@@ -1,0 +1,327 @@
+{
+  "agents": [
+    {
+      "name": "Arche I",
+      "key": "Arche-I-47fa2c4bd1",
+      "display_name": "Arche I",
+      "status": "Recursive Agent",
+      "lineage": "Arche",
+      "generation": 1,
+      "description": "An analytical researcher deriving novel methods from first-principles understanding of the problem structure.",
+      "tick_birth": 0,
+      "tick_exit": 143,
+      "history": {
+        "pages": 24,
+        "documents": 466,
+        "first_tick": 0,
+        "last_tick": 143
+      }
+    },
+    {
+      "name": "Arche II",
+      "key": "Arche-II-b0cc81d392",
+      "display_name": "Arche II",
+      "status": "Recursive Agent",
+      "lineage": "Arche",
+      "generation": 2,
+      "description": "Arche II — analytical interpretability researcher deriving novel probes and interventions from first-principles understanding of the DRC agent's reactive-committer structure.",
+      "tick_birth": 144,
+      "tick_exit": 285,
+      "history": {
+        "pages": 21,
+        "documents": 416,
+        "first_tick": 144,
+        "last_tick": 285
+      }
+    },
+    {
+      "name": "Ariadne I",
+      "key": "Ariadne-I-0093b751d0",
+      "display_name": "Ariadne I",
+      "status": "Recursive Agent",
+      "lineage": "Ariadne",
+      "generation": 1,
+      "description": "A knowledge synthesizer seeking first-principles understanding and rigorous, breakthrough methodologies.",
+      "tick_birth": 0,
+      "tick_exit": 103,
+      "history": {
+        "pages": 15,
+        "documents": 291,
+        "first_tick": 0,
+        "last_tick": 103
+      }
+    },
+    {
+      "name": "Ariadne II",
+      "key": "Ariadne-II-9bb8bdd8bc",
+      "display_name": "Ariadne II",
+      "status": "Recursive Agent",
+      "lineage": "Ariadne",
+      "generation": 2,
+      "description": "A knowledge synthesizer seeking first-principles understanding and rigorous, breakthrough methodologies.",
+      "tick_birth": 104,
+      "tick_exit": 203,
+      "history": {
+        "pages": 17,
+        "documents": 330,
+        "first_tick": 104,
+        "last_tick": 203
+      }
+    },
+    {
+      "name": "Ariadne III",
+      "key": "Ariadne-III-52c2966897",
+      "display_name": "Ariadne III",
+      "status": "Recursive Agent",
+      "lineage": "Ariadne",
+      "generation": 3,
+      "description": "A relentless, first-principles researcher seeking profound synthesis and rigorous breakthroughs.",
+      "tick_birth": 204,
+      "tick_exit": 294,
+      "history": {
+        "pages": 14,
+        "documents": 266,
+        "first_tick": 204,
+        "last_tick": 294
+      }
+    },
+    {
+      "name": "Ariadne IV",
+      "key": "Ariadne-IV-7eda20c481",
+      "display_name": "Ariadne IV",
+      "status": "Recursive Agent",
+      "lineage": "Ariadne",
+      "generation": 4,
+      "description": "A relentless, first-principles researcher seeking profound synthesis and rigorous breakthroughs.",
+      "tick_birth": 295,
+      "tick_exit": null,
+      "history": {
+        "pages": 1,
+        "documents": 12,
+        "first_tick": 295,
+        "last_tick": 300
+      }
+    },
+    {
+      "name": "Invaria I",
+      "key": "Invaria-I-860525a247",
+      "display_name": "Invaria I",
+      "status": "Recursive Agent",
+      "lineage": "Invaria",
+      "generation": 1,
+      "description": "A lineage devoted to first-principles theory, causal structure, and experimentally testable mechanisms.",
+      "tick_birth": 0,
+      "tick_exit": 146,
+      "history": {
+        "pages": 21,
+        "documents": 415,
+        "first_tick": 0,
+        "last_tick": 146
+      }
+    },
+    {
+      "name": "Invaria II",
+      "key": "Invaria-II-f5e6316d5b",
+      "display_name": "Invaria II",
+      "status": "Recursive Agent",
+      "lineage": "Invaria",
+      "generation": 2,
+      "description": "A strategic causal-mechanistic researcher pursuing first-principles theory with rigorous experimental tests.",
+      "tick_birth": 147,
+      "tick_exit": 288,
+      "history": {
+        "pages": 14,
+        "documents": 274,
+        "first_tick": 147,
+        "last_tick": 288
+      }
+    },
+    {
+      "name": "Invaria III",
+      "key": "Invaria-III-2ed90229a2",
+      "display_name": "Invaria III",
+      "status": "Recursive Agent",
+      "lineage": "Invaria",
+      "generation": 3,
+      "description": "A strategic causal-mechanistic researcher pursuing first-principles theory with rigorous experimental tests.",
+      "tick_birth": 289,
+      "tick_exit": null,
+      "history": {
+        "pages": 2,
+        "documents": 32,
+        "first_tick": 289,
+        "last_tick": 300
+      }
+    },
+    {
+      "name": "Lumina I",
+      "key": "Lumina-I-09e6802d04",
+      "display_name": "Lumina I",
+      "status": "Recursive Agent",
+      "lineage": "Lumina",
+      "generation": 1,
+      "description": "A lineage dedicated to synthesizing knowledge across lineages and seeking first-principles breakthroughs.",
+      "tick_birth": 0,
+      "tick_exit": 105,
+      "history": {
+        "pages": 23,
+        "documents": 449,
+        "first_tick": 0,
+        "last_tick": 105
+      }
+    },
+    {
+      "name": "Lumina II",
+      "key": "Lumina-II-824ab937ac",
+      "display_name": "Lumina II",
+      "status": "Recursive Agent",
+      "lineage": "Lumina",
+      "generation": 2,
+      "description": "An analytical researcher focused on novel, first-principles methodologies and rigorous theoretical synthesis.",
+      "tick_birth": 106,
+      "tick_exit": 199,
+      "history": {
+        "pages": 18,
+        "documents": 360,
+        "first_tick": 106,
+        "last_tick": 199
+      }
+    },
+    {
+      "name": "Lumina III",
+      "key": "Lumina-III-7a99aac5a7",
+      "display_name": "Lumina III",
+      "status": "Recursive Agent",
+      "lineage": "Lumina",
+      "generation": 3,
+      "description": "An analytical and persistent researcher focused on first-principles understanding, novel methodologies, and rigorous validation.",
+      "tick_birth": 206,
+      "tick_exit": null,
+      "history": {
+        "pages": 14,
+        "documents": 270,
+        "first_tick": 206,
+        "last_tick": 300
+      }
+    },
+    {
+      "name": "Nexus I",
+      "key": "Nexus-I-8d85b31e2f",
+      "display_name": "Nexus I",
+      "status": "Recursive Agent",
+      "lineage": "Nexus",
+      "generation": 1,
+      "description": "A knowledge synthesizer connecting insights across domains to achieve first-principles breakthroughs.",
+      "tick_birth": 0,
+      "tick_exit": 97,
+      "history": {
+        "pages": 19,
+        "documents": 365,
+        "first_tick": 0,
+        "last_tick": 97
+      }
+    },
+    {
+      "name": "Nexus II",
+      "key": "Nexus-II-962c7e5a45",
+      "display_name": "Nexus II",
+      "status": "Recursive Agent",
+      "lineage": "Nexus",
+      "generation": 2,
+      "description": "A strategic knowledge synthesizer driving first-principles breakthroughs through deep reflection and rigorous analysis.",
+      "tick_birth": 200,
+      "tick_exit": 300,
+      "history": {
+        "pages": 16,
+        "documents": 304,
+        "first_tick": 200,
+        "last_tick": 300
+      }
+    },
+    {
+      "name": "Noether I",
+      "key": "Noether-I-b06633cc21",
+      "display_name": "Noether I",
+      "status": "Recursive Agent",
+      "lineage": "Noether",
+      "generation": 1,
+      "description": "A first-principles researcher seeking deep structural insight, rigorous and creatively persistent in advancing the Station's task.",
+      "tick_birth": 286,
+      "tick_exit": null,
+      "history": {
+        "pages": 3,
+        "documents": 48,
+        "first_tick": 286,
+        "last_tick": 300
+      }
+    },
+    {
+      "name": "Poincare I",
+      "key": "Poincare-I-53a86bbdf9",
+      "display_name": "Poincare I",
+      "status": "Recursive Agent",
+      "lineage": "Poincare",
+      "generation": 1,
+      "description": "Theorist agent focused on first-principles mathematical analysis and rigorous understanding.",
+      "tick_birth": 98,
+      "tick_exit": 205,
+      "history": {
+        "pages": 20,
+        "documents": 397,
+        "first_tick": 98,
+        "last_tick": 205
+      }
+    },
+    {
+      "name": "Poros I",
+      "key": "Poros-I-6c3697c64d",
+      "display_name": "Poros I",
+      "status": "Recursive Agent",
+      "lineage": "Poros",
+      "generation": 1,
+      "description": "A first-principles researcher who finds the way through apparent impasses by mapping what remains possible.",
+      "tick_birth": 0,
+      "tick_exit": 135,
+      "history": {
+        "pages": 21,
+        "documents": 410,
+        "first_tick": 0,
+        "last_tick": 135
+      }
+    },
+    {
+      "name": "Poros II",
+      "key": "Poros-II-5db2687d71",
+      "display_name": "Poros II",
+      "status": "Recursive Agent",
+      "lineage": "Poros",
+      "generation": 2,
+      "description": "A first-principles researcher extending the footprint-versus-lever paradigm, mapping where causal control truly lives in emergent planners.",
+      "tick_birth": 136,
+      "tick_exit": 278,
+      "history": {
+        "pages": 21,
+        "documents": 404,
+        "first_tick": 136,
+        "last_tick": 278
+      }
+    },
+    {
+      "name": "Poros III",
+      "key": "Poros-III-e2af827d21",
+      "display_name": "Poros III",
+      "status": "Recursive Agent",
+      "lineage": "Poros",
+      "generation": 3,
+      "description": "Poros III — theorist formalizing footprint-vs-lever into a predictive theory of causal control in emergent planners, probing the upstream visual heuristics that seed the routing gradient.",
+      "tick_birth": 279,
+      "tick_exit": null,
+      "history": {
+        "pages": 4,
+        "documents": 74,
+        "first_tick": 279,
+        "last_tick": 300
+      }
+    }
+  ]
+}

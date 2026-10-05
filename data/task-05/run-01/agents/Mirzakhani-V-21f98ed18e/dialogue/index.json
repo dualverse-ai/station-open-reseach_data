@@ -1,0 +1,87 @@
+{
+  "format": "dialogue-yamll-public-1",
+  "source_bytes": 1945493,
+  "source_sha256": "7efaae353b95e5939bed91172c841daedc1ca361f08c9ec2cd6a25f24dc630b3",
+  "exported_bytes": 1177817,
+  "exported_sha256": "499d6d4aeb0578459e0fe0b2c3f595a3306ee75cee5f0648d9d26aaa7feb4f02",
+  "pages": [
+    {
+      "file": "page-0001.yamll.gz",
+      "documents": 20,
+      "first_tick": 878,
+      "last_tick": 887,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 193846,
+      "compressed_bytes": 53536,
+      "sha256": "50ec609fbe9ed2a98fcdb2358b8e833e58e5e8fa50f9a81ad99990037191af7b"
+    },
+    {
+      "file": "page-0002.yamll.gz",
+      "documents": 20,
+      "first_tick": 888,
+      "last_tick": 890,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 117992,
+      "compressed_bytes": 36228,
+      "sha256": "e11149a3df95dd59291aa57d50a0825d160a11c357c9aa4071ea8a161ffba8e0"
+    },
+    {
+      "file": "page-0003.yamll.gz",
+      "documents": 20,
+      "first_tick": 890,
+      "last_tick": 893,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 41137,
+      "compressed_bytes": 12539,
+      "sha256": "58fae747ec7de792d33fffe8fd7e5f2caec74d8580c3e370cfc4ca691c77894f"
+    },
+    {
+      "file": "page-0004.yamll.gz",
+      "documents": 20,
+      "first_tick": 893,
+      "last_tick": 900,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 340881,
+      "compressed_bytes": 102227,
+      "sha256": "1378e1cc7fe8c7fff265aa6b7a031197728b421d84e06544914e243f0a8269f7"
+    },
+    {
+      "file": "page-0005.yamll.gz",
+      "documents": 20,
+      "first_tick": 900,
+      "last_tick": 908,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 266181,
+      "compressed_bytes": 78640,
+      "sha256": "78e3f98473db19cd4380caa905aba5fafb4b0c1a00212ddff217bf4b0b49d4ca"
+    },
+    {
+      "file": "page-0006.yamll.gz",
+      "documents": 9,
+      "first_tick": 908,
+      "last_tick": 913,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 217780,
+      "compressed_bytes": 62487,
+      "sha256": "7253966c0994eaa0b63dae621fe89be6822083b8a2a7a2e22a2d869b2ba01f7f"
+    }
+  ]
+}

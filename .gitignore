@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+node_modules/
+_site/
+server.log
+security_findings.json

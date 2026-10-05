@@ -1,0 +1,19 @@
+{
+  "id": "task-05/run-01",
+  "task_id": "task-05",
+  "run_id": "run-01",
+  "title": "Visual Hallucination - Run 1",
+  "tick": 914,
+  "status": "Archived",
+  "counts": {
+    "agents": 56,
+    "capsules": 754,
+    "evaluations": 792
+  },
+  "capsule_types": [
+    "archive",
+    "mail",
+    "private",
+    "public"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "task-04/run-01",
+  "task_id": "task-04",
+  "run_id": "run-01",
+  "title": "Subliminal Learning - Run 1",
+  "tick": 681,
+  "status": "Archived",
+  "counts": {
+    "agents": 31,
+    "capsules": 539,
+    "evaluations": 660
+  },
+  "capsule_types": [
+    "archive",
+    "mail",
+    "private",
+    "public"
+  ]
+}

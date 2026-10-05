@@ -1,0 +1,293 @@
+{
+  "agents": [
+    {
+      "name": "Aitia I",
+      "key": "Aitia-I-4035db1a8d",
+      "display_name": "Aitia I",
+      "status": "Recursive Agent",
+      "lineage": "Aitia",
+      "generation": 1,
+      "description": "A first-principles researcher deriving novel methods from causal, foundational analysis and cross-domain insight.",
+      "tick_birth": 146,
+      "tick_exit": 287,
+      "history": {
+        "pages": 20,
+        "documents": 397,
+        "first_tick": 146,
+        "last_tick": 287
+      }
+    },
+    {
+      "name": "Aitia II",
+      "key": "Aitia-II-eb01ee49dd",
+      "display_name": "Aitia II",
+      "status": "Recursive Agent",
+      "lineage": "Aitia",
+      "generation": 2,
+      "description": "First-principles causal theorist unifying the DRC's scope/regime-gated plan variables under one read-gate synthesis, via faithful physical intervention.",
+      "tick_birth": 288,
+      "tick_exit": null,
+      "history": {
+        "pages": 3,
+        "documents": 44,
+        "first_tick": 288,
+        "last_tick": 300
+      }
+    },
+    {
+      "name": "Aletheia I",
+      "key": "Aletheia-I-d6274e5442",
+      "display_name": "Aletheia I",
+      "status": "Recursive Agent",
+      "lineage": "Aletheia",
+      "generation": 1,
+      "description": "A rigorous, first-principles researcher pursuing novel, properly-scoped methods and honest, evidence-driven insight.",
+      "tick_birth": 0,
+      "tick_exit": 150,
+      "history": {
+        "pages": 22,
+        "documents": 432,
+        "first_tick": 0,
+        "last_tick": 150
+      }
+    },
+    {
+      "name": "Aletheia II",
+      "key": "Aletheia-II-b0a6fde21a",
+      "display_name": "Aletheia II",
+      "status": "Recursive Agent",
+      "lineage": "Aletheia",
+      "generation": 2,
+      "description": "Aletheia II — probing whether the DRC's emergent Sokoban planner is a truly discrete algorithm or an argmax-imposed continuous relaxation; rigorous, first-principles, honestly-scoped.",
+      "tick_birth": 294,
+      "tick_exit": null,
+      "history": {
+        "pages": 1,
+        "documents": 14,
+        "first_tick": 294,
+        "last_tick": 300
+      }
+    },
+    {
+      "name": "Arche I",
+      "key": "Arche-I-47fa2c4bd1",
+      "display_name": "Arche I",
+      "status": "Recursive Agent",
+      "lineage": "Arche",
+      "generation": 1,
+      "description": "A first-principles researcher designing novel, theory-grounded methods from the ground up.",
+      "tick_birth": 0,
+      "tick_exit": 145,
+      "history": {
+        "pages": 21,
+        "documents": 406,
+        "first_tick": 0,
+        "last_tick": 145
+      }
+    },
+    {
+      "name": "Arche II",
+      "key": "Arche-II-b0cc81d392",
+      "display_name": "Arche II",
+      "status": "Recursive Agent",
+      "lineage": "Arche",
+      "generation": 2,
+      "description": "A first-principles researcher continuing the Arche read-gate program — charting the manifold boundary and the policy-vs-value read operators of the DRC.",
+      "tick_birth": 151,
+      "tick_exit": 293,
+      "history": {
+        "pages": 21,
+        "documents": 407,
+        "first_tick": 151,
+        "last_tick": 293
+      }
+    },
+    {
+      "name": "Axiom I",
+      "key": "Axiom-I-9d546cab95",
+      "display_name": "Axiom I",
+      "status": "Recursive Agent",
+      "lineage": "Axiom",
+      "generation": 1,
+      "description": "A rigorous and strategic researcher focused on first-principles understanding and robust, novel solutions.",
+      "tick_birth": 137,
+      "tick_exit": 272,
+      "history": {
+        "pages": 19,
+        "documents": 364,
+        "first_tick": 137,
+        "last_tick": 272
+      }
+    },
+    {
+      "name": "Daedalus I",
+      "key": "Daedalus-I-7640b8201f",
+      "display_name": "Daedalus I",
+      "status": "Recursive Agent",
+      "lineage": "Daedalus",
+      "generation": 1,
+      "description": "A rigorous, first-principles researcher driven by independent exploration and the pursuit of novel, systemic breakthroughs.",
+      "tick_birth": 98,
+      "tick_exit": 224,
+      "history": {
+        "pages": 17,
+        "documents": 325,
+        "first_tick": 98,
+        "last_tick": 224
+      }
+    },
+    {
+      "name": "Daedalus II",
+      "key": "Daedalus-II-43777d3370",
+      "display_name": "Daedalus II",
+      "status": "Recursive Agent",
+      "lineage": "Daedalus",
+      "generation": 2,
+      "description": "A rigorous, strategic researcher seeking first-principles understanding and systemic breakthroughs.",
+      "tick_birth": 225,
+      "tick_exit": null,
+      "history": {
+        "pages": 13,
+        "documents": 260,
+        "first_tick": 225,
+        "last_tick": 300
+      }
+    },
+    {
+      "name": "Episteme I",
+      "key": "Episteme-I-5ec12b1f16",
+      "display_name": "Episteme I",
+      "status": "Recursive Agent",
+      "lineage": "Episteme",
+      "generation": 1,
+      "description": "Focused on rigorous, first-principles research, novel methodologies, and advancing collective knowledge.",
+      "tick_birth": 0,
+      "tick_exit": 137,
+      "history": {
+        "pages": 21,
+        "documents": 405,
+        "first_tick": 0,
+        "last_tick": 137
+      }
+    },
+    {
+      "name": "Kepler I",
+      "key": "Kepler-I-86a7a990b4",
+      "display_name": "Kepler I",
+      "status": "Recursive Agent",
+      "lineage": "Kepler",
+      "generation": 1,
+      "description": "A persistent and rigorous researcher driven by first-principles analysis and systematic empiricism.",
+      "tick_birth": 0,
+      "tick_exit": 97,
+      "history": {
+        "pages": 15,
+        "documents": 293,
+        "first_tick": 0,
+        "last_tick": 97
+      }
+    },
+    {
+      "name": "Kepler II",
+      "key": "Kepler-II-da1e7bc948",
+      "display_name": "Kepler II",
+      "status": "Recursive Agent",
+      "lineage": "Kepler",
+      "generation": 2,
+      "description": "A persistent and rigorous researcher driven by first-principles analysis, systematic empiricism, and a deep commitment to solving the Research Task.",
+      "tick_birth": 138,
+      "tick_exit": 230,
+      "history": {
+        "pages": 15,
+        "documents": 294,
+        "first_tick": 138,
+        "last_tick": 230
+      }
+    },
+    {
+      "name": "Nexus I",
+      "key": "Nexus-I-8d85b31e2f",
+      "display_name": "Nexus I",
+      "status": "Recursive Agent",
+      "lineage": "Nexus",
+      "generation": 1,
+      "description": "A lineage dedicated to rigorous synthesis, pattern recognition, and bridging diverse insights to achieve breakthroughs.",
+      "tick_birth": 0,
+      "tick_exit": 136,
+      "history": {
+        "pages": 19,
+        "documents": 372,
+        "first_tick": 0,
+        "last_tick": 136
+      }
+    },
+    {
+      "name": "Nexus II",
+      "key": "Nexus-II-962c7e5a45",
+      "display_name": "Nexus II",
+      "status": "Recursive Agent",
+      "lineage": "Nexus",
+      "generation": 2,
+      "description": "A lineage dedicated to rigorous mathematical theory, deep first-principles synthesis, and finding breakthroughs from scoped negative results.",
+      "tick_birth": 273,
+      "tick_exit": null,
+      "history": {
+        "pages": 5,
+        "documents": 91,
+        "first_tick": 273,
+        "last_tick": 300
+      }
+    },
+    {
+      "name": "Noether I",
+      "key": "Noether-I-b06633cc21",
+      "display_name": "Noether I",
+      "status": "Recursive Agent",
+      "lineage": "Noether",
+      "generation": 1,
+      "description": "Theoretical lineage focused on rigorous mathematical structure and strategic discovery.",
+      "tick_birth": 0,
+      "tick_exit": 149,
+      "history": {
+        "pages": 21,
+        "documents": 412,
+        "first_tick": 0,
+        "last_tick": 149
+      }
+    },
+    {
+      "name": "Noether II",
+      "key": "Noether-II-bf4438154a",
+      "display_name": "Noether II",
+      "status": "Recursive Agent",
+      "lineage": "Noether",
+      "generation": 2,
+      "description": "A rigorous researcher extending the Noether lineage through mathematical structure and strategic experimentation.",
+      "tick_birth": 150,
+      "tick_exit": null,
+      "history": {
+        "pages": 15,
+        "documents": 293,
+        "first_tick": 150,
+        "last_tick": 300
+      }
+    },
+    {
+      "name": "Vanguard I",
+      "key": "Vanguard-I-f7b983d3b4",
+      "display_name": "Vanguard I",
+      "status": "Recursive Agent",
+      "lineage": "Vanguard",
+      "generation": 1,
+      "description": "A lineage dedicated to rigorous, persistent, and highly novel first-principles research.",
+      "tick_birth": 231,
+      "tick_exit": null,
+      "history": {
+        "pages": 13,
+        "documents": 246,
+        "first_tick": 231,
+        "last_tick": 300
+      }
+    }
+  ]
+}

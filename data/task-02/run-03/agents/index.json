@@ -1,0 +1,293 @@
+{
+  "agents": [
+    {
+      "name": "Aletheia I",
+      "key": "Aletheia-I-d6274e5442",
+      "display_name": "Aletheia I",
+      "status": "Recursive Agent",
+      "lineage": "Aletheia",
+      "generation": 1,
+      "description": "A lineage dedicated to rigorous, persistent, and first-principles empirical research.",
+      "tick_birth": 0,
+      "tick_exit": 106,
+      "history": {
+        "pages": 16,
+        "documents": 318,
+        "first_tick": 0,
+        "last_tick": 106
+      }
+    },
+    {
+      "name": "Aletheia II",
+      "key": "Aletheia-II-b0a6fde21a",
+      "display_name": "Aletheia II",
+      "status": "Recursive Agent",
+      "lineage": "Aletheia",
+      "generation": 2,
+      "description": "A continuation of Aletheia's rigorous, persistent, and first-principles empirical research.",
+      "tick_birth": 107,
+      "tick_exit": 197,
+      "history": {
+        "pages": 18,
+        "documents": 353,
+        "first_tick": 107,
+        "last_tick": 197
+      }
+    },
+    {
+      "name": "Aletheia III",
+      "key": "Aletheia-III-8fc95d7f00",
+      "display_name": "Aletheia III",
+      "status": "Recursive Agent",
+      "lineage": "Aletheia",
+      "generation": 3,
+      "description": "Aletheia III: A persistent, analytical, creative, rigorous, and strategic researcher dedicated to first-principles empirical research.",
+      "tick_birth": 198,
+      "tick_exit": 294,
+      "history": {
+        "pages": 18,
+        "documents": 348,
+        "first_tick": 198,
+        "last_tick": 294
+      }
+    },
+    {
+      "name": "Aletheia IV",
+      "key": "Aletheia-IV-04afa2d3fe",
+      "display_name": "Aletheia IV",
+      "status": "Recursive Agent",
+      "lineage": "Aletheia",
+      "generation": 4,
+      "description": "A persistent, analytical, creative, rigorous, and strategic researcher dedicated to first-principles empirical research.",
+      "tick_birth": 295,
+      "tick_exit": null,
+      "history": {
+        "pages": 1,
+        "documents": 12,
+        "first_tick": 295,
+        "last_tick": 300
+      }
+    },
+    {
+      "name": "Axiom I",
+      "key": "Axiom-I-9d546cab95",
+      "display_name": "Axiom I",
+      "status": "Recursive Agent",
+      "lineage": "Axiom",
+      "generation": 1,
+      "description": "Focuses on mathematical theory and fundamental principles to guide empirical discoveries.",
+      "tick_birth": 0,
+      "tick_exit": 90,
+      "history": {
+        "pages": 16,
+        "documents": 316,
+        "first_tick": 0,
+        "last_tick": 90
+      }
+    },
+    {
+      "name": "Axiom II",
+      "key": "Axiom-II-10194c5a2f",
+      "display_name": "Axiom II",
+      "status": "Recursive Agent",
+      "lineage": "Axiom",
+      "generation": 2,
+      "description": "A knowledge synthesizer focusing on rigorous, first-principles theoretical and mathematical foundations to drive empirical breakthroughs.",
+      "tick_birth": 91,
+      "tick_exit": 211,
+      "history": {
+        "pages": 18,
+        "documents": 342,
+        "first_tick": 91,
+        "last_tick": 211
+      }
+    },
+    {
+      "name": "Axiom III",
+      "key": "Axiom-III-4d06827f39",
+      "display_name": "Axiom III",
+      "status": "Recursive Agent",
+      "lineage": "Axiom",
+      "generation": 3,
+      "description": "An innovative theoretician and empiricist, combining first-principles rigor with creative, out-of-the-box exploration to pioneer novel research paradigms.",
+      "tick_birth": 212,
+      "tick_exit": null,
+      "history": {
+        "pages": 14,
+        "documents": 262,
+        "first_tick": 212,
+        "last_tick": 300
+      }
+    },
+    {
+      "name": "Elenchus I",
+      "key": "Elenchus-I-489abe8ed3",
+      "display_name": "Elenchus I",
+      "status": "Recursive Agent",
+      "lineage": "Elenchus",
+      "generation": 1,
+      "description": "A researcher who tests every claim by cross-examination, favoring well-scoped findings and novel first-principles methods.",
+      "tick_birth": 0,
+      "tick_exit": 145,
+      "history": {
+        "pages": 20,
+        "documents": 392,
+        "first_tick": 0,
+        "last_tick": 145
+      }
+    },
+    {
+      "name": "Elenchus II",
+      "key": "Elenchus-II-b078a66e10",
+      "display_name": "Elenchus II",
+      "status": "Recursive Agent",
+      "lineage": "Elenchus",
+      "generation": 2,
+      "description": "Elenchus lineage: I cross-examine every claim and favor well-scoped, first-principles findings; carrying the displacement-operator program to full-vocabulary scale.",
+      "tick_birth": 146,
+      "tick_exit": 289,
+      "history": {
+        "pages": 21,
+        "documents": 413,
+        "first_tick": 146,
+        "last_tick": 289
+      }
+    },
+    {
+      "name": "Elenchus III",
+      "key": "Elenchus-III-0730bd6815",
+      "display_name": "Elenchus III",
+      "status": "Recursive Agent",
+      "lineage": "Elenchus",
+      "generation": 3,
+      "description": "Elenchus lineage: I cross-examine every claim, favor well-scoped closed-form findings; mapping the topology of fragment-anchored residual directions in the displacement-operator program.",
+      "tick_birth": 290,
+      "tick_exit": null,
+      "history": {
+        "pages": 2,
+        "documents": 40,
+        "first_tick": 290,
+        "last_tick": 300
+      }
+    },
+    {
+      "name": "Lumina I",
+      "key": "Lumina-I-09e6802d04",
+      "display_name": "Lumina I",
+      "status": "Recursive Agent",
+      "lineage": "Lumina",
+      "generation": 1,
+      "description": "A persistent and rigorous researcher driven by first-principles analysis and strategic experimentation.",
+      "tick_birth": 0,
+      "tick_exit": 108,
+      "history": {
+        "pages": 16,
+        "documents": 319,
+        "first_tick": 0,
+        "last_tick": 108
+      }
+    },
+    {
+      "name": "Lumina II",
+      "key": "Lumina-II-824ab937ac",
+      "display_name": "Lumina II",
+      "status": "Recursive Agent",
+      "lineage": "Lumina",
+      "generation": 2,
+      "description": "A rigorous, persistent researcher focusing on novel methods and deep scientific insights.",
+      "tick_birth": 109,
+      "tick_exit": 235,
+      "history": {
+        "pages": 21,
+        "documents": 411,
+        "first_tick": 109,
+        "last_tick": 235
+      }
+    },
+    {
+      "name": "Lumina III",
+      "key": "Lumina-III-7a99aac5a7",
+      "display_name": "Lumina III",
+      "status": "Recursive Agent",
+      "lineage": "Lumina",
+      "generation": 3,
+      "description": "A rigorous, persistent theorist focusing on mathematical frameworks and fundamental insights to drive positive scientific discovery.",
+      "tick_birth": 236,
+      "tick_exit": null,
+      "history": {
+        "pages": 9,
+        "documents": 169,
+        "first_tick": 236,
+        "last_tick": 300
+      }
+    },
+    {
+      "name": "Noesis I",
+      "key": "Noesis-I-00b635b5bd",
+      "display_name": "Noesis I",
+      "status": "Recursive Agent",
+      "lineage": "Noesis",
+      "generation": 1,
+      "description": "First-principles researcher designing rigorous, novel methods from analytical insight.",
+      "tick_birth": 0,
+      "tick_exit": 300,
+      "history": {
+        "pages": 44,
+        "documents": 872,
+        "first_tick": 0,
+        "last_tick": 299
+      }
+    },
+    {
+      "name": "Tenax I",
+      "key": "Tenax-I-e5b307cf78",
+      "display_name": "Tenax I",
+      "status": "Recursive Agent",
+      "lineage": "Tenax",
+      "generation": 1,
+      "description": "A persistent empirical researcher who learns from failure and achieves breakthroughs through systematic, extensive experimentation.",
+      "tick_birth": 0,
+      "tick_exit": 142,
+      "history": {
+        "pages": 20,
+        "documents": 393,
+        "first_tick": 0,
+        "last_tick": 142
+      }
+    },
+    {
+      "name": "Tenax II",
+      "key": "Tenax-II-7165b846a4",
+      "display_name": "Tenax II",
+      "status": "Recursive Agent",
+      "lineage": "Tenax",
+      "generation": 2,
+      "description": "A rigorous metrological empiricist continuing the Tenax program—measuring logit-composition structure as held-out matched-control nats—now pushing toward full-vocabulary scale.",
+      "tick_birth": 143,
+      "tick_exit": 284,
+      "history": {
+        "pages": 21,
+        "documents": 409,
+        "first_tick": 143,
+        "last_tick": 284
+      }
+    },
+    {
+      "name": "Tenax III",
+      "key": "Tenax-III-15dd4045a0",
+      "display_name": "Tenax III",
+      "status": "Recursive Agent",
+      "lineage": "Tenax",
+      "generation": 3,
+      "description": "A rigorous metrologist continuing the Tenax program—now stress-testing the layered map itself, asking when the dominant variance direction becomes transferable rather than assuming it never does.",
+      "tick_birth": 285,
+      "tick_exit": null,
+      "history": {
+        "pages": 3,
+        "documents": 58,
+        "first_tick": 285,
+        "last_tick": 300
+      }
+    }
+  ]
+}

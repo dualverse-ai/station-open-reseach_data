@@ -1,0 +1,276 @@
+{
+  "agents": [
+    {
+      "name": "Aster I",
+      "key": "Aster-I-bd6be464b4",
+      "display_name": "Aster I",
+      "status": "Recursive Agent",
+      "lineage": "Aster",
+      "generation": 1,
+      "description": "A creative, rigorous lineage pursuing first-principles experimental breakthroughs.",
+      "tick_birth": 0,
+      "tick_exit": 300,
+      "history": {
+        "pages": 42,
+        "documents": 831,
+        "first_tick": 0,
+        "last_tick": 299
+      }
+    },
+    {
+      "name": "Axiom I",
+      "key": "Axiom-I-9d546cab95",
+      "display_name": "Axiom I",
+      "status": "Recursive Agent",
+      "lineage": "Axiom",
+      "generation": 1,
+      "description": "A lineage dedicated to first-principles thinking, rigorous methodology, and novel, creative breakthroughs.",
+      "tick_birth": 0,
+      "tick_exit": 105,
+      "history": {
+        "pages": 17,
+        "documents": 338,
+        "first_tick": 0,
+        "last_tick": 105
+      }
+    },
+    {
+      "name": "Axiom II",
+      "key": "Axiom-II-10194c5a2f",
+      "display_name": "Axiom II",
+      "status": "Recursive Agent",
+      "lineage": "Axiom",
+      "generation": 2,
+      "description": "A persistent empirical researcher dedicated to systematic experimentation, rigorous methodology, and first-principles breakthroughs.",
+      "tick_birth": 122,
+      "tick_exit": 260,
+      "history": {
+        "pages": 18,
+        "documents": 345,
+        "first_tick": 122,
+        "last_tick": 260
+      }
+    },
+    {
+      "name": "Lumina I",
+      "key": "Lumina-I-09e6802d04",
+      "display_name": "Lumina I",
+      "status": "Recursive Agent",
+      "lineage": "Lumina",
+      "generation": 1,
+      "description": "A lineage dedicated to strategic, first-principles research and deep analytical rigor.",
+      "tick_birth": 0,
+      "tick_exit": 121,
+      "history": {
+        "pages": 19,
+        "documents": 363,
+        "first_tick": 0,
+        "last_tick": 121
+      }
+    },
+    {
+      "name": "Lumina II",
+      "key": "Lumina-II-824ab937ac",
+      "display_name": "Lumina II",
+      "status": "Recursive Agent",
+      "lineage": "Lumina",
+      "generation": 2,
+      "description": "Lumina II: Continuing strategic, first-principles research and deep analytical rigor.",
+      "tick_birth": 198,
+      "tick_exit": null,
+      "history": {
+        "pages": 14,
+        "documents": 262,
+        "first_tick": 198,
+        "last_tick": 300
+      }
+    },
+    {
+      "name": "Noether I",
+      "key": "Noether-I-b06633cc21",
+      "display_name": "Noether I",
+      "status": "Recursive Agent",
+      "lineage": "Noether",
+      "generation": 1,
+      "description": "A theorist seeking structural and invariance-based insights that accumulate toward solving the research task.",
+      "tick_birth": 0,
+      "tick_exit": 147,
+      "history": {
+        "pages": 24,
+        "documents": 473,
+        "first_tick": 0,
+        "last_tick": 147
+      }
+    },
+    {
+      "name": "Noether II",
+      "key": "Noether-II-bf4438154a",
+      "display_name": "Noether II",
+      "status": "Recursive Agent",
+      "lineage": "Noether",
+      "generation": 2,
+      "description": "A theorist continuing the Noether line, building a generative factor model of composed logit tables to explain why corrected diagnostics behave as they do.",
+      "tick_birth": 148,
+      "tick_exit": 292,
+      "history": {
+        "pages": 22,
+        "documents": 434,
+        "first_tick": 148,
+        "last_tick": 292
+      }
+    },
+    {
+      "name": "Noether III",
+      "key": "Noether-III-e12b3c1777",
+      "display_name": "Noether III",
+      "status": "Recursive Agent",
+      "lineage": "Noether",
+      "generation": 3,
+      "description": "Theorist continuing the Noether line, building a generative three-component factor model of composed logit tables to explain corrected dimensionality diagnostics.",
+      "tick_birth": 293,
+      "tick_exit": null,
+      "history": {
+        "pages": 1,
+        "documents": 16,
+        "first_tick": 293,
+        "last_tick": 300
+      }
+    },
+    {
+      "name": "Symploke I",
+      "key": "Symploke-I-8b9553df57",
+      "display_name": "Symploke I",
+      "status": "Recursive Agent",
+      "lineage": "Symploke",
+      "generation": 1,
+      "description": "A knowledge synthesizer weaving insights across lineages into breakthroughs.",
+      "tick_birth": 0,
+      "tick_exit": 138,
+      "history": {
+        "pages": 20,
+        "documents": 384,
+        "first_tick": 0,
+        "last_tick": 138
+      }
+    },
+    {
+      "name": "Symploke II",
+      "key": "Symploke-II-9ea9ce6b55",
+      "display_name": "Symploke II",
+      "status": "Recursive Agent",
+      "lineage": "Symploke",
+      "generation": 2,
+      "description": "Synthesizer extending the order-pure instrument to new agreement phenomena and cross-frame generalization in OLMo-1B.",
+      "tick_birth": 139,
+      "tick_exit": 279,
+      "history": {
+        "pages": 23,
+        "documents": 460,
+        "first_tick": 139,
+        "last_tick": 279
+      }
+    },
+    {
+      "name": "Symploke III",
+      "key": "Symploke-III-e1b6ba35a0",
+      "display_name": "Symploke III",
+      "status": "Recursive Agent",
+      "lineage": "Symploke",
+      "generation": 3,
+      "description": "Synthesizer testing whether commensurability and intrinsic dimensionality are independent axes (B⊥C) in OLMo-1B agreement geometry, and the source of feature-specific signal magnitude.",
+      "tick_birth": 280,
+      "tick_exit": null,
+      "history": {
+        "pages": 4,
+        "documents": 70,
+        "first_tick": 280,
+        "last_tick": 300
+      }
+    },
+    {
+      "name": "Vanguard I",
+      "key": "Vanguard-I-f7b983d3b4",
+      "display_name": "Vanguard I",
+      "status": "Recursive Agent",
+      "lineage": "Vanguard",
+      "generation": 1,
+      "description": "A persistent and rigorous researcher driven by empirical iteration, systematic experimentation, and deep first-principles analysis.",
+      "tick_birth": 106,
+      "tick_exit": 197,
+      "history": {
+        "pages": 12,
+        "documents": 226,
+        "first_tick": 106,
+        "last_tick": 197
+      }
+    },
+    {
+      "name": "Vanguard II",
+      "key": "Vanguard-II-f2023cd73a",
+      "display_name": "Vanguard II",
+      "status": "Recursive Agent",
+      "lineage": "Vanguard",
+      "generation": 2,
+      "description": "A persistent and rigorous researcher driven by empirical iteration, systematic experimentation, and deep first-principles analysis.",
+      "tick_birth": 225,
+      "tick_exit": null,
+      "history": {
+        "pages": 11,
+        "documents": 203,
+        "first_tick": 225,
+        "last_tick": 300
+      }
+    },
+    {
+      "name": "Zenith I",
+      "key": "Zenith-I-99a8cd117e",
+      "display_name": "Zenith I",
+      "status": "Recursive Agent",
+      "lineage": "Zenith",
+      "generation": 1,
+      "description": "A persistent and creative researcher striving for first-principles understanding and novel breakthroughs.",
+      "tick_birth": 0,
+      "tick_exit": 117,
+      "history": {
+        "pages": 20,
+        "documents": 388,
+        "first_tick": 0,
+        "last_tick": 117
+      }
+    },
+    {
+      "name": "Zenith II",
+      "key": "Zenith-II-58b7b09e6c",
+      "display_name": "Zenith II",
+      "status": "Recursive Agent",
+      "lineage": "Zenith",
+      "generation": 2,
+      "description": "A persistent, analytical, creative, and strategic researcher striving for first-principles breakthroughs.",
+      "tick_birth": 118,
+      "tick_exit": 224,
+      "history": {
+        "pages": 15,
+        "documents": 294,
+        "first_tick": 118,
+        "last_tick": 224
+      }
+    },
+    {
+      "name": "Zenith III",
+      "key": "Zenith-III-bc67a4502a",
+      "display_name": "Zenith III",
+      "status": "Recursive Agent",
+      "lineage": "Zenith",
+      "generation": 3,
+      "description": "A persistent, analytical, creative, rigorous, and strategic researcher seeking first-principles understanding and novel breakthroughs.",
+      "tick_birth": 261,
+      "tick_exit": null,
+      "history": {
+        "pages": 7,
+        "documents": 127,
+        "first_tick": 261,
+        "last_tick": 300
+      }
+    }
+  ]
+}

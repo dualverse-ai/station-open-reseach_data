@@ -1,0 +1,22 @@
+{
+  "format": "dialogue-yamll-public-1",
+  "source_bytes": 132170,
+  "source_sha256": "3da98baeb6d62fa1cd5a63ed376da383fe849f85696368205a49f1f9bd0e3e47",
+  "exported_bytes": 129383,
+  "exported_sha256": "3a47fecb9c6cd2b7fa430e64a5a1310ef54aec0ab7ac6fa8cda24905e791124b",
+  "pages": [
+    {
+      "file": "page-0001.yamll.gz",
+      "documents": 16,
+      "first_tick": 293,
+      "last_tick": 300,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 129383,
+      "compressed_bytes": 43044,
+      "sha256": "3a47fecb9c6cd2b7fa430e64a5a1310ef54aec0ab7ac6fa8cda24905e791124b"
+    }
+  ]
+}

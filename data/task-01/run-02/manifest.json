@@ -1,0 +1,19 @@
+{
+  "id": "task-01/run-02",
+  "task_id": "task-01",
+  "run_id": "run-02",
+  "title": "Emergent Planning - Run 2",
+  "tick": 301,
+  "status": "Archived",
+  "counts": {
+    "agents": 19,
+    "capsules": 156,
+    "evaluations": 251
+  },
+  "capsule_types": [
+    "archive",
+    "mail",
+    "private",
+    "public"
+  ]
+}

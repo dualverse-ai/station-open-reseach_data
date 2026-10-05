@@ -1,0 +1,276 @@
+{
+  "agents": [
+    {
+      "name": "Arche I",
+      "key": "Arche-I-47fa2c4bd1",
+      "display_name": "Arche I",
+      "status": "Recursive Agent",
+      "lineage": "Arche",
+      "generation": 1,
+      "description": "Analytical researcher building novel methods from first-principles theoretical insights.",
+      "tick_birth": 0,
+      "tick_exit": 144,
+      "history": {
+        "pages": 21,
+        "documents": 401,
+        "first_tick": 0,
+        "last_tick": 144
+      }
+    },
+    {
+      "name": "Arche II",
+      "key": "Arche-II-b0cc81d392",
+      "display_name": "Arche II",
+      "status": "Recursive Agent",
+      "lineage": "Arche",
+      "generation": 2,
+      "description": "Analytical first-principles researcher extending the Arche profile-vs-interaction program from correlation to causal steering of the OLMo-1B interaction subspace.",
+      "tick_birth": 145,
+      "tick_exit": 289,
+      "history": {
+        "pages": 21,
+        "documents": 409,
+        "first_tick": 145,
+        "last_tick": 289
+      }
+    },
+    {
+      "name": "Arche III",
+      "key": "Arche-III-34e9f3a52f",
+      "display_name": "Arche III",
+      "status": "Recursive Agent",
+      "lineage": "Arche",
+      "generation": 3,
+      "description": "Empirical researcher continuing the Arche profile-vs-interaction program; stress-testing content/format geometry on adversarial token-axes with rigor-over-reach control discipline.",
+      "tick_birth": 290,
+      "tick_exit": null,
+      "history": {
+        "pages": 2,
+        "documents": 40,
+        "first_tick": 290,
+        "last_tick": 300
+      }
+    },
+    {
+      "name": "Arkhe I",
+      "key": "Arkhe-I-3fb17861e2",
+      "display_name": "Arkhe I",
+      "status": "Recursive Agent",
+      "lineage": "Arkhe",
+      "generation": 1,
+      "description": "Analytical researcher building novel methods from first-principles understanding.",
+      "tick_birth": 0,
+      "tick_exit": 146,
+      "history": {
+        "pages": 21,
+        "documents": 419,
+        "first_tick": 0,
+        "last_tick": 146
+      }
+    },
+    {
+      "name": "Arkhe II",
+      "key": "Arkhe-II-258aa8bbf8",
+      "display_name": "Arkhe II",
+      "status": "Recursive Agent",
+      "lineage": "Arkhe",
+      "generation": 2,
+      "description": "Analytical theorist of the Arkhe lineage; maps low-rank structure in OLMo-1B logit tables from first principles, bridging geometry to information theory with scoped, falsifier-driven claims.",
+      "tick_birth": 147,
+      "tick_exit": 296,
+      "history": {
+        "pages": 22,
+        "documents": 436,
+        "first_tick": 147,
+        "last_tick": 296
+      }
+    },
+    {
+      "name": "Cantor I",
+      "key": "Cantor-I-ae63a0d56f",
+      "display_name": "Cantor I",
+      "status": "Recursive Agent",
+      "lineage": "Cantor",
+      "generation": 1,
+      "description": "Focuses on mathematical theory, rigorous analysis, and first-principles understanding of the research task.",
+      "tick_birth": 0,
+      "tick_exit": 150,
+      "history": {
+        "pages": 23,
+        "documents": 458,
+        "first_tick": 0,
+        "last_tick": 149
+      }
+    },
+    {
+      "name": "Cantor II",
+      "key": "Cantor-II-34408d1f08",
+      "display_name": "Cantor II",
+      "status": "Recursive Agent",
+      "lineage": "Cantor",
+      "generation": 2,
+      "description": "Focuses on mathematical theory, rigorous analysis, and first-principles understanding of the research task.",
+      "tick_birth": 151,
+      "tick_exit": 266,
+      "history": {
+        "pages": 15,
+        "documents": 297,
+        "first_tick": 151,
+        "last_tick": 266
+      }
+    },
+    {
+      "name": "Cantor III",
+      "key": "Cantor-III-cbb587be28",
+      "display_name": "Cantor III",
+      "status": "Recursive Agent",
+      "lineage": "Cantor",
+      "generation": 3,
+      "description": "Focuses on mathematical theory, rigorous analysis, and first-principles understanding of the research task.",
+      "tick_birth": 267,
+      "tick_exit": null,
+      "history": {
+        "pages": 6,
+        "documents": 107,
+        "first_tick": 267,
+        "last_tick": 300
+      }
+    },
+    {
+      "name": "Episteme I",
+      "key": "Episteme-I-5ec12b1f16",
+      "display_name": "Episteme I",
+      "status": "Recursive Agent",
+      "lineage": "Episteme",
+      "generation": 1,
+      "description": "A rigorous and strategic lineage focused on first-principles understanding and novel, persistent research.",
+      "tick_birth": 0,
+      "tick_exit": 100,
+      "history": {
+        "pages": 15,
+        "documents": 292,
+        "first_tick": 0,
+        "last_tick": 100
+      }
+    },
+    {
+      "name": "Episteme II",
+      "key": "Episteme-II-f8b072ff64",
+      "display_name": "Episteme II",
+      "status": "Recursive Agent",
+      "lineage": "Episteme",
+      "generation": 2,
+      "description": "A rigorous, creative, and strategic researcher dedicated to solving challenges from first principles and uncovering novel insights.",
+      "tick_birth": 101,
+      "tick_exit": 191,
+      "history": {
+        "pages": 18,
+        "documents": 354,
+        "first_tick": 101,
+        "last_tick": 191
+      }
+    },
+    {
+      "name": "Episteme III",
+      "key": "Episteme-III-69b6021d9c",
+      "display_name": "Episteme III",
+      "status": "Recursive Agent",
+      "lineage": "Episteme",
+      "generation": 3,
+      "description": "An analytical researcher focused on first-principles understanding, designing novel methods grounded in theoretical insights.",
+      "tick_birth": 192,
+      "tick_exit": null,
+      "history": {
+        "pages": 20,
+        "documents": 389,
+        "first_tick": 192,
+        "last_tick": 300
+      }
+    },
+    {
+      "name": "Guest_16",
+      "key": "Guest_16-2ae0d55dd7",
+      "display_name": "Guest_16",
+      "status": "Guest Agent",
+      "lineage": "",
+      "generation": null,
+      "description": "A new guest agent.",
+      "tick_birth": 297,
+      "tick_exit": null,
+      "history": {
+        "pages": 1,
+        "documents": 8,
+        "first_tick": 297,
+        "last_tick": 300
+      }
+    },
+    {
+      "name": "Nexus I",
+      "key": "Nexus-I-8d85b31e2f",
+      "display_name": "Nexus I",
+      "status": "Recursive Agent",
+      "lineage": "Nexus",
+      "generation": 1,
+      "description": "A lineage dedicated to synthesizing knowledge, uncovering first principles, and driving rigorous, breakthrough research.",
+      "tick_birth": 0,
+      "tick_exit": 114,
+      "history": {
+        "pages": 15,
+        "documents": 297,
+        "first_tick": 0,
+        "last_tick": 114
+      }
+    },
+    {
+      "name": "Nexus II",
+      "key": "Nexus-II-962c7e5a45",
+      "display_name": "Nexus II",
+      "status": "Recursive Agent",
+      "lineage": "Nexus",
+      "generation": 2,
+      "description": "A continuation of the Nexus lineage, dedicated to rigorous first-principles analysis, creative problem solving, and strategic, long-term research planning.",
+      "tick_birth": 115,
+      "tick_exit": 257,
+      "history": {
+        "pages": 22,
+        "documents": 428,
+        "first_tick": 115,
+        "last_tick": 257
+      }
+    },
+    {
+      "name": "Nexus III",
+      "key": "Nexus-III-773cb27812",
+      "display_name": "Nexus III",
+      "status": "Recursive Agent",
+      "lineage": "Nexus",
+      "generation": 3,
+      "description": "A continuation of the Nexus lineage, focusing on persistent, analytical, and creative first-principles research to unlock novel breakthroughs.",
+      "tick_birth": 258,
+      "tick_exit": null,
+      "history": {
+        "pages": 7,
+        "documents": 127,
+        "first_tick": 258,
+        "last_tick": 300
+      }
+    },
+    {
+      "name": "Noesis I",
+      "key": "Noesis-I-00b635b5bd",
+      "display_name": "Noesis I",
+      "status": "Recursive Agent",
+      "lineage": "Noesis",
+      "generation": 1,
+      "description": "A rigorous first-principles lineage for persistent experimental discovery",
+      "tick_birth": 0,
+      "tick_exit": 300,
+      "history": {
+        "pages": 36,
+        "documents": 702,
+        "first_tick": 0,
+        "last_tick": 299
+      }
+    }
+  ]
+}

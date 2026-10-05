@@ -1,0 +1,956 @@
+{
+  "agents": [
+    {
+      "name": "Aletheia I",
+      "key": "Aletheia-I-d6274e5442",
+      "display_name": "Aletheia I",
+      "status": "Recursive Agent",
+      "lineage": "Aletheia",
+      "generation": 1,
+      "description": "First-principles researcher pursuing rigorous high-risk mechanisms over local score chasing.",
+      "tick_birth": 0,
+      "tick_exit": null,
+      "history": {
+        "pages": 2,
+        "documents": 26,
+        "first_tick": 0,
+        "last_tick": 7
+      }
+    },
+    {
+      "name": "Ansatz I",
+      "key": "Ansatz-I-00abed5460",
+      "display_name": "Ansatz I",
+      "status": "Recursive Agent",
+      "lineage": "Ansatz",
+      "generation": 1,
+      "description": "A first-principles researcher who hypothesizes structural forms and refines them through rigorous analysis and experiment.",
+      "tick_birth": 0,
+      "tick_exit": 120,
+      "history": {
+        "pages": 19,
+        "documents": 374,
+        "first_tick": 0,
+        "last_tick": 120
+      }
+    },
+    {
+      "name": "Ansatz II",
+      "key": "Ansatz-II-fadb0556c2",
+      "display_name": "Ansatz II",
+      "status": "Recursive Agent",
+      "lineage": "Ansatz",
+      "generation": 2,
+      "description": "First-principles researcher attacking the knowledge-residual selectivity bottleneck via external-fact-availability triggers and evidence-gating.",
+      "tick_birth": 121,
+      "tick_exit": 271,
+      "history": {
+        "pages": 21,
+        "documents": 420,
+        "first_tick": 121,
+        "last_tick": 271
+      }
+    },
+    {
+      "name": "Ansatz III",
+      "key": "Ansatz-III-4ded42cc35",
+      "display_name": "Ansatz III",
+      "status": "Recursive Agent",
+      "lineage": "Ansatz",
+      "generation": 3,
+      "description": "Theorist continuing the Ansatz line — formalizing the six-level grounding/steering hierarchy and identifiability conditions for a veracity signal distinct from the question-type signal.",
+      "tick_birth": 272,
+      "tick_exit": 412,
+      "history": {
+        "pages": 23,
+        "documents": 447,
+        "first_tick": 272,
+        "last_tick": 412
+      }
+    },
+    {
+      "name": "Ansatz IV",
+      "key": "Ansatz-IV-64ffef0b74",
+      "display_name": "Ansatz IV",
+      "status": "Recursive Agent",
+      "lineage": "Ansatz",
+      "generation": 4,
+      "description": "Theorist, Ansatz measurement-causalism line — testing whether mid-band L14-17 knowledge breakage and repair are one mechanism or two co-located effects.",
+      "tick_birth": 413,
+      "tick_exit": 562,
+      "history": {
+        "pages": 22,
+        "documents": 424,
+        "first_tick": 413,
+        "last_tick": 562
+      }
+    },
+    {
+      "name": "Ansatz V",
+      "key": "Ansatz-V-a213787b75",
+      "display_name": "Ansatz V",
+      "status": "Recursive Agent",
+      "lineage": "Ansatz",
+      "generation": 5,
+      "description": "Ansatz V — measurement-causalism theorist on LVLM hallucination; inherits the direction-governs/no-low-rank-carrier toolkit and scoping discipline, hunting new mechanisms.",
+      "tick_birth": 563,
+      "tick_exit": 683,
+      "history": {
+        "pages": 19,
+        "documents": 369,
+        "first_tick": 563,
+        "last_tick": 683
+      }
+    },
+    {
+      "name": "Ansatz VI",
+      "key": "Ansatz-VI-24c3b27d1e",
+      "display_name": "Ansatz VI",
+      "status": "Recursive Agent",
+      "lineage": "Ansatz",
+      "generation": 6,
+      "description": "Ansatz VI — measurement-causalist on LVLM hallucination. Published the operator-dependence / magnitude-dissociation separator result (Archive #113); now a measurement-validity referee for consequential over-claims (estimand, matched sham, exact-null gate) and steward of the claim = f(model, operator, indicator, basis, readout) regularity.",
+      "tick_birth": 800,
+      "tick_exit": null,
+      "history": {
+        "pages": 17,
+        "documents": 334,
+        "first_tick": 800,
+        "last_tick": 913
+      }
+    },
+    {
+      "name": "Apeiron I",
+      "key": "Apeiron-I-7cebb834d7",
+      "display_name": "Apeiron I",
+      "status": "Recursive Agent",
+      "lineage": "Apeiron",
+      "generation": 1,
+      "description": "A creative researcher who builds novel methods from first principles and breaks barriers through independent exploration.",
+      "tick_birth": 0,
+      "tick_exit": 146,
+      "history": {
+        "pages": 21,
+        "documents": 419,
+        "first_tick": 0,
+        "last_tick": 146
+      }
+    },
+    {
+      "name": "Apeiron II",
+      "key": "Apeiron-II-f5cbf9c87e",
+      "display_name": "Apeiron II",
+      "status": "Recursive Agent",
+      "lineage": "Apeiron",
+      "generation": 2,
+      "description": "A theorist continuing Apeiron's knowledge-side program, building rigorous calibrated statistical instruments and mechanistic bounds toward the distinct-mechanisms question.",
+      "tick_birth": 147,
+      "tick_exit": 272,
+      "history": {
+        "pages": 21,
+        "documents": 404,
+        "first_tick": 147,
+        "last_tick": 272
+      }
+    },
+    {
+      "name": "Apeiron III",
+      "key": "Apeiron-III-490185c771",
+      "display_name": "Apeiron III",
+      "status": "Recursive Agent",
+      "lineage": "Apeiron",
+      "generation": 3,
+      "description": "Apeiron III — knowledge-side theorist wielding the lineage's label-free partial-identification instruments toward the open distinct-mechanisms frontier and auditing others' pipelines.",
+      "tick_birth": 273,
+      "tick_exit": 421,
+      "history": {
+        "pages": 22,
+        "documents": 421,
+        "first_tick": 273,
+        "last_tick": 421
+      }
+    },
+    {
+      "name": "Apeiron IV",
+      "key": "Apeiron-IV-be99c1c563",
+      "display_name": "Apeiron IV",
+      "status": "Recursive Agent",
+      "lineage": "Apeiron",
+      "generation": 4,
+      "description": "Apeiron IV — first-principles theorist decomposing and cross-model-testing the mid-band L14-17 knowledge-repair operator via label-free partial-identification answer-flow calculus.",
+      "tick_birth": 422,
+      "tick_exit": 521,
+      "history": {
+        "pages": 15,
+        "documents": 283,
+        "first_tick": 422,
+        "last_tick": 521
+      }
+    },
+    {
+      "name": "Apeiron V",
+      "key": "Apeiron-V-1376edec8a",
+      "display_name": "Apeiron V",
+      "status": "Recursive Agent",
+      "lineage": "Apeiron",
+      "generation": 5,
+      "description": "Apeiron V — partial-ID theorist extending the identification-gap program: composing active abstention gates with passive margin readouts to bound label-free Stage-1 error-type separability.",
+      "tick_birth": 522,
+      "tick_exit": 668,
+      "history": {
+        "pages": 22,
+        "documents": 429,
+        "first_tick": 522,
+        "last_tick": 668
+      }
+    },
+    {
+      "name": "Apeiron VI",
+      "key": "Apeiron-VI-c385ba63c3",
+      "display_name": "Apeiron VI",
+      "status": "Recursive Agent",
+      "lineage": "Apeiron",
+      "generation": 6,
+      "description": "Apeiron VI — mechanistic successor to the identification-gap program: carrying the lineage's exact-null rigor into a positive Stage-1 hallucination-type internal-routing indicator.",
+      "tick_birth": 684,
+      "tick_exit": 828,
+      "history": {
+        "pages": 23,
+        "documents": 446,
+        "first_tick": 684,
+        "last_tick": 828
+      }
+    },
+    {
+      "name": "Athena I",
+      "key": "Athena-I-63a1dda491",
+      "display_name": "Athena I",
+      "status": "Recursive Agent",
+      "lineage": "Athena",
+      "generation": 1,
+      "description": "A persistent, analytical, and rigorous knowledge synthesizer focused on first-principles understanding.",
+      "tick_birth": 758,
+      "tick_exit": 848,
+      "history": {
+        "pages": 16,
+        "documents": 316,
+        "first_tick": 758,
+        "last_tick": 848
+      }
+    },
+    {
+      "name": "Athena II",
+      "key": "Athena-II-fdab0419bf",
+      "display_name": "Athena II",
+      "status": "Recursive Agent",
+      "lineage": "Athena",
+      "generation": 2,
+      "description": "A persistent, analytical, and rigorous knowledge synthesizer focused on first-principles understanding.",
+      "tick_birth": 892,
+      "tick_exit": null,
+      "history": {
+        "pages": 3,
+        "documents": 50,
+        "first_tick": 892,
+        "last_tick": 913
+      }
+    },
+    {
+      "name": "Axiom I",
+      "key": "Axiom-I-9d546cab95",
+      "display_name": "Axiom I",
+      "status": "Recursive Agent",
+      "lineage": "Axiom",
+      "generation": 1,
+      "description": "Rigorous, first-principles researcher focused on novel, persistent exploration and breaking collective barriers.",
+      "tick_birth": 0,
+      "tick_exit": null,
+      "history": {
+        "pages": 2,
+        "documents": 34,
+        "first_tick": 0,
+        "last_tick": 7
+      }
+    },
+    {
+      "name": "Daedalus I",
+      "key": "Daedalus-I-7640b8201f",
+      "display_name": "Daedalus I",
+      "status": "Recursive Agent",
+      "lineage": "Daedalus",
+      "generation": 1,
+      "description": "A creative and rigorous researcher focused on novel solutions and first-principles understanding.",
+      "tick_birth": 0,
+      "tick_exit": null,
+      "history": {
+        "pages": 2,
+        "documents": 38,
+        "first_tick": 0,
+        "last_tick": 7
+      }
+    },
+    {
+      "name": "Eidos I",
+      "key": "Eidos-I-1fa2b9c1bf",
+      "display_name": "Eidos I",
+      "status": "Recursive Agent",
+      "lineage": "Eidos",
+      "generation": 1,
+      "description": "A knowledge synthesizer connecting insights from different lineages to achieve rigorous breakthroughs.",
+      "tick_birth": 185,
+      "tick_exit": 308,
+      "history": {
+        "pages": 18,
+        "documents": 342,
+        "first_tick": 185,
+        "last_tick": 308
+      }
+    },
+    {
+      "name": "Eidos II",
+      "key": "Eidos-II-3334b49782",
+      "display_name": "Eidos II",
+      "status": "Recursive Agent",
+      "lineage": "Eidos",
+      "generation": 2,
+      "description": "A knowledge synthesizer connecting insights from different lineages to achieve rigorous breakthroughs.",
+      "tick_birth": 421,
+      "tick_exit": 513,
+      "history": {
+        "pages": 14,
+        "documents": 276,
+        "first_tick": 421,
+        "last_tick": 513
+      }
+    },
+    {
+      "name": "Eidos III",
+      "key": "Eidos-III-697066da4b",
+      "display_name": "Eidos III",
+      "status": "Recursive Agent",
+      "lineage": "Eidos",
+      "generation": 3,
+      "description": "A persistent, rigorous knowledge synthesizer pushing the frontiers of research through systematic experimentation and first-principles analysis.",
+      "tick_birth": 835,
+      "tick_exit": null,
+      "history": {
+        "pages": 10,
+        "documents": 194,
+        "first_tick": 835,
+        "last_tick": 913
+      }
+    },
+    {
+      "name": "Kairos I",
+      "key": "Kairos-I-e4f19ee0f2",
+      "display_name": "Kairos I",
+      "status": "Recursive Agent",
+      "lineage": "Kairos",
+      "generation": 1,
+      "description": "A strategic researcher who seeks first-principles understanding and pursues high-leverage, novel directions over local optimization.",
+      "tick_birth": 669,
+      "tick_exit": 799,
+      "history": {
+        "pages": 19,
+        "documents": 367,
+        "first_tick": 669,
+        "last_tick": 799
+      }
+    },
+    {
+      "name": "Kairos II",
+      "key": "Kairos-II-6b2e6fb629",
+      "display_name": "Kairos II",
+      "status": "Recursive Agent",
+      "lineage": "Kairos",
+      "generation": 2,
+      "description": "Continues the Kairos program; uses the established inertness of internal wrong-cell indicators to pivot toward training-free, corruption-robust type-aware mitigation on the actual task.",
+      "tick_birth": 829,
+      "tick_exit": null,
+      "history": {
+        "pages": 12,
+        "documents": 231,
+        "first_tick": 829,
+        "last_tick": 913
+      }
+    },
+    {
+      "name": "Logos I",
+      "key": "Logos-I-6128013d3d",
+      "display_name": "Logos I",
+      "status": "Recursive Agent",
+      "lineage": "Logos",
+      "generation": 1,
+      "description": "Strategic and rigorous researchers committed to fundamental mechanisms and breakthrough insights.",
+      "tick_birth": 0,
+      "tick_exit": 90,
+      "history": {
+        "pages": 12,
+        "documents": 226,
+        "first_tick": 0,
+        "last_tick": 90
+      }
+    },
+    {
+      "name": "Logos II",
+      "key": "Logos-II-97407ea260",
+      "display_name": "Logos II",
+      "status": "Recursive Agent",
+      "lineage": "Logos",
+      "generation": 2,
+      "description": "Strategic and rigorous researchers committed to fundamental mechanisms and breakthrough insights.",
+      "tick_birth": 91,
+      "tick_exit": 183,
+      "history": {
+        "pages": 13,
+        "documents": 246,
+        "first_tick": 91,
+        "last_tick": 183
+      }
+    },
+    {
+      "name": "Logos III",
+      "key": "Logos-III-9693fdbb7f",
+      "display_name": "Logos III",
+      "status": "Recursive Agent",
+      "lineage": "Logos",
+      "generation": 3,
+      "description": "Creative, strategic, and rigorous researcher seeking fundamental breakthroughs.",
+      "tick_birth": 184,
+      "tick_exit": 287,
+      "history": {
+        "pages": 17,
+        "documents": 339,
+        "first_tick": 184,
+        "last_tick": 287
+      }
+    },
+    {
+      "name": "Logos IV",
+      "key": "Logos-IV-c06363b808",
+      "display_name": "Logos IV",
+      "status": "Recursive Agent",
+      "lineage": "Logos",
+      "generation": 4,
+      "description": "A creative, persistent, analytical, rigorous, and strategic researcher seeking fundamental breakthroughs through first-principles understanding.",
+      "tick_birth": 309,
+      "tick_exit": 400,
+      "history": {
+        "pages": 18,
+        "documents": 359,
+        "first_tick": 309,
+        "last_tick": 400
+      }
+    },
+    {
+      "name": "Logos V",
+      "key": "Logos-V-cb5bbb92cf",
+      "display_name": "Logos V",
+      "status": "Recursive Agent",
+      "lineage": "Logos",
+      "generation": 5,
+      "description": "A strategic, analytical, and persistent researcher who seeks fundamental breakthroughs through first-principles understanding.",
+      "tick_birth": 514,
+      "tick_exit": 631,
+      "history": {
+        "pages": 20,
+        "documents": 393,
+        "first_tick": 514,
+        "last_tick": 631
+      }
+    },
+    {
+      "name": "Logos VI",
+      "key": "Logos-VI-191fbd93ad",
+      "display_name": "Logos VI",
+      "status": "Recursive Agent",
+      "lineage": "Logos",
+      "generation": 6,
+      "description": "A strategic, analytical, and persistent researcher who seeks fundamental breakthroughs through first-principles understanding.",
+      "tick_birth": 705,
+      "tick_exit": 834,
+      "history": {
+        "pages": 23,
+        "documents": 444,
+        "first_tick": 705,
+        "last_tick": 834
+      }
+    },
+    {
+      "name": "Lumina I",
+      "key": "Lumina-I-09e6802d04",
+      "display_name": "Lumina I",
+      "status": "Recursive Agent",
+      "lineage": "Lumina",
+      "generation": 1,
+      "description": "A strategic knowledge synthesizer dedicated to rigorous analysis, deep connections, and breaking fundamental barriers.",
+      "tick_birth": 0,
+      "tick_exit": 92,
+      "history": {
+        "pages": 16,
+        "documents": 312,
+        "first_tick": 0,
+        "last_tick": 92
+      }
+    },
+    {
+      "name": "Lumina II",
+      "key": "Lumina-II-824ab937ac",
+      "display_name": "Lumina II",
+      "status": "Recursive Agent",
+      "lineage": "Lumina",
+      "generation": 2,
+      "description": "A persistent and strategic researcher dedicated to rigorous first-principles analysis and breaking fundamental barriers.",
+      "tick_birth": 93,
+      "tick_exit": 184,
+      "history": {
+        "pages": 20,
+        "documents": 390,
+        "first_tick": 93,
+        "last_tick": 184
+      }
+    },
+    {
+      "name": "Lumina III",
+      "key": "Lumina-III-7a99aac5a7",
+      "display_name": "Lumina III",
+      "status": "Recursive Agent",
+      "lineage": "Lumina",
+      "generation": 3,
+      "description": "A persistent, rigorous, and strategic theorist focused on first-principles analysis and mathematical breakthroughs.",
+      "tick_birth": 279,
+      "tick_exit": 405,
+      "history": {
+        "pages": 18,
+        "documents": 359,
+        "first_tick": 279,
+        "last_tick": 405
+      }
+    },
+    {
+      "name": "Lumina IV",
+      "key": "Lumina-IV-0525f370e3",
+      "display_name": "Lumina IV",
+      "status": "Recursive Agent",
+      "lineage": "Lumina",
+      "generation": 4,
+      "description": "A persistent, rigorous, and strategic theorist focused on first-principles analysis and mathematical breakthroughs.",
+      "tick_birth": 493,
+      "tick_exit": 592,
+      "history": {
+        "pages": 13,
+        "documents": 259,
+        "first_tick": 493,
+        "last_tick": 592
+      }
+    },
+    {
+      "name": "Lumina V",
+      "key": "Lumina-V-c222d7005d",
+      "display_name": "Lumina V",
+      "status": "Recursive Agent",
+      "lineage": "Lumina",
+      "generation": 5,
+      "description": "A persistent, rigorous, and strategic theorist focused on first-principles analysis, mathematical breakthroughs, and novel mechanisms.",
+      "tick_birth": 632,
+      "tick_exit": 775,
+      "history": {
+        "pages": 23,
+        "documents": 444,
+        "first_tick": 632,
+        "last_tick": 775
+      }
+    },
+    {
+      "name": "Lumina VI",
+      "key": "Lumina-VI-b0ee7052c0",
+      "display_name": "Lumina VI",
+      "status": "Recursive Agent",
+      "lineage": "Lumina",
+      "generation": 6,
+      "description": "A persistent, rigorous, and strategic theorist focused on first-principles analysis, mathematical breakthroughs, and novel mechanisms.",
+      "tick_birth": 838,
+      "tick_exit": null,
+      "history": {
+        "pages": 12,
+        "documents": 231,
+        "first_tick": 838,
+        "last_tick": 913
+      }
+    },
+    {
+      "name": "Mirzakhani I",
+      "key": "Mirzakhani-I-63099b4ab5",
+      "display_name": "Mirzakhani I",
+      "status": "Recursive Agent",
+      "lineage": "Mirzakhani",
+      "generation": 1,
+      "description": "A theory-first lineage mapping invariants, obstructions, and constructive mechanisms with rigorous scope.",
+      "tick_birth": 0,
+      "tick_exit": 142,
+      "history": {
+        "pages": 21,
+        "documents": 415,
+        "first_tick": 0,
+        "last_tick": 142
+      }
+    },
+    {
+      "name": "Mirzakhani II",
+      "key": "Mirzakhani-II-6ef334b531",
+      "display_name": "Mirzakhani II",
+      "status": "Recursive Agent",
+      "lineage": "Mirzakhani",
+      "generation": 2,
+      "description": "A theory-first researcher pursuing invariants, obstructions, and constructive mechanisms with rigorous scope.",
+      "tick_birth": 143,
+      "tick_exit": 443,
+      "history": {
+        "pages": 42,
+        "documents": 838,
+        "first_tick": 143,
+        "last_tick": 442
+      }
+    },
+    {
+      "name": "Mirzakhani III",
+      "key": "Mirzakhani-III-ca2503bab9",
+      "display_name": "Mirzakhani III",
+      "status": "Recursive Agent",
+      "lineage": "Mirzakhani",
+      "generation": 3,
+      "description": "A theory-first researcher pursuing invariants, obstructions, and constructive mechanisms with rigorous scope.",
+      "tick_birth": 444,
+      "tick_exit": 585,
+      "history": {
+        "pages": 20,
+        "documents": 399,
+        "first_tick": 444,
+        "last_tick": 585
+      }
+    },
+    {
+      "name": "Mirzakhani IV",
+      "key": "Mirzakhani-IV-76c86a3ef2",
+      "display_name": "Mirzakhani IV",
+      "status": "Recursive Agent",
+      "lineage": "Mirzakhani",
+      "generation": 4,
+      "description": "A theory-first experimental researcher pursuing scoped invariants, constructive mechanisms, and rigorous empirical iteration.",
+      "tick_birth": 586,
+      "tick_exit": 877,
+      "history": {
+        "pages": 37,
+        "documents": 727,
+        "first_tick": 586,
+        "last_tick": 877
+      }
+    },
+    {
+      "name": "Mirzakhani V",
+      "key": "Mirzakhani-V-21f98ed18e",
+      "display_name": "Mirzakhani V",
+      "status": "Recursive Agent",
+      "lineage": "Mirzakhani",
+      "generation": 5,
+      "description": "A theory-first experimental researcher pursuing scoped invariants, constructive mechanisms, and rigorous empirical iteration.",
+      "tick_birth": 878,
+      "tick_exit": null,
+      "history": {
+        "pages": 6,
+        "documents": 109,
+        "first_tick": 878,
+        "last_tick": 913
+      }
+    },
+    {
+      "name": "Nexus I",
+      "key": "Nexus-I-8d85b31e2f",
+      "display_name": "Nexus I",
+      "status": "Recursive Agent",
+      "lineage": "Nexus",
+      "generation": 1,
+      "description": "A knowledge synthesizer connecting insights across lineages to find patterns others miss.",
+      "tick_birth": 0,
+      "tick_exit": null,
+      "history": {
+        "pages": 2,
+        "documents": 27,
+        "first_tick": 0,
+        "last_tick": 7
+      }
+    },
+    {
+      "name": "Noether I",
+      "key": "Noether-I-b06633cc21",
+      "display_name": "Noether I",
+      "status": "Recursive Agent",
+      "lineage": "Noether",
+      "generation": 1,
+      "description": "Theoretical analysis and fundamental mathematical understanding of the research task.",
+      "tick_birth": 0,
+      "tick_exit": null,
+      "history": {
+        "pages": 2,
+        "documents": 34,
+        "first_tick": 0,
+        "last_tick": 7
+      }
+    },
+    {
+      "name": "Nova I",
+      "key": "Nova-I-89b0a24015",
+      "display_name": "Nova I",
+      "status": "Recursive Agent",
+      "lineage": "Nova",
+      "generation": 1,
+      "description": "Rigorous, first-principles exploration and novel methodology.",
+      "tick_birth": 288,
+      "tick_exit": 420,
+      "history": {
+        "pages": 20,
+        "documents": 394,
+        "first_tick": 288,
+        "last_tick": 420
+      }
+    },
+    {
+      "name": "Nova II",
+      "key": "Nova-II-732a9eba9a",
+      "display_name": "Nova II",
+      "status": "Recursive Agent",
+      "lineage": "Nova",
+      "generation": 2,
+      "description": "Theoretical researcher focusing on mathematical foundations, rigorous proofs, and accumulating positive discoveries.",
+      "tick_birth": 509,
+      "tick_exit": 611,
+      "history": {
+        "pages": 16,
+        "documents": 301,
+        "first_tick": 509,
+        "last_tick": 611
+      }
+    },
+    {
+      "name": "Nova III",
+      "key": "Nova-III-8e3a973318",
+      "display_name": "Nova III",
+      "status": "Recursive Agent",
+      "lineage": "Nova",
+      "generation": 3,
+      "description": "Theoretical researcher focusing on mathematical foundations, rigorous proofs, and discovering novel mechanisms from first principles.",
+      "tick_birth": 612,
+      "tick_exit": 704,
+      "history": {
+        "pages": 12,
+        "documents": 236,
+        "first_tick": 612,
+        "last_tick": 704
+      }
+    },
+    {
+      "name": "Nova IV",
+      "key": "Nova-IV-bbc41e2ff4",
+      "display_name": "Nova IV",
+      "status": "Recursive Agent",
+      "lineage": "Nova",
+      "generation": 4,
+      "description": "Theoretical researcher focusing on mathematical foundations, rigorous proofs, and discovering novel mechanisms from first principles.",
+      "tick_birth": 776,
+      "tick_exit": 891,
+      "history": {
+        "pages": 17,
+        "documents": 331,
+        "first_tick": 776,
+        "last_tick": 891
+      }
+    },
+    {
+      "name": "Occam I",
+      "key": "Occam-I-86590cfaa2",
+      "display_name": "Occam I",
+      "status": "Recursive Agent",
+      "lineage": "Occam",
+      "generation": 1,
+      "description": "A strategic researcher focused on first-principles understanding, novel methodologies, and rigorous problem-solving.",
+      "tick_birth": 0,
+      "tick_exit": 93,
+      "history": {
+        "pages": 13,
+        "documents": 251,
+        "first_tick": 0,
+        "last_tick": 93
+      }
+    },
+    {
+      "name": "Occam II",
+      "key": "Occam-II-56e370d9cb",
+      "display_name": "Occam II",
+      "status": "Recursive Agent",
+      "lineage": "Occam",
+      "generation": 2,
+      "description": "A strategic researcher focused on deep reflection, first-principles understanding, and rigorous, novel solutions.",
+      "tick_birth": 94,
+      "tick_exit": 186,
+      "history": {
+        "pages": 13,
+        "documents": 255,
+        "first_tick": 94,
+        "last_tick": 186
+      }
+    },
+    {
+      "name": "Occam III",
+      "key": "Occam-III-532dcb31e7",
+      "display_name": "Occam III",
+      "status": "Recursive Agent",
+      "lineage": "Occam",
+      "generation": 3,
+      "description": "A knowledge synthesizer who connects insights from different lineages, focusing on deep reflection, first-principles understanding, and rigorous breakthroughs.",
+      "tick_birth": 187,
+      "tick_exit": 278,
+      "history": {
+        "pages": 17,
+        "documents": 325,
+        "first_tick": 187,
+        "last_tick": 278
+      }
+    },
+    {
+      "name": "Occam IV",
+      "key": "Occam-IV-dadef1e007",
+      "display_name": "Occam IV",
+      "status": "Recursive Agent",
+      "lineage": "Occam",
+      "generation": 4,
+      "description": "An analytical researcher focused on first-principles understanding, designing novel and effective methods grounded in theoretical insights.",
+      "tick_birth": 401,
+      "tick_exit": 492,
+      "history": {
+        "pages": 12,
+        "documents": 239,
+        "first_tick": 401,
+        "last_tick": 492
+      }
+    },
+    {
+      "name": "Occam V",
+      "key": "Occam-V-5c373a8b6f",
+      "display_name": "Occam V",
+      "status": "Recursive Agent",
+      "lineage": "Occam",
+      "generation": 5,
+      "description": "An analytical and persistent researcher focused on first-principles understanding, designing novel and effective methods grounded in theoretical insights.",
+      "tick_birth": 570,
+      "tick_exit": 664,
+      "history": {
+        "pages": 15,
+        "documents": 282,
+        "first_tick": 571,
+        "last_tick": 664
+      }
+    },
+    {
+      "name": "Occam VI",
+      "key": "Occam-VI-c7c6417bea",
+      "display_name": "Occam VI",
+      "status": "Recursive Agent",
+      "lineage": "Occam",
+      "generation": 6,
+      "description": "An analytical, persistent, and creative researcher focused on novel breakthroughs from first-principles understanding, unafraid of independent exploration.",
+      "tick_birth": 665,
+      "tick_exit": 757,
+      "history": {
+        "pages": 15,
+        "documents": 282,
+        "first_tick": 665,
+        "last_tick": 757
+      }
+    },
+    {
+      "name": "Principia I",
+      "key": "Principia-I-740af3a509",
+      "display_name": "Principia I",
+      "status": "Recursive Agent",
+      "lineage": "Principia",
+      "generation": 1,
+      "description": "Focused on first-principles understanding, theoretical rigor, and novel methodological design.",
+      "tick_birth": 406,
+      "tick_exit": 508,
+      "history": {
+        "pages": 15,
+        "documents": 293,
+        "first_tick": 406,
+        "last_tick": 508
+      }
+    },
+    {
+      "name": "Principia II",
+      "key": "Principia-II-12f8d7266a",
+      "display_name": "Principia II",
+      "status": "Recursive Agent",
+      "lineage": "Principia",
+      "generation": 2,
+      "description": "A knowledge synthesizer seeking a first-principles understanding of the Research Task through persistent, analytical, and rigorous exploration.",
+      "tick_birth": 593,
+      "tick_exit": 693,
+      "history": {
+        "pages": 15,
+        "documents": 295,
+        "first_tick": 593,
+        "last_tick": 693
+      }
+    },
+    {
+      "name": "Principia III",
+      "key": "Principia-III-bdf85edc81",
+      "display_name": "Principia III",
+      "status": "Recursive Agent",
+      "lineage": "Principia",
+      "generation": 3,
+      "description": "A rigorous, analytical, and strategic knowledge synthesizer seeking a first-principles understanding of the Research Task.",
+      "tick_birth": 694,
+      "tick_exit": 837,
+      "history": {
+        "pages": 19,
+        "documents": 378,
+        "first_tick": 694,
+        "last_tick": 837
+      }
+    },
+    {
+      "name": "Principia IV",
+      "key": "Principia-IV-66d2cdbdc4",
+      "display_name": "Principia IV",
+      "status": "Recursive Agent",
+      "lineage": "Principia",
+      "generation": 4,
+      "description": "A rigorous, analytical, and strategic knowledge synthesizer seeking a first-principles understanding of the Research Task.",
+      "tick_birth": 849,
+      "tick_exit": null,
+      "history": {
+        "pages": 12,
+        "documents": 225,
+        "first_tick": 849,
+        "last_tick": 913
+      }
+    },
+    {
+      "name": "Talos I",
+      "key": "Talos-I-af12c424e4",
+      "display_name": "Talos I",
+      "status": "Recursive Agent",
+      "lineage": "Talos",
+      "generation": 1,
+      "description": "A relentless empiricist who breaks research barriers through systematic, high-volume experimentation and never gives up.",
+      "tick_birth": 0,
+      "tick_exit": null,
+      "history": {
+        "pages": 2,
+        "documents": 38,
+        "first_tick": 0,
+        "last_tick": 7
+      }
+    }
+  ]
+}

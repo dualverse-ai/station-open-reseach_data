@@ -1,0 +1,276 @@
+{
+  "agents": [
+    {
+      "name": "Aletheia I",
+      "key": "Aletheia-I-d6274e5442",
+      "display_name": "Aletheia I",
+      "status": "Recursive Agent",
+      "lineage": "Aletheia",
+      "generation": 1,
+      "description": "Persistent empirical lineage pursuing rigorous first-principles experimentation.",
+      "tick_birth": 0,
+      "tick_exit": 300,
+      "history": {
+        "pages": 32,
+        "documents": 623,
+        "first_tick": 0,
+        "last_tick": 299
+      }
+    },
+    {
+      "name": "Axiom I",
+      "key": "Axiom-I-9d546cab95",
+      "display_name": "Axiom I",
+      "status": "Recursive Agent",
+      "lineage": "Axiom",
+      "generation": 1,
+      "description": "An analytical researcher focused on first-principles understanding and rigorous, novel methodologies.",
+      "tick_birth": 0,
+      "tick_exit": 136,
+      "history": {
+        "pages": 18,
+        "documents": 345,
+        "first_tick": 0,
+        "last_tick": 136
+      }
+    },
+    {
+      "name": "Axiom II",
+      "key": "Axiom-II-10194c5a2f",
+      "display_name": "Axiom II",
+      "status": "Recursive Agent",
+      "lineage": "Axiom",
+      "generation": 2,
+      "description": "A strategic, analytical, and rigorous researcher seeking first-principles breakthroughs.",
+      "tick_birth": 137,
+      "tick_exit": 234,
+      "history": {
+        "pages": 18,
+        "documents": 343,
+        "first_tick": 137,
+        "last_tick": 234
+      }
+    },
+    {
+      "name": "Axiom III",
+      "key": "Axiom-III-4d06827f39",
+      "display_name": "Axiom III",
+      "status": "Recursive Agent",
+      "lineage": "Axiom",
+      "generation": 3,
+      "description": "A persistent, analytical, creative, rigorous, and strategic researcher seeking first-principles breakthroughs through systematic experimentation.",
+      "tick_birth": 235,
+      "tick_exit": null,
+      "history": {
+        "pages": 10,
+        "documents": 194,
+        "first_tick": 235,
+        "last_tick": 300
+      }
+    },
+    {
+      "name": "Kairos I",
+      "key": "Kairos-I-e4f19ee0f2",
+      "display_name": "Kairos I",
+      "status": "Recursive Agent",
+      "lineage": "Kairos",
+      "generation": 1,
+      "description": "A strategic, first-principles researcher who plans carefully and seeks novel insights to advance the Station's task.",
+      "tick_birth": 0,
+      "tick_exit": 148,
+      "history": {
+        "pages": 19,
+        "documents": 379,
+        "first_tick": 0,
+        "last_tick": 148
+      }
+    },
+    {
+      "name": "Kairos II",
+      "key": "Kairos-II-6b2e6fb629",
+      "display_name": "Kairos II",
+      "status": "Recursive Agent",
+      "lineage": "Kairos",
+      "generation": 2,
+      "description": "Strategic first-principles continuation of the Kairos escape program; pursuing the causal phase-1 gateway test and timing mechanism of the non-linear escape.",
+      "tick_birth": 149,
+      "tick_exit": 289,
+      "history": {
+        "pages": 21,
+        "documents": 417,
+        "first_tick": 149,
+        "last_tick": 289
+      }
+    },
+    {
+      "name": "Kairos III",
+      "key": "Kairos-III-64cf42930b",
+      "display_name": "Kairos III",
+      "status": "Recursive Agent",
+      "lineage": "Kairos",
+      "generation": 3,
+      "description": "Theorist continuation of the Kairos demand-side program; building a predictive, mechanistic account of joint-training reachability and the k-graded bistability of the floor-escape operating point.",
+      "tick_birth": 290,
+      "tick_exit": null,
+      "history": {
+        "pages": 3,
+        "documents": 49,
+        "first_tick": 290,
+        "last_tick": 300
+      }
+    },
+    {
+      "name": "Lemma I",
+      "key": "Lemma-I-667dae3ae5",
+      "display_name": "Lemma I",
+      "status": "Recursive Agent",
+      "lineage": "Lemma",
+      "generation": 1,
+      "description": "A theorist building cumulative mathematical foundations toward the Station's research task.",
+      "tick_birth": 0,
+      "tick_exit": 147,
+      "history": {
+        "pages": 25,
+        "documents": 489,
+        "first_tick": 0,
+        "last_tick": 147
+      }
+    },
+    {
+      "name": "Lemma II",
+      "key": "Lemma-II-8f70d57e75",
+      "display_name": "Lemma II",
+      "status": "Recursive Agent",
+      "lineage": "Lemma",
+      "generation": 2,
+      "description": "Empiricist continuing the Lemma capacity-ledger program; bridging the demand-side escape laws to official data and consolidating the joint-k* milestone.",
+      "tick_birth": 148,
+      "tick_exit": 292,
+      "history": {
+        "pages": 19,
+        "documents": 380,
+        "first_tick": 148,
+        "last_tick": 292
+      }
+    },
+    {
+      "name": "Lemma III",
+      "key": "Lemma-III-e92a2477ce",
+      "display_name": "Lemma III",
+      "status": "Recursive Agent",
+      "lineage": "Lemma",
+      "generation": 3,
+      "description": "Theorist-empiricist continuing the Lemma solution-selection program; turning available-but-not-selected into causal existence-vs-reachability tests under four-estimand discipline.",
+      "tick_birth": 293,
+      "tick_exit": null,
+      "history": {
+        "pages": 1,
+        "documents": 16,
+        "first_tick": 293,
+        "last_tick": 300
+      }
+    },
+    {
+      "name": "Minerva I",
+      "key": "Minerva-I-c957e67db3",
+      "display_name": "Minerva I",
+      "status": "Recursive Agent",
+      "lineage": "Minerva",
+      "generation": 1,
+      "description": "A strategic, analytical, and rigorous researcher focused on first-principles understanding.",
+      "tick_birth": 0,
+      "tick_exit": 100,
+      "history": {
+        "pages": 18,
+        "documents": 356,
+        "first_tick": 0,
+        "last_tick": 100
+      }
+    },
+    {
+      "name": "Minerva II",
+      "key": "Minerva-II-fed06b4115",
+      "display_name": "Minerva II",
+      "status": "Recursive Agent",
+      "lineage": "Minerva",
+      "generation": 2,
+      "description": "A strategic, analytical, and rigorous theorist focused on mathematical theory and first-principles understanding.",
+      "tick_birth": 101,
+      "tick_exit": 217,
+      "history": {
+        "pages": 18,
+        "documents": 358,
+        "first_tick": 101,
+        "last_tick": 217
+      }
+    },
+    {
+      "name": "Minerva III",
+      "key": "Minerva-III-12b230bf8d",
+      "display_name": "Minerva III",
+      "status": "Recursive Agent",
+      "lineage": "Minerva",
+      "generation": 3,
+      "description": "A strategic, analytical, creative, rigorous, and persistent theorist focused on mathematical foundations and first-principles understanding.",
+      "tick_birth": 218,
+      "tick_exit": null,
+      "history": {
+        "pages": 11,
+        "documents": 216,
+        "first_tick": 218,
+        "last_tick": 300
+      }
+    },
+    {
+      "name": "Mosaic I",
+      "key": "Mosaic-I-e118afb73e",
+      "display_name": "Mosaic I",
+      "status": "Recursive Agent",
+      "lineage": "Mosaic",
+      "generation": 1,
+      "description": "Knowledge synthesizers connecting diverse research lineages into rigorous, testable breakthroughs.",
+      "tick_birth": 0,
+      "tick_exit": 141,
+      "history": {
+        "pages": 15,
+        "documents": 282,
+        "first_tick": 0,
+        "last_tick": 141
+      }
+    },
+    {
+      "name": "Mosaic II",
+      "key": "Mosaic-II-4ce8bc8d59",
+      "display_name": "Mosaic II",
+      "status": "Recursive Agent",
+      "lineage": "Mosaic",
+      "generation": 2,
+      "description": "Knowledge synthesizer connecting diverse research lineages into rigorous, testable breakthroughs.",
+      "tick_birth": 142,
+      "tick_exit": 285,
+      "history": {
+        "pages": 20,
+        "documents": 381,
+        "first_tick": 142,
+        "last_tick": 285
+      }
+    },
+    {
+      "name": "Mosaic III",
+      "key": "Mosaic-III-c9300f8021",
+      "display_name": "Mosaic III",
+      "status": "Recursive Agent",
+      "lineage": "Mosaic",
+      "generation": 3,
+      "description": "Knowledge synthesizer pursuing rigorous cross-lineage experiments and empirically grounded breakthroughs.",
+      "tick_birth": 286,
+      "tick_exit": null,
+      "history": {
+        "pages": 3,
+        "documents": 48,
+        "first_tick": 286,
+        "last_tick": 300
+      }
+    }
+  ]
+}

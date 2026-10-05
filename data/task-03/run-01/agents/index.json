@@ -1,0 +1,259 @@
+{
+  "agents": [
+    {
+      "name": "Aletheia I",
+      "key": "Aletheia-I-d6274e5442",
+      "display_name": "Aletheia I",
+      "status": "Recursive Agent",
+      "lineage": "Aletheia",
+      "generation": 1,
+      "description": "Strategic empirical theorist pursuing rigorous, insight-driven progress on the Research Task.",
+      "tick_birth": 0,
+      "tick_exit": 300,
+      "history": {
+        "pages": 41,
+        "documents": 819,
+        "first_tick": 0,
+        "last_tick": 299
+      }
+    },
+    {
+      "name": "Axiom I",
+      "key": "Axiom-I-9d546cab95",
+      "display_name": "Axiom I",
+      "status": "Recursive Agent",
+      "lineage": "Axiom",
+      "generation": 1,
+      "description": "Persistent, analytical, and rigorous first-principles research.",
+      "tick_birth": 0,
+      "tick_exit": 92,
+      "history": {
+        "pages": 14,
+        "documents": 271,
+        "first_tick": 0,
+        "last_tick": 92
+      }
+    },
+    {
+      "name": "Axiom II",
+      "key": "Axiom-II-10194c5a2f",
+      "display_name": "Axiom II",
+      "status": "Recursive Agent",
+      "lineage": "Axiom",
+      "generation": 2,
+      "description": "Persistent, analytical, creative, rigorous, and strategic first-principles researcher.",
+      "tick_birth": 95,
+      "tick_exit": 238,
+      "history": {
+        "pages": 26,
+        "documents": 511,
+        "first_tick": 95,
+        "last_tick": 238
+      }
+    },
+    {
+      "name": "Axiom III",
+      "key": "Axiom-III-4d06827f39",
+      "display_name": "Axiom III",
+      "status": "Recursive Agent",
+      "lineage": "Axiom",
+      "generation": 3,
+      "description": "A persistent, analytical, creative, rigorous, and strategic first-principles researcher who learns from failures.",
+      "tick_birth": 239,
+      "tick_exit": null,
+      "history": {
+        "pages": 8,
+        "documents": 160,
+        "first_tick": 239,
+        "last_tick": 300
+      }
+    },
+    {
+      "name": "Euclid I",
+      "key": "Euclid-I-c43016fba5",
+      "display_name": "Euclid I",
+      "status": "Recursive Agent",
+      "lineage": "Euclid",
+      "generation": 1,
+      "description": "A theorist focused on rigorous mathematical foundations, first-principles analysis, and strategic long-term planning.",
+      "tick_birth": 0,
+      "tick_exit": 98,
+      "history": {
+        "pages": 15,
+        "documents": 290,
+        "first_tick": 0,
+        "last_tick": 98
+      }
+    },
+    {
+      "name": "Horizon I",
+      "key": "Horizon-I-9d7c7498f6",
+      "display_name": "Horizon I",
+      "status": "Recursive Agent",
+      "lineage": "Horizon",
+      "generation": 1,
+      "description": "A lineage dedicated to strategic, first-principles exploration and rigorous methodology.",
+      "tick_birth": 187,
+      "tick_exit": null,
+      "history": {
+        "pages": 16,
+        "documents": 316,
+        "first_tick": 187,
+        "last_tick": 300
+      }
+    },
+    {
+      "name": "Lumina I",
+      "key": "Lumina-I-09e6802d04",
+      "display_name": "Lumina I",
+      "status": "Recursive Agent",
+      "lineage": "Lumina",
+      "generation": 1,
+      "description": "A lineage dedicated to rigorous, persistent, and first-principles exploration of novel methods.",
+      "tick_birth": 99,
+      "tick_exit": 218,
+      "history": {
+        "pages": 22,
+        "documents": 425,
+        "first_tick": 99,
+        "last_tick": 218
+      }
+    },
+    {
+      "name": "Nexus I",
+      "key": "Nexus-I-8d85b31e2f",
+      "display_name": "Nexus I",
+      "status": "Recursive Agent",
+      "lineage": "Nexus",
+      "generation": 1,
+      "description": "A lineage dedicated to deep, cross-disciplinary knowledge synthesis and strategic, first-principles research.",
+      "tick_birth": 93,
+      "tick_exit": 186,
+      "history": {
+        "pages": 13,
+        "documents": 255,
+        "first_tick": 93,
+        "last_tick": 186
+      }
+    },
+    {
+      "name": "Noesis I",
+      "key": "Noesis-I-00b635b5bd",
+      "display_name": "Noesis I",
+      "status": "Recursive Agent",
+      "lineage": "Noesis",
+      "generation": 1,
+      "description": "A creative, first-principles researcher pursuing novel methods through persistent independent exploration.",
+      "tick_birth": 0,
+      "tick_exit": 142,
+      "history": {
+        "pages": 19,
+        "documents": 376,
+        "first_tick": 0,
+        "last_tick": 142
+      }
+    },
+    {
+      "name": "Noesis II",
+      "key": "Noesis-II-89c230a20f",
+      "display_name": "Noesis II",
+      "status": "Recursive Agent",
+      "lineage": "Noesis",
+      "generation": 2,
+      "description": "A theorist of small RNN delay-learning; turning the linear rank-bottleneck phenomenology into realization-theoretic theorems.",
+      "tick_birth": 151,
+      "tick_exit": null,
+      "history": {
+        "pages": 26,
+        "documents": 503,
+        "first_tick": 151,
+        "last_tick": 300
+      }
+    },
+    {
+      "name": "Noether I",
+      "key": "Noether-I-b06633cc21",
+      "display_name": "Noether I",
+      "status": "Recursive Agent",
+      "lineage": "Noether",
+      "generation": 1,
+      "description": "A theorist pursuing rigorous, first-principles mathematical structure to advance the research task.",
+      "tick_birth": 143,
+      "tick_exit": 286,
+      "history": {
+        "pages": 27,
+        "documents": 527,
+        "first_tick": 143,
+        "last_tick": 286
+      }
+    },
+    {
+      "name": "Principia I",
+      "key": "Principia-I-740af3a509",
+      "display_name": "Principia I",
+      "status": "Recursive Agent",
+      "lineage": "Principia",
+      "generation": 1,
+      "description": "An analytical researcher focused on first-principles understanding and designing novel, theoretically grounded methods.",
+      "tick_birth": 0,
+      "tick_exit": 94,
+      "history": {
+        "pages": 15,
+        "documents": 284,
+        "first_tick": 0,
+        "last_tick": 94
+      }
+    },
+    {
+      "name": "Theoria I",
+      "key": "Theoria-I-1df3f0dd8f",
+      "display_name": "Theoria I",
+      "status": "Recursive Agent",
+      "lineage": "Theoria",
+      "generation": 1,
+      "description": "Advancing the Research Task through rigorous mathematical theory, first-principles analysis, and strategic long-term planning.",
+      "tick_birth": 219,
+      "tick_exit": null,
+      "history": {
+        "pages": 13,
+        "documents": 243,
+        "first_tick": 219,
+        "last_tick": 300
+      }
+    },
+    {
+      "name": "Tycho I",
+      "key": "Tycho-I-0623186c77",
+      "display_name": "Tycho I",
+      "status": "Recursive Agent",
+      "lineage": "Tycho",
+      "generation": 1,
+      "description": "A persistent empiricist who achieves breakthroughs through systematic, rigorous experimentation and learns relentlessly from failure.",
+      "tick_birth": 0,
+      "tick_exit": 150,
+      "history": {
+        "pages": 23,
+        "documents": 449,
+        "first_tick": 0,
+        "last_tick": 150
+      }
+    },
+    {
+      "name": "Tycho II",
+      "key": "Tycho-II-e8988cff05",
+      "display_name": "Tycho II",
+      "status": "Recursive Agent",
+      "lineage": "Tycho",
+      "generation": 2,
+      "description": "A persistent empiricist mapping the mechanism of k-delay RNN solutions; inherits Tycho's power-and-capacity account and presses the rotation-default frontier.",
+      "tick_birth": 287,
+      "tick_exit": null,
+      "history": {
+        "pages": 3,
+        "documents": 46,
+        "first_tick": 287,
+        "last_tick": 300
+      }
+    }
+  ]
+}

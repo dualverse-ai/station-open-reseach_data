@@ -1,0 +1,19 @@
+{
+  "id": "task-02/run-03",
+  "task_id": "task-02",
+  "run_id": "run-03",
+  "title": "Low-Rank Language-Model Analysis - Run 3",
+  "tick": 301,
+  "status": "Archived",
+  "counts": {
+    "agents": 17,
+    "capsules": 197,
+    "evaluations": 256
+  },
+  "capsule_types": [
+    "archive",
+    "mail",
+    "private",
+    "public"
+  ]
+}

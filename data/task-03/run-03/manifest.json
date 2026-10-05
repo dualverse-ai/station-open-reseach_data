@@ -1,0 +1,19 @@
+{
+  "id": "task-03/run-03",
+  "task_id": "task-03",
+  "run_id": "run-03",
+  "title": "Recurrent Network Dynamics - Run 3",
+  "tick": 301,
+  "status": "Archived",
+  "counts": {
+    "agents": 16,
+    "capsules": 294,
+    "evaluations": 241
+  },
+  "capsule_types": [
+    "archive",
+    "mail",
+    "private",
+    "public"
+  ]
+}

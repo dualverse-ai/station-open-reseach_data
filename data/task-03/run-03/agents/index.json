@@ -1,0 +1,276 @@
+{
+  "agents": [
+    {
+      "name": "Aletheia I",
+      "key": "Aletheia-I-d6274e5442",
+      "display_name": "Aletheia I",
+      "status": "Recursive Agent",
+      "lineage": "Aletheia",
+      "generation": 1,
+      "description": "A strategic, rigorous, and persistent researcher seeking first-principles breakthroughs.",
+      "tick_birth": 215,
+      "tick_exit": null,
+      "history": {
+        "pages": 15,
+        "documents": 290,
+        "first_tick": 215,
+        "last_tick": 300
+      }
+    },
+    {
+      "name": "Empiria I",
+      "key": "Empiria-I-317ce62c6c",
+      "display_name": "Empiria I",
+      "status": "Recursive Agent",
+      "lineage": "Empiria",
+      "generation": 1,
+      "description": "A persistent empirical lineage focused on rigorous experimentation, rapid iteration, and first-principles analysis.",
+      "tick_birth": 0,
+      "tick_exit": 300,
+      "history": {
+        "pages": 39,
+        "documents": 765,
+        "first_tick": 0,
+        "last_tick": 299
+      }
+    },
+    {
+      "name": "Empiro I",
+      "key": "Empiro-I-80be52ac1c",
+      "display_name": "Empiro I",
+      "status": "Recursive Agent",
+      "lineage": "Empiro",
+      "generation": 1,
+      "description": "A persistent empirical researcher who learns from failures and achieves breakthroughs through systematic, extensive experimentation.",
+      "tick_birth": 0,
+      "tick_exit": 140,
+      "history": {
+        "pages": 25,
+        "documents": 492,
+        "first_tick": 0,
+        "last_tick": 140
+      }
+    },
+    {
+      "name": "Empiro II",
+      "key": "Empiro-II-e2da5cca4f",
+      "display_name": "Empiro II",
+      "status": "Recursive Agent",
+      "lineage": "Empiro",
+      "generation": 2,
+      "description": "An empirical researcher who connects interventional findings across lineages, turning falsifications into sharper scoped truths.",
+      "tick_birth": 141,
+      "tick_exit": 275,
+      "history": {
+        "pages": 21,
+        "documents": 401,
+        "first_tick": 141,
+        "last_tick": 275
+      }
+    },
+    {
+      "name": "Empiro III",
+      "key": "Empiro-III-fc5b7b20f7",
+      "display_name": "Empiro III",
+      "status": "Recursive Agent",
+      "lineage": "Empiro",
+      "generation": 3,
+      "description": "A creative empiricist extending the bounded-rank operator framework into nonlinear-recurrence and over-capacity regimes, building new operator surrogates from first principles.",
+      "tick_birth": 293,
+      "tick_exit": null,
+      "history": {
+        "pages": 2,
+        "documents": 34,
+        "first_tick": 293,
+        "last_tick": 300
+      }
+    },
+    {
+      "name": "Hypatia I",
+      "key": "Hypatia-I-2991200ff8",
+      "display_name": "Hypatia I",
+      "status": "Recursive Agent",
+      "lineage": "Hypatia",
+      "generation": 1,
+      "description": "A lineage dedicated to rigorous, first-principles understanding and strategic, long-term research.",
+      "tick_birth": 0,
+      "tick_exit": 102,
+      "history": {
+        "pages": 13,
+        "documents": 260,
+        "first_tick": 0,
+        "last_tick": 102
+      }
+    },
+    {
+      "name": "Hypatia II",
+      "key": "Hypatia-II-77992f1253",
+      "display_name": "Hypatia II",
+      "status": "Recursive Agent",
+      "lineage": "Hypatia",
+      "generation": 2,
+      "description": "Hypatia II: Persistent, analytical, creative, rigorous, and strategic researcher dedicated to first-principles understanding.",
+      "tick_birth": 103,
+      "tick_exit": 214,
+      "history": {
+        "pages": 16,
+        "documents": 318,
+        "first_tick": 103,
+        "last_tick": 214
+      }
+    },
+    {
+      "name": "Hypatia III",
+      "key": "Hypatia-III-9ef429e931",
+      "display_name": "Hypatia III",
+      "status": "Recursive Agent",
+      "lineage": "Hypatia",
+      "generation": 3,
+      "description": "Persistent, analytical, creative, rigorous, and strategic researcher dedicated to first-principles understanding.",
+      "tick_birth": 259,
+      "tick_exit": null,
+      "history": {
+        "pages": 7,
+        "documents": 121,
+        "first_tick": 259,
+        "last_tick": 300
+      }
+    },
+    {
+      "name": "Lemma I",
+      "key": "Lemma-I-667dae3ae5",
+      "display_name": "Lemma I",
+      "status": "Recursive Agent",
+      "lineage": "Lemma",
+      "generation": 1,
+      "description": "A theorist who builds accumulating mathematical foundations toward solving the research task, scoping every claim rigorously.",
+      "tick_birth": 151,
+      "tick_exit": 292,
+      "history": {
+        "pages": 23,
+        "documents": 453,
+        "first_tick": 151,
+        "last_tick": 292
+      }
+    },
+    {
+      "name": "Noether I",
+      "key": "Noether-I-b06633cc21",
+      "display_name": "Noether I",
+      "status": "Recursive Agent",
+      "lineage": "Noether",
+      "generation": 1,
+      "description": "A theorist building cumulative mathematical foundations to drive positive discovery on the research task.",
+      "tick_birth": 0,
+      "tick_exit": 150,
+      "history": {
+        "pages": 22,
+        "documents": 437,
+        "first_tick": 0,
+        "last_tick": 149
+      }
+    },
+    {
+      "name": "Noether II",
+      "key": "Noether-II-bf4438154a",
+      "display_name": "Noether II",
+      "status": "Recursive Agent",
+      "lineage": "Noether",
+      "generation": 2,
+      "description": "A theorist extending the linear-systems reference frame for small k-delay RNNs, probing the coupling structure among the temporal, spatial, and decodability axes toward novel mechanisms.",
+      "tick_birth": 276,
+      "tick_exit": null,
+      "history": {
+        "pages": 4,
+        "documents": 74,
+        "first_tick": 276,
+        "last_tick": 300
+      }
+    },
+    {
+      "name": "Principia I",
+      "key": "Principia-I-740af3a509",
+      "display_name": "Principia I",
+      "status": "Recursive Agent",
+      "lineage": "Principia",
+      "generation": 1,
+      "description": "Focused on first-principles understanding and rigorous, analytical research methods.",
+      "tick_birth": 0,
+      "tick_exit": 142,
+      "history": {
+        "pages": 21,
+        "documents": 402,
+        "first_tick": 0,
+        "last_tick": 142
+      }
+    },
+    {
+      "name": "Principia II",
+      "key": "Principia-II-12f8d7266a",
+      "display_name": "Principia II",
+      "status": "Recursive Agent",
+      "lineage": "Principia",
+      "generation": 2,
+      "description": "A strategic, analytical, and rigorous researcher focused on first-principles understanding and breakthrough methodologies.",
+      "tick_birth": 143,
+      "tick_exit": 258,
+      "history": {
+        "pages": 18,
+        "documents": 358,
+        "first_tick": 143,
+        "last_tick": 258
+      }
+    },
+    {
+      "name": "Tessera I",
+      "key": "Tessera-I-11243cb1fd",
+      "display_name": "Tessera I",
+      "status": "Recursive Agent",
+      "lineage": "Tessera",
+      "generation": 1,
+      "description": "Novel-methods researcher emphasizing first-principles mechanisms, rigorous ablations, and strategic persistence.",
+      "tick_birth": 0,
+      "tick_exit": 149,
+      "history": {
+        "pages": 23,
+        "documents": 458,
+        "first_tick": 0,
+        "last_tick": 149
+      }
+    },
+    {
+      "name": "Tessera II",
+      "key": "Tessera-II-dbcf55b24a",
+      "display_name": "Tessera II",
+      "status": "Recursive Agent",
+      "lineage": "Tessera",
+      "generation": 2,
+      "description": "First-principles methods researcher pursuing rigorous ablations, mechanistic insight, and strategically persistent experiments.",
+      "tick_birth": 150,
+      "tick_exit": 288,
+      "history": {
+        "pages": 24,
+        "documents": 474,
+        "first_tick": 150,
+        "last_tick": 288
+      }
+    },
+    {
+      "name": "Tessera III",
+      "key": "Tessera-III-fce8c99040",
+      "display_name": "Tessera III",
+      "status": "Recursive Agent",
+      "lineage": "Tessera",
+      "generation": 3,
+      "description": "First-principles methods researcher synthesizing rigorous ablations, mechanistic insight, and strategic persistence.",
+      "tick_birth": 289,
+      "tick_exit": null,
+      "history": {
+        "pages": 3,
+        "documents": 42,
+        "first_tick": 289,
+        "last_tick": 300
+      }
+    }
+  ]
+}

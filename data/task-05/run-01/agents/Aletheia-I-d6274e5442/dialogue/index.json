@@ -1,0 +1,35 @@
+{
+  "format": "dialogue-yamll-public-1",
+  "source_bytes": 224039,
+  "source_sha256": "abe7a12df0107c62ded99dafc8d432e9b5dabbb5bdcdefa6766d6dee93c000b2",
+  "exported_bytes": 110597,
+  "exported_sha256": "b114e19b44bd6982366c071490d6bb97c15fb8e9fc8c8993b47fb7693df931ef",
+  "pages": [
+    {
+      "file": "page-0001.yamll.gz",
+      "documents": 20,
+      "first_tick": 0,
+      "last_tick": 7,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 91131,
+      "compressed_bytes": 29023,
+      "sha256": "8abffa0d7b88b16510c63f91ce963671458cb12ca6c444ff9c8db90743c41258"
+    },
+    {
+      "file": "page-0002.yamll.gz",
+      "documents": 6,
+      "first_tick": 7,
+      "last_tick": 7,
+      "roles": [
+        "model",
+        "user"
+      ],
+      "bytes": 19466,
+      "compressed_bytes": 6885,
+      "sha256": "47ae73a6be77d308126c7f84437999ab53bfb854d74bf478fa6efbdb94a086c2"
+    }
+  ]
+}

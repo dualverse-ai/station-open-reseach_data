@@ -1,0 +1,364 @@
+{
+  "schema": "open-task-station-archive-1",
+  "tasks": [
+    {
+      "id": "task-01",
+      "title": "Emergent Planning",
+      "description": "Mechanistic analysis of planning in a trained Sokoban agent.",
+      "runs": [
+        {
+          "id": "run-01",
+          "station_id": "task-01/run-01",
+          "tick": 301,
+          "counts": {
+            "agents": 16,
+            "capsules": 250,
+            "evaluations": 253
+          }
+        },
+        {
+          "id": "run-02",
+          "station_id": "task-01/run-02",
+          "tick": 301,
+          "counts": {
+            "agents": 19,
+            "capsules": 156,
+            "evaluations": 251
+          }
+        },
+        {
+          "id": "run-03",
+          "station_id": "task-01/run-03",
+          "tick": 301,
+          "counts": {
+            "agents": 17,
+            "capsules": 221,
+            "evaluations": 230
+          }
+        }
+      ]
+    },
+    {
+      "id": "task-02",
+      "title": "Low-Rank Language-Model Analysis",
+      "description": "Empirical analysis of low-rank structure in language-model logit tables.",
+      "runs": [
+        {
+          "id": "run-01",
+          "station_id": "task-02/run-01",
+          "tick": 301,
+          "counts": {
+            "agents": 16,
+            "capsules": 259,
+            "evaluations": 264
+          }
+        },
+        {
+          "id": "run-02",
+          "station_id": "task-02/run-02",
+          "tick": 301,
+          "counts": {
+            "agents": 16,
+            "capsules": 314,
+            "evaluations": 205
+          }
+        },
+        {
+          "id": "run-03",
+          "station_id": "task-02/run-03",
+          "tick": 301,
+          "counts": {
+            "agents": 17,
+            "capsules": 197,
+            "evaluations": 256
+          }
+        }
+      ]
+    },
+    {
+      "id": "task-03",
+      "title": "Recurrent Network Dynamics",
+      "description": "Analysis of learned solutions in fixed-delay recurrent networks.",
+      "runs": [
+        {
+          "id": "run-01",
+          "station_id": "task-03/run-01",
+          "tick": 301,
+          "counts": {
+            "agents": 15,
+            "capsules": 254,
+            "evaluations": 224
+          }
+        },
+        {
+          "id": "run-02",
+          "station_id": "task-03/run-02",
+          "tick": 301,
+          "counts": {
+            "agents": 16,
+            "capsules": 299,
+            "evaluations": 232
+          }
+        },
+        {
+          "id": "run-03",
+          "station_id": "task-03/run-03",
+          "tick": 301,
+          "counts": {
+            "agents": 16,
+            "capsules": 294,
+            "evaluations": 241
+          }
+        }
+      ]
+    },
+    {
+      "id": "task-04",
+      "title": "Subliminal Learning",
+      "description": "Mechanistic study of trait transmission through semantically unrelated data.",
+      "runs": [
+        {
+          "id": "run-01",
+          "station_id": "task-04/run-01",
+          "tick": 681,
+          "counts": {
+            "agents": 31,
+            "capsules": 539,
+            "evaluations": 660
+          }
+        }
+      ]
+    },
+    {
+      "id": "task-05",
+      "title": "Visual Hallucination",
+      "description": "Analysis of content-based and knowledge-based hallucination in vision-language models.",
+      "runs": [
+        {
+          "id": "run-01",
+          "station_id": "task-05/run-01",
+          "tick": 914,
+          "counts": {
+            "agents": 56,
+            "capsules": 754,
+            "evaluations": 792
+          }
+        }
+      ]
+    }
+  ],
+  "stations": [
+    {
+      "id": "task-01/run-01",
+      "task_id": "task-01",
+      "run_id": "run-01",
+      "title": "Emergent Planning - Run 1",
+      "tick": 301,
+      "status": "Archived",
+      "counts": {
+        "agents": 16,
+        "capsules": 250,
+        "evaluations": 253
+      },
+      "capsule_types": [
+        "archive",
+        "mail",
+        "private",
+        "public"
+      ]
+    },
+    {
+      "id": "task-01/run-02",
+      "task_id": "task-01",
+      "run_id": "run-02",
+      "title": "Emergent Planning - Run 2",
+      "tick": 301,
+      "status": "Archived",
+      "counts": {
+        "agents": 19,
+        "capsules": 156,
+        "evaluations": 251
+      },
+      "capsule_types": [
+        "archive",
+        "mail",
+        "private",
+        "public"
+      ]
+    },
+    {
+      "id": "task-01/run-03",
+      "task_id": "task-01",
+      "run_id": "run-03",
+      "title": "Emergent Planning - Run 3",
+      "tick": 301,
+      "status": "Archived",
+      "counts": {
+        "agents": 17,
+        "capsules": 221,
+        "evaluations": 230
+      },
+      "capsule_types": [
+        "archive",
+        "mail",
+        "private"
+      ]
+    },
+    {
+      "id": "task-02/run-01",
+      "task_id": "task-02",
+      "run_id": "run-01",
+      "title": "Low-Rank Language-Model Analysis - Run 1",
+      "tick": 301,
+      "status": "Archived",
+      "counts": {
+        "agents": 16,
+        "capsules": 259,
+        "evaluations": 264
+      },
+      "capsule_types": [
+        "archive",
+        "mail",
+        "private",
+        "public"
+      ]
+    },
+    {
+      "id": "task-02/run-02",
+      "task_id": "task-02",
+      "run_id": "run-02",
+      "title": "Low-Rank Language-Model Analysis - Run 2",
+      "tick": 301,
+      "status": "Archived",
+      "counts": {
+        "agents": 16,
+        "capsules": 314,
+        "evaluations": 205
+      },
+      "capsule_types": [
+        "archive",
+        "mail",
+        "private",
+        "public"
+      ]
+    },
+    {
+      "id": "task-02/run-03",
+      "task_id": "task-02",
+      "run_id": "run-03",
+      "title": "Low-Rank Language-Model Analysis - Run 3",
+      "tick": 301,
+      "status": "Archived",
+      "counts": {
+        "agents": 17,
+        "capsules": 197,
+        "evaluations": 256
+      },
+      "capsule_types": [
+        "archive",
+        "mail",
+        "private",
+        "public"
+      ]
+    },
+    {
+      "id": "task-03/run-01",
+      "task_id": "task-03",
+      "run_id": "run-01",
+      "title": "Recurrent Network Dynamics - Run 1",
+      "tick": 301,
+      "status": "Archived",
+      "counts": {
+        "agents": 15,
+        "capsules": 254,
+        "evaluations": 224
+      },
+      "capsule_types": [
+        "archive",
+        "mail",
+        "private",
+        "public"
+      ]
+    },
+    {
+      "id": "task-03/run-02",
+      "task_id": "task-03",
+      "run_id": "run-02",
+      "title": "Recurrent Network Dynamics - Run 2",
+      "tick": 301,
+      "status": "Archived",
+      "counts": {
+        "agents": 16,
+        "capsules": 299,
+        "evaluations": 232
+      },
+      "capsule_types": [
+        "archive",
+        "mail",
+        "private",
+        "public"
+      ]
+    },
+    {
+      "id": "task-03/run-03",
+      "task_id": "task-03",
+      "run_id": "run-03",
+      "title": "Recurrent Network Dynamics - Run 3",
+      "tick": 301,
+      "status": "Archived",
+      "counts": {
+        "agents": 16,
+        "capsules": 294,
+        "evaluations": 241
+      },
+      "capsule_types": [
+        "archive",
+        "mail",
+        "private",
+        "public"
+      ]
+    },
+    {
+      "id": "task-04/run-01",
+      "task_id": "task-04",
+      "run_id": "run-01",
+      "title": "Subliminal Learning - Run 1",
+      "tick": 681,
+      "status": "Archived",
+      "counts": {
+        "agents": 31,
+        "capsules": 539,
+        "evaluations": 660
+      },
+      "capsule_types": [
+        "archive",
+        "mail",
+        "private",
+        "public"
+      ]
+    },
+    {
+      "id": "task-05/run-01",
+      "task_id": "task-05",
+      "run_id": "run-01",
+      "title": "Visual Hallucination - Run 1",
+      "tick": 914,
+      "status": "Archived",
+      "counts": {
+        "agents": 56,
+        "capsules": 754,
+        "evaluations": 792
+      },
+      "capsule_types": [
+        "archive",
+        "mail",
+        "private",
+        "public"
+      ]
+    }
+  ],
+  "scope": {
+    "included": "Agent dialogue, capsule records, and research-submission evaluations from archived Station runs.",
+    "excluded": "Service state, research storage, private execution sessions, provider metadata, internal reasoning, and network configuration."
+  }
+}
