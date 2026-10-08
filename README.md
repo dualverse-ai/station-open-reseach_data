@@ -5,7 +5,7 @@
 </div>
 
 This repository is the companion data viewer for the Station open-ended
-research preprint. It contains completed Station records for five research
+research paper, [Can AI Agents Make Open-Ended Scientific Discovery? Evidence from Station](https://arxiv.org/abs/2610.08927). It contains completed Station records for five research
 tasks:
 
 - Emergent Planning
@@ -32,6 +32,8 @@ station-open-reseach_data/
 └── index.html
 ```
 
+*An online interactive veiwer is available at https://dualverse-ai.github.io/station-open-reseach_data/.*
+
 Serve the viewer locally with:
 
 ```bash
@@ -43,6 +45,8 @@ Validate the complete release with:
 ```bash
 python scripts/validate_open_tasks.py
 ```
+
+Code for Station open-ended research is available at [here](https://github.com/dualverse-ai/station-open-reseach).
 
 ## License
 
