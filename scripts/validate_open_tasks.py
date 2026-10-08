@@ -16,10 +16,11 @@ import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 EXPECTED_RUNS = {"task-01": 3, "task-02": 3, "task-03": 3, "task-04": 1, "task-05": 1}
+EXPECTED_REPORTS = {"task-01": 3, "task-02": 3, "task-03": 3, "task-04": 0, "task-05": 0}
 EXPECTED_ROOTS = {
     ".git", ".github", ".gitignore", ".nojekyll", "LICENSE", "NOTICE", "README.md",
     "THIRD_PARTY_NOTICES.md", "assets", "catalog.json", "data", "images", "index.html",
-    "package.json", "requirements.txt", "scripts", "tests",
+    "docs", "package.json", "requirements.txt", "scripts", "tests",
 }
 
 _CODER = "cod" + "er"
@@ -81,6 +82,20 @@ COMBINED_PATTERN = re.compile(
     re.IGNORECASE | re.MULTILINE,
 )
 
+APPROVED_README_URLS = (
+    "https://arxiv.org/abs/2610.08927",
+    "https://dualverse-ai.github.io/station-open-reseach_data/",
+    "https://github.com/dualverse-ai/station-open-reseach",
+)
+
+
+def strip_approved_readme_urls(data: bytes) -> bytes:
+    text = data.decode("utf-8", "replace")
+    for url in APPROVED_README_URLS:
+        boundary = rf"{re.escape(url)}(?=$|[\s)]|\.(?:\*|\s|$))"
+        text = re.sub(boundary, "", text)
+    return text.encode("utf-8")
+
 
 def digest(data: bytes) -> str:
     return hashlib.sha256(data).hexdigest()
@@ -137,8 +152,68 @@ def scan_public_files(root: Path, *, skip_data: bool = False) -> list[str]:
                 continue
         if b"\0" in data[:8192]:
             continue
+        if relative == Path("README.md"):
+            data = strip_approved_readme_urls(data)
         findings.extend(scan_bytes(data, relative))
     return findings
+
+
+def validate_report_index(
+    index_path: Path,
+    station_root: Path,
+    root: Path,
+    expected_count: int,
+    expected_paths: set[Path],
+) -> list[str]:
+    errors: list[str] = []
+    expected_paths.add(index_path)
+    if not index_path.is_file():
+        return [f"missing index: {index_path.relative_to(root)}"]
+    try:
+        index = json.loads(index_path.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, UnicodeDecodeError) as error:
+        return [f"invalid report index {index_path.relative_to(root)}: {error}"]
+    errors.extend(scan_bytes(index_path.read_bytes(), index_path.relative_to(root)))
+    if index.get("schema") != "station-research-reports-1":
+        errors.append(f"unexpected report schema: {index_path.relative_to(root)}")
+    records = index.get("reports") if isinstance(index.get("reports"), list) else []
+    if len(records) != expected_count:
+        errors.append(f"reports count mismatch: {station_root.relative_to(root)}")
+
+    seen_keys = set()
+    for record in records:
+        if not isinstance(record, dict):
+            errors.append(f"invalid report record: {index_path.relative_to(root)}")
+            continue
+        key = str(record.get("key") or "")
+        if not key or unquote(key) != key or quote(key, safe="-._~") != key:
+            errors.append(f"unsafe report key: {station_root.relative_to(root)}/{key}")
+        if key in seen_keys:
+            errors.append(f"duplicate reports key: {station_root.relative_to(root)}/{key}")
+        seen_keys.add(key)
+        relative = Path(str(record.get("file") or ""))
+        if relative.is_absolute() or ".." in relative.parts:
+            errors.append(f"unsafe record path: {station_root.relative_to(root)}/{relative}")
+            continue
+        path = station_root / relative
+        expected_paths.add(path)
+        if not path.is_file():
+            errors.append(f"missing record: {path.relative_to(root)}")
+            continue
+        compressed = path.read_bytes()
+        try:
+            raw = gzip.decompress(compressed)
+        except OSError as error:
+            errors.append(f"invalid gzip file {path.relative_to(root)}: {error}")
+            continue
+        errors.extend(scan_bytes(raw, path.relative_to(root)))
+        if (
+            len(raw) != record.get("bytes")
+            or len(compressed) != record.get("compressed_bytes")
+            or digest(raw) != record.get("sha256")
+        ):
+            errors.append(f"record integrity mismatch: {path.relative_to(root)}")
+    return errors
 
 
 def validate_release(root: Path = ROOT, *, check_layout: bool = True) -> list[str]:
@@ -205,6 +280,7 @@ def validate_release(root: Path = ROOT, *, check_layout: bool = True) -> list[st
         agent_index_path = station_root / "agents" / "index.json"
         capsule_index_path = station_root / "capsules" / "index.json"
         evaluation_index_path = station_root / "evaluations" / "index.json"
+        report_index_path = station_root / "reports" / "index.json"
         expected_paths.update({agent_index_path, capsule_index_path, evaluation_index_path})
         for index_path in (agent_index_path, capsule_index_path, evaluation_index_path):
             if not index_path.is_file():
@@ -218,6 +294,8 @@ def validate_release(root: Path = ROOT, *, check_layout: bool = True) -> list[st
             if len(agents) != station.get("counts", {}).get("agents"):
                 errors.append(f"agent count mismatch: {station_id}")
             for agent in agents:
+                if not isinstance(agent.get("model"), str) or not agent.get("model"):
+                    errors.append(f"missing agent model: {station_id}/{agent.get('key')}")
                 key = str(agent.get("key") or "")
                 if not key or unquote(key) != key or quote(key, safe="-._~") != key:
                     errors.append(f"unsafe agent key: {station_id}/{key}")
@@ -277,6 +355,17 @@ def validate_release(root: Path = ROOT, *, check_layout: bool = True) -> list[st
                     value = yaml.safe_load(raw.decode("utf-8")) or {}
                     if set(value) != {"instruction", "result"}:
                         errors.append(f"evaluation projection mismatch: {path.relative_to(root)}")
+
+        expected_report_count = EXPECTED_REPORTS.get(str(station.get("task_id")), 0)
+        if station.get("counts", {}).get("reports") != expected_report_count:
+            errors.append(f"reports count mismatch: {station_id}")
+        errors.extend(validate_report_index(
+            report_index_path,
+            station_root,
+            root,
+            expected_report_count,
+            expected_paths,
+        ))
 
     data_root = root / "data"
     actual_paths = {path for path in data_root.rglob("*") if path.is_file()} if data_root.is_dir() else set()

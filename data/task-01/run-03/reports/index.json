@@ -1,0 +1,32 @@
+{
+  "schema": "station-research-reports-1",
+  "reports": [
+    {
+      "id": "report-01",
+      "key": "report-01",
+      "title": "Planning Without a Search Tree: A Memory-Stabilized Spatial Relaxation Algorithm in a Recurrent Sokoban Agent",
+      "file": "reports/records/report-01.md.gz",
+      "bytes": 74958,
+      "compressed_bytes": 26829,
+      "sha256": "5ab07efefbd69f3e57f3c17589c8aad4ca02bdc1e52f286c8cf2b1937e0031e8"
+    },
+    {
+      "id": "report-02",
+      "key": "report-02",
+      "title": "Planning Without a Queue: A Causal Account of Spatial Relaxation in a Recurrent Sokoban Agent",
+      "file": "reports/records/report-02.md.gz",
+      "bytes": 60945,
+      "compressed_bytes": 21730,
+      "sha256": "4f221df70f435a7feaf5e3e0c3b5638182641961a5c41221a16eb942b61c4fec"
+    },
+    {
+      "id": "report-03",
+      "key": "report-03",
+      "title": "Planning Without a Search Tree: A Receding-Horizon Continuous Spatial Constraint Solver in a Recurrent Sokoban Agent",
+      "file": "reports/records/report-03.md.gz",
+      "bytes": 69686,
+      "compressed_bytes": 25227,
+      "sha256": "edec06bc15eb5bab86ee7b5ac71ec7907ac9ab627cc61b490f464a03c62afdd9"
+    }
+  ]
+}

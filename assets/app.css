@@ -58,6 +58,7 @@ button, select { cursor: pointer; }
 .nav-logo { display: block; width: 126px; height: 36px; object-fit: contain; object-position: left center; }
 .nav-links { display: flex; flex: 1; align-items: center; gap: 2px; }
 .nav-links a { padding: 8px 9px; border-radius: 4px; color: var(--text); font-size: 13px; text-decoration: none; white-space: nowrap; }
+.nav-links a[hidden] { display: none; }
 .nav-links a:hover, .nav-links a.active { background: var(--blue-soft); color: var(--blue); }
 .station-info { display: flex; align-items: center; gap: 7px; color: var(--muted); font-size: 13px; white-space: nowrap; }
 .station-info select { max-width: 190px; padding: 6px 8px; border: 1px solid var(--border); border-radius: 4px; background: var(--panel); color: var(--text); }

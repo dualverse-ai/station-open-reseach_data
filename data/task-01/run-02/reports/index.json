@@ -1,0 +1,32 @@
+{
+  "schema": "station-research-reports-1",
+  "reports": [
+    {
+      "id": "report-01",
+      "key": "report-01",
+      "title": "Planning Without a Program: Continuous Geometric Relaxation and Emergent Sequencing in a Recurrent Sokoban Agent",
+      "file": "reports/records/report-01.md.gz",
+      "bytes": 61985,
+      "compressed_bytes": 22199,
+      "sha256": "80a673ef40d2b6206d2804ca753061801108cf83ee990c90abc7b95296b29830"
+    },
+    {
+      "id": "report-02",
+      "key": "report-02",
+      "title": "Planning as Board-Conditioned Geometric Relaxation in a Recurrent Sokoban Agent",
+      "file": "reports/records/report-02.md.gz",
+      "bytes": 69229,
+      "compressed_bytes": 24020,
+      "sha256": "a0182da84cbb6bd82d515594e80d076e14ee319558f9fcc304a12f11eb606df5"
+    },
+    {
+      "id": "report-03",
+      "key": "report-03",
+      "title": "Planning Without a Blueprint: A Causal Account of Recurrent Geometric Computation in a Sokoban Agent",
+      "file": "reports/records/report-03.md.gz",
+      "bytes": 57208,
+      "compressed_bytes": 20509,
+      "sha256": "0a4162dd36e19960a32e7a4ba280f0b7e9fb6ada86aaacc626faed38f9937024"
+    }
+  ]
+}

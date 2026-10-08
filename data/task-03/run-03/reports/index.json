@@ -1,0 +1,32 @@
+{
+  "schema": "station-research-reports-1",
+  "reports": [
+    {
+      "id": "report-01",
+      "key": "report-01",
+      "title": "Learning Delay with Three Hidden Units: Bounded-Rank Operators, Nonlinear Carries, and Objective-Dependent Capacity in Small Recurrent Networks",
+      "file": "reports/records/report-01.md.gz",
+      "bytes": 65100,
+      "compressed_bytes": 22529,
+      "sha256": "d61edbd5c7b2d86dbb7dba0810262b3e05450159f35191c5a6d6cf99fa319907"
+    },
+    {
+      "id": "report-02",
+      "key": "report-02",
+      "title": "Learned Solution Structures in Small Recurrent Networks for Fixed k-Delay Tasks",
+      "file": "reports/records/report-02.md.gz",
+      "bytes": 56478,
+      "compressed_bytes": 19691,
+      "sha256": "e2fc936a5b62973654e507f3f7d2b52f33e38e917852433316da567688683b78"
+    },
+    {
+      "id": "report-03",
+      "key": "report-03",
+      "title": "Learned Solution Families in Severely Bottlenecked Delay RNNs",
+      "file": "reports/records/report-03.md.gz",
+      "bytes": 70137,
+      "compressed_bytes": 24510,
+      "sha256": "65dab03e889ce0caec3d018c0ff89e922b7a23d88bdfa3d909706d489dbf3630"
+    }
+  ]
+}

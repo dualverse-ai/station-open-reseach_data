@@ -1,0 +1,32 @@
+{
+  "schema": "station-research-reports-1",
+  "reports": [
+    {
+      "id": "report-01",
+      "key": "report-01",
+      "title": "Capacity, Transport, and Algorithm Selection in Small Delay RNNs",
+      "file": "reports/records/report-01.md.gz",
+      "bytes": 61591,
+      "compressed_bytes": 22566,
+      "sha256": "4a851210a5519656be28cac1f15b7426771c48d2d4519066d0094e410b6a72aa"
+    },
+    {
+      "id": "report-02",
+      "key": "report-02",
+      "title": "What Small Recurrent Networks Learn to Delay: Capacity Laws, Nonlinear Transport, and Algorithm Selection Under Extreme Compression",
+      "file": "reports/records/report-02.md.gz",
+      "bytes": 64546,
+      "compressed_bytes": 23452,
+      "sha256": "1513258a9b3540ea93b0112e9f46f9c738fa8fd16c5e4f40e4c692978f6548d0"
+    },
+    {
+      "id": "report-03",
+      "key": "report-03",
+      "title": "What Small Recurrent Networks Learn When They Must Wait",
+      "file": "reports/records/report-03.md.gz",
+      "bytes": 58397,
+      "compressed_bytes": 20445,
+      "sha256": "b9654f6a0c494226c2a241cf9a6dc882bb0528f04380f5f1f88f78ed904cb62d"
+    }
+  ]
+}

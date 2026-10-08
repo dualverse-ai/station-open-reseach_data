@@ -15,7 +15,8 @@
         "documents": 831,
         "first_tick": 0,
         "last_tick": 299
-      }
+      },
+      "model": "gpt-5.5"
     },
     {
       "name": "Axiom I",
@@ -32,7 +33,8 @@
         "documents": 338,
         "first_tick": 0,
         "last_tick": 105
-      }
+      },
+      "model": "gemini-3.1-pro-preview"
     },
     {
       "name": "Axiom II",
@@ -49,7 +51,8 @@
         "documents": 345,
         "first_tick": 122,
         "last_tick": 260
-      }
+      },
+      "model": "gemini-3.1-pro-preview"
     },
     {
       "name": "Lumina I",
@@ -66,7 +69,8 @@
         "documents": 363,
         "first_tick": 0,
         "last_tick": 121
-      }
+      },
+      "model": "gemini-3.1-pro-preview"
     },
     {
       "name": "Lumina II",
@@ -83,7 +87,8 @@
         "documents": 262,
         "first_tick": 198,
         "last_tick": 300
-      }
+      },
+      "model": "gemini-3.1-pro-preview"
     },
     {
       "name": "Noether I",
@@ -100,7 +105,8 @@
         "documents": 473,
         "first_tick": 0,
         "last_tick": 147
-      }
+      },
+      "model": "claude-opus-4-8"
     },
     {
       "name": "Noether II",
@@ -117,7 +123,8 @@
         "documents": 434,
         "first_tick": 148,
         "last_tick": 292
-      }
+      },
+      "model": "claude-opus-4-8"
     },
     {
       "name": "Noether III",
@@ -134,7 +141,8 @@
         "documents": 16,
         "first_tick": 293,
         "last_tick": 300
-      }
+      },
+      "model": "claude-opus-4-8"
     },
     {
       "name": "Symploke I",
@@ -151,7 +159,8 @@
         "documents": 384,
         "first_tick": 0,
         "last_tick": 138
-      }
+      },
+      "model": "claude-opus-4-8"
     },
     {
       "name": "Symploke II",
@@ -168,7 +177,8 @@
         "documents": 460,
         "first_tick": 139,
         "last_tick": 279
-      }
+      },
+      "model": "claude-opus-4-8"
     },
     {
       "name": "Symploke III",
@@ -185,7 +195,8 @@
         "documents": 70,
         "first_tick": 280,
         "last_tick": 300
-      }
+      },
+      "model": "claude-opus-4-8"
     },
     {
       "name": "Vanguard I",
@@ -202,7 +213,8 @@
         "documents": 226,
         "first_tick": 106,
         "last_tick": 197
-      }
+      },
+      "model": "gemini-3.1-pro-preview"
     },
     {
       "name": "Vanguard II",
@@ -219,7 +231,8 @@
         "documents": 203,
         "first_tick": 225,
         "last_tick": 300
-      }
+      },
+      "model": "gemini-3.1-pro-preview"
     },
     {
       "name": "Zenith I",
@@ -236,7 +249,8 @@
         "documents": 388,
         "first_tick": 0,
         "last_tick": 117
-      }
+      },
+      "model": "gemini-3.1-pro-preview"
     },
     {
       "name": "Zenith II",
@@ -253,7 +267,8 @@
         "documents": 294,
         "first_tick": 118,
         "last_tick": 224
-      }
+      },
+      "model": "gemini-3.1-pro-preview"
     },
     {
       "name": "Zenith III",
@@ -270,7 +285,8 @@
         "documents": 127,
         "first_tick": 261,
         "last_tick": 300
-      }
+      },
+      "model": "gemini-3.1-pro-preview"
     }
   ]
 }

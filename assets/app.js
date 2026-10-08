@@ -245,6 +245,7 @@
     navLinks.querySelectorAll('[data-page]').forEach(link => {
       const target = link.dataset.page;
       link.href = stationUrl(station.id, target === 'public' || target === 'private' ? `memory/${target}` : target);
+      link.hidden = target === 'reports' && Number(station.counts?.reports || 0) === 0;
       link.classList.toggle('active', page === target);
     });
   }
@@ -628,6 +629,21 @@
     enhance();
   }
 
+  async function renderReports(station, signal, request) {
+    const data = await fetchJSON(`data/${station.id}/reports/index.json`, signal); current(request);
+    const records = data.reports || [];
+    app.innerHTML = `${pageHeader('Research Reports')}<div class="table-shell"><table class="data-table"><thead><tr><th>Title</th><th>ID</th></tr></thead><tbody>${records.map(item => { const href = stationUrl(station.id, `report/${encodeURIComponent(item.key)}`); return `<tr data-href="${href}"><td data-label="Title"><a href="${href}">${escapeHtml(item.title)}</a></td><td data-label="ID">${escapeHtml(item.id)}</td></tr>`; }).join('')}</tbody></table></div>${records.length ? '' : '<div class="empty-state">No research reports are available for this run.</div>'}`;
+    bindRowLinks(app);
+  }
+
+  async function renderReport(station, key, signal, request) {
+    const data = await fetchJSON(`data/${station.id}/reports/index.json`, signal); current(request);
+    const record = (data.reports || []).find(item => item.key === key); if (!record) throw new Error('Research report not found');
+    const raw = await fetchGzip(`data/${station.id}/${record.file}`, signal); current(request);
+    app.innerHTML = `${pageHeader(record.title, '', `<a class="back-link" href="${stationUrl(station.id, 'reports')}">Back to Research Reports</a>`)}${meta([['ID', record.id]])}<article class="record-paper">${markdown(raw)}</article>`;
+    enhance();
+  }
+
   function showError(error) {
     console.error(error); app.innerHTML = `<div class="error-state"><h1>Could not load this page</h1><p>${escapeHtml(error?.message || error)}</p><p><a href="#/">Back to Stations</a></p></div>`;
   }
@@ -647,7 +663,7 @@
       const { parts, query } = routeState();
       if (!parts.length) { renderDashboard(); return; }
       const station = stationById(parts[0]); if (!station) throw new Error('Station not found');
-      const page = parts[1] || 'agents'; const active = page === 'memory' ? parts[2] : page === 'capsule' ? parts[2] : page === 'agent' ? 'agents' : page === 'evaluation' ? 'evaluations' : page === 'archive-graph' ? 'archive' : page;
+      const page = parts[1] || 'agents'; const active = page === 'memory' ? parts[2] : page === 'capsule' ? parts[2] : page === 'agent' ? 'agents' : page === 'evaluation' ? 'evaluations' : page === 'report' ? 'reports' : page === 'archive-graph' ? 'archive' : page;
       showNavbar(station, active);
       if (page === 'agents') await renderAgents(station, controller.signal, request);
       else if (page === 'agent' && parts.length === 3) focusedTarget = await renderAgent(station, parts[2], parseDialogueTarget(query), controller.signal, request);
@@ -657,6 +673,8 @@
       else if (page === 'capsule') await renderCapsule(station, parts[2], parts[3], controller.signal, request);
       else if (page === 'evaluations') await renderEvaluations(station, controller.signal, request);
       else if (page === 'evaluation') await renderEvaluation(station, parts[2], controller.signal, request);
+      else if (page === 'reports') await renderReports(station, controller.signal, request);
+      else if (page === 'report') await renderReport(station, parts[2], controller.signal, request);
       else throw new Error('Page not found');
       current(request); if (!focusedTarget) app.focus({ preventScroll: true });
     } catch (error) { if (error.name !== 'AbortError' && request === state.request) showError(error); }

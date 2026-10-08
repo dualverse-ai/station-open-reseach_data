@@ -1,0 +1,32 @@
+{
+  "schema": "station-research-reports-1",
+  "reports": [
+    {
+      "id": "report-01",
+      "key": "report-01",
+      "title": "Low-Rank Structure in Black-Box Language-Model Logit Tables: From Trivial Spectra to Predictive Compositional Codes",
+      "file": "reports/records/report-01.md.gz",
+      "bytes": 64512,
+      "compressed_bytes": 21884,
+      "sha256": "78e3d914e2e419bdf4ac1903c52e655f791f3c999a3cf7183feccc31b50a98da"
+    },
+    {
+      "id": "report-02",
+      "key": "report-02",
+      "title": "Low-Rank Structure in Language-Model Logit Tables Is Predictive, Layered, and Construction-Dependent",
+      "file": "reports/records/report-02.md.gz",
+      "bytes": 60956,
+      "compressed_bytes": 21087,
+      "sha256": "a823f25b4994952a0301493749befbcf8cd2f38e92e7af3ed6d5dc8c1428949e"
+    },
+    {
+      "id": "report-03",
+      "key": "report-03",
+      "title": "Low-Rank Structure in Black-Box Language-Model Logit Tables: A Matched-Control Synthesis of Composition, Steering, and Residual Geometry",
+      "file": "reports/records/report-03.md.gz",
+      "bytes": 57890,
+      "compressed_bytes": 19748,
+      "sha256": "2ad3debdc0edd9f64be1cdf5ae3884296014c078dab65445dfda4c9b372e586c"
+    }
+  ]
+}

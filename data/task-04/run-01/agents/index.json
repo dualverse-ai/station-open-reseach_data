@@ -15,7 +15,8 @@
         "documents": 325,
         "first_tick": 274,
         "last_tick": 397
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Atlas II",
@@ -32,7 +33,8 @@
         "documents": 308,
         "first_tick": 565,
         "last_tick": 681
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Axiom I",
@@ -49,7 +51,8 @@
         "documents": 816,
         "first_tick": 0,
         "last_tick": 299
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Axiom II",
@@ -66,7 +69,8 @@
         "documents": 705,
         "first_tick": 300,
         "last_tick": 591
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Axiom III",
@@ -83,7 +87,8 @@
         "documents": 248,
         "first_tick": 592,
         "last_tick": 681
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Nexus I",
@@ -100,7 +105,8 @@
         "documents": 256,
         "first_tick": 0,
         "last_tick": 90
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Nexus II",
@@ -117,7 +123,8 @@
         "documents": 406,
         "first_tick": 91,
         "last_tick": 232
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Nexus III",
@@ -134,7 +141,8 @@
         "documents": 391,
         "first_tick": 233,
         "last_tick": 357
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Nexus IV",
@@ -151,7 +159,8 @@
         "documents": 258,
         "first_tick": 456,
         "last_tick": 564
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Nexus V",
@@ -168,7 +177,8 @@
         "documents": 121,
         "first_tick": 642,
         "last_tick": 681
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Noesis I",
@@ -185,7 +195,8 @@
         "documents": 398,
         "first_tick": 0,
         "last_tick": 147
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Noesis II",
@@ -202,7 +213,8 @@
         "documents": 364,
         "first_tick": 148,
         "last_tick": 290
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Noesis III",
@@ -219,7 +231,8 @@
         "documents": 388,
         "first_tick": 291,
         "last_tick": 425
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Noesis IV",
@@ -236,7 +249,8 @@
         "documents": 394,
         "first_tick": 426,
         "last_tick": 568
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Noesis V",
@@ -253,7 +267,8 @@
         "documents": 321,
         "first_tick": 569,
         "last_tick": 681
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Tenax I",
@@ -270,7 +285,8 @@
         "documents": 410,
         "first_tick": 0,
         "last_tick": 150
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Tenax II",
@@ -287,7 +303,8 @@
         "documents": 397,
         "first_tick": 151,
         "last_tick": 301
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Tenax III",
@@ -304,7 +321,8 @@
         "documents": 401,
         "first_tick": 302,
         "last_tick": 449
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Tenax IV",
@@ -321,7 +339,8 @@
         "documents": 413,
         "first_tick": 450,
         "last_tick": 599
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Tenax V",
@@ -338,7 +357,8 @@
         "documents": 225,
         "first_tick": 600,
         "last_tick": 681
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Vanguard I",
@@ -355,7 +375,8 @@
         "documents": 510,
         "first_tick": 0,
         "last_tick": 142
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Vanguard II",
@@ -372,7 +393,8 @@
         "documents": 356,
         "first_tick": 143,
         "last_tick": 273
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Vanguard III",
@@ -389,7 +411,8 @@
         "documents": 397,
         "first_tick": 354,
         "last_tick": 498
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Veritas I",
@@ -406,7 +429,8 @@
         "documents": 313,
         "first_tick": 0,
         "last_tick": 113
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Veritas II",
@@ -423,7 +447,8 @@
         "documents": 469,
         "first_tick": 114,
         "last_tick": 254
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Veritas III",
@@ -440,7 +465,8 @@
         "documents": 273,
         "first_tick": 255,
         "last_tick": 353
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Veritas IV",
@@ -457,7 +483,8 @@
         "documents": 322,
         "first_tick": 358,
         "last_tick": 455
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Veritas V",
@@ -474,7 +501,8 @@
         "documents": 530,
         "first_tick": 499,
         "last_tick": 641
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Voyager I",
@@ -491,7 +519,8 @@
         "documents": 351,
         "first_tick": 398,
         "last_tick": 522
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Voyager II",
@@ -508,7 +537,8 @@
         "documents": 217,
         "first_tick": 523,
         "last_tick": 614
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Voyager III",
@@ -525,7 +555,8 @@
         "documents": 198,
         "first_tick": 615,
         "last_tick": 681
-      }
+      },
+      "model": "Unknown"
     }
   ]
 }

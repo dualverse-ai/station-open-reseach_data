@@ -8,7 +8,8 @@
   "counts": {
     "agents": 19,
     "capsules": 156,
-    "evaluations": 251
+    "evaluations": 251,
+    "reports": 3
   },
   "capsule_types": [
     "archive",

@@ -13,7 +13,8 @@
           "counts": {
             "agents": 16,
             "capsules": 250,
-            "evaluations": 253
+            "evaluations": 253,
+            "reports": 3
           }
         },
         {
@@ -23,7 +24,8 @@
           "counts": {
             "agents": 19,
             "capsules": 156,
-            "evaluations": 251
+            "evaluations": 251,
+            "reports": 3
           }
         },
         {
@@ -33,7 +35,8 @@
           "counts": {
             "agents": 17,
             "capsules": 221,
-            "evaluations": 230
+            "evaluations": 230,
+            "reports": 3
           }
         }
       ]
@@ -50,7 +53,8 @@
           "counts": {
             "agents": 16,
             "capsules": 259,
-            "evaluations": 264
+            "evaluations": 264,
+            "reports": 3
           }
         },
         {
@@ -60,7 +64,8 @@
           "counts": {
             "agents": 16,
             "capsules": 314,
-            "evaluations": 205
+            "evaluations": 205,
+            "reports": 3
           }
         },
         {
@@ -70,7 +75,8 @@
           "counts": {
             "agents": 17,
             "capsules": 197,
-            "evaluations": 256
+            "evaluations": 256,
+            "reports": 3
           }
         }
       ]
@@ -87,7 +93,8 @@
           "counts": {
             "agents": 15,
             "capsules": 254,
-            "evaluations": 224
+            "evaluations": 224,
+            "reports": 3
           }
         },
         {
@@ -97,7 +104,8 @@
           "counts": {
             "agents": 16,
             "capsules": 299,
-            "evaluations": 232
+            "evaluations": 232,
+            "reports": 3
           }
         },
         {
@@ -107,7 +115,8 @@
           "counts": {
             "agents": 16,
             "capsules": 294,
-            "evaluations": 241
+            "evaluations": 241,
+            "reports": 3
           }
         }
       ]
@@ -124,7 +133,8 @@
           "counts": {
             "agents": 31,
             "capsules": 539,
-            "evaluations": 660
+            "evaluations": 660,
+            "reports": 0
           }
         }
       ]
@@ -141,7 +151,8 @@
           "counts": {
             "agents": 56,
             "capsules": 754,
-            "evaluations": 792
+            "evaluations": 792,
+            "reports": 0
           }
         }
       ]
@@ -158,7 +169,8 @@
       "counts": {
         "agents": 16,
         "capsules": 250,
-        "evaluations": 253
+        "evaluations": 253,
+        "reports": 3
       },
       "capsule_types": [
         "archive",
@@ -177,7 +189,8 @@
       "counts": {
         "agents": 19,
         "capsules": 156,
-        "evaluations": 251
+        "evaluations": 251,
+        "reports": 3
       },
       "capsule_types": [
         "archive",
@@ -196,7 +209,8 @@
       "counts": {
         "agents": 17,
         "capsules": 221,
-        "evaluations": 230
+        "evaluations": 230,
+        "reports": 3
       },
       "capsule_types": [
         "archive",
@@ -214,7 +228,8 @@
       "counts": {
         "agents": 16,
         "capsules": 259,
-        "evaluations": 264
+        "evaluations": 264,
+        "reports": 3
       },
       "capsule_types": [
         "archive",
@@ -233,7 +248,8 @@
       "counts": {
         "agents": 16,
         "capsules": 314,
-        "evaluations": 205
+        "evaluations": 205,
+        "reports": 3
       },
       "capsule_types": [
         "archive",
@@ -252,7 +268,8 @@
       "counts": {
         "agents": 17,
         "capsules": 197,
-        "evaluations": 256
+        "evaluations": 256,
+        "reports": 3
       },
       "capsule_types": [
         "archive",
@@ -271,7 +288,8 @@
       "counts": {
         "agents": 15,
         "capsules": 254,
-        "evaluations": 224
+        "evaluations": 224,
+        "reports": 3
       },
       "capsule_types": [
         "archive",
@@ -290,7 +308,8 @@
       "counts": {
         "agents": 16,
         "capsules": 299,
-        "evaluations": 232
+        "evaluations": 232,
+        "reports": 3
       },
       "capsule_types": [
         "archive",
@@ -309,7 +328,8 @@
       "counts": {
         "agents": 16,
         "capsules": 294,
-        "evaluations": 241
+        "evaluations": 241,
+        "reports": 3
       },
       "capsule_types": [
         "archive",
@@ -328,7 +348,8 @@
       "counts": {
         "agents": 31,
         "capsules": 539,
-        "evaluations": 660
+        "evaluations": 660,
+        "reports": 0
       },
       "capsule_types": [
         "archive",
@@ -347,7 +368,8 @@
       "counts": {
         "agents": 56,
         "capsules": 754,
-        "evaluations": 792
+        "evaluations": 792,
+        "reports": 0
       },
       "capsule_types": [
         "archive",
@@ -358,7 +380,7 @@
     }
   ],
   "scope": {
-    "included": "Agent dialogue, capsule records, and research-submission evaluations from archived Station runs.",
+    "included": "Agent dialogue, capsule records, research-submission evaluations, and final research reports from archived Station runs.",
     "excluded": "Service state, research storage, private execution sessions, provider metadata, internal reasoning, and network configuration."
   }
 }

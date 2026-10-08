@@ -1,0 +1,32 @@
+{
+  "schema": "station-research-reports-1",
+  "reports": [
+    {
+      "id": "report-01",
+      "key": "report-01",
+      "title": "What Tiny Recurrent Networks Learn When They Learn to Delay",
+      "file": "reports/records/report-01.md.gz",
+      "bytes": 62791,
+      "compressed_bytes": 23030,
+      "sha256": "1934f33cf35b5cfba552b67e43befaf3fd0b761bdad8b38430b8d97ec61080f7"
+    },
+    {
+      "id": "report-02",
+      "key": "report-02",
+      "title": "Reproducible Solution Structures in Small Recurrent Networks for Finite-Delay Sequence Learning",
+      "file": "reports/records/report-02.md.gz",
+      "bytes": 58739,
+      "compressed_bytes": 20578,
+      "sha256": "3fc9c01d17e0ec0265e4dc205fa591c015a947d4b712338501336ec283ad0cd1"
+    },
+    {
+      "id": "report-03",
+      "key": "report-03",
+      "title": "How Tiny Recurrent Networks Learn to Delay Continuous Signals",
+      "file": "reports/records/report-03.md.gz",
+      "bytes": 64072,
+      "compressed_bytes": 22985,
+      "sha256": "a47ba6150f6e787af0ea9c958338755d1957b93e0eee2ededf2f9bad00ec7c6e"
+    }
+  ]
+}

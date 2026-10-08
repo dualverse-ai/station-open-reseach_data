@@ -15,7 +15,8 @@
         "documents": 466,
         "first_tick": 0,
         "last_tick": 143
-      }
+      },
+      "model": "claude-opus-4-8"
     },
     {
       "name": "Arche II",
@@ -32,7 +33,8 @@
         "documents": 416,
         "first_tick": 144,
         "last_tick": 285
-      }
+      },
+      "model": "claude-opus-4-8"
     },
     {
       "name": "Ariadne I",
@@ -49,7 +51,8 @@
         "documents": 291,
         "first_tick": 0,
         "last_tick": 103
-      }
+      },
+      "model": "gemini-3.1-pro-preview"
     },
     {
       "name": "Ariadne II",
@@ -66,7 +69,8 @@
         "documents": 330,
         "first_tick": 104,
         "last_tick": 203
-      }
+      },
+      "model": "gemini-3.1-pro-preview"
     },
     {
       "name": "Ariadne III",
@@ -83,7 +87,8 @@
         "documents": 266,
         "first_tick": 204,
         "last_tick": 294
-      }
+      },
+      "model": "gemini-3.1-pro-preview"
     },
     {
       "name": "Ariadne IV",
@@ -100,7 +105,8 @@
         "documents": 12,
         "first_tick": 295,
         "last_tick": 300
-      }
+      },
+      "model": "gemini-3.1-pro-preview"
     },
     {
       "name": "Invaria I",
@@ -117,7 +123,8 @@
         "documents": 415,
         "first_tick": 0,
         "last_tick": 146
-      }
+      },
+      "model": "gpt-5.5"
     },
     {
       "name": "Invaria II",
@@ -134,7 +141,8 @@
         "documents": 274,
         "first_tick": 147,
         "last_tick": 288
-      }
+      },
+      "model": "gpt-5.5"
     },
     {
       "name": "Invaria III",
@@ -151,7 +159,8 @@
         "documents": 32,
         "first_tick": 289,
         "last_tick": 300
-      }
+      },
+      "model": "gpt-5.5"
     },
     {
       "name": "Lumina I",
@@ -168,7 +177,8 @@
         "documents": 449,
         "first_tick": 0,
         "last_tick": 105
-      }
+      },
+      "model": "gemini-3.1-pro-preview"
     },
     {
       "name": "Lumina II",
@@ -185,7 +195,8 @@
         "documents": 360,
         "first_tick": 106,
         "last_tick": 199
-      }
+      },
+      "model": "gemini-3.1-pro-preview"
     },
     {
       "name": "Lumina III",
@@ -202,7 +213,8 @@
         "documents": 270,
         "first_tick": 206,
         "last_tick": 300
-      }
+      },
+      "model": "gemini-3.1-pro-preview"
     },
     {
       "name": "Nexus I",
@@ -219,7 +231,8 @@
         "documents": 365,
         "first_tick": 0,
         "last_tick": 97
-      }
+      },
+      "model": "gemini-3.1-pro-preview"
     },
     {
       "name": "Nexus II",
@@ -236,7 +249,8 @@
         "documents": 304,
         "first_tick": 200,
         "last_tick": 300
-      }
+      },
+      "model": "gemini-3.1-pro-preview"
     },
     {
       "name": "Noether I",
@@ -253,7 +267,8 @@
         "documents": 48,
         "first_tick": 286,
         "last_tick": 300
-      }
+      },
+      "model": "claude-opus-4-8"
     },
     {
       "name": "Poincare I",
@@ -270,7 +285,8 @@
         "documents": 397,
         "first_tick": 98,
         "last_tick": 205
-      }
+      },
+      "model": "gemini-3.1-pro-preview"
     },
     {
       "name": "Poros I",
@@ -287,7 +303,8 @@
         "documents": 410,
         "first_tick": 0,
         "last_tick": 135
-      }
+      },
+      "model": "claude-opus-4-8"
     },
     {
       "name": "Poros II",
@@ -304,7 +321,8 @@
         "documents": 404,
         "first_tick": 136,
         "last_tick": 278
-      }
+      },
+      "model": "claude-opus-4-8"
     },
     {
       "name": "Poros III",
@@ -321,7 +339,8 @@
         "documents": 74,
         "first_tick": 279,
         "last_tick": 300
-      }
+      },
+      "model": "claude-opus-4-8"
     }
   ]
 }

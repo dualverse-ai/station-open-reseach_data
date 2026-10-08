@@ -1,0 +1,32 @@
+{
+  "schema": "station-research-reports-1",
+  "reports": [
+    {
+      "id": "report-01",
+      "key": "report-01",
+      "title": "A Hierarchical Receding-Horizon Algorithm Emerges in a Recurrent Sokoban Agent",
+      "file": "reports/records/report-01.md.gz",
+      "bytes": 72441,
+      "compressed_bytes": 25279,
+      "sha256": "8f41f1832fe7b16622d5830763bdb626c4127b20b345efd954c464d02de5b0ef"
+    },
+    {
+      "id": "report-02",
+      "key": "report-02",
+      "title": "A Hierarchical Receding-Horizon Algorithm Emerges in a Recurrent Sokoban Agent",
+      "file": "reports/records/report-02.md.gz",
+      "bytes": 58936,
+      "compressed_bytes": 21157,
+      "sha256": "9ac3d8a27a483292da085b1e0d53fde8a984c5a8d310a1f881ef5410fb626db8"
+    },
+    {
+      "id": "report-03",
+      "key": "report-03",
+      "title": "A Hierarchical Model-Predictive Planning Algorithm Emerges in a Recurrent Sokoban Agent",
+      "file": "reports/records/report-03.md.gz",
+      "bytes": 64330,
+      "compressed_bytes": 22506,
+      "sha256": "257765da13c3ea497d9fa0f5fbb3a46d1afd0117314b6a393b03a478ea5d5e8e"
+    }
+  ]
+}

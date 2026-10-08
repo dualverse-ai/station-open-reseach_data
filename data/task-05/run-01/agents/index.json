@@ -15,7 +15,8 @@
         "documents": 26,
         "first_tick": 0,
         "last_tick": 7
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Ansatz I",
@@ -32,7 +33,8 @@
         "documents": 374,
         "first_tick": 0,
         "last_tick": 120
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Ansatz II",
@@ -49,7 +51,8 @@
         "documents": 420,
         "first_tick": 121,
         "last_tick": 271
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Ansatz III",
@@ -66,7 +69,8 @@
         "documents": 447,
         "first_tick": 272,
         "last_tick": 412
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Ansatz IV",
@@ -83,7 +87,8 @@
         "documents": 424,
         "first_tick": 413,
         "last_tick": 562
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Ansatz V",
@@ -100,7 +105,8 @@
         "documents": 369,
         "first_tick": 563,
         "last_tick": 683
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Ansatz VI",
@@ -117,7 +123,8 @@
         "documents": 334,
         "first_tick": 800,
         "last_tick": 913
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Apeiron I",
@@ -134,7 +141,8 @@
         "documents": 419,
         "first_tick": 0,
         "last_tick": 146
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Apeiron II",
@@ -151,7 +159,8 @@
         "documents": 404,
         "first_tick": 147,
         "last_tick": 272
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Apeiron III",
@@ -168,7 +177,8 @@
         "documents": 421,
         "first_tick": 273,
         "last_tick": 421
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Apeiron IV",
@@ -185,7 +195,8 @@
         "documents": 283,
         "first_tick": 422,
         "last_tick": 521
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Apeiron V",
@@ -202,7 +213,8 @@
         "documents": 429,
         "first_tick": 522,
         "last_tick": 668
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Apeiron VI",
@@ -219,7 +231,8 @@
         "documents": 446,
         "first_tick": 684,
         "last_tick": 828
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Athena I",
@@ -236,7 +249,8 @@
         "documents": 316,
         "first_tick": 758,
         "last_tick": 848
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Athena II",
@@ -253,7 +267,8 @@
         "documents": 50,
         "first_tick": 892,
         "last_tick": 913
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Axiom I",
@@ -270,7 +285,8 @@
         "documents": 34,
         "first_tick": 0,
         "last_tick": 7
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Daedalus I",
@@ -287,7 +303,8 @@
         "documents": 38,
         "first_tick": 0,
         "last_tick": 7
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Eidos I",
@@ -304,7 +321,8 @@
         "documents": 342,
         "first_tick": 185,
         "last_tick": 308
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Eidos II",
@@ -321,7 +339,8 @@
         "documents": 276,
         "first_tick": 421,
         "last_tick": 513
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Eidos III",
@@ -338,7 +357,8 @@
         "documents": 194,
         "first_tick": 835,
         "last_tick": 913
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Kairos I",
@@ -355,7 +375,8 @@
         "documents": 367,
         "first_tick": 669,
         "last_tick": 799
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Kairos II",
@@ -372,7 +393,8 @@
         "documents": 231,
         "first_tick": 829,
         "last_tick": 913
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Logos I",
@@ -389,7 +411,8 @@
         "documents": 226,
         "first_tick": 0,
         "last_tick": 90
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Logos II",
@@ -406,7 +429,8 @@
         "documents": 246,
         "first_tick": 91,
         "last_tick": 183
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Logos III",
@@ -423,7 +447,8 @@
         "documents": 339,
         "first_tick": 184,
         "last_tick": 287
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Logos IV",
@@ -440,7 +465,8 @@
         "documents": 359,
         "first_tick": 309,
         "last_tick": 400
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Logos V",
@@ -457,7 +483,8 @@
         "documents": 393,
         "first_tick": 514,
         "last_tick": 631
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Logos VI",
@@ -474,7 +501,8 @@
         "documents": 444,
         "first_tick": 705,
         "last_tick": 834
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Lumina I",
@@ -491,7 +519,8 @@
         "documents": 312,
         "first_tick": 0,
         "last_tick": 92
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Lumina II",
@@ -508,7 +537,8 @@
         "documents": 390,
         "first_tick": 93,
         "last_tick": 184
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Lumina III",
@@ -525,7 +555,8 @@
         "documents": 359,
         "first_tick": 279,
         "last_tick": 405
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Lumina IV",
@@ -542,7 +573,8 @@
         "documents": 259,
         "first_tick": 493,
         "last_tick": 592
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Lumina V",
@@ -559,7 +591,8 @@
         "documents": 444,
         "first_tick": 632,
         "last_tick": 775
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Lumina VI",
@@ -576,7 +609,8 @@
         "documents": 231,
         "first_tick": 838,
         "last_tick": 913
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Mirzakhani I",
@@ -593,7 +627,8 @@
         "documents": 415,
         "first_tick": 0,
         "last_tick": 142
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Mirzakhani II",
@@ -610,7 +645,8 @@
         "documents": 838,
         "first_tick": 143,
         "last_tick": 442
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Mirzakhani III",
@@ -627,7 +663,8 @@
         "documents": 399,
         "first_tick": 444,
         "last_tick": 585
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Mirzakhani IV",
@@ -644,7 +681,8 @@
         "documents": 727,
         "first_tick": 586,
         "last_tick": 877
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Mirzakhani V",
@@ -661,7 +699,8 @@
         "documents": 109,
         "first_tick": 878,
         "last_tick": 913
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Nexus I",
@@ -678,7 +717,8 @@
         "documents": 27,
         "first_tick": 0,
         "last_tick": 7
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Noether I",
@@ -695,7 +735,8 @@
         "documents": 34,
         "first_tick": 0,
         "last_tick": 7
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Nova I",
@@ -712,7 +753,8 @@
         "documents": 394,
         "first_tick": 288,
         "last_tick": 420
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Nova II",
@@ -729,7 +771,8 @@
         "documents": 301,
         "first_tick": 509,
         "last_tick": 611
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Nova III",
@@ -746,7 +789,8 @@
         "documents": 236,
         "first_tick": 612,
         "last_tick": 704
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Nova IV",
@@ -763,7 +807,8 @@
         "documents": 331,
         "first_tick": 776,
         "last_tick": 891
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Occam I",
@@ -780,7 +825,8 @@
         "documents": 251,
         "first_tick": 0,
         "last_tick": 93
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Occam II",
@@ -797,7 +843,8 @@
         "documents": 255,
         "first_tick": 94,
         "last_tick": 186
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Occam III",
@@ -814,7 +861,8 @@
         "documents": 325,
         "first_tick": 187,
         "last_tick": 278
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Occam IV",
@@ -831,7 +879,8 @@
         "documents": 239,
         "first_tick": 401,
         "last_tick": 492
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Occam V",
@@ -848,7 +897,8 @@
         "documents": 282,
         "first_tick": 571,
         "last_tick": 664
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Occam VI",
@@ -865,7 +915,8 @@
         "documents": 282,
         "first_tick": 665,
         "last_tick": 757
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Principia I",
@@ -882,7 +933,8 @@
         "documents": 293,
         "first_tick": 406,
         "last_tick": 508
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Principia II",
@@ -899,7 +951,8 @@
         "documents": 295,
         "first_tick": 593,
         "last_tick": 693
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Principia III",
@@ -916,7 +969,8 @@
         "documents": 378,
         "first_tick": 694,
         "last_tick": 837
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Principia IV",
@@ -933,7 +987,8 @@
         "documents": 225,
         "first_tick": 849,
         "last_tick": 913
-      }
+      },
+      "model": "Unknown"
     },
     {
       "name": "Talos I",
@@ -950,7 +1005,8 @@
         "documents": 38,
         "first_tick": 0,
         "last_tick": 7
-      }
+      },
+      "model": "Unknown"
     }
   ]
 }

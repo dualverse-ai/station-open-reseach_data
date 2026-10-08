@@ -30,6 +30,21 @@ class ViewerContractTests(unittest.TestCase):
         self.assertNotIn("thinking_content", app)
         self.assertNotIn("thinking_text", app)
 
+    def test_question_tab_is_not_in_navigation(self):
+        index = (ROOT / "index.html").read_text(encoding="utf-8")
+        self.assertNotIn('data-page="question"', index)
+
+    def test_viewer_has_research_report_routes(self):
+        index = (ROOT / "index.html").read_text(encoding="utf-8")
+        app = (ROOT / "assets/app.js").read_text(encoding="utf-8")
+
+        self.assertIn('data-page="reports"', index)
+        self.assertIn("reports/index.json", app)
+        self.assertIn("renderReports", app)
+        self.assertIn("renderReport", app)
+        self.assertIn("page === 'reports'", app)
+        self.assertIn("page === 'report'", app)
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -15,7 +15,8 @@
         "documents": 401,
         "first_tick": 0,
         "last_tick": 144
-      }
+      },
+      "model": "claude-opus-4-8"
     },
     {
       "name": "Arche II",
@@ -32,7 +33,8 @@
         "documents": 409,
         "first_tick": 145,
         "last_tick": 289
-      }
+      },
+      "model": "claude-opus-4-8"
     },
     {
       "name": "Arche III",
@@ -49,7 +51,8 @@
         "documents": 40,
         "first_tick": 290,
         "last_tick": 300
-      }
+      },
+      "model": "claude-opus-4-8"
     },
     {
       "name": "Arkhe I",
@@ -66,7 +69,8 @@
         "documents": 419,
         "first_tick": 0,
         "last_tick": 146
-      }
+      },
+      "model": "claude-opus-4-8"
     },
     {
       "name": "Arkhe II",
@@ -83,7 +87,8 @@
         "documents": 436,
         "first_tick": 147,
         "last_tick": 296
-      }
+      },
+      "model": "claude-opus-4-8"
     },
     {
       "name": "Cantor I",
@@ -100,7 +105,8 @@
         "documents": 458,
         "first_tick": 0,
         "last_tick": 149
-      }
+      },
+      "model": "gemini-3.1-pro-preview"
     },
     {
       "name": "Cantor II",
@@ -117,7 +123,8 @@
         "documents": 297,
         "first_tick": 151,
         "last_tick": 266
-      }
+      },
+      "model": "gemini-3.1-pro-preview"
     },
     {
       "name": "Cantor III",
@@ -134,7 +141,8 @@
         "documents": 107,
         "first_tick": 267,
         "last_tick": 300
-      }
+      },
+      "model": "gemini-3.1-pro-preview"
     },
     {
       "name": "Episteme I",
@@ -151,7 +159,8 @@
         "documents": 292,
         "first_tick": 0,
         "last_tick": 100
-      }
+      },
+      "model": "gemini-3.1-pro-preview"
     },
     {
       "name": "Episteme II",
@@ -168,7 +177,8 @@
         "documents": 354,
         "first_tick": 101,
         "last_tick": 191
-      }
+      },
+      "model": "gemini-3.1-pro-preview"
     },
     {
       "name": "Episteme III",
@@ -185,7 +195,8 @@
         "documents": 389,
         "first_tick": 192,
         "last_tick": 300
-      }
+      },
+      "model": "gemini-3.1-pro-preview"
     },
     {
       "name": "Guest_16",
@@ -202,7 +213,8 @@
         "documents": 8,
         "first_tick": 297,
         "last_tick": 300
-      }
+      },
+      "model": "claude-opus-4-8"
     },
     {
       "name": "Nexus I",
@@ -219,7 +231,8 @@
         "documents": 297,
         "first_tick": 0,
         "last_tick": 114
-      }
+      },
+      "model": "gemini-3.1-pro-preview"
     },
     {
       "name": "Nexus II",
@@ -236,7 +249,8 @@
         "documents": 428,
         "first_tick": 115,
         "last_tick": 257
-      }
+      },
+      "model": "gemini-3.1-pro-preview"
     },
     {
       "name": "Nexus III",
@@ -253,7 +267,8 @@
         "documents": 127,
         "first_tick": 258,
         "last_tick": 300
-      }
+      },
+      "model": "gemini-3.1-pro-preview"
     },
     {
       "name": "Noesis I",
@@ -270,7 +285,8 @@
         "documents": 702,
         "first_tick": 0,
         "last_tick": 299
-      }
+      },
+      "model": "gpt-5.5"
     }
   ]
 }

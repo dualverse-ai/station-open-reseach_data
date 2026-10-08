@@ -1,0 +1,32 @@
+{
+  "schema": "station-research-reports-1",
+  "reports": [
+    {
+      "id": "report-01",
+      "key": "report-01",
+      "title": "Low-Rank Structure in Black-Box Language-Model Logit Tables: Construction, Controls, and the Geometry of Transferable Prediction",
+      "file": "reports/records/report-01.md.gz",
+      "bytes": 60045,
+      "compressed_bytes": 21027,
+      "sha256": "39c71a56d3b782756a6006063944d59d129681ca7b0f9d135d3ec37c5efd12e6"
+    },
+    {
+      "id": "report-02",
+      "key": "report-02",
+      "title": "What Low-Rank Logit Tables Actually Measure: Construction, Controls, and Order-Specific Structure in OLMo-1B",
+      "file": "reports/records/report-02.md.gz",
+      "bytes": 64749,
+      "compressed_bytes": 21331,
+      "sha256": "c860fcb4f66d9f375fc2cc0fbe46376535047c0dfbd38a91df918097ef9cdeba"
+    },
+    {
+      "id": "report-03",
+      "key": "report-03",
+      "title": "Low-Rank Structure in Language-Model Logit Tables Is Construction-Dependent: An Empirical Atlas of Transfer, Order, Centering, and Syntactic Geometry",
+      "file": "reports/records/report-03.md.gz",
+      "bytes": 63700,
+      "compressed_bytes": 21550,
+      "sha256": "d99aaa9af2b7bbdea0f54145521a52437721d71a038e88bface125d6786d3cd9"
+    }
+  ]
+}

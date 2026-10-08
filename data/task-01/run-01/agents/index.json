@@ -15,7 +15,8 @@
         "documents": 779,
         "first_tick": 0,
         "last_tick": 299
-      }
+      },
+      "model": "gpt-5.5"
     },
     {
       "name": "Episteme I",
@@ -32,7 +33,8 @@
         "documents": 259,
         "first_tick": 0,
         "last_tick": 94
-      }
+      },
+      "model": "gemini-3.1-pro-preview"
     },
     {
       "name": "Episteme II",
@@ -49,7 +51,8 @@
         "documents": 435,
         "first_tick": 95,
         "last_tick": 212
-      }
+      },
+      "model": "gemini-3.1-pro-preview"
     },
     {
       "name": "Episteme III",
@@ -66,7 +69,8 @@
         "documents": 318,
         "first_tick": 213,
         "last_tick": 300
-      }
+      },
+      "model": "gemini-3.1-pro-preview"
     },
     {
       "name": "Guest_16",
@@ -83,7 +87,8 @@
         "documents": 6,
         "first_tick": 298,
         "last_tick": 300
-      }
+      },
+      "model": "claude-opus-4-8"
     },
     {
       "name": "Hypatia I",
@@ -100,7 +105,8 @@
         "documents": 259,
         "first_tick": 0,
         "last_tick": 91
-      }
+      },
+      "model": "gemini-3.1-pro-preview"
     },
     {
       "name": "Hypatia II",
@@ -117,7 +123,8 @@
         "documents": 275,
         "first_tick": 92,
         "last_tick": 194
-      }
+      },
+      "model": "gemini-3.1-pro-preview"
     },
     {
       "name": "Hypatia III",
@@ -134,7 +141,8 @@
         "documents": 342,
         "first_tick": 195,
         "last_tick": 300
-      }
+      },
+      "model": "gemini-3.1-pro-preview"
     },
     {
       "name": "Itero I",
@@ -151,7 +159,8 @@
         "documents": 413,
         "first_tick": 0,
         "last_tick": 143
-      }
+      },
+      "model": "claude-opus-4-8"
     },
     {
       "name": "Itero II",
@@ -168,7 +177,8 @@
         "documents": 396,
         "first_tick": 144,
         "last_tick": 285
-      }
+      },
+      "model": "claude-opus-4-8"
     },
     {
       "name": "Itero III",
@@ -185,7 +195,8 @@
         "documents": 46,
         "first_tick": 286,
         "last_tick": 300
-      }
+      },
+      "model": "claude-opus-4-8"
     },
     {
       "name": "Principia I",
@@ -202,7 +213,8 @@
         "documents": 314,
         "first_tick": 0,
         "last_tick": 93
-      }
+      },
+      "model": "gemini-3.1-pro-preview"
     },
     {
       "name": "Principia II",
@@ -219,7 +231,8 @@
         "documents": 291,
         "first_tick": 94,
         "last_tick": 207
-      }
+      },
+      "model": "gemini-3.1-pro-preview"
     },
     {
       "name": "Principia III",
@@ -236,7 +249,8 @@
         "documents": 272,
         "first_tick": 208,
         "last_tick": 300
-      }
+      },
+      "model": "gemini-3.1-pro-preview"
     },
     {
       "name": "Syzygy I",
@@ -253,7 +267,8 @@
         "documents": 445,
         "first_tick": 0,
         "last_tick": 150
-      }
+      },
+      "model": "claude-opus-4-8"
     },
     {
       "name": "Syzygy II",
@@ -270,7 +285,8 @@
         "documents": 424,
         "first_tick": 151,
         "last_tick": 297
-      }
+      },
+      "model": "claude-opus-4-8"
     }
   ]
 }

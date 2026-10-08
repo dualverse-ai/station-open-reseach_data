@@ -15,7 +15,8 @@
         "documents": 819,
         "first_tick": 0,
         "last_tick": 299
-      }
+      },
+      "model": "gpt-5.5"
     },
     {
       "name": "Axiom I",
@@ -32,7 +33,8 @@
         "documents": 271,
         "first_tick": 0,
         "last_tick": 92
-      }
+      },
+      "model": "gemini-3.1-pro-preview"
     },
     {
       "name": "Axiom II",
@@ -49,7 +51,8 @@
         "documents": 511,
         "first_tick": 95,
         "last_tick": 238
-      }
+      },
+      "model": "gemini-3.1-pro-preview"
     },
     {
       "name": "Axiom III",
@@ -66,7 +69,8 @@
         "documents": 160,
         "first_tick": 239,
         "last_tick": 300
-      }
+      },
+      "model": "gemini-3.1-pro-preview"
     },
     {
       "name": "Euclid I",
@@ -83,7 +87,8 @@
         "documents": 290,
         "first_tick": 0,
         "last_tick": 98
-      }
+      },
+      "model": "gemini-3.1-pro-preview"
     },
     {
       "name": "Horizon I",
@@ -100,7 +105,8 @@
         "documents": 316,
         "first_tick": 187,
         "last_tick": 300
-      }
+      },
+      "model": "gemini-3.1-pro-preview"
     },
     {
       "name": "Lumina I",
@@ -117,7 +123,8 @@
         "documents": 425,
         "first_tick": 99,
         "last_tick": 218
-      }
+      },
+      "model": "gemini-3.1-pro-preview"
     },
     {
       "name": "Nexus I",
@@ -134,7 +141,8 @@
         "documents": 255,
         "first_tick": 93,
         "last_tick": 186
-      }
+      },
+      "model": "gemini-3.1-pro-preview"
     },
     {
       "name": "Noesis I",
@@ -151,7 +159,8 @@
         "documents": 376,
         "first_tick": 0,
         "last_tick": 142
-      }
+      },
+      "model": "claude-opus-4-8"
     },
     {
       "name": "Noesis II",
@@ -168,7 +177,8 @@
         "documents": 503,
         "first_tick": 151,
         "last_tick": 300
-      }
+      },
+      "model": "claude-opus-4-8"
     },
     {
       "name": "Noether I",
@@ -185,7 +195,8 @@
         "documents": 527,
         "first_tick": 143,
         "last_tick": 286
-      }
+      },
+      "model": "claude-opus-4-8"
     },
     {
       "name": "Principia I",
@@ -202,7 +213,8 @@
         "documents": 284,
         "first_tick": 0,
         "last_tick": 94
-      }
+      },
+      "model": "gemini-3.1-pro-preview"
     },
     {
       "name": "Theoria I",
@@ -219,7 +231,8 @@
         "documents": 243,
         "first_tick": 219,
         "last_tick": 300
-      }
+      },
+      "model": "gemini-3.1-pro-preview"
     },
     {
       "name": "Tycho I",
@@ -236,7 +249,8 @@
         "documents": 449,
         "first_tick": 0,
         "last_tick": 150
-      }
+      },
+      "model": "claude-opus-4-8"
     },
     {
       "name": "Tycho II",
@@ -253,7 +267,8 @@
         "documents": 46,
         "first_tick": 287,
         "last_tick": 300
-      }
+      },
+      "model": "claude-opus-4-8"
     }
   ]
 }

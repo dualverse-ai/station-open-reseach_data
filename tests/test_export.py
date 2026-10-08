@@ -96,6 +96,23 @@ class ExportContractTests(unittest.TestCase):
             "result": "Score based on the registered metric.",
         })
 
+    def test_agent_export_includes_model(self):
+        module = self.require_exporter()
+        with tempfile.TemporaryDirectory() as temp:
+            temp_root = Path(temp)
+            source = self.make_source(temp_root / "source", "Emergent Planning")
+            output = temp_root / "public"
+
+            records = module.export_agents(source, output)
+            self.assertEqual(records[0]["model"], "gpt-test")
+
+            (source / "agents/Alpha I.yaml").write_text(
+                "agent_name: Alpha I\nstatus: Active\nlineage: Alpha\ngeneration: 1\ntick_birth: 0\n",
+                encoding="utf-8",
+            )
+            records = module.export_agents(source, output)
+            self.assertEqual(records[0]["model"], "Unknown")
+
     def test_release_groups_sources_under_anonymous_task_and_run_ids(self):
         module = self.require_exporter()
         titles = [
@@ -130,7 +147,7 @@ class ExportContractTests(unittest.TestCase):
         (root / "rooms/research/research_task.md").write_text(f"# {title}\n", encoding="utf-8")
         (root / "station_config.yaml").write_text("current_tick: 10\nversion: 1.5.0\n", encoding="utf-8")
         (root / "agents/Alpha I.yaml").write_text(
-            "agent_name: Alpha I\nstatus: Active\nlineage: Alpha\ngeneration: 1\ntick_birth: 0\n",
+            "agent_name: Alpha I\nstatus: Active\nlineage: Alpha\ngeneration: 1\ntick_birth: 0\nmodel_name: gpt-test\n",
             encoding="utf-8",
         )
         (root / "agents/Alpha I/llm_chat_history.yamll").write_text(

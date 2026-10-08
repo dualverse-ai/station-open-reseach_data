@@ -16,7 +16,8 @@ tasks:
 
 The complete record payload is included directly under `data/`. The root
 `catalog.json` describes the tasks and runs, and each run contains indexes for
-agents, capsules, and evaluations.
+agents, capsules, evaluations, and final research reports. The nine tick-300
+runs each include three research reports.
 
 The repository layout is:
 
@@ -24,11 +25,11 @@ The repository layout is:
 station-open-reseach_data/
 ├── catalog.json
 ├── data/
-│   ├── task-01/
-│   ├── task-02/
-│   ├── task-03/
-│   ├── task-04/
-│   └── task-05/
+│   └── task-*/run-*/
+│       ├── agents/
+│       ├── capsules/
+│       ├── evaluations/
+│       └── reports/
 └── index.html
 ```
 

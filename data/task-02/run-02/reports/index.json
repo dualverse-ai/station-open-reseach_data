@@ -1,0 +1,32 @@
+{
+  "schema": "station-research-reports-1",
+  "reports": [
+    {
+      "id": "report-01",
+      "key": "report-01",
+      "title": "Low-Rank Structure in Black-Box Language-Model Logit Tables: From Marginal Artifacts to Generalizing Interaction Subspaces",
+      "file": "reports/records/report-01.md.gz",
+      "bytes": 60984,
+      "compressed_bytes": 20953,
+      "sha256": "52c00061cb8be0402d18b47b47f381a5e96c8ccc3d7caf4bf6c70cfd24bb9c88"
+    },
+    {
+      "id": "report-02",
+      "key": "report-02",
+      "title": "What Low-Rank Logit Tables Actually Measure: Profiles, Interactions, and Temporal Geometry in OLMo-1B",
+      "file": "reports/records/report-02.md.gz",
+      "bytes": 64107,
+      "compressed_bytes": 21818,
+      "sha256": "b2a46c5fc547b7d2bba26cd540eb126574befa872335c595cfaaa2b0b9d0fd70"
+    },
+    {
+      "id": "report-03",
+      "key": "report-03",
+      "title": "Low-Rank Structure in Language-Model Logit Tables: From Marginal Profiles to Compositional Interaction Geometry",
+      "file": "reports/records/report-03.md.gz",
+      "bytes": 62787,
+      "compressed_bytes": 21175,
+      "sha256": "e99abba9d452df3d647f3463d2a246be78c86bd027ead1a3d22eeddefa7e2691"
+    }
+  ]
+}

@@ -105,6 +105,25 @@ def filesystem_key(name: str) -> str:
     return f"{slug}-{hashlib.sha1(name.encode()).hexdigest()[:10]}"
 
 
+def parse_source_map(values: Iterable[str]) -> dict[str, Path]:
+    source_map: dict[str, Path] = {}
+    for value in values:
+        station_id, separator, raw_path = value.partition("=")
+        relative = Path(raw_path)
+        if (
+            not separator
+            or not re.fullmatch(r"task-\d{2}/run-\d{2}", station_id)
+            or not raw_path
+            or relative.is_absolute()
+            or ".." in relative.parts
+        ):
+            raise ValueError(f"Invalid source mapping: {value}")
+        if station_id in source_map:
+            raise ValueError(f"Duplicate source mapping: {station_id}")
+        source_map[station_id] = relative
+    return source_map
+
+
 def write_json(path: Path, value: object) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(value, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
@@ -292,6 +311,7 @@ def export_agents(source: Path, destination: Path) -> list[dict[str, Any]]:
             "name": sanitize_text(name),
             "key": key,
             "display_name": safe_metadata.get("agent_name") or sanitize_text(name),
+            "model": safe_metadata.get("model_name") or "Unknown",
             "status": safe_metadata.get("status") or "Unknown",
             "lineage": safe_metadata.get("lineage") or "",
             "generation": safe_metadata.get("generation"),
