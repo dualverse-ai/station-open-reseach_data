@@ -100,6 +100,28 @@ class ExportContractTests(unittest.TestCase):
             "coder_report": "Useful scientific conclusion.",
         })
 
+    def test_evaluation_export_normalizes_non_finite_score_to_valid_json(self):
+        module = self.require_exporter()
+        with tempfile.TemporaryDirectory() as temp:
+            temp_root = Path(temp)
+            source = self.make_source(temp_root / "source", "Emergent Planning")
+            output = temp_root / "public"
+            (source / "rooms/research/evaluations/1.yaml").write_text(
+                "id: 1\ntitle: Evaluation\nauthor: Alpha I\ninstruction: Test\n"
+                "final:\n  status: partial\n  primary_score: .nan\n",
+                encoding="utf-8",
+            )
+
+            module.export_evaluations(source, output)
+            raw_index = (output / "evaluations/index.json").read_text(encoding="utf-8")
+            index = json.loads(
+                raw_index,
+                parse_constant=lambda value: (_ for _ in ()).throw(ValueError(value)),
+            )
+
+            self.assertNotIn("NaN", raw_index)
+            self.assertEqual(index["evaluations"][0]["score"], "n.a.")
+
     def test_capsule_export_ignores_tools_and_extracts_archive_review_score(self):
         module = self.require_exporter()
         with tempfile.TemporaryDirectory() as temp:

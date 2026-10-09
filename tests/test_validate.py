@@ -26,6 +26,11 @@ class ValidationContractTests(unittest.TestCase):
     def test_validator_module_exists(self):
         self.require_validator()
 
+    def test_strict_json_parser_rejects_nonstandard_constants(self):
+        module = self.require_validator()
+        with self.assertRaises(ValueError):
+            module.strict_json_loads('{"score": NaN}')
+
     def test_scanner_rejects_release_branding_and_source_identifiers(self):
         module = self.require_validator()
         samples = [

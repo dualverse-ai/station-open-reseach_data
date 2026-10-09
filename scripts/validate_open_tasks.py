@@ -101,6 +101,13 @@ def digest(data: bytes) -> str:
     return hashlib.sha256(data).hexdigest()
 
 
+def strict_json_loads(value: str):
+    def reject_constant(constant: str):
+        raise ValueError(f"nonstandard JSON constant: {constant}")
+
+    return json.loads(value, parse_constant=reject_constant)
+
+
 def decoded_forms(data: bytes) -> list[str]:
     text = data.decode("utf-8", "replace")
     forms = [text]
@@ -343,7 +350,7 @@ def validate_release(root: Path = ROOT, *, check_layout: bool = True) -> list[st
         ):
             if not index_path.is_file():
                 continue
-            index = json.loads(index_path.read_text(encoding="utf-8"))
+            index = strict_json_loads(index_path.read_text(encoding="utf-8"))
             records = index.get(key, [])
             if len(records) != station.get("counts", {}).get(count_key):
                 errors.append(f"{count_key} count mismatch: {station_id}")

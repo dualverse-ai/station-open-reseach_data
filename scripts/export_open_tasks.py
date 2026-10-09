@@ -7,6 +7,7 @@ import argparse
 import gzip
 import hashlib
 import json
+import math
 import re
 import shutil
 from collections import defaultdict
@@ -126,7 +127,7 @@ def parse_source_map(values: Iterable[str]) -> dict[str, Path]:
 
 def write_json(path: Path, value: object) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(value, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    path.write_text(json.dumps(value, indent=2, ensure_ascii=False, allow_nan=False) + "\n", encoding="utf-8")
 
 
 def write_gzip(path: Path, data: bytes) -> dict[str, object]:
@@ -248,6 +249,12 @@ def archive_reviewer_score(metadata: dict[str, Any]) -> float | None:
         if match:
             return float(match.group(1))
     return None
+
+
+def public_score(value: Any) -> Any:
+    if isinstance(value, float) and not math.isfinite(value):
+        return "n.a."
+    return value
 
 
 def mail_recipients(metadata: dict[str, Any]) -> list[str]:
@@ -426,7 +433,7 @@ def export_evaluations(source: Path, destination: Path) -> list[dict[str, Any]]:
                 "lineage": safe_metadata.get("lineage") or "",
                 "submitted_tick": safe_metadata.get("submitted_tick"),
                 "status": safe_final.get("status") or safe_metadata.get("status") or "Unknown",
-                "score": safe_final.get("primary_score", "n.a."),
+                "score": public_score(safe_final.get("primary_score", "n.a.")),
                 "tags": safe_metadata.get("tags") if isinstance(safe_metadata.get("tags"), list) else [],
                 "abstract": safe_metadata.get("abstract") or "",
                 "file": output.relative_to(destination).as_posix(),

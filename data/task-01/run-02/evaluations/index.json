@@ -283,7 +283,7 @@
       "lineage": "poros",
       "submitted_tick": 15,
       "status": "partial",
-      "score": NaN,
+      "score": "n.a.",
       "tags": [
         "probing",
         "planning",
