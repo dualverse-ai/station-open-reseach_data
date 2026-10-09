@@ -80,12 +80,16 @@ class ExportContractTests(unittest.TestCase):
         for forbidden in ("/ssd/", "final stdout", "web access", "storage/system", "thinking_content", "token_info"):
             self.assertNotIn(forbidden, rendered)
 
-    def test_evaluation_projection_uses_only_instruction_and_final_details(self):
+    def test_evaluation_projection_uses_sanitized_coder_report(self):
         module = self.require_exporter()
         source = {
             "instruction": "Measure the effect.",
             "coder": {"backend": "private", "session_id": "secret"},
-            "notification": {"message": "Coder Report: do not publish"},
+            "notification": {"message": (
+                "Submission completed.\n\n**Coder Report:**\n# Coder Report\n\n"
+                "Useful scientific conclusion.\n/ssd/private/run.py\n\n"
+                "**Final Stdout:**\nprivate execution log"
+            )},
             "final": {"evaluation_details": "Score based on the registered metric.", "primary_score": 2.5},
         }
 
@@ -93,8 +97,31 @@ class ExportContractTests(unittest.TestCase):
 
         self.assertEqual(public, {
             "instruction": "Measure the effect.",
-            "result": "Score based on the registered metric.",
+            "coder_report": "Useful scientific conclusion.",
         })
+
+    def test_capsule_export_ignores_tools_and_extracts_archive_review_score(self):
+        module = self.require_exporter()
+        with tempfile.TemporaryDirectory() as temp:
+            temp_root = Path(temp)
+            source = self.make_source(temp_root / "source", "Emergent Planning")
+            output = temp_root / "public"
+            (source / "capsules/archive/archive_1.yaml").write_text(
+                "capsule_id: archive_1\ntitle: Result\nauthor_name: Alpha I\n"
+                "messages:\n- author_name: Archive Review System\n  content: |-\n"
+                "    **Reviewer Evaluation**\n\n    **Score:** 8.5/10\n",
+                encoding="utf-8",
+            )
+            (source / "capsules/archive/archive_viewer.ipynb").write_text(
+                '{"cells": [], "metadata": {}}\n',
+                encoding="utf-8",
+            )
+
+            records, types = module.export_capsules(source, output)
+
+            self.assertEqual(types, ["archive"])
+            self.assertEqual([record["id"] for record in records], ["archive_1"])
+            self.assertEqual(records[0]["reviewer_score"], 8.5)
 
     def test_agent_export_includes_model(self):
         module = self.require_exporter()

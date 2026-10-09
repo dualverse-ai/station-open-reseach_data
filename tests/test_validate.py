@@ -56,6 +56,15 @@ class ValidationContractTests(unittest.TestCase):
             with self.subTest(sample=sample):
                 self.assertTrue(module.scan_bytes(sample, Path("record.yaml.gz")))
 
+    def test_scanner_allows_public_coder_report_heading(self):
+        module = self.require_validator()
+        value = b"coder_report: Scientific findings only."
+        path = Path("data/task-01/run-01/evaluations/records/1.yaml.gz")
+        self.assertEqual(module.scan_bytes(value, path), [])
+
+        viewer = b"item.coder_report; label = 'Coder Report'"
+        self.assertEqual(module.scan_bytes(viewer, Path("assets/app.js")), [])
+
     def test_scanner_accepts_scientific_model_discussion(self):
         module = self.require_validator()
         value = b"A language model and a vision-language model were evaluated offline."

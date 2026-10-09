@@ -45,6 +45,12 @@ class ViewerContractTests(unittest.TestCase):
         self.assertIn("page === 'reports'", app)
         self.assertIn("page === 'report'", app)
 
+    def test_research_submission_displays_coder_report(self):
+        app = (ROOT / "assets/app.js").read_text(encoding="utf-8")
+
+        self.assertIn("item.coder_report", app)
+        self.assertIn('record-label">Coder Report', app)
+
 
 if __name__ == "__main__":
     unittest.main()

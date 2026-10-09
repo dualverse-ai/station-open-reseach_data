@@ -112,9 +112,24 @@ def decoded_forms(data: bytes) -> list[str]:
 
 def scan_bytes(data: bytes, path: Path) -> list[str]:
     findings = []
+    evaluation_payload = "evaluations" in path.parts and "records" in path.parts
+    viewer_source = path == Path("assets/app.js")
     for text in decoded_forms(data):
         for match in COMBINED_PATTERN.finditer(text):
             label = PATTERN_LABELS[int(match.lastgroup[1:])]
+            matched_text = match.group(match.lastgroup)
+            if (
+                evaluation_payload
+                and label == "private coder material"
+                and matched_text.casefold() == f"{_CODER}_report"
+            ):
+                continue
+            if (
+                viewer_source
+                and label == "private coder material"
+                and matched_text.casefold() in {f"{_CODER} report", f"{_CODER}_report"}
+            ):
+                continue
             finding = f"{label} in {path}"
             if finding not in findings:
                 findings.append(finding)
@@ -351,10 +366,16 @@ def validate_release(root: Path = ROOT, *, check_layout: bool = True) -> list[st
                 errors.extend(scan_bytes(raw, path.relative_to(root)))
                 if len(raw) != record.get("bytes") or digest(raw) != record.get("sha256"):
                     errors.append(f"record integrity mismatch: {path.relative_to(root)}")
+                if key == "capsules" and record.get("type") == "archive":
+                    score = record.get("reviewer_score")
+                    if isinstance(score, bool) or not isinstance(score, (int, float)):
+                        errors.append(f"missing archive reviewer score: {path.relative_to(root)}")
                 if key == "evaluations":
                     value = yaml.safe_load(raw.decode("utf-8")) or {}
-                    if set(value) != {"instruction", "result"}:
+                    if set(value) != {"instruction", "coder_report"}:
                         errors.append(f"evaluation projection mismatch: {path.relative_to(root)}")
+                    elif not all(isinstance(value[field], str) for field in ("instruction", "coder_report")):
+                        errors.append(f"invalid evaluation projection types: {path.relative_to(root)}")
 
         expected_report_count = EXPECTED_REPORTS.get(str(station.get("task_id")), 0)
         if station.get("counts", {}).get("reports") != expected_report_count:

@@ -203,16 +203,25 @@ def project_dialogue(raw: bytes) -> bytes:
     return yaml.safe_dump_all(public, sort_keys=False, allow_unicode=True).encode("utf-8")
 
 
+def evaluation_coder_report(metadata: dict[str, Any]) -> str:
+    notification = metadata.get("notification") if isinstance(metadata.get("notification"), dict) else {}
+    message = notification.get("message")
+    if not isinstance(message, str):
+        return ""
+    marker = re.search(r"\*\*Coder Report:\*\*", message, re.IGNORECASE)
+    if not marker:
+        return ""
+    report = message[marker.end():]
+    report = re.split(r"\n\s*\*\*Final Stdout:\*\*", report, maxsplit=1, flags=re.IGNORECASE)[0]
+    report = re.sub(r"^\s*#[ \t]+Coder Report[ \t]*\r?\n", "", report, count=1, flags=re.IGNORECASE)
+    return sanitize_text(report)
+
+
 def project_evaluation(metadata: dict[str, Any]) -> bytes:
-    final = metadata.get("final") if isinstance(metadata.get("final"), dict) else {}
-    details = final.get("evaluation_details")
-    if isinstance(details, str):
-        result = details
-    elif details in (None, {}, []):
-        result = ""
-    else:
-        result = yaml.safe_dump(details, sort_keys=False, allow_unicode=True).rstrip()
-    public = sanitize_value({"instruction": str(metadata.get("instruction") or ""), "result": result})
+    public = {
+        "instruction": sanitize_text(str(metadata.get("instruction") or "")),
+        "coder_report": evaluation_coder_report(metadata),
+    }
     return yaml.safe_dump(public, sort_keys=False, allow_unicode=True).encode("utf-8")
 
 
@@ -228,6 +237,17 @@ def serialize_capsule(raw: bytes) -> tuple[bytes, dict[str, Any]]:
 def active_messages(metadata: dict[str, Any]) -> list[dict[str, Any]]:
     messages = metadata.get("messages") if isinstance(metadata.get("messages"), list) else []
     return [message for message in messages if isinstance(message, dict) and not message.get("is_deleted")]
+
+
+def archive_reviewer_score(metadata: dict[str, Any]) -> float | None:
+    for message in reversed(active_messages(metadata)):
+        content = str(message.get("content") or "")
+        if "Reviewer Evaluation" not in content:
+            continue
+        match = re.search(r"\*\*Score:\*\*\s*([0-9]+(?:\.[0-9]+)?)\s*/\s*10", content)
+        if match:
+            return float(match.group(1))
+    return None
 
 
 def mail_recipients(metadata: dict[str, Any]) -> list[str]:
@@ -335,7 +355,12 @@ def export_capsules(source: Path, destination: Path) -> tuple[list[dict[str, Any
     if capsule_root.is_dir():
         candidates = sorted(capsule_root.rglob("*"), key=lambda path: path.as_posix().casefold())
         for capsule_source in candidates:
-            if not capsule_source.is_file() or capsule_source.name.endswith(".lock") or capsule_source.name == "_index.json":
+            if (
+                not capsule_source.is_file()
+                or capsule_source.suffix.casefold() not in {".yaml", ".yml"}
+                or capsule_source.name.endswith(".lock")
+                or capsule_source.name == "_index.json"
+            ):
                 continue
             relative = capsule_source.relative_to(capsule_root)
             capsule_type = relative.parts[0] if len(relative.parts) > 1 else "other"
@@ -361,6 +386,8 @@ def export_capsules(source: Path, destination: Path) -> tuple[list[dict[str, Any
             }
             if capsule_type in {"public", "private", "mail", "question"}:
                 record["reply_count"] = max(0, len(active_messages(metadata)) - 1)
+            if capsule_type == "archive":
+                record["reviewer_score"] = archive_reviewer_score(metadata)
             if capsule_type == "mail":
                 record["recipients"] = mail_recipients(metadata)
             if capsule_type == "question":

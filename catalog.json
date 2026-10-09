@@ -12,7 +12,7 @@
           "tick": 301,
           "counts": {
             "agents": 16,
-            "capsules": 250,
+            "capsules": 249,
             "evaluations": 253,
             "reports": 3
           }
@@ -23,7 +23,7 @@
           "tick": 301,
           "counts": {
             "agents": 19,
-            "capsules": 156,
+            "capsules": 155,
             "evaluations": 251,
             "reports": 3
           }
@@ -34,7 +34,7 @@
           "tick": 301,
           "counts": {
             "agents": 17,
-            "capsules": 221,
+            "capsules": 220,
             "evaluations": 230,
             "reports": 3
           }
@@ -52,7 +52,7 @@
           "tick": 301,
           "counts": {
             "agents": 16,
-            "capsules": 259,
+            "capsules": 258,
             "evaluations": 264,
             "reports": 3
           }
@@ -63,7 +63,7 @@
           "tick": 301,
           "counts": {
             "agents": 16,
-            "capsules": 314,
+            "capsules": 313,
             "evaluations": 205,
             "reports": 3
           }
@@ -74,7 +74,7 @@
           "tick": 301,
           "counts": {
             "agents": 17,
-            "capsules": 197,
+            "capsules": 196,
             "evaluations": 256,
             "reports": 3
           }
@@ -92,7 +92,7 @@
           "tick": 301,
           "counts": {
             "agents": 15,
-            "capsules": 254,
+            "capsules": 253,
             "evaluations": 224,
             "reports": 3
           }
@@ -103,7 +103,7 @@
           "tick": 301,
           "counts": {
             "agents": 16,
-            "capsules": 299,
+            "capsules": 298,
             "evaluations": 232,
             "reports": 3
           }
@@ -114,7 +114,7 @@
           "tick": 301,
           "counts": {
             "agents": 16,
-            "capsules": 294,
+            "capsules": 293,
             "evaluations": 241,
             "reports": 3
           }
@@ -168,7 +168,7 @@
       "status": "Archived",
       "counts": {
         "agents": 16,
-        "capsules": 250,
+        "capsules": 249,
         "evaluations": 253,
         "reports": 3
       },
@@ -188,7 +188,7 @@
       "status": "Archived",
       "counts": {
         "agents": 19,
-        "capsules": 156,
+        "capsules": 155,
         "evaluations": 251,
         "reports": 3
       },
@@ -208,7 +208,7 @@
       "status": "Archived",
       "counts": {
         "agents": 17,
-        "capsules": 221,
+        "capsules": 220,
         "evaluations": 230,
         "reports": 3
       },
@@ -227,7 +227,7 @@
       "status": "Archived",
       "counts": {
         "agents": 16,
-        "capsules": 259,
+        "capsules": 258,
         "evaluations": 264,
         "reports": 3
       },
@@ -247,7 +247,7 @@
       "status": "Archived",
       "counts": {
         "agents": 16,
-        "capsules": 314,
+        "capsules": 313,
         "evaluations": 205,
         "reports": 3
       },
@@ -267,7 +267,7 @@
       "status": "Archived",
       "counts": {
         "agents": 17,
-        "capsules": 197,
+        "capsules": 196,
         "evaluations": 256,
         "reports": 3
       },
@@ -287,7 +287,7 @@
       "status": "Archived",
       "counts": {
         "agents": 15,
-        "capsules": 254,
+        "capsules": 253,
         "evaluations": 224,
         "reports": 3
       },
@@ -307,7 +307,7 @@
       "status": "Archived",
       "counts": {
         "agents": 16,
-        "capsules": 299,
+        "capsules": 298,
         "evaluations": 232,
         "reports": 3
       },
@@ -327,7 +327,7 @@
       "status": "Archived",
       "counts": {
         "agents": 16,
-        "capsules": 294,
+        "capsules": 293,
         "evaluations": 241,
         "reports": 3
       },

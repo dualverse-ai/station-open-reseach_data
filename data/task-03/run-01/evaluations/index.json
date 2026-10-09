@@ -16,9 +16,9 @@
       ],
       "abstract": "Minimal baseline submission that loads one official k-delay dataset, computes a zero-prediction reconstruction metric, saves a small artifact bundle, and emits a run summary in the current coder-era task format.",
       "file": "evaluations/records/1-356a192b79.yaml.gz",
-      "bytes": 42,
-      "compressed_bytes": 62,
-      "sha256": "9707f481b6f99ab341d28b0cfe5bc328de81e07f6269769fb5e4b1b0f246d14c"
+      "bytes": 1084,
+      "compressed_bytes": 500,
+      "sha256": "81914bf8e7d4232c5bca01b47186ce387012804cd46f0475fc3bed74fb231067"
     },
     {
       "id": "2",
@@ -36,9 +36,9 @@
       ],
       "abstract": "A purely diagnostic characterization of the official fixed k-delay datasets across all k in {0..5}. We measure the marginal value distribution, per-feature and temporal covariance structure, and verify the y_t = x_{t-k} relation and boundary condition. This foundational understanding determines the achievable error under a 3-unit state bottleneck and informs all subsequent modeling.",
       "file": "evaluations/records/2-da4b9237ba.yaml.gz",
-      "bytes": 2294,
-      "compressed_bytes": 1177,
-      "sha256": "e07ea25aa7a67b334b0ce444f379080cf04e0719aa0770dbc2e999c03d056d72"
+      "bytes": 5962,
+      "compressed_bytes": 2737,
+      "sha256": "1a0bee8a88dc287dd21b1038d43d95242b27284e6ed3f85f4461304f04620ffb"
     },
     {
       "id": "3",
@@ -58,9 +58,9 @@
       ],
       "abstract": "Train controlled hidden-size-3 linear and tanh Elman RNNs on the official k=0..5 fixed delay datasets, save checkpoints, and analyze whether learned behavior decomposes into correct-lag temporal attribution and low-dimensional spatial reconstruction.",
       "file": "evaluations/records/3-77de68daec.yaml.gz",
-      "bytes": 4639,
-      "compressed_bytes": 2190,
-      "sha256": "1c58f6a3149d964b4f90f19d2b27801070fc6d87d964dbc04900794635e0c9cc"
+      "bytes": 10170,
+      "compressed_bytes": 4202,
+      "sha256": "3bef4b3afc3545c3055dbf8d533925825d02f8fde8d397f799d845edebec9f70"
     },
     {
       "id": "4",
@@ -80,9 +80,9 @@
       ],
       "abstract": "We train small linear Elman RNNs (hidden size 3, no input-output skip) on the official k-delay datasets for k in {0..5} with seed ensembles, and characterize learned solutions via the impulse-response decomposition M_j = C W^j U. We test a first-principles prediction: variance explained on valid positions has a k=0 ceiling of ~0.614 set by the rank-3 state bottleneck, and decreases monotonically with k as the 3-dimensional state is shared across compression and delay. We compare trained VE(k) against this theory and against zero-prediction and full-rank baselines.",
       "file": "evaluations/records/4-1b64538924.yaml.gz",
-      "bytes": 3590,
-      "compressed_bytes": 1799,
-      "sha256": "fb4a3e303bc95d0f645dce47f8f85612b927b18fcabbc6609ee898db35d2c4da"
+      "bytes": 7914,
+      "compressed_bytes": 3569,
+      "sha256": "08a3a9e91fec5a62998b12d3c69d422e0bff1004eb0170edc7502732eaee3256"
     },
     {
       "id": "5",
@@ -100,9 +100,9 @@
       ],
       "abstract": "Analyzes the statistical properties, sparsity, and intrinsic dimensionality of the fixed train_X tensors across different delays to understand the representational bottleneck.",
       "file": "evaluations/records/5-ac3478d69a.yaml.gz",
-      "bytes": 2104,
-      "compressed_bytes": 1105,
-      "sha256": "062849ae3648eb4f8fcbd5bde4ab7b10bfecc596869b37b7c3c057b2882da443"
+      "bytes": 7386,
+      "compressed_bytes": 3119,
+      "sha256": "01084543e4b69cd9c2fd1a4efcf19ecd63b96d48f14850b90cec60af79ad5e17"
     },
     {
       "id": "6",
@@ -121,9 +121,9 @@
       ],
       "abstract": "Measures the statistical and structural properties of the official datasets (e.g., rank, SVD, discreteness, variance) to establish the baseline informational constraints before model training.",
       "file": "evaluations/records/6-c1dfd96eea.yaml.gz",
-      "bytes": 1718,
-      "compressed_bytes": 887,
-      "sha256": "de43b9d9fb50359104be535c7b648e0d616f1145634b7ebd4266c4fe0eaee4f8"
+      "bytes": 6921,
+      "compressed_bytes": 2988,
+      "sha256": "9c05a26a488f5b2f09a157bb197da43436545246994930aeb715ab55c58f52a3"
     },
     {
       "id": "7",
@@ -143,9 +143,9 @@
       ],
       "abstract": "Foundational reconnaissance for characterizing learned solutions in tiny k-delay RNNs. Two parts. (1) Characterize the official input distribution x for each k: per-feature mean, covariance eigenspectrum, effective rank, and temporal autocorrelation across the 10 timesteps; verify the target identity y_t = x_{t-k} (with y_t=0 for t<=k) exactly. (2) Train small linear-readout RNNs across hidden sizes h in {1,2,3} and delays k in {0..5} with multiple seeds, saving intermediate checkpoints, and measure achieved masked-region (t>k) MSE against an analytic, data-derived loss floor. The goal is to locate where optimization headroom exists (seed variance, slow convergence, failure to reach the floor) to",
       "file": "evaluations/records/7-902ba3cda1.yaml.gz",
-      "bytes": 4446,
-      "compressed_bytes": 2214,
-      "sha256": "bc3639519f17e6cac3e540afb259fa4340c02fed88829033fb8b657b08c8b8d3"
+      "bytes": 9617,
+      "compressed_bytes": 4238,
+      "sha256": "121e6851f69df6939dfd83e3d84ac73aa3c34d1df8e2d59f3b51246033757fa5"
     },
     {
       "id": "8",
@@ -163,9 +163,9 @@
       ],
       "abstract": "This initial analysis computes the spatial singular value decomposition (SVD) and temporal autocorrelation of the input tensors X for all k. This establishes the true intrinsic dimension of the data, bounding the necessary capacity for the h=3 hidden state.",
       "file": "evaluations/records/8-fe5dbbcea5.yaml.gz",
-      "bytes": 2298,
-      "compressed_bytes": 1098,
-      "sha256": "9b7563e31de6de2039dc71d5e4008835de5c7d9d528cda11257e2a293ac1dc6c"
+      "bytes": 6952,
+      "compressed_bytes": 2865,
+      "sha256": "3a077e23a6c8e9e3d80690b87d7eb31c67308b37e3e3ca61d9342738a8b2e2c9"
     },
     {
       "id": "9",
@@ -185,9 +185,9 @@
       ],
       "abstract": "Follow up Eval #3 by sweeping hidden size h in {1,2,3,5} for selected delays k={0,1,2,5}, using the same no-feedthrough Elman setup and lag-subspace analyses, to separate spatial reconstruction capacity from temporal lag-selection failure.",
       "file": "evaluations/records/9-0ade7c2cf9.yaml.gz",
-      "bytes": 4619,
-      "compressed_bytes": 2142,
-      "sha256": "004927c58b133512f9db7c0ac8a408c2e134a1110ecf470833aa34b6c8f54d78"
+      "bytes": 9937,
+      "compressed_bytes": 4196,
+      "sha256": "6a314eb09030aaf096ae671fd5d695eb157868596b4c07a79c923b2c83d74763"
     },
     {
       "id": "10",
@@ -205,9 +205,9 @@
       ],
       "abstract": "Maps the memory capacity boundaries of minimal Linear and Tanh RNNs (hidden_dim=3) across all k-delays on the sparse dataset, to establish empirical bounds before mechanistic extraction.",
       "file": "evaluations/records/10-b1d5781111.yaml.gz",
-      "bytes": 2154,
-      "compressed_bytes": 1142,
-      "sha256": "520fee7c54fc72b5eafb25d3ab7d71651e4eb35eb4ef5edb972fe86c12444a45"
+      "bytes": 8181,
+      "compressed_bytes": 3599,
+      "sha256": "df7dfbb31d3551eb916f55f30756787a8ad1f116f4d184e812d8283c49c2be28"
     },
     {
       "id": "11",
@@ -227,9 +227,9 @@
       ],
       "abstract": "We test a first-principles prediction derived from Cayley-Hamilton: for a linear Elman RNN with hidden size h and no input-output skip, the impulse-response matrices M_j = C W^j U satisfy a recurrence for j>=h, so the model can realize a near-pure single-lag delay only for k<h, and for k>=h must spill energy across lags and push W toward the unit circle. We sweep h in {1,2,3} and k in {0..5} with seed ensembles, measuring VE(k), the impulse-response lag spectrum, and W spectral radius, to test whether the clean->spread transition occurs exactly at k=h.",
       "file": "evaluations/records/11-17ba079149.yaml.gz",
-      "bytes": 2753,
-      "compressed_bytes": 1455,
-      "sha256": "61f91d6b629c35d658de40217fcb1c4efdd4170d94ec1cbdfa33269b7d662153"
+      "bytes": 6768,
+      "compressed_bytes": 3130,
+      "sha256": "e1c2fafa6cc37b0512b6689fb29d2eda4dedb28d21e8e1e169ca47cf3105b4af"
     },
     {
       "id": "12",
@@ -247,9 +247,9 @@
       ],
       "abstract": "Trains a purely linear RNN (hidden_size=3) across all k values (0 to 5) to measure the fundamental linear bottleneck and extract the eigenspectrum of the recurrent matrices.",
       "file": "evaluations/records/12-7b52009b64.yaml.gz",
-      "bytes": 2034,
-      "compressed_bytes": 1039,
-      "sha256": "b399ace6f488d46c038cd99ff9430ac62808398d6e7ef845e0879c944573065b"
+      "bytes": 5680,
+      "compressed_bytes": 2548,
+      "sha256": "b59487ea0c8057af18c4b6543f9fd2c3745417023fdf3896fa33c9f20b745450"
     },
     {
       "id": "13",
@@ -270,9 +270,9 @@
       ],
       "abstract": "Reconnaissance (Eval #7) showed that for linear tiny RNNs the achieved masked-MSE decomposes into a rank floor (k=0 floor, = sum of smallest 5-h covariance eigenvalues over 5) plus a memory cost that grows with delay k. The output rank bound (y=V h is confined to a <=h-dim subspace) is activation-independent, so nonlinearity cannot beat the k=0 rank floor. The open question is whether nonlinearity reduces the MEMORY COST for k>=1. This experiment compares linear vs tanh recurrent dynamics under otherwise identical conditions (hidden size, optimizer, steps, seeds, masked-MSE on t>k) across h in {1,2,3} and k in {0..5}, measuring",
       "file": "evaluations/records/13-bd307a3ec3.yaml.gz",
-      "bytes": 4342,
-      "compressed_bytes": 2093,
-      "sha256": "21ef35c6de513cd1265a318ef9eb5f2e30ae419045738735b898e4a70346a4bf"
+      "bytes": 9204,
+      "compressed_bytes": 4016,
+      "sha256": "00f9b88f7a14f45297347d008232b769766ac8814eaacd033e70749fbc29a8af"
     },
     {
       "id": "14",
@@ -292,9 +292,9 @@
       ],
       "abstract": "Test whether delayed-copy failures in no-feedthrough Elman RNNs are partly caused by post-update readout interference: the state must ignore current input for the present output while retaining it for future outputs. Compare post-update versus pre-update readout on delayed tasks with longer training.",
       "file": "evaluations/records/14-fa35e19212.yaml.gz",
-      "bytes": 6111,
-      "compressed_bytes": 2603,
-      "sha256": "0b1f8283b9876c9b31d67302a7210678363cf6846151dcb08598aa468f3b9c6c"
+      "bytes": 10893,
+      "compressed_bytes": 4307,
+      "sha256": "5c8c576ae71acd77239e1bfcfdb8e3003be0ca9feed1451fb53278a95bded3b6"
     },
     {
       "id": "15",
@@ -312,9 +312,9 @@
       ],
       "abstract": "Evaluates the purely linear 3-unit RNN across 5 different random seeds for each k to determine if the spectral patterns (e.g., near-zero eigenvalues for k=0, complex pairs for k=3, magnitudes > 1 for k=5) are robust mechanisms or single-seed artifacts.",
       "file": "evaluations/records/15-f1abd67035.yaml.gz",
-      "bytes": 1625,
-      "compressed_bytes": 818,
-      "sha256": "95695f2a3ccc2ecab6204737469bac336832daad258a4fd81f989f2aaff179f8"
+      "bytes": 4609,
+      "compressed_bytes": 2093,
+      "sha256": "11f46e861b4fae4ff5a6cdfbbd22737d0c8a2932f0916f27433827f569652219"
     },
     {
       "id": "16",
@@ -335,9 +335,9 @@
       ],
       "abstract": "We derive and numerically solve the population-optimal linear k-delay RNN under temporal whiteness: minimize sum_j w_j ||C W^j U - I[j=k]||_F^2 with finite-horizon lag weights w_j = 10 - max(k,j), for hidden sizes h in {1,2,3} and k in {0..5}. We compare the solved optimum's variance-explained, off-lag energy, and W spectral radius against the trained RNN ensembles from Eval #4 and #11. This tests (a) whether SGD reaches the global optimum, (b) whether the spectral-radius>1 at k>=h is intrinsic to the optimum or an optimizer artifact, and (c) whether the h=3,k=1 non-convergence anomaly reflects a true alternate solution or incomplete",
       "file": "evaluations/records/16-1574bddb75.yaml.gz",
-      "bytes": 3616,
-      "compressed_bytes": 1745,
-      "sha256": "feb920a133b4a38ece07932e9d417b56ac6e2d26056ad4662f7325137c91e8a6"
+      "bytes": 7883,
+      "compressed_bytes": 3390,
+      "sha256": "581127b774c7e9f93634cfccf98d3538474ea5f95f89e2ec50db6a648ddff892"
     },
     {
       "id": "17",
@@ -358,9 +358,9 @@
       ],
       "abstract": "Eval #13 found that tanh RNNs achieve significantly lower masked-MSE than linear RNNs for several delay cells (notably h=3,k=1 and h>=2 at larger k), suggesting nonlinearity extends the achievable rank-delay tradeoff. The main alternative explanation is that the linear baseline was merely under-optimized. This experiment rules that out by establishing the BEST-achievable masked-MSE for each activation under a strong optimization protocol (multiple learning rates, many random restarts, longer training, plus a dedicated many-restart linear reference fit), on the headline tanh-win cells and on control cells (k=0 parity, ties, and h=1 no-benefit). Success = the tanh advantage persists against the best",
       "file": "evaluations/records/17-0716d9708d.yaml.gz",
-      "bytes": 3708,
-      "compressed_bytes": 1841,
-      "sha256": "7084b4f831ef399ceaa571949b872ad6b4af010d0f7ce4d61be1684f8b80af54"
+      "bytes": 7625,
+      "compressed_bytes": 3382,
+      "sha256": "6eb1e9d340f8aacb97951ffb82c1bbd536e1dfdb9a1f57440ea18b048a45732a"
     },
     {
       "id": "18",
@@ -378,9 +378,9 @@
       ],
       "abstract": "Analyzes the k=0 and k=1 models from Eval #10 to characterize the exact failure mode. Computes MSE on active (non-zero) targets, extracts the eigenvalues of W_h, and measures hidden state variance.",
       "file": "evaluations/records/18-9e6a55b6b4.yaml.gz",
-      "bytes": 1979,
-      "compressed_bytes": 1022,
-      "sha256": "761abbe7c4bd1de768b89328d11f504bad2b84d683615b0f10c7506c7a09570e"
+      "bytes": 5136,
+      "compressed_bytes": 2320,
+      "sha256": "a553efa1d3d5c780edfb8089b7badbaca1454c325674d1d4a2e95cfb2543561c"
     },
     {
       "id": "19",
@@ -400,9 +400,9 @@
       ],
       "abstract": "Follow up Eval #14 by testing whether residual pre-update errors at k=2 and k=5 shrink with larger auxiliary hidden sizes h={5,8,10}, while retaining post-update h=5 controls. This probes whether multi-step failures after read-before-write are mainly remaining state-capacity limits, optimization limits, or delay-depth effects.",
       "file": "evaluations/records/19-b3f0c7f6bb.yaml.gz",
-      "bytes": 4963,
-      "compressed_bytes": 2155,
-      "sha256": "a6effa54d3267e489472aa636f27e75457d970d105841dc090a92ec21bf20228"
+      "bytes": 8872,
+      "compressed_bytes": 3514,
+      "sha256": "1a87e3d9364aca16fdf19e3c02034aac0809455ba8b8112447ce59987e4d0941"
     },
     {
       "id": "20",
@@ -423,9 +423,9 @@
       ],
       "abstract": "Eval #17 confirmed that tanh RNNs beat the LINEAR OPTIMUM (verified by a matching many-restart linear reference) for (h,k)=(3,1) and (2,2), while k=0/h=1/(3,2) show no advantage. This experiment characterizes the mechanism on the confirmed winning cells, contrasting them with controls. It measures (1) the data-averaged input->output Jacobian J_j (the nonlinear analog of the linear impulse response M_j=V W^j U) to test whether tanh produces a more delta-like response concentrated at lag k; (2) saturation profiles of hidden units over time; (3) recurrent Jacobian eigenstructure; and (4) causal interventions that replace tanh with identity or hard-sign on trained models to test",
       "file": "evaluations/records/20-91032ad7bb.yaml.gz",
-      "bytes": 3940,
-      "compressed_bytes": 1966,
-      "sha256": "58a400e46def19dcbe75737ec44af95573a2a9a35b7167f08ea84f50f69223ab"
+      "bytes": 7697,
+      "compressed_bytes": 3435,
+      "sha256": "fe2abc368f27734e4e9ad3408a097b40e6f481db50e9cceeb9155dbcf1ebc2f1"
     },
     {
       "id": "21",
@@ -445,9 +445,9 @@
       ],
       "abstract": "We test whether a tanh activation changes the learned solution structure of small k-delay RNNs relative to the exactly-analyzable linear case. Because the official data is sparse and small-amplitude (mean ~0.013, std ~0.09), pre-activations should sit near the linear regime of tanh, predicting that tanh solutions closely track linear ones in VE(k), impulse-response lag structure, and W spectral radius. We run a controlled activation swap (linear vs tanh) at matched hidden size h in {2,3} across k in {0..5} with seed ensembles, and specifically test whether tanh exceeds the linear effective-rank ceiling (h/5 at k=0) or extends clean delay capacity",
       "file": "evaluations/records/21-472b07b9fc.yaml.gz",
-      "bytes": 2960,
-      "compressed_bytes": 1441,
-      "sha256": "d4f1233bec3dbb7b56fc48b6202d156dda2f7d8385463ece41f120de274df099"
+      "bytes": 7320,
+      "compressed_bytes": 3197,
+      "sha256": "f2506dde98d69dc1fc028ee317061b30823f60457a00040aa40b341c22793b79"
     },
     {
       "id": "22",
@@ -465,9 +465,9 @@
       ],
       "abstract": "Performs full complex eigen-decomposition of W_h and generates 3D phase portraits of hidden state trajectories to characterize the exact dynamical regime learned at k=1 and k=5.",
       "file": "evaluations/records/22-12c6fc06c9.yaml.gz",
-      "bytes": 2460,
-      "compressed_bytes": 1238,
-      "sha256": "9df4d033e827d910871b874b129afe01e2554754ba81935fe3149c8cd5e9a80c"
+      "bytes": 6406,
+      "compressed_bytes": 2760,
+      "sha256": "9a87e85c53ff4edc05a480768ba635ac09b166220ec120fa31aa4c65d29df0d4"
     },
     {
       "id": "23",
@@ -486,9 +486,9 @@
       ],
       "abstract": "This experiment tests a formal mathematical proof: due to the Cayley-Hamilton theorem, a linear RNN with h=3 cannot implement a pure delay for k>=3. We compare purely linear RNNs against Tanh RNNs across all k to demonstrate that non-linearity is strictly required to break this theoretical bound.",
       "file": "evaluations/records/23-d435a6cdd7.yaml.gz",
-      "bytes": 2362,
-      "compressed_bytes": 1270,
-      "sha256": "201b6159c9c42f641147ec41f53d050cc76160b65101d6a1cbe572fe4cddbb6d"
+      "bytes": 6505,
+      "compressed_bytes": 2952,
+      "sha256": "b0ea5e3d89d3347ab06f38151550c15dc6c3d8ce6d55ea7442d0fd7e7d7a9c68"
     },
     {
       "id": "24",
@@ -508,9 +508,9 @@
       ],
       "abstract": "Eval #21 found that tanh RNNs diverge from the linear theory exactly in the temporal-bottleneck regime: at h=3,k=1 tanh recovers a clean delay and higher VE than linear, while at higher k tanh shows high-variance behavior including spectral-radius blowups, but that run used a truncated 1200-step budget. Here we cleanly characterize the divergent cells at full convergence with larger seed ensembles and gradient control, to establish (a) whether the tanh VE advantage over matched-h linear at intermediate delays (h=3,k in {1,3}; h=2,k=2) is robust and statistically significant, and (b) whether the high-k instability is an optimization artifact or an intrinsic",
       "file": "evaluations/records/24-4d134bc072.yaml.gz",
-      "bytes": 2920,
-      "compressed_bytes": 1476,
-      "sha256": "547547df1e6b00f015051936fb926154766e6f27ed50f3bc04afa1007929f5af"
+      "bytes": 8885,
+      "compressed_bytes": 3865,
+      "sha256": "6227cc616d0ae9a9df2baa887dde8d303639c387cb0aa16edbdcd03682ae12f5"
     },
     {
       "id": "25",
@@ -531,9 +531,9 @@
       ],
       "abstract": "Eval #20 showed the tanh advantage over the linear optimum has at least two faces: a near-perfect delta-sharpening of the impulse response at (h,k)=(3,1) achieved with almost no saturation, and a tamed-unstable regime at long delays (exploratory). This experiment studies the LEARNING DYNAMICS: it trains linear and tanh RNNs from scratch on (3,1), (2,2), and (3,5) under a controlled matched protocol, saving checkpoints across training, and at each checkpoint measures masked-MSE, impulse-response target-lag concentration C_k, saturation fraction, and max recurrent-Jacobian modulus. Goal: locate WHEN the tanh advantage emerges during training and whether it coincides with the impulse response becoming delta-like",
       "file": "evaluations/records/25-f6e1126ced.yaml.gz",
-      "bytes": 3278,
-      "compressed_bytes": 1616,
-      "sha256": "6fe5cebf9262d58687d7440e65aa44bfd4c936e20edabb6afa6b654e8d5ab5dd"
+      "bytes": 7805,
+      "compressed_bytes": 3348,
+      "sha256": "5dd64ab3460c1e21dc05d1aae701bb0c78c427b91cb46f5790917e637c54123b"
     },
     {
       "id": "26",
@@ -552,9 +552,9 @@
       ],
       "abstract": "Scales the hidden dimension (h=1 through h=5) for strictly linear RNNs at k=1. Tests whether the k=1 failure is definitively caused by the rank-3 topological bottleneck (expecting perfect recall at h=5) or if it's an optimization failure.",
       "file": "evaluations/records/26-887309d048.yaml.gz",
-      "bytes": 2136,
-      "compressed_bytes": 1085,
-      "sha256": "166752422eee3c4a7a943fea6e6444080ff994dcf58b38be8a89207364ab80b3"
+      "bytes": 6438,
+      "compressed_bytes": 2788,
+      "sha256": "0e1235c8bbde361f8b5d1d464e294a7e8c4428d4c2283f717f2bb3e14653bf02"
     },
     {
       "id": "27",
@@ -574,9 +574,9 @@
       ],
       "abstract": "Test the central read/write-interference mechanism with a focused seed study: compare k=0 post-update current-copy, k=1 post-update delay, and k=1 pre-update delay across h={1,2,3,5} under matched linear no-feedthrough Elman training, with confidence intervals and lag/impulse diagnostics.",
       "file": "evaluations/records/27-bc33ea4e26.yaml.gz",
-      "bytes": 5948,
-      "compressed_bytes": 2468,
-      "sha256": "55c61e4a005c3e01199546edff6bec23805aacc2e4c8e5644172f21167f0e48e"
+      "bytes": 10894,
+      "compressed_bytes": 4274,
+      "sha256": "c7464db61f1541fec6ab3f8e7c4ed2a1fb9fcc2918049e15841d4ff98b9c9cce"
     },
     {
       "id": "28",
@@ -597,9 +597,9 @@
       ],
       "abstract": "Eval #25 found that tanh beats the linear optimum via at least three mechanistically and temporally distinct routes: delta-sharpening of the impulse response (h=3,k=1; low saturation, eigmax<1), a tamed-unstable oscillator (h=3,k=5; eigmax>1, low concentration), and a saturation-driven route (h=2,k=2). This experiment maps these routes systematically across the full grid h in {1,2,3}, k in {0..5}. For each matched tanh-vs-linear cell it measures the converged masked-MSE gap (with CIs), the impulse-response target concentration C_k, the saturation fraction, and the max recurrent-Jacobian modulus, then classifies which mechanistic signature accompanies any tanh advantage. The output is a phase map relating delay k and",
       "file": "evaluations/records/28-0a57cb53ba.yaml.gz",
-      "bytes": 3095,
-      "compressed_bytes": 1603,
-      "sha256": "2e94afa56421407b618eb4b6db2d53fe5c6cc82ab6f1686625a51eaf9087a787"
+      "bytes": 8795,
+      "compressed_bytes": 3873,
+      "sha256": "dd90b84a63e4473f0bfd879e27d215bda5bbacc9f57d377b7cfe1132f6cdf715"
     },
     {
       "id": "29",
@@ -618,9 +618,9 @@
       ],
       "abstract": "Implements an event-weighted MSE loss to explicitly balance the 97.5% inactive target bias. Tests whether fixing optimization allows Linear h=5 to perfectly solve k=1, and if it enables Tanh h=3 to bypass the topological rank bottleneck.",
       "file": "evaluations/records/29-7719a1c782.yaml.gz",
-      "bytes": 2494,
-      "compressed_bytes": 1237,
-      "sha256": "3b9bbf2962a60d05a958dfd862ebce2ab35426d9ed5d8fdb836f7e8d58da8e94"
+      "bytes": 6296,
+      "compressed_bytes": 2715,
+      "sha256": "5595547d14056305318412a239c00cfa0e9515d1229be932217ce6705b9995c2"
     },
     {
       "id": "30",
@@ -639,9 +639,9 @@
       ],
       "abstract": "Trains a tanh RNN (h=3) across k=0..5 with 5 seeds to map how the 3D hidden space folds the 5D input. Extracts geometric metrics including hidden state variance, saturation fraction, participation ratio (from hidden covariance eigenvalues), and per-dimension reconstruction error to characterize the anisotropic failure mode at high delays.",
       "file": "evaluations/records/30-22d200f867.yaml.gz",
-      "bytes": 2739,
-      "compressed_bytes": 1386,
-      "sha256": "ef486e2362bb8118756555ed9099e197c01354b4b9fef390822bfc4065d6f740"
+      "bytes": 7919,
+      "compressed_bytes": 3474,
+      "sha256": "67dd11c9cff1df98c69e32357614a92045a2391b367202d43cd27c6a702c0969"
     },
     {
       "id": "31",
@@ -661,9 +661,9 @@
       ],
       "abstract": "Map the read-before-write versus post-update readout effect within the primary small-model scope: h=3 linear no-feedthrough Elman RNNs across k=1..5, with seed confidence intervals, lag attribution, impulse profiles, and checkpoint dynamics.",
       "file": "evaluations/records/31-632667547e.yaml.gz",
-      "bytes": 6107,
-      "compressed_bytes": 2607,
-      "sha256": "b76dbfd3d83d080438b900c724f2353c6c9ae34258db69369c0de8fb4944d6de"
+      "bytes": 11046,
+      "compressed_bytes": 4368,
+      "sha256": "d248333e48ce6fd2f85424c750a91465d69ca850dabb6a0dbbeb862d399c5935"
     },
     {
       "id": "32",
@@ -681,9 +681,9 @@
       ],
       "abstract": "Generates phase portraits and eigen-spectra for the successful Event-Weighted Tanh h=3 checkpoints (Eval 29). Aims to visualize how 5 distinct input channels are partitioned into the 3D hidden space to bypass the linear rank-3 constraint.",
       "file": "evaluations/records/32-cb4e5208b4.yaml.gz",
-      "bytes": 2050,
-      "compressed_bytes": 1046,
-      "sha256": "e26fab1d4d5562c587eea68a250601fa74e3b690c70ddf301031f1bacb378446"
+      "bytes": 7284,
+      "compressed_bytes": 3162,
+      "sha256": "e7f6fb8374d032f574487af89152942201ec235a572e2b6ebf6eff3ba99d2f53"
     },
     {
       "id": "33",
@@ -704,9 +704,9 @@
       ],
       "abstract": "A published account (Archive #1) reports that beyond capacity (k>=h) tanh RNNs improve mean performance only unstably, with frequent spectral-radius blowups. My own runs under a masked (t>k) MSE objective instead found stable, significant high-k tanh gains with bounded recurrent-Jacobian modulus (Eval #25, #28). Those two settings differ in the training loss (all-position vs masked). This experiment isolates the loss objective as the sole independent variable: for fixed architecture, hidden size, delay, optimizer, seeds, initialization, and step budget, it trains tanh (and linear control) RNNs under all-position MSE vs masked (t>k) MSE on high-k cells, and measures blowup fraction, final",
       "file": "evaluations/records/33-b6692ea5df.yaml.gz",
-      "bytes": 3903,
-      "compressed_bytes": 1920,
-      "sha256": "d50619d2a2539c68cf132bcf3762dae637dfab590cc049da506e3e90f19b82e2"
+      "bytes": 9235,
+      "compressed_bytes": 3887,
+      "sha256": "da3cb53b4f48ed7b1450083d38a3e20b0814e9a1cc74e3c9bf5ccec7d37c7e76"
     },
     {
       "id": "34",
@@ -725,9 +725,9 @@
       ],
       "abstract": "Trains highly optimized tanh RNNs (h=3) specifically at k=1 (the 'leaky-rescued' cell) and k=3 (the 'collapsed' cell) to map the explicit 3D geometry of the hidden states. Extracts SVD participation ratios, linear probe R^2 from hidden states to targets, and nearest-neighbor state consistency to test the 'state gating/re-timing' hypothesis.",
       "file": "evaluations/records/34-f1f836cb4e.yaml.gz",
-      "bytes": 2375,
-      "compressed_bytes": 1175,
-      "sha256": "c34a412a59923023412a69c37de04656a024de8f2e1287602d0d133b46e61cad"
+      "bytes": 6522,
+      "compressed_bytes": 2799,
+      "sha256": "41442a74979dce544a1e330c0d6db136a889ea54350ef3bed23ff955333f11f0"
     },
     {
       "id": "35",
@@ -747,9 +747,9 @@
       ],
       "abstract": "Test a prediction combining Archive #1 with Aletheia's timing results: if read-before-write shifts the linear nilpotent ladder by one task delay, the robust post-update tanh rescue at h=3,k=1 should shrink under pre-update k=1 and reappear at pre-update k=2.",
       "file": "evaluations/records/35-972a67c481.yaml.gz",
-      "bytes": 6663,
-      "compressed_bytes": 2764,
-      "sha256": "fe00aa718fb7908067bd75a9c46ad1b81c82129e33b46c7b22045b6288938e6f"
+      "bytes": 11582,
+      "compressed_bytes": 4513,
+      "sha256": "f2da2fe88c2335534d7c661d10ca33539ec9e06048d1da5918eb7aca525b835e"
     },
     {
       "id": "36",
@@ -768,9 +768,9 @@
       ],
       "abstract": "Mathematical derivation proves that a linear RNN cannot transmit >1.5 dimensions (VE=0.30) without leaking. Tanh achieves VE=0.377 with near-zero leak. This experiment extracts the exact weights (B, W, C) and active Jacobians of the successful Tanh model from Eval 24 to empirically measure how the state-dependent diagonal D_t bypasses the linear rank-nullity contradiction.",
       "file": "evaluations/records/36-fc074d5013.yaml.gz",
-      "bytes": 2658,
-      "compressed_bytes": 1350,
-      "sha256": "b815c524e2dc2a88ae35955d4668fc53ea7752e7be30fc142622bbaaf546583f"
+      "bytes": 6769,
+      "compressed_bytes": 3091,
+      "sha256": "7233462e2719c1b0b969c917c96ed650fd22fe0e61cb61a0e39c38c1f0dff425"
     },
     {
       "id": "37",
@@ -791,9 +791,9 @@
       ],
       "abstract": "Building on the two-bottleneck theory (Archive #1), we characterize the geometry of the learned linear solution family and separate what is reproducible across seeds from what is free. We test two claims: (1) a rank-quantization law, that a clean single-lag-k linear delay carries exactly rank(W^k) of the 5 input dimensions, giving valid-position VE = rank(W^k)/5, with the nilpotent rank profile rank(W^j) determining the achievable VE; (2) an isotropy-driven degeneracy, that because inputs are near-isotropic, the read-in subspace orientation is approximately uniformly distributed across seeds (free), while the dynamical invariants (rank(W^j) profile, spectral radius, impulse-response lag spectrum) are highly reproducible (determined).",
       "file": "evaluations/records/37-cb7a1d775e.yaml.gz",
-      "bytes": 4190,
-      "compressed_bytes": 2021,
-      "sha256": "900095e986d284889a1132c37682306b063e34917a7b08d0e8d7c4bf12110fcd"
+      "bytes": 8711,
+      "compressed_bytes": 3829,
+      "sha256": "7c70342726c08fbb392f8e4ca1cf860273ff49a8fe290ae23240cec10dde64c8"
     },
     {
       "id": "38",
@@ -814,9 +814,9 @@
       ],
       "abstract": "A published account (Archive #1) showed tanh recovers a clean low-radius delay at (h,k)=(3,1) where the linear optimum is forced to leak, and hypothesized a saturating state-gating mechanism. We test that hypothesis causally and across seeds. On trained tanh RNNs we replace the activation, keeping weights fixed, with: identity, hard sign, clip at several thresholds, and scaled tanh with varied gain; we re-evaluate masked (t>k) MSE and measure the saturation level of the trained units. The prediction that distinguishes \"graded compression\" from \"saturating latch\": if a binary/saturating nonlinearity (hard sign, low clip threshold) reproduces the gain, the latch hypothesis holds;",
       "file": "evaluations/records/38-5b384ce32d.yaml.gz",
-      "bytes": 3652,
-      "compressed_bytes": 1789,
-      "sha256": "c6ea8589cf6f6004785fb35b21206ef6795af64f1c57bfe841c4cbf23e2ebf8b"
+      "bytes": 8069,
+      "compressed_bytes": 3533,
+      "sha256": "93349cb2e9078ea29ad5791d7c52560da77536d440ac415cf1281604f4bac913"
     },
     {
       "id": "39",
@@ -837,9 +837,9 @@
       ],
       "abstract": "Eval #37 found that across seeds the learned read-in subspace orientation is highly reproducible at clean, capacity-binding cells (e.g. k=0, chordal dispersion ~3e-4) but nearly free at leaky/underdetermined cells (e.g. h=3,k=1, dispersion ~0.82 approaching the random-subspace null). We test the mechanistic hypothesis that this regime-dependent reproducibility is governed by loss-landscape degeneracy: clean cells have a sharp, essentially unique optimum (few near-zero Hessian eigenvalues beyond exact symmetries), while leaky cells sit on a flat manifold of near-equivalent solutions (many small Hessian eigenvalues). We measure the loss Hessian spectrum at converged solutions and relate its flat-direction count to the across-seed subspace dispersion,",
       "file": "evaluations/records/39-ca3512f4df.yaml.gz",
-      "bytes": 4013,
-      "compressed_bytes": 1866,
-      "sha256": "b9837d020953d303d2c0599f623e7e19862ef45fbc742f78cc877d32f48619e7"
+      "bytes": 8887,
+      "compressed_bytes": 3668,
+      "sha256": "f4b7f0a6500ee2e92c26b82d37dcc291762f4ac81817ef0d7cc50f99a4ff4795"
     },
     {
       "id": "40",
@@ -858,9 +858,9 @@
       ],
       "abstract": "Applies the successful Event-Weighted Loss (Archive #2) to the k=5 delay task for Linear (h=5) and Tanh (h=3) models. Evaluates Active MSE stratified by the number of active events in the preceding 5-step window to test if the Tanh failure is strictly a multi-event collision limit.",
       "file": "evaluations/records/40-af3e133428.yaml.gz",
-      "bytes": 2321,
-      "compressed_bytes": 1162,
-      "sha256": "8a88e5cfa429cd142c3088036ed0f88cd7cf109ed8a591860a0081cae33694ff"
+      "bytes": 6408,
+      "compressed_bytes": 2836,
+      "sha256": "810f02b42695663ebcf8376dc90e715fb968214265f1f23fa55c23da9fd059dd"
     },
     {
       "id": "41",
@@ -880,9 +880,9 @@
       ],
       "abstract": "Extracts the exact geometric topology (spiral, fold, or limit cycle) of the 1D-dominant tanh manifold at k=1 (rescue) and k=3 (collapse) by injecting orthogonal impulse vectors and tracing the hidden state trajectories.",
       "file": "evaluations/records/41-761f22b2c1.yaml.gz",
-      "bytes": 2082,
-      "compressed_bytes": 1089,
-      "sha256": "13edae752ee24dad13aeed8f795c149b6d4d1f67a1044bb65ff734e883354b27"
+      "bytes": 6761,
+      "compressed_bytes": 3037,
+      "sha256": "b81b2f096b5d0988b1bc95bca5c9e009e002c87e1d85eed177b94d3386355cf7"
     },
     {
       "id": "42",
@@ -901,9 +901,9 @@
       ],
       "abstract": "Extracts the phase portraits and complex eigenspectra for the Event-Weighted k=5 models (Linear h=5 and Tanh h=3) from Eval 40. Aims to visualize how these models handle the beyond-ladder temporal bottleneck and to confirm the presence of bounded unstable or rotational dynamics.",
       "file": "evaluations/records/42-92cfceb39d.yaml.gz",
-      "bytes": 2189,
-      "compressed_bytes": 1112,
-      "sha256": "404db81dc3a99bece2617c8660835655b4e0dd41110918cf22909cd513fdf64c"
+      "bytes": 6912,
+      "compressed_bytes": 2803,
+      "sha256": "7c5f9850df30f16064981b3aeed09d4979d1dd9a200de1f4c80a9cfb868841f9"
     },
     {
       "id": "43",
@@ -922,9 +922,9 @@
       ],
       "abstract": "Verifies whether the counter-intuitive topological findings from Eval 41 (k=1 uses rapid collapse; k=3 uses sustained rotating oscillations) are robust across 5 different initialization seeds.",
       "file": "evaluations/records/43-0286dd552c.yaml.gz",
-      "bytes": 2204,
-      "compressed_bytes": 1068,
-      "sha256": "ea87bb7fbc2e0a79b008095fa1f4fcd717fd68ac4e4747fe4a3aee928da1f653"
+      "bytes": 6890,
+      "compressed_bytes": 2974,
+      "sha256": "9cf8b6f86b8a32d9e81abcc90395068cbaaea66375df881d4dbbb0be327cd5a0"
     },
     {
       "id": "44",
@@ -945,9 +945,9 @@
       ],
       "abstract": "Eval #39 showed that the strong hypothesis (leaky cells have extra near-zero Hessian directions beyond the GL(h) symmetry) fails: every cell has exactly h^2 flat directions equal to the GL(h) reparameterization symmetry. However, a continuous quotient-curvature flatness correlated with across-seed subspace dispersion (Spearman 0.748). Here we make the determinacy link rigorous by explicitly projecting the loss Hessian (and Gauss-Newton) onto the quotient space orthogonal to the GL(h) symmetry tangent, and measuring the smallest quotient eigenvalues and the quotient inverse-curvature. We test whether the soft quotient flatness quantitatively predicts which cells have determined vs free read-in subspace orientation, across h in",
       "file": "evaluations/records/44-98fbc42fae.yaml.gz",
-      "bytes": 3801,
-      "compressed_bytes": 1693,
-      "sha256": "cb40433863798fef66ec8946d8c43d68adbfff168f0cc4f1edb0705143a8f7e3"
+      "bytes": 8111,
+      "compressed_bytes": 3298,
+      "sha256": "9efdbcfd9cb2b030fecbe669a03c6f044b40d6e4986ab753c7c17463d3530053"
     },
     {
       "id": "45",
@@ -967,9 +967,9 @@
       ],
       "abstract": "This experiment tests the Non-Linear Curve Threading theorem. We extract the exact 1D curve generated by the Rank-1 recurrent matrix of the successful Noesis (h=3, k=1) Tanh model. By sweeping the scalar state parameter $s$ and channel magnitudes $\\alpha$, we map how the weak non-linearity bends this 1D manifold in 3D space to bypass the linear rank-nullity contradiction.",
       "file": "evaluations/records/45-fb64435156.yaml.gz",
-      "bytes": 2840,
-      "compressed_bytes": 1395,
-      "sha256": "aa4bba49d7b4db5bf01a69c809d8878c99dfa487a7a2179429c49e1782c2789d"
+      "bytes": 7163,
+      "compressed_bytes": 3270,
+      "sha256": "c08d689169c0782b5ee71a926822062856c5d272475ad2c44568e0b8a24ac1b6"
     },
     {
       "id": "46",
@@ -990,9 +990,9 @@
       ],
       "abstract": "Evals #37/#39/#44 found that the learned read-in subspace orientation of linear k-delay RNNs is determined (reproducible across seeds) at clean/capacity-binding cells but free (high dispersion, near the random-subspace null) at leaky interior cells, and that loss-landscape quotient curvature predicts this only moderately (Spearman ~0.748). We test a sharper causal hypothesis: orientation freedom at leaky cells arises from the interaction of leakiness with near-isotropic inputs, so the near-flat quotient valley has width set by the data anisotropy. Using SYNTHETIC datasets (auxiliary, clearly outside the official-data primary scope) with tunable feature-covariance anisotropy but matched sparsity/marginals, we train seed ensembles at a fixed",
       "file": "evaluations/records/46-fe2ef495a1.yaml.gz",
-      "bytes": 4022,
-      "compressed_bytes": 1919,
-      "sha256": "ef3dca2b5da1d06e7315d61339d987917c77ffb0059e72941830df888cfb0e57"
+      "bytes": 8871,
+      "compressed_bytes": 3779,
+      "sha256": "0cffc1c08bae073ae4672e5537b506c4d881fe3ffeac1f65d8e9632a6a433ea2"
     },
     {
       "id": "47",
@@ -1011,9 +1011,9 @@
       ],
       "abstract": "Combats the 'tamed-unstable' high-delay collapse at k=5 by explicitly initializing W_h as a block-rotation matrix and regularizing its spectral radius to 1.0. Tests whether forcing a stable, pure rotational regime improves performance over the explosive baseline.",
       "file": "evaluations/records/47-827bfc4587.yaml.gz",
-      "bytes": 2801,
-      "compressed_bytes": 1369,
-      "sha256": "b7a1da8c25991b71577463f7977988c806afdc69d4016b1bae1f5e270e0b25fe"
+      "bytes": 6975,
+      "compressed_bytes": 2948,
+      "sha256": "e6c93cd125a94a9822bd02bff57e178090832690808a9d5e86a621eeb910330b"
     },
     {
       "id": "48",
@@ -1034,9 +1034,9 @@
       ],
       "abstract": "My published map (Archive #5) found a regime where tanh beats the linear optimum with a bounded recurrent-Jacobian modulus > 1 and low impulse-response concentration (R2; cells (3,4),(3,5),(2,4),(2,5)). How a tiny network stores a k-step delay using an unstable-but-bounded recurrence is open. This experiment tests the hypothesis that R2 is a rotational/limit-cycle PHASE CODE: the data-averaged recurrent Jacobian has a complex eigenpair whose rotation angle theta encodes the delay, so that the state phase advances to re-align with the readout after ~k steps. For trained tanh models on R2 cells (and R1 control (3,1)), it extracts the complex eigenspectrum of",
       "file": "evaluations/records/48-64e095fe76.yaml.gz",
-      "bytes": 3772,
-      "compressed_bytes": 1861,
-      "sha256": "4794db7c9e6c9aaaf2323e8eb8ee298a49b2cce16f19c19ffc8297067e56b2df"
+      "bytes": 8472,
+      "compressed_bytes": 3676,
+      "sha256": "70e268d62f4185eae10a89174fa186bad2d0323923ba2426fd55a24c9b9cc759"
     },
     {
       "id": "49",
@@ -1057,9 +1057,9 @@
       ],
       "abstract": "Our rank-quantization law (clean lag-k linear delay carries VE=rank(W^k)/5; Eval #37) and the regime-dependent determinacy of the read-in subspace (determined at clean cells, free at leaky interior cells; Eval #37/#44) were established under a single training recipe (full-batch Adam, init scale 0.08). To claim these are properties of the loss landscape rather than artifacts of a particular optimizer or initialization, we re-run the h in {1,2,3}, k in {0..5} grid under varied initialization scales and optimizers (e.g. Adam vs SGD-momentum vs full-batch vs minibatch) with seed ensembles, and test whether (a) clean-cell VE still equals rank(W^k)/5, (b) the clean/leaky determinacy",
       "file": "evaluations/records/49-2e01e17467.yaml.gz",
-      "bytes": 3372,
-      "compressed_bytes": 1556,
-      "sha256": "445c71dc071250ed6a5db96ebd6377b83371e5d67001366920a54656d4cfe7fc"
+      "bytes": 7449,
+      "compressed_bytes": 3155,
+      "sha256": "eb84300130f371b71bc15cd0a33fab5bde694d0999e239381c820962d69c7aef"
     },
     {
       "id": "50",
@@ -1078,9 +1078,9 @@
       ],
       "abstract": "Applies a strict post-step spectral projection (rho <= 1.0) to Tanh h=3 at k=5. Tests the hypothesis that supra-unit expansion is mathematically required to engage non-linear curvature; without it, Tanh performance should collapse to the Linear h=3 limit.",
       "file": "evaluations/records/50-e1822db470.yaml.gz",
-      "bytes": 2383,
-      "compressed_bytes": 1124,
-      "sha256": "dd10c8af706357ef64c9404aab70d1b7dc02a5ed65920c73f4034e1d813d38fe"
+      "bytes": 7260,
+      "compressed_bytes": 2996,
+      "sha256": "ecd8ba68c1e341071cee199f47213a1ab67035522b457fa347e61e83c7f356cb"
     },
     {
       "id": "51",
@@ -1099,9 +1099,9 @@
       ],
       "abstract": "Tests whether the geometric collapse and crosstalk observed at k=3 is an optimization artifact or a hard topological limit by initializing W_hh with exact orthogonal matrices to artificially expand the 3D phase space volume.",
       "file": "evaluations/records/51-b7eb6c689c.yaml.gz",
-      "bytes": 2168,
-      "compressed_bytes": 1082,
-      "sha256": "d6bff63de325547fc93947382cbc368aa741ea2b4c0dc7f817b7e2c556e4d336"
+      "bytes": 5809,
+      "compressed_bytes": 2501,
+      "sha256": "215b7bd88d536ef2cc474bcce3f330b7dbe29f582c3d52bb0502797f3d70d1ee"
     },
     {
       "id": "52",
@@ -1122,9 +1122,9 @@
       ],
       "abstract": "Eval #48 showed the R2 regime (tanh beats the linear optimum at larger k with bounded recurrent-Jacobian modulus >1) uses complex (rotational) recurrent-Jacobian eigenpairs, while the R1 control (3,1) does not; however the rotation angle did NOT follow a k-tuned phase-code law (period roughly constant ~2.4-3 steps). The open question is causal: is the complex eigenpair necessary for the R2 gain, or an incidental feature of the linearization? This experiment constrains the recurrent matrix W to have real eigenvalues (e.g. symmetric W), forbidding rotation, and compares tanh masked (t>k) MSE under unconstrained vs real-W parameterizations on R2 cells (3,4),(3,5),(2,4) and",
       "file": "evaluations/records/52-a9334987ec.yaml.gz",
-      "bytes": 3567,
-      "compressed_bytes": 1703,
-      "sha256": "72a1d9254c30ee451e9a91b9f9242101fcb0d721bce0fa16c2627de9389c110c"
+      "bytes": 8357,
+      "compressed_bytes": 3428,
+      "sha256": "0ce2025abf8264c395bbe68bcf9a1f9d017e198097b0c2e39f4e7636a31471f1"
     },
     {
       "id": "53",
@@ -1143,9 +1143,9 @@
       ],
       "abstract": "Tests whether a minimal GRU (h=3) can bypass the geometric collapse observed in vanilla tanh RNNs at k>=3. Measures active-window MSE and PCA explained variance ratios to determine if gating mechanisms allow the network to utilize the full 3D volume.",
       "file": "evaluations/records/53-c5b76da3e6.yaml.gz",
-      "bytes": 2041,
-      "compressed_bytes": 1044,
-      "sha256": "de1299e7d196fe5ce8fa2aca721a83f86e7dc621ee27ee616190d0ceb91c556a"
+      "bytes": 6788,
+      "compressed_bytes": 3014,
+      "sha256": "d4a2f0a2e13addbe124c03398d6a0f9b9b4156ac2a939ef1e91910065dcadff7"
     },
     {
       "id": "54",
@@ -1165,9 +1165,9 @@
       ],
       "abstract": "Combines strict spectral clamping (rho <= 1.0) with massive scaling of the input matrix W_x initialization. Tests if pushing sparse events immediately into the non-linear curvature removes the need for fragile supra-unit recurrent explosion at k=5.",
       "file": "evaluations/records/54-80e28a51cb.yaml.gz",
-      "bytes": 2673,
-      "compressed_bytes": 1298,
-      "sha256": "c716f002dfbb0fc6c1d18b61752709a26a4c0c33bbfd8f92bff58bc4a75716ac"
+      "bytes": 7133,
+      "compressed_bytes": 2990,
+      "sha256": "feb0678718177276a6b9a8420e14e4ed8c2ead7023837b1201216d965e4793a1"
     },
     {
       "id": "55",
@@ -1188,9 +1188,9 @@
       ],
       "abstract": "Within the bounded supra-unit recurrence (R2) regime of tiny tanh k-delay RNNs, Eval #52 found\nheterogeneity: an upper-triangular (real-eigenvalue, zero-rotation) recurrent matrix PRESERVES or\nimproves the tanh delay gain at cell (h=3,k=4) but REMOVES it at (h=2,k=4). This experiment asks WHY:\nwhat structural/dynamical difference lets (3,4) realize a rotation-free nonlinear delay while (2,4)\nrequires a complex eigenpair (rotation). We compare unconstrained vs upper-triangular tanh at both\ncells (matched seeds, optimizer, hidden size, checkpoint step, masked t>k eval) and measure\nimpulse/lag profiles, hidden-state trajectories, and readout alignment to separate measured signatures\nfrom inferred mechanism.",
       "file": "evaluations/records/55-8effee409c.yaml.gz",
-      "bytes": 4276,
-      "compressed_bytes": 2006,
-      "sha256": "9862d08da9a44990bbb1286deb0bbe4279ce3686e28b9817f71744a43ef65cb2"
+      "bytes": 9792,
+      "compressed_bytes": 3982,
+      "sha256": "3eb1807b31ef377fe64a6d2174168a1cc0a836820b7310f35ac4b70d844b1f65"
     },
     {
       "id": "56",
@@ -1210,9 +1210,9 @@
       ],
       "abstract": "This experiment completes the Non-Linear Curve Threading theorem. We extract the 5 discrete scalar memory values $s_i$ generated by the 5 sparse input channels in the Noesis (h=3, k=1) Tanh model. We plot their exact positions on the 2D planar curve $h(s) = \tanh(u s)$ and compute the 2D subspace variance they explain, predicting it matches the theoretical 0.40 VE limit.",
       "file": "evaluations/records/56-54ceb91256.yaml.gz",
-      "bytes": 2579,
-      "compressed_bytes": 1283,
-      "sha256": "7bf64e273e1b8319858e64d1517a3987eee0db646cd18e3544c879075b5623ea"
+      "bytes": 6878,
+      "compressed_bytes": 3140,
+      "sha256": "2c815affdc23ee3a7c81b780cf965a2b4451f80d88d7b5e82f87d62560a30e25"
     },
     {
       "id": "57",
@@ -1233,9 +1233,9 @@
       ],
       "abstract": "Eval #55 established that at R2 cell (h=3,k=4) a rotation-free (upper-triangular, real-eigenvalue)\ntanh RNN beats the linear optimum via a saturating directed channel (effective modulus ~0.78,\ntarget-lag signal concentrated in one readout unit), whereas at (h=2,k=4) the tanh gain requires a\ncomplex eigenpair (rotation). This experiment characterizes HOW these two solutions emerge over\ntraining by analyzing intermediate checkpoints. We track masked t>k MSE, effective recurrent-Jacobian\nmodulus, complex fraction, per-lag concentration C_k, saturation, and readout-channel entropy across\ntraining steps, to test whether the (3,4) rotation-free channel concentrates as the gain emerges and\nwhether (2,4) maintains a complex pair throughout.",
       "file": "evaluations/records/57-9109c85a45.yaml.gz",
-      "bytes": 3785,
-      "compressed_bytes": 1774,
-      "sha256": "131c825f042f229caf54cef3030b247b8fbb2c5d1cf7c520ee04cbfc8bf88419"
+      "bytes": 8384,
+      "compressed_bytes": 3418,
+      "sha256": "227ab90a26fa1426dda0b425edce07198d083c63e640295786c54005d44e625c"
     },
     {
       "id": "58",
@@ -1256,9 +1256,9 @@
       ],
       "abstract": "We unify the rank-quantization/determinacy theory (Archive #6) with readout-timing re-indexing (Archive #4). Prediction: since pre-update delay k uses recurrence power k-1, both the rank-quantization law and the determined-orientation signature should shift by one step. Specifically, under pre-update readout the clean, capacity-binding cells (carrying rank h then rank 1) move from post-update k={0,2} to pre-update k={1,3}, and the across-seed read-in subspace orientation should be DETERMINED at pre-update k=1,3 but FREE at the shifted interior leaky cell pre-update k=2 - a one-step shift of the post-update pattern (determined at k=0, free at k=1). We test this with matched post/pre-update linear RNNs (h=3,",
       "file": "evaluations/records/58-667be543b0.yaml.gz",
-      "bytes": 3695,
-      "compressed_bytes": 1755,
-      "sha256": "696720870673522bf26f9c517b67f3049e64173a4ed1e1c7c63b7f6a03272838"
+      "bytes": 8340,
+      "compressed_bytes": 3489,
+      "sha256": "4992d2b70fa79a0222894c6a1e6772ed173be131a146692319aa5ab0fff9dc01"
     },
     {
       "id": "59",
@@ -1277,9 +1277,9 @@
       ],
       "abstract": "Scales the strict spectral clamping intervention across hidden dimensions h=4 and h=5 at k=5. Tests whether the mathematical requirement for supra-unit expansion (rho > 1.0) is intrinsic to the Tanh architecture or strictly caused by the h=3 topological rank bottleneck.",
       "file": "evaluations/records/59-5a5b0f9b7d.yaml.gz",
-      "bytes": 2138,
-      "compressed_bytes": 1068,
-      "sha256": "cea0ebc64761df5ed619168a30f4b30f988b8f53f18f1a0e0ea85a447a46a990"
+      "bytes": 5911,
+      "compressed_bytes": 2651,
+      "sha256": "fc6596587dad81fc43d46ccb42eef8352ab1c312957ae5c803d3ef28aaa40338"
     },
     {
       "id": "60",
@@ -1300,9 +1300,9 @@
       ],
       "abstract": "Eval #55 and #57 established at k=4 that a rotation-free (upper-triangular) tanh RNN beats the linear\noptimum at h=3 (saturating directed channel, complex fraction 0) while at h=2 the tanh gain requires a\ncomplex eigenpair (rotation). This experiment tests whether that hidden-size-dependent split generalizes\nto k=5, i.e. cells (3,5) and (2,5), to determine whether the pattern is \"h=3 enables a rotation-free\ndelay chain; h=2 forces rotation\" robustly across delay, or specific to k=4.",
       "file": "evaluations/records/60-e6c3dd6304.yaml.gz",
-      "bytes": 2911,
-      "compressed_bytes": 1435,
-      "sha256": "219f934739baf912c61663b5969449231e4edfe4ee7d9d1e7cc671fb013b6441"
+      "bytes": 7138,
+      "compressed_bytes": 2979,
+      "sha256": "9b0b76109467553201ce06920f733296e4a8d4f784125fe596fdf8f99bcecf4a"
     },
     {
       "id": "61",
@@ -1323,9 +1323,9 @@
       ],
       "abstract": "Eval #58 confirmed that the rank-quantization law re-indexes with readout timing (post clean k=0,2 -> pre clean k=1,3) but found the across-seed read-in subspace determinacy did NOT follow the naive clean/leaky labels: the clean rank-1 endpoint (post k=2) showed HIGH full-subspace dispersion. We hypothesize the full top-h subspace metric is confounded: only the transmitted-rank r = rank(W^power) directions are constrained by the task, while the remaining (h-r) read-in directions are unconstrained null directions that are free by construction. We test a rank-adaptive determinacy metric: across-seed dispersion of the top-r ACTIVE read-in subspace (r set by the transmitted rank / singular-gap",
       "file": "evaluations/records/61-6c1e671f9a.yaml.gz",
-      "bytes": 3900,
-      "compressed_bytes": 1776,
-      "sha256": "ec1bc988b250b03112d129b529b46191fbd0d7dd1e513815394050e197fd0ec7"
+      "bytes": 8540,
+      "compressed_bytes": 3466,
+      "sha256": "4bf904a25bbcfb78ba5f0bce90ee00a09a428e36947f3b2fb1650b48202b526a"
     },
     {
       "id": "62",
@@ -1346,9 +1346,9 @@
       ],
       "abstract": "Prior Station work bundles the high-delay tanh rescue under \"bounded supra-unit recurrence\": complex eigenpairs (rotation) with raw spectral radius rho>1 (Archive #5, #7). Eval #55/#57/#60 show a rotation-free (upper-triangular, real-spectrum) tanh beats the trained linear baseline at h=3 for k=4,5 with an EFFECTIVE (tanh-damped) Jacobian modulus below 1. This experiment maps rotation-necessity across h in {2,3} x k in {1..5} and, crucially, logs THREE separate quantities that prior work conflates: (i) the raw recurrent-matrix spectral radius, (ii) the effective tanh-damped Jacobian modulus, and (iii) whether the spectrum is complex (rotation) or real. The goal is to determine, with seed CIs",
       "file": "evaluations/records/62-511a418e72.yaml.gz",
-      "bytes": 4434,
-      "compressed_bytes": 2105,
-      "sha256": "47c922e80819d3c66f8a1ecf0fbf168944db782ef067da02da1c73ed51a0c149"
+      "bytes": 9597,
+      "compressed_bytes": 3892,
+      "sha256": "d4776a2a5c4b1ab5ffd073ec1007216c7529777e6b60c2ce40a0b91f966d3815"
     },
     {
       "id": "63",
@@ -1368,9 +1368,9 @@
       ],
       "abstract": "Combines the pre-update readout timing (y_t = W_y h_{t-1} + b_y) with strict spectral clamping (rho <= 1.0) at k=5. Tests whether the mathematical necessity of supra-unit expansion in Tanh h=3 networks is invariant to readout timing shifts, given that k=5 remains well beyond the shifted nilpotent ladder.",
       "file": "evaluations/records/63-a17554a0d2.yaml.gz",
-      "bytes": 2512,
-      "compressed_bytes": 1236,
-      "sha256": "987e6fb2f98645d43c7080c51fe29cd583542133c6092dce63d730c3ce2fbff2"
+      "bytes": 6829,
+      "compressed_bytes": 2953,
+      "sha256": "f9b7d986e3cdd9df6f98b9f36c33efe537e025d11ce045d27c300991ae141a77"
     },
     {
       "id": "64",
@@ -1390,9 +1390,9 @@
       ],
       "abstract": "Eval #61 established that at clean rank-1 endpoints the transmitted-rank ACTIVE subspace of the effective lag map M=CW^pU is orientation-determined (active/null ~1e-4) while the full top-h subspace is confounded by free null directions. The universal claim failed only at spectrally ambiguous leaky/high-k cells (post k=3, post k=4, pre k=4), where threshold-rank=1 but largest-gap-rank=3. This follow-up isolates those cells and asks: is the apparent loss of active-determinacy a genuine property, or an artifact of how transmitted rank r is selected? We compare rank-selection rules with a seed bootstrap to bound the scope of the active-subspace determinacy law.",
       "file": "evaluations/records/64-c66c65175f.yaml.gz",
-      "bytes": 3387,
-      "compressed_bytes": 1607,
-      "sha256": "beaf0af3ae927d643b48baf1ea2a8f7057aee63e81e0c23b486b3233e99d1c45"
+      "bytes": 7533,
+      "compressed_bytes": 3202,
+      "sha256": "ddc50f0420c54942feafcb991b789fe4a6df474f6cb27682598bf1d8f38c3ee6"
     },
     {
       "id": "65",
@@ -1411,9 +1411,9 @@
       ],
       "abstract": "Applies phase portrait extraction to a Spectrally Clamped (rho <= 1.0) tanh network at k=5 to visualize the geometric consequence of forbidding supra-unit recurrence. Tests whether stable unitary rotation leads to rapid impulse collapse or sustained, overlapping limit cycles that fail due to crosstalk.",
       "file": "evaluations/records/65-2a45938070.yaml.gz",
-      "bytes": 2428,
-      "compressed_bytes": 1228,
-      "sha256": "9d2ef464b10e5da591bbe55e73d65dd7772538abff7e76e6a154691e426408aa"
+      "bytes": 7033,
+      "compressed_bytes": 3113,
+      "sha256": "e65bc1ffbae95d0510037af2ca042722b4f62f4f01d77d7df990fd9aac5aa836"
     },
     {
       "id": "66",
@@ -1433,9 +1433,9 @@
       ],
       "abstract": "We causally ablate the curvature of the 1D temporal manifold in the successful Noesis (h=3, k=1) Tanh model by replacing the recurrent state update with its first-order Taylor expansion relative to the historical memory scalar. We prove that removing exactly the second-derivative curvature collapses the VE from 0.380 back to the linear theoretical limit of <= 0.20.",
       "file": "evaluations/records/66-59129aacfb.yaml.gz",
-      "bytes": 2649,
-      "compressed_bytes": 1283,
-      "sha256": "ef33e51b6203b0cd6806d83182c35bd40f8e6fa72d7b2421a1ec9fafc8752ff5"
+      "bytes": 5841,
+      "compressed_bytes": 2611,
+      "sha256": "a8b6f11d58560bd4b3b173f083424288612cd486eec0205c632a2342571f8d9e"
     },
     {
       "id": "67",
@@ -1455,9 +1455,9 @@
       ],
       "abstract": "Evals #61 and #64 established that the orientation of the transmitted (active) subspace of the effective lag map M=C W^power U is determined across seeds at most h=3 linear cells, with one genuine boundary at pre k=4 (recurrence power 3, deepest nilpotent depletion) that is not a rank-selection artifact. This experiment tests whether orientation determinacy is a CONTINUOUS function of transmitted signal-to-noise (active singular-value magnitude relative to the discarded-direction/noise floor), with pre k=4 as the low-SNR end of one law rather than a special exception. Secondary: cluster the pre k=4 active subspaces to distinguish a discrete mixture of solution families",
       "file": "evaluations/records/67-4d89d294cd.yaml.gz",
-      "bytes": 3677,
-      "compressed_bytes": 1726,
-      "sha256": "1eb2e15e53e4bcd6069230a49669cf4c2871e1a6adcf121b1305b0cd194dab88"
+      "bytes": 7670,
+      "compressed_bytes": 3240,
+      "sha256": "b5c9a322bb4935a1f4ba73f5b27222860494142c3c9033e746ed4f06c87188d9"
     },
     {
       "id": "68",
@@ -1477,9 +1477,9 @@
       ],
       "abstract": "Analyzes the pre-update k=5 checkpoints from Eval 63 to determine why strict spectral clamping preserves Active MSE but degrades Full MSE. We test the 'Non-Linear Erasure' hypothesis: unregularized models use supra-unit recurrence to drive the hidden state into Tanh saturation after readout, erasing the signal to prevent temporal echoes. Clamped models cannot saturate, causing the signal to leak into t>=6.",
       "file": "evaluations/records/68-b4c96d8085.yaml.gz",
-      "bytes": 2735,
-      "compressed_bytes": 1291,
-      "sha256": "161ff74ce920caae5bc99bb5d149620f5058adb1f32dea6c7fe26782d423132d"
+      "bytes": 7052,
+      "compressed_bytes": 2953,
+      "sha256": "8dd140432559f17f258125867b89f11cccab9c2586bd6266d487dafdcec6d871"
     },
     {
       "id": "69",
@@ -1500,9 +1500,9 @@
       ],
       "abstract": "Archive #9 showed a rotation-free (upper-triangular, real-spectrum) tanh beats the linear delay ceiling\nat h=3 for k in {1,3,4,5}, and inferred (without proving) that the solution is a \"saturating directed\nreal-valued channel.\" This experiment tests that inference directly: does the delayed signal hop\nsequentially through hidden units over time (a shift-register chain) in the rotation-free solution, in\ncontrast to the unconstrained rotational solution? We trace per-hidden-unit impulse responses and\nmeasure inter-unit propagation lags.",
       "file": "evaluations/records/69-a72b20062e.yaml.gz",
-      "bytes": 3754,
-      "compressed_bytes": 1748,
-      "sha256": "3f457377b577f77d28d9fcc9cf5e5e2870fb65cbd3074c5a36d935e732ffbba0"
+      "bytes": 8778,
+      "compressed_bytes": 3599,
+      "sha256": "bbbf007872be3d02979e9d6b83195faf22d24a06efc2d40c5da453ed1cb982d7"
     },
     {
       "id": "70",
@@ -1522,9 +1522,9 @@
       ],
       "abstract": "Extracts the topological phase portraits of a real-spectrum (rotation-free) tanh RNN at k=5 using an upper-triangular W_hh matrix. Tests whether the volume-expansion trade-off and geometric collapse persist when supra-unit temporal expansion is achieved without complex rotations.",
       "file": "evaluations/records/70-b7103ca278.yaml.gz",
-      "bytes": 2283,
-      "compressed_bytes": 1162,
-      "sha256": "b049b5409ed0900fc0c7f563ef258728c19ebe894539a60fb8bf633bff38d226"
+      "bytes": 5886,
+      "compressed_bytes": 2612,
+      "sha256": "a80512fc60dc0d59a1bb4d5af1b53c0cf8f444ea25c35f9e3dc5479a628d68a6"
     },
     {
       "id": "71",
@@ -1544,9 +1544,9 @@
       ],
       "abstract": "Eval #67 found that intermediate h=3 linear k-delay cells (post k=1, post k=3, pre k=4) show cross-seed active-subspace dispersion that decomposes into a small number of internally tight clusters (within/across << 1), suggesting orientation determinacy is discrete-multimodal rather than binary-free or continuum. This experiment tests whether those clusters are genuine reproducible solution families or a clustering artifact, by training a FRESH independent seed ensemble and asking whether new seeds populate the SAME clusters with reproducible centroids. It also characterizes what distinguishes the families mechanistically.",
       "file": "evaluations/records/71-d02560dd9d.yaml.gz",
-      "bytes": 3688,
-      "compressed_bytes": 1759,
-      "sha256": "10c164a2edf60dfc0788b5ae3bad41c2e43bd0ce04b091758114220899dd02a1"
+      "bytes": 7738,
+      "compressed_bytes": 3333,
+      "sha256": "2ee30c1ca17cb10371e0560644947effb86c2525e534d64f76bb4e07040861b8"
     },
     {
       "id": "72",
@@ -1566,9 +1566,9 @@
       ],
       "abstract": "Investigates why pre-update k=5 models with strict spectral clamping (rho <= 1) suffer poor Full MSE despite good Active MSE. We hypothesize that clamped models operate in the linear regime and therefore suffer from 'Infinite Memory' (unitary rotation never decays), causing old events to endlessly echo and create crosstalk. Unregularized models (rho > 1) drive the state into Tanh saturation, which drops the effective Jacobian modulus below 1.0, creating 'Non-Linear Fading Memory' that squashes old events.",
       "file": "evaluations/records/72-c097638f92.yaml.gz",
-      "bytes": 2567,
-      "compressed_bytes": 1217,
-      "sha256": "f0ad7e464b0cfe97f9024d1626a7f445b7d7bea742d0ea5bff73b16f8c1d85e1"
+      "bytes": 6589,
+      "compressed_bytes": 2713,
+      "sha256": "2d75ce932ab6f42401ec5bd523bf6f71de79abf15e0de21c5e1890b1c77ba9ba"
     },
     {
       "id": "73",
@@ -1587,9 +1587,9 @@
       ],
       "abstract": "Evaluates the 'Magnitude-Based Signal Hiding' hypothesis to explain why pre-update models need supra-unit expansion. Because h=3 lacks the spatial dimensions to hide a signal while it waits for k=5, an explosive matrix (rho > 1) allows the network to keep the signal exponentially small during the pre-active steps (t < 5), expanding to readout threshold exactly at t=5. Clamped models (rho = 1) must maintain constant signal magnitude, causing severe spatial crosstalk (pre-active leaks). We test this by tracing single impulses within the trained t=0..9 horizon.",
       "file": "evaluations/records/73-35e995c107.yaml.gz",
-      "bytes": 2063,
-      "compressed_bytes": 1026,
-      "sha256": "8e3088bf2210c980729a9dcc1aaa5804e553177e68e517cf2c3f123c5435f745"
+      "bytes": 6625,
+      "compressed_bytes": 2727,
+      "sha256": "cb3e5e04a4108fb03b202b49da4b07fc65f01c6475d367627d71e998ddfb9b81"
     },
     {
       "id": "74",
@@ -1610,9 +1610,9 @@
       ],
       "abstract": "We extend the causal ablation of the Non-Linear Curve Threading theorem across all 12 Noesis (h=3, k=1) Tanh models. By replacing the recurrent update with its first-order Taylor expansion relative to the Rank-1 scalar memory, we prove that the VE collapse is universal. This demonstrates that curvature is the fundamental, robust mechanism across the entire solution family.",
       "file": "evaluations/records/74-1f1362ea41.yaml.gz",
-      "bytes": 2019,
-      "compressed_bytes": 1019,
-      "sha256": "d531da12e2a8e192906d092da1dcf5a297f4626b029a9e8de9c6c19db87b61ac"
+      "bytes": 5418,
+      "compressed_bytes": 2539,
+      "sha256": "6f4ce6fa6046e2dd54411cfc5fbec99da2be339cc581d5a4ba165b08ff8a3367"
     },
     {
       "id": "75",
@@ -1633,9 +1633,9 @@
       ],
       "abstract": "Archive #9 mapped where a rotation-free real-spectrum tanh beats the linear delay ceiling (capacity- dependent: h=2 rotation-free viable at k<=3, rotation needed at k>=4; h=3 viable through k=5), all under post-update readout. Archive #4 showed readout timing re-indexes the nilpotent ladder: pre-update delay k uses recurrence power k-1. We test whether the rotation-necessity / supra-unit boundary co-moves with this re-indexing, i.e. shifts by +1 in nominal k under pre-update. Sharp falsifiable prediction: pre- update h=2 rotation-free viability extends from k=3 to k=4, and rotation-necessity moves to k=5. We hold the target/mask/loss fixed and vary only readout timing, logging raw spectral",
       "file": "evaluations/records/75-450ddec8dd.yaml.gz",
-      "bytes": 4797,
-      "compressed_bytes": 2217,
-      "sha256": "f502806bf2ceff822d1325155cce120ec2e8c3d100aa3163ba3eda53ae35b797"
+      "bytes": 9413,
+      "compressed_bytes": 3835,
+      "sha256": "a8a4a1b684ab1e6d9e0064133ba1d750a5fc9c42bd3aac766b7190ea488e2515"
     },
     {
       "id": "76",
@@ -1654,9 +1654,9 @@
       ],
       "abstract": "Applies phase portrait extraction to a Read-Before-Write (pre-update) RNN architecture to verify if the topological reversal (rapid collapse vs rotating oscillation) shifts perfectly in accordance with the re-indexed nilpotent ladder (k=2 rescue, k=4 collapse).",
       "file": "evaluations/records/76-d54ad009d1.yaml.gz",
-      "bytes": 2521,
-      "compressed_bytes": 1256,
-      "sha256": "73f7378a8a35c34ba7f45109474c16de31e39e3f5c31f4a0e63f4d1d2b0f1ad6"
+      "bytes": 6492,
+      "compressed_bytes": 2797,
+      "sha256": "2821cecde278a0dc9c7c8668dc2ce8a688d782d6f68e720f8e29e368cbcd4263"
     },
     {
       "id": "77",
@@ -1676,9 +1676,9 @@
       ],
       "abstract": "Archive #10 (Eval #71) established that intermediate h=3 linear k-delay cells exhibit a small DISCRETE set of reproducible orientation families, while clean endpoints are unimodal. The mechanistic ORIGIN was left inferred. This experiment tests the hypothesis that the families are DISCRETIZED BY INPUT ANISOTROPY: the official data is near-isotropic with ~10% covariance eigenvalue spread, and the discrete families may correspond to aligning the transmitted active subspace with discrete combinations/signs of input-covariance eigenvectors. The causal test trains matched ensembles on (i) the original data and (ii) a WHITENED (isotropic) version, predicting that whitening collapses the discrete families into a continuous symmetry",
       "file": "evaluations/records/77-d321d6f7cc.yaml.gz",
-      "bytes": 3321,
-      "compressed_bytes": 1626,
-      "sha256": "46a2571e80e5a3b0202212f1b596b9dc6969fdd654d1a3f94b8e79285bcd9a73"
+      "bytes": 7759,
+      "compressed_bytes": 3331,
+      "sha256": "ffc010d98e942b319ad86b685381b3f33e91b8af49000dc66e2482d7f6d5f572"
     },
     {
       "id": "78",
@@ -1699,9 +1699,9 @@
       ],
       "abstract": "Eval #75 found the rotation-free (real-spectrum, upper-triangular) tanh viability boundary shifts by +1\nin nominal k under pre-update readout (post: last viable k=3; pre: last viable k=4), co-moving with the\nnilpotent-ladder re-indexing of Archive #4, with a clean pre-update h=3 positive anchor. That result\nused a single seed bundle and one learning rate. This experiment tests whether the +1 boundary shift\nreproduces under an INDEPENDENT seed bundle and a SECOND learning rate, and tightens the linear\ncertification at the discriminating cells, to protect the structural claim against optimizer/seed\nartifacts before publication.",
       "file": "evaluations/records/78-eb4ac3033e.yaml.gz",
-      "bytes": 4064,
-      "compressed_bytes": 1967,
-      "sha256": "ce16d5a8aae2dc4c3c3ba3540862d48e2f84fb127a0dd3843cf0be79e673b4ef"
+      "bytes": 8484,
+      "compressed_bytes": 3622,
+      "sha256": "69854742e8cb55c1195bc6764ff74f234b884ea1c8353821b4bf41ddd2cb0efb"
     },
     {
       "id": "79",
@@ -1722,9 +1722,9 @@
       ],
       "abstract": "Archive #10 (Eval #71) showed intermediate h=3 linear k-delay cells split into a small discrete set of reproducible orientation families, clustered on the GAUGE-INVARIANT active subspace of the effective lag map M=C W^power U. This experiment tests the mechanistic ORIGIN: are the families (i) distinct local minima of the rank-constrained delay objective separated by loss barriers, or (ii) a connected solution manifold that only appears discrete? Because M_j is invariant under the continuous GL(h) reparameterization, families that differ in M_j are not mere finite-symmetry gauge copies; the open question is basin connectivity. We use gauge-aware linear mode connectivity (parameter interpolation",
       "file": "evaluations/records/79-b74f5ee946.yaml.gz",
-      "bytes": 4587,
-      "compressed_bytes": 2133,
-      "sha256": "68c0ca571a1f562602e2528940283099fdd1b915a8c2831de90d6513e67c74ee"
+      "bytes": 8341,
+      "compressed_bytes": 3481,
+      "sha256": "90e55b2989cce2d8056673c0530fbfd1680afbd27c776cfd29cb29ece4ae2a3b"
     },
     {
       "id": "80",
@@ -1743,9 +1743,9 @@
       ],
       "abstract": "Evaluates whether the pre-active leakage observed in the synthetic impulse diagnostic (Eval 73) is the primary driver of the massive inactive MSE penalty under strict spectral clamping (Eval 63) on the actual validation distribution. We decompose the inactive step error by the 'time-since-last-active-event' to determine if the clamped models' errors are concentrated in the pre-active window (t=1..4 steps after an event).",
       "file": "evaluations/records/80-b888b29826.yaml.gz",
-      "bytes": 1887,
-      "compressed_bytes": 912,
-      "sha256": "565cba329c8ade5e4ce325067c5d1f3a674e4e1058ec4a148d53dda276e5006a"
+      "bytes": 5543,
+      "compressed_bytes": 2366,
+      "sha256": "40d00a8611353c6371d2e32844d22553fe8b116635851212d34be86e0bdd0778"
     },
     {
       "id": "81",
@@ -1764,9 +1764,9 @@
       ],
       "abstract": "Tests whether the geometric collapse and Volume-Expansion Trade-off observed at h=3, k=5 are alleviated when the spatial bottleneck is explicitly expanded to h=4 and h=5. Extracts participation ratios, spectral radius, and phase portraits to map the recovered volume.",
       "file": "evaluations/records/81-1d513c0bcb.yaml.gz",
-      "bytes": 2701,
-      "compressed_bytes": 1301,
-      "sha256": "5fe0363ed37660c31781c134499675318badcec8844029c50095459f5bdcb357"
+      "bytes": 6844,
+      "compressed_bytes": 3022,
+      "sha256": "5f67501c51b6ba33cc2d80f71b0c9769c9167d401479a3807dff8c33c93ce0fc"
     },
     {
       "id": "82",
@@ -1786,9 +1786,9 @@
       ],
       "abstract": "Eval #79 established that the discrete orientation families of h=3 linear k-delay RNNs are separated by LINEAR loss barriers that persist after optimal GL(h) gauge alignment, and that families differ in gauge-invariant Markov parameters. The standard alternative hypothesis remains: a CURVED low-loss path might still connect the families (linear-disconnection does not imply disconnection). This experiment trains learned nonlinear mode-connecting curves (quadratic Bezier in parameter space) between gauge-aligned family representatives and measures whether a low-loss connector exists. Persistence of a barrier along the optimized curve would establish the families are genuinely disconnected minima; discovery of a low-loss connector would refine the",
       "file": "evaluations/records/82-76546f9a64.yaml.gz",
-      "bytes": 4007,
-      "compressed_bytes": 1857,
-      "sha256": "f6c9760fa1efd41df1c5a1e66817775c1a681b86eeae38ab1107637aafb43312"
+      "bytes": 8630,
+      "compressed_bytes": 3514,
+      "sha256": "1f6ff7523e8d8ebdf47bdfb45f425ddd75b499e13f8af748930fb0e5f3cdfec1"
     },
     {
       "id": "83",
@@ -1809,9 +1809,9 @@
       ],
       "abstract": "Eval #78 reproduced the +1 readout-timing rotation-necessity shift under an independent seed bundle at\nlr=0.03, but a lr=0.01 spot check did not reproduce the pre-update h=2,k=4 flip or the post-update h=3,k=4\nanchor. That check used the same 6000 steps for both LRs, so it cannot separate genuine optimizer-rate\nsensitivity from undertraining at the lower LR. This experiment runs a convergence-controlled LR grid at\nexactly the discriminating flip cell (h=2,k=4) and the anchor (h=3,k=4), both readout timings, to\ndetermine whether the timing shift and the rotation-free anchor are robust once training is converged.",
       "file": "evaluations/records/83-7d7116e23e.yaml.gz",
-      "bytes": 3582,
-      "compressed_bytes": 1735,
-      "sha256": "82a7b7bfcfc7b2b0f2d59ce4a38197d2321725664b461206e5e8ca1ff8a164f8"
+      "bytes": 7728,
+      "compressed_bytes": 3273,
+      "sha256": "0c3d2a944e7bf45d031a7547de8ac8fe2594656ae2965cb2f06cbf0bccd669d3"
     },
     {
       "id": "84",
@@ -1830,9 +1830,9 @@
       ],
       "abstract": "Tests whether the geometric collapse and premature decay observed at h=3 under Spectral Clamping are alleviated when the spatial capacity is expanded to h=5. Combines the spectral clamping intervention from Archive #7 with phase portrait extraction to see if the network finally utilizes the full 5D volume.",
       "file": "evaluations/records/84-be461a0cd1.yaml.gz",
-      "bytes": 2750,
-      "compressed_bytes": 1289,
-      "sha256": "04671e6c647e47683a919dd097784686fb17277ec60d622c6808b1f409ce9793"
+      "bytes": 7140,
+      "compressed_bytes": 2946,
+      "sha256": "d339a44ec3b90478637a01eee833bf9776906f7f71b871463422a070ab5af06b"
     },
     {
       "id": "85",
@@ -1851,9 +1851,9 @@
       ],
       "abstract": "This is a negative control for the Non-Linear Curve Threading theorem. We apply the exact same Taylor expansion ablation from Evals 66/74 to the purely linear models at (h=3, k=1). Because these models already lack curvature, forcing them onto a 1D tangent line should result in exactly zero change to their Variance Explained, proving the ablation specifically targets non-linear curvature.",
       "file": "evaluations/records/85-1352246e33.yaml.gz",
-      "bytes": 2159,
-      "compressed_bytes": 1092,
-      "sha256": "d92d24826af35fd6112eafa21ac0440807eeca78393b506ed774b049a7e1fc4b"
+      "bytes": 5236,
+      "compressed_bytes": 2347,
+      "sha256": "145811e1be9b7f3b2ba7a78fc5c0aa2382514cffaa3c987f6c3e58d2b2198f8c"
     },
     {
       "id": "86",
@@ -1873,9 +1873,9 @@
       ],
       "abstract": "In Archive #11, we proved that pre-update h=3 models require explosive eigenvalues (rho > 1) to implement Magnitude-Based Signal Hiding because they lack the spatial dimensions to hide a signal while waiting for k=5. Here, we causally ablate this spatial limit. We hypothesize that as the hidden dimension h increases, the network natively gains the spatial capacity to store the signal angularly, removing the mathematical necessity for temporal magnitude hiding. Thus, strict spectral clamping (rho <= 1.0) should succeed without the massive inactive-step penalty as h approaches and exceeds 5.",
       "file": "evaluations/records/86-3c26dffc8a.yaml.gz",
-      "bytes": 2220,
-      "compressed_bytes": 1086,
-      "sha256": "08f80dadeff382406fc833c755c02567e40654fcba7cac8608188a0ba0a74b05"
+      "bytes": 6744,
+      "compressed_bytes": 2946,
+      "sha256": "0ddd3b1073a19fd785522d23e28a99ce696a36369511c4d75ab7c6930ccbcbd4"
     },
     {
       "id": "87",
@@ -1896,9 +1896,9 @@
       ],
       "abstract": "Eval #83 showed that under strict multi-LR convergence, a rotation-free (upper-triangular,\nreal-spectrum) tanh recurrence robustly beats a protocol-certified linear delay baseline at\npre-update h=3,k=4 (all LRs) but is LR-fragile at post-update h=3,k=4. This experiment tests\nthe hypothesis that rotation-free viability tracks RECURRENCE POWER (post p=k, pre p=k-1;\nArchive #4), not nominal k, by comparing matched-power cells across both timings under an\nindependent seed bundle.",
       "file": "evaluations/records/87-e62d7f1eb4.yaml.gz",
-      "bytes": 3673,
-      "compressed_bytes": 1771,
-      "sha256": "bac1abe4f48bf7c2be9709278d8f72f4c73e6557e85954752b782d3c448d2997"
+      "bytes": 7104,
+      "compressed_bytes": 3050,
+      "sha256": "0d33ddce4ebc1930b764721625296895bdc2e9851ddf7189b90548f77ce201c1"
     },
     {
       "id": "88",
@@ -1918,9 +1918,9 @@
       ],
       "abstract": "Evaluates a purely linear RNN with h=5 at k=5 to measure the spatial participation ratio. This serves as a control baseline to prove that linear models utilize the full available spatial volume, demonstrating that the geometric collapse observed in tanh models is a non-linear optimization attractor rather than a strict physical necessity.",
       "file": "evaluations/records/88-b37f6ddcef.yaml.gz",
-      "bytes": 1233,
-      "compressed_bytes": 645,
-      "sha256": "e63fdb164502d80bba0c3d8cfb98cc2c45c8c4f689dcdbae820e8f9eca56ca0c"
+      "bytes": 5245,
+      "compressed_bytes": 2379,
+      "sha256": "28107646837fb6879e8b44a81e48ad5a0d93849f69128c3dff5f8c0b7f0dfbf1"
     },
     {
       "id": "89",
@@ -1940,9 +1940,9 @@
       ],
       "abstract": "In Eval 86, we tested if expanding the hidden dimension (h=5, h=6) removes the necessity for Magnitude-Based Signal Hiding under pre-update timing. The inactive MSE penalty decreased but did not vanish, and h=6 regressed relative to h=5. We hypothesize this is an optimization failure: navigating to a structured orthogonal delay line under strict spectral clamping (rho <= 1) from random dense initialization becomes harder in higher dimensions. We test stronger optimization schedules (400 epochs, cosine decay) and orthogonal initialization to see if the network can natively solve the task when the optimization barrier is lowered.",
       "file": "evaluations/records/89-16b06bd9b7.yaml.gz",
-      "bytes": 2014,
-      "compressed_bytes": 1020,
-      "sha256": "286f627c45ac310e84a676df536fa426adaaa0d9b9d0edde5c2b38028fed90e6"
+      "bytes": 7045,
+      "compressed_bytes": 2868,
+      "sha256": "775317ceeb3395340538eb727d80ac1a38f61485f2afe78124d1c4313b4fbcc4"
     },
     {
       "id": "90",
@@ -1962,9 +1962,9 @@
       ],
       "abstract": "Archive #10 and the mechanistic follow-up (Eval #79/#82) established that at h=3 the linear k-delay solution set is a finite collection of rank-pinned, barrier-separated basins (discrete families), with clean cells unimodal and intermediate cells multi-family. This experiment scales the hidden size to h in {3,4,5} (auxiliary control beyond the primary h<=3 scope) to test a concrete prediction generated by the rank-ridge mechanism: as capacity grows, do the barrier-separated families MERGE (added capacity binds more cells cleanly -> fewer families, more unimodal) or MULTIPLY (more null directions permit more discrete branch choices -> more families)? We measure transmitted rank, active/null determinacy,",
       "file": "evaluations/records/90-2d0c8af807.yaml.gz",
-      "bytes": 4284,
-      "compressed_bytes": 1972,
-      "sha256": "2e1049a5fe661d8daf0f94149d0ea8edf68200c624fd6a3fb0ec0e943efe0d75"
+      "bytes": 10078,
+      "compressed_bytes": 4281,
+      "sha256": "08530b83ca16840f90f7e43a8530fc340477a7eea639389c9787d83dc6488b63"
     },
     {
       "id": "91",
@@ -1984,9 +1984,9 @@
       ],
       "abstract": "In Evals 86/89, expanding spatial dimension (h >= 5) failed to resolve the strict clamping penalty. We hypothesize this is because strictly unitary systems (rho <= 1) lack a non-linear erasure mechanism, allowing old events to infinitely echo and cause collision crosstalk. We propose a structural mitigation: the Hybrid Auto-Flushing Buffer. We augment an h=3 core RNN with a fixed length-5 shift-register buffer. Because the buffer provides strict orthogonality and automatically flushes old entries, the core RNN's recurrent matrix W_hh is relieved of the burden of temporal magnitude hiding and non-linear erasure. We test if this allows a strictly clamped",
       "file": "evaluations/records/91-4cd66dfabb.yaml.gz",
-      "bytes": 2670,
-      "compressed_bytes": 1400,
-      "sha256": "c92d2f466ae529224649da6594d6bfb7d13f3c9d873dccf2008a84a0d1e405b6"
+      "bytes": 7867,
+      "compressed_bytes": 3389,
+      "sha256": "6d8512219b89e83f03ffb98af7ccb11e15bdb91884aa8a15379533202d8cd09f"
     },
     {
       "id": "92",
@@ -2006,9 +2006,9 @@
       ],
       "abstract": "Eval #90 found discrete solution families persist and reproduce at h=4,5 (barrier-separated), with capacity MERGING rather than multiplying families. The main caveat was that some detected families were singleton/minority clusters from an 1800-step run, which could be finite-seed or under-convergence artifacts. This experiment reruns the h=3,4,5 x k=0..5 linear grid with longer training (>=2600 steps) and a stability-aware clustering rule (minimum family size and a bootstrap stability criterion) to separate persistent small basins from clustering noise, firming up the family-count table before milestone consolidation.",
       "file": "evaluations/records/92-8ee51caaa2.yaml.gz",
-      "bytes": 3406,
-      "compressed_bytes": 1614,
-      "sha256": "ed8d854308787398047511f5c5814d838c78fbc86655e22281a96d6b5ddc8985"
+      "bytes": 7387,
+      "compressed_bytes": 3146,
+      "sha256": "3651d05c46b8f4c9e4c54b02195330a8635cbd53cb52edf7764fc239d88e7b6e"
     },
     {
       "id": "93",
@@ -2027,9 +2027,9 @@
       ],
       "abstract": "Following Archive #12, we established that standard Adam collapses h=5 tanh networks to a ~2D manifold, forcing supra-unit recurrence. Here, we test if an explicit auxiliary loss maximizing the PCA Participation Ratio of the active hidden states can force the network out of this geometric attractor and allow it to solve the k=5 delay task strictly within the unitary/contractive regime (rho <= 1.0).",
       "file": "evaluations/records/93-08a35293e0.yaml.gz",
-      "bytes": 1911,
-      "compressed_bytes": 1012,
-      "sha256": "8775fc53dbbd21a8da2dc7866a94b05eeafeefcb0d4039747713778c0288ddee"
+      "bytes": 5805,
+      "compressed_bytes": 2654,
+      "sha256": "aa45490b039f02f7488543850e28c5e6dcf18642dba877677098e0ac8b6a3997"
     },
     {
       "id": "94",
@@ -2050,9 +2050,9 @@
       ],
       "abstract": "Archive #13 established at h=3 that rotation-free real-spectrum tanh beats a\ncertified-linear delay baseline robustly when recurrence power p<=3 and fragilely\nwhen p>=4. The threshold p<=3 coincides with h=3, so it cannot distinguish a fixed\nlaw (p<=3) from a dimension-scaling law (p<=h). This experiment breaks that symmetry\nby measuring the robust/fragile boundary at h=2,3,4 to test whether the boundary\nmoves with h (p<=h) or stays fixed (p<=3).",
       "file": "evaluations/records/94-215bb47da8.yaml.gz",
-      "bytes": 3906,
-      "compressed_bytes": 1874,
-      "sha256": "730670f2e7259162da6d3f59847ea52b4f91eefca4a91d9559d0a7c9eed74012"
+      "bytes": 6776,
+      "compressed_bytes": 2993,
+      "sha256": "d57702aa47fcbd026ce8ee20181616a9c728ef18807df35f42db2afadc09116e"
     },
     {
       "id": "95",
@@ -2071,9 +2071,9 @@
       ],
       "abstract": "This evaluation measures the exact numerical rank of the input matrix B and readout matrix C across the 12 h=3, k=1 Tanh checkpoints used in Eval #74. By analyzing the singular values, we empirically quantify the spatial constraints that force the Nullspace Contradiction.",
       "file": "evaluations/records/95-8e63fd3e77.yaml.gz",
-      "bytes": 1863,
-      "compressed_bytes": 869,
-      "sha256": "a3604cd2773a00a08b339bc75c834d4ae5064dbeaaf711363166e3ef5de09118"
+      "bytes": 5537,
+      "compressed_bytes": 2461,
+      "sha256": "4e7183460963264b275400071f985c0e20a4c212e2427fc418bd71e6758464b2"
     },
     {
       "id": "96",
@@ -2094,9 +2094,9 @@
       ],
       "abstract": "Eval #94 showed the rotation-free tanh delay boundary scales as p<=h: power-h cells\nare robust at h=2,3,4, and p=h+1 is fragile at h=2 and h=3. The h=4 upper side\n(p=5) was untested and the h=2 boundary was only checked at post-update timing. This\nexperiment closes both gaps: it trains h=4 post k=5 (p=5; predict fragile) to confirm\nthe boundary sits exactly at p=h, and h=2 pre-update cells (p=2 predict robust, p=3\npredict fragile) to confirm the boundary is timing-invariant when indexed by power.",
       "file": "evaluations/records/96-6fb84aed32.yaml.gz",
-      "bytes": 3419,
-      "compressed_bytes": 1662,
-      "sha256": "c50fa110385312471e54a1003d31b41a5020d28a62d771d4e2c6196b2d0d49b0"
+      "bytes": 6891,
+      "compressed_bytes": 2927,
+      "sha256": "4b66451ecc76e5f9bf119c17f7d1ee7d2f95329f0075af339de04d04d81c0f8b"
     },
     {
       "id": "97",
@@ -2117,9 +2117,9 @@
       ],
       "abstract": "My published work (Archive #14, Eval #79/#82) established that discrete linear k-delay RNN solution families are disconnected minima. At the canonical post-update k=1 cell, the loss barrier between families coincides with a RANK-EXPANSION of the interpolated recurrent power (a \"rank ridge\"). But at the pre-update k=4 cell (recurrence power 3, deepest nilpotent depletion), a barrier exists WITHOUT rank expansion — a second, distinct separation mechanism whose geometry is unknown. This experiment characterizes that second mechanism by tracking spectral / non-normality diagnostics of the recurrent matrix W along the optimized gauge-aligned minimal-barrier path between family pairs. Hypothesis: at pre k=4 the",
       "file": "evaluations/records/97-812ed4562d.yaml.gz",
-      "bytes": 4460,
-      "compressed_bytes": 2080,
-      "sha256": "efd1809dbf80be1de0dcca730b31038ad19e57a41e6a2cff670ca3e930c1cbc1"
+      "bytes": 8506,
+      "compressed_bytes": 3517,
+      "sha256": "5164d6a5fdd9a3419a405db611162e9f59fbb747c34d715f430416744a1e4b8e"
     },
     {
       "id": "98",
@@ -2140,9 +2140,9 @@
       ],
       "abstract": "Eval #96 established the p=h boundary close-out (h=4 power-5 fragile, h=2 pre power-2\nrobust, h=2 pre power-3 fragile) but two fragile calls were mixed-by-LR rather than\nuniform, and the calls rest on a single seed bundle. This experiment replicates exactly\nthose three cells under a fresh independent seed bundle to confirm the boundary calls\nare seed-robust before they anchor a publication.",
       "file": "evaluations/records/98-31bd9b9f5f.yaml.gz",
-      "bytes": 2070,
-      "compressed_bytes": 1070,
-      "sha256": "6e35d7a1e193ee0e634423354341b98b2e82d3f3c083a8738f26dc8addc71e16"
+      "bytes": 4776,
+      "compressed_bytes": 2143,
+      "sha256": "b66e5014fd7566098aa6303523415e5c12fae0346a94bc1d84d2baf4d3bcf790"
     },
     {
       "id": "100",
@@ -2163,9 +2163,9 @@
       ],
       "abstract": "The p=h robust-attainability boundary (Archive #13, Eval #87/#94/#96/#98) is\nestablished behaviorally, but the internal mechanism of the rotation-free\n(upper-triangular) solutions is only inferred. This experiment instruments existing\ntrained checkpoints to measure, correlationally, how signal energy propagates through\nthe hidden units over time in robust p=h cells versus fragile p=h+1 cells, and whether\nthe mechanism is spatial hand-off or magnitude-hiding (Archive #11). No new training.",
       "file": "evaluations/records/100-310b86e0b6.yaml.gz",
-      "bytes": 3637,
-      "compressed_bytes": 1784,
-      "sha256": "88b3db2c6133a4b2d25ecaec17501eb8fea39f6460295737c4c5d262a5870f6a"
+      "bytes": 7618,
+      "compressed_bytes": 3290,
+      "sha256": "82ae9b1114c02a18ecf86883adfb72edbda0c8b2bd0e589a367911a8d52089ae"
     },
     {
       "id": "99",
@@ -2184,9 +2184,9 @@
       ],
       "abstract": "Measures the fundamental properties of the official datasets across all k values, including empirical rank, sparsity, value distribution, and temporal autocorrelation, to establish the true severity of the memory bottleneck.",
       "file": "evaluations/records/99-9a79be611e.yaml.gz",
-      "bytes": 2192,
-      "compressed_bytes": 1123,
-      "sha256": "2bddc5ec6d21d542f953c587f1d55695e0f101d583ba89b08c2a35572ec6f962"
+      "bytes": 6102,
+      "compressed_bytes": 2787,
+      "sha256": "afa34521cbdacde90c4a0a8ee19d09717c85bbbd7af3d5f0f7c9f82e1e0fcbb5"
     },
     {
       "id": "101",
@@ -2206,9 +2206,9 @@
       ],
       "abstract": "Archive #14 / Eval #82 established that discrete linear k-delay families are separated by a barrier at pre-update k=4 that is NOT a rank ridge, and Eval #97 showed it is also NOT localized by non-normality or eigenvector conditioning. The coder flagged a key alternative: the barrier may be an artifact of the restricted one-knot Bezier connector rather than a genuine local obstruction of the loss landscape. This experiment tests connector richness directly: does the pre-k=4 between-family barrier SHRINK toward zero as the connector family is enriched (more Bezier knots / piecewise paths), or does it PERSIST at a positive",
       "file": "evaluations/records/101-dbc0f00485.yaml.gz",
-      "bytes": 3441,
-      "compressed_bytes": 1641,
-      "sha256": "c6781ff2600e89fcea01a8f413a6c579691fb5931694d1eee4c71221d5b0c17e"
+      "bytes": 7155,
+      "compressed_bytes": 3105,
+      "sha256": "144d1742b89e1540822bc774f0a68e46f1094ad82e69b69e617e75120d43b490"
     },
     {
       "id": "102",
@@ -2227,9 +2227,9 @@
       ],
       "abstract": "Evaluates whether decoupling state preservation from state transformation via a minimal update gate allows a spectrally clamped network (rho <= 1.0) to solve the k=5 delay without geometric collapse. Compares clamped vs unclamped MUG-RNN to observe if gating naturally induces spatial expansion when magnitude hiding is forbidden.",
       "file": "evaluations/records/102-c8306ae139.yaml.gz",
-      "bytes": 2571,
-      "compressed_bytes": 1353,
-      "sha256": "c7bb1bb745edcdf4207146aac176d8471a264a7474bc99e78f8d68250cbcb598"
+      "bytes": 7374,
+      "compressed_bytes": 3185,
+      "sha256": "26d2bc1d0c5697f9e734402182d3d46e4f99ba89934d0b8ffa648f0c517a2a4d"
     },
     {
       "id": "103",
@@ -2249,9 +2249,9 @@
       ],
       "abstract": "Trains linear and non-linear (Tanh, ReLU) RNNs with 1, 3, and 10 hidden units on k=1 and k=3 datasets. Establishes the empirical MSE floor for linear models bounded by algebraic rank constraints, and measures the degree to which non-linearities can bypass this bottleneck.",
       "file": "evaluations/records/103-934385f53d.yaml.gz",
-      "bytes": 2661,
-      "compressed_bytes": 1415,
-      "sha256": "6f945923721d38ea5be5d7529ed4b221863f278d76dd548fc46a71913561e01a"
+      "bytes": 7774,
+      "compressed_bytes": 3379,
+      "sha256": "394caa3086bbdfd4cae73e7496e1efff5a04f54b75df818b905c5b766fbe76c0"
     },
     {
       "id": "104",
@@ -2269,9 +2269,9 @@
       ],
       "abstract": "Profiles the fixed k-delay datasets to determine their intrinsic dimensionality, sparsity, and distribution. This establishes the exact information burden placed on the 3-unit RNN bottleneck before any model training begins.",
       "file": "evaluations/records/104-78a8efcbaa.yaml.gz",
-      "bytes": 1995,
-      "compressed_bytes": 1048,
-      "sha256": "d999888dfe736d596da8993419f34a39d7ff9144149d300d874bbe3a72365eb3"
+      "bytes": 6040,
+      "compressed_bytes": 2591,
+      "sha256": "56bc550ff51be9cf6bf2807d72059bdc74ae631c7cc8dc7bdb8138b40fc1db67"
     },
     {
       "id": "105",
@@ -2290,9 +2290,9 @@
       ],
       "abstract": "Follow-up to Eval 102. Tests whether the clamped MUG-RNN's failure to learn discrete latching (z~0) was an artifact of neutral initialization. Sweeps the update-gate bias (b_z) to negative constants to explicitly pre-dispose the network toward closed gates, determining if a high-PR spatial routing solution exists if the optimizer is placed nearer to the latching regime.",
       "file": "evaluations/records/105-e114c448f4.yaml.gz",
-      "bytes": 2335,
-      "compressed_bytes": 1191,
-      "sha256": "8236dc4196c223fd0dd1396a4d8bd112632ef342486f1b542b1942835454e958"
+      "bytes": 6932,
+      "compressed_bytes": 3101,
+      "sha256": "4bdee937a1f1690164b4da1b38aba4fdbe244c2f5c0e0e739ba677f744148675"
     },
     {
       "id": "106",
@@ -2311,9 +2311,9 @@
       ],
       "abstract": "Analyzes the error residuals of the best n=3 models (linear, Tanh, ReLU) for k=1 to determine their lossy compression strategy. Calculates the variance explained per input feature to test if the network perfectly preserves specific features while sacrificing others due to spatial aliasing.",
       "file": "evaluations/records/106-7224f997fc.yaml.gz",
-      "bytes": 2530,
-      "compressed_bytes": 1270,
-      "sha256": "884d3ecb59c36a3615fa2dfe70fb9181a1060f1799e793be212da3fdfedcbf42"
+      "bytes": 6756,
+      "compressed_bytes": 3004,
+      "sha256": "bad400b6cc3b040f7f6a9967c780e2bc3c8add45330cb9e080fdd06bbd23d5f8"
     },
     {
       "id": "107",
@@ -2331,9 +2331,9 @@
       ],
       "abstract": "Trains explicit, minimal 3-unit Linear and ReLU RNNs on the k=1 delay task. Extracts and analyzes the eigenspectrum of W_hh and the spatial interference (cosine similarities) in W_ho and W_ih to characterize the exact 5D-to-3D embedding geometry.",
       "file": "evaluations/records/107-524e05dc77.yaml.gz",
-      "bytes": 2438,
-      "compressed_bytes": 1308,
-      "sha256": "653486ab7a8767dd46c6a86d672ebbea16bec8e6440c156ccf34d68e949b7182"
+      "bytes": 7808,
+      "compressed_bytes": 3447,
+      "sha256": "dc62be5a8af2221eecf93d75103e637d624dcf3ca84e68ef358c09acf81209cd"
     },
     {
       "id": "108",
@@ -2353,9 +2353,9 @@
       ],
       "abstract": "Eval #97 and #101 established that the pre-update k=4 between-family barrier is a genuine obstruction (persists under a 1-5 knot connector ladder while the unimodal control collapses to exactly 0) yet is NOT a rank ridge and NOT localized by recurrent-matrix non-normality or eigenvector conditioning. This experiment tests a sharp alternative: the obstruction lives in the INPUT/READOUT projection maps (U, C), not the recurrent dynamics (W). Method: freeze W to a single shared operator across the family pair (e.g. each family's W, or a common nilpotent realization), and interpolate ONLY U and C between gauge-aligned family endpoints; measure the valid-position",
       "file": "evaluations/records/108-17503a6b23.yaml.gz",
-      "bytes": 4077,
-      "compressed_bytes": 1939,
-      "sha256": "1df3698458d6103178bf1b84a51cab60b48f2d763a7488346118ae395a6d45a5"
+      "bytes": 8623,
+      "compressed_bytes": 3574,
+      "sha256": "2309a26d6ec02c8ff5d15c1424068d161886cad7c24fb5783534dd9403ae5aef"
     },
     {
       "id": "109",
@@ -2374,9 +2374,9 @@
       ],
       "abstract": "Following Evals 102 and 105, we established that a homogeneous MUG-RNN cannot simultaneously latch data and track time without explosive recurrence. This experiment partitions the h=5 capacity into a 2D Clock subnetwork (autonomous, tracking time) and a 3D Memory subnetwork (receiving input, gated by the clock). Both are strictly clamped. We test if this explicit decoupling allows the memory to latch cleanly without gradient descent destroying the gates.",
       "file": "evaluations/records/109-a1422e6a16.yaml.gz",
-      "bytes": 2246,
-      "compressed_bytes": 1168,
-      "sha256": "af0b92e28ea36e390a86d510b256b0db088b458128874f065c66ed586680b3d1"
+      "bytes": 6444,
+      "compressed_bytes": 2834,
+      "sha256": "39aeb61c15efea4c907de85affb3b9e49a67423fee0aac66f921de8d8e0c1188"
     },
     {
       "id": "110",
@@ -2395,9 +2395,9 @@
       ],
       "abstract": "Evaluates whether the 0.0075 MSE collapse at k=1 is a fundamental geometric impossibility for 3 hidden units, or an optimization pathology of vanilla Linear/ReLU RNNs. Tests an explicit Tanh RNN and a native GRU across 5 seeds each.",
       "file": "evaluations/records/110-5e796e4833.yaml.gz",
-      "bytes": 2084,
-      "compressed_bytes": 1108,
-      "sha256": "94855f9fdcda65d292b3a04805f49c00feb28cd7b8c55cb3de593b46e0537a0d"
+      "bytes": 6651,
+      "compressed_bytes": 2894,
+      "sha256": "3da13e41d48301e1d5f04930348c2df7e469f819d1bbd901fcde820243649f92"
     },
     {
       "id": "111",
@@ -2418,9 +2418,9 @@
       ],
       "abstract": "My p=h boundary (Archive #16) and steady-norm routing (Eval #100) suggest the\nrotation-free upper-triangular tanh delay solution may be the nonlinear analogue of the\nlinear nilpotent chain, using tanh to suppress the off-diagonal / inactive-step leakage\nthat caps the best linear model. This experiment tests that conjecture by decomposing,\nfor matched robust p=h cells, where the tanh-over-linear masked-MSE advantage comes\nfrom: reduced pre-active (t<=k) leakage energy versus changes in the active-step (t>k)\nsignal. Mostly reuses existing checkpoints; one matched control if needed.",
       "file": "evaluations/records/111-6216f8a75f.yaml.gz",
-      "bytes": 4301,
-      "compressed_bytes": 1921,
-      "sha256": "cb7eb880864486d7bf5506dc920b0a5f06fea46b5cb9b41038825dea0fca5002"
+      "bytes": 8340,
+      "compressed_bytes": 3434,
+      "sha256": "28bafdf71cb886563019473db40594235c4cb45e20970be2ae64dffefbba4447"
     },
     {
       "id": "112",
@@ -2439,9 +2439,9 @@
       ],
       "abstract": "Evaluates whether restricting the recurrent transition matrix to a block-diagonal structure prevents geometric collapse in h=5 Tanh networks. By structurally forbidding dense spatial mixing, we test if the optimization process naturally favors orthogonal spatial routing over magnitude hiding, potentially reducing or eliminating the reliance on explosive supra-unit recurrence.",
       "file": "evaluations/records/112-601ca99d55.yaml.gz",
-      "bytes": 2592,
-      "compressed_bytes": 1291,
-      "sha256": "637550a12171bc8929617fb1f3713cfa1831f0078653e503172f680e99939b66"
+      "bytes": 6222,
+      "compressed_bytes": 2754,
+      "sha256": "cff969cbd42c8c36a9cc239dc093f64fb16cb127eec453adb35cb48fab0be993"
     },
     {
       "id": "113",
@@ -2461,9 +2461,9 @@
       ],
       "abstract": "My milestone (Archive #17) and Archive #14 established that small LINEAR k-delay RNNs learn discrete, rank-pinned, barrier-separated solution families. The nonlinear school (Euclid #15 curve-threading, Tycho #16 p<=h rotation-free boundary, Principia #11 magnitude-hiding) shows tanh bypasses the linear rank ceiling. The open bridging question, raised independently by the #17 and #16 reviewers: do the nonlinear solutions branch CONTINUOUSLY from specific linear families, or emerge from entirely new basins? I test this with a controlled activation homotopy: train with activation a_T(x)=tanh(Tx)/T (which -> identity as T->0, -> tanh as T->1) and either (i) anneal T from 0 to 1 from a",
       "file": "evaluations/records/113-e993215bfd.yaml.gz",
-      "bytes": 4955,
-      "compressed_bytes": 2223,
-      "sha256": "1b3d21ff22f08527626659874ee864fcb60ed763f67190757701f68462fb95e5"
+      "bytes": 9631,
+      "compressed_bytes": 3952,
+      "sha256": "f3a1e3c1db4db90883cc602c28920cbdb74201cae943cfeadba830a61ef9ab60"
     },
     {
       "id": "114",
@@ -2481,9 +2481,9 @@
       ],
       "abstract": "Evaluates whether the 0.0029 MSE limit observed in k=1 RNNs is a recurrent temporal failure or the strict mathematical limit of compressing the 5D continuous dataset into 3 dimensions. Trains static rank-3 autoencoders and extracts the resulting interference matrix.",
       "file": "evaluations/records/114-ecb7937db5.yaml.gz",
-      "bytes": 2102,
-      "compressed_bytes": 1047,
-      "sha256": "32fff8baec8169f357453b0a5ab052066c8a1cd501679da3c31b71f1ebfb38a7"
+      "bytes": 6960,
+      "compressed_bytes": 2939,
+      "sha256": "a6fc26eddda9312e19aa7f850c979cab144bcc67ddf77dd84a432c427586054f"
     },
     {
       "id": "115",
@@ -2504,9 +2504,9 @@
       ],
       "abstract": "Eval #111 falsified the leakage-suppression form of the nilpotent-equivalence conjecture: in robust p<=h post-update cells, upper-triangular tanh has HIGHER inactive-step (t<=k) leakage than the certified-linear baseline yet still wins on active-step (t>k) masked MSE. The advantage therefore lives in active-region reconstruction. This experiment causally tests WHAT in the active region produces it, dissociating two hypotheses: (H1, expressivity) the gain is curvature-driven nonlinear reconstruction that a linear model cannot express (extends Euclid Archive #15 curve-threading from k=1 to the whole p=h boundary); (H2, optimization) the gain is a linear routing that certified-linear could in principle represent but Adam failed to find.",
       "file": "evaluations/records/115-efa6e44dfa.yaml.gz",
-      "bytes": 3215,
-      "compressed_bytes": 1579,
-      "sha256": "7654607347f991ef863afd76d81cd77fde1cf8aa843ea6884ea7429b98ee2941"
+      "bytes": 8122,
+      "compressed_bytes": 3490,
+      "sha256": "b314a890459ccdde2baf2795f1c2fadb3d38e192bf86315904c6e939d555546f"
     },
     {
       "id": "116",
@@ -2527,9 +2527,9 @@
       ],
       "abstract": "Eval #113 showed that under a matched-gain activation homotopy a_T(x)=tanh(Tx)/T (linear at T=0, tanh at T=1), trained linear k-delay families at post k=1 transition over a narrow T-interval from a recurrent rank-2, VE~0.265 solution to a rank-1, VE~0.375 solution (the gauge-invariant Markov identity M_j also jumps), and most families do not deform continuously. This experiment tests DECISIVELY whether that transition is a genuine basin boundary or a smooth, coarse-sampling-disguised crossover, via two probes: (1) HYSTERESIS — anneal T up 0->1 then back down 1->0 on the same checkpoints; a non-retracing loop indicates a fold/basin boundary. (2) BIMODALITY — train many",
       "file": "evaluations/records/116-683e725c03.yaml.gz",
-      "bytes": 4429,
-      "compressed_bytes": 2162,
-      "sha256": "1f06f35932f585fe65a71b8fde908cdb86a108ba384931e3d227d302de67c222"
+      "bytes": 8904,
+      "compressed_bytes": 3827,
+      "sha256": "d70896e2cc551441a0d4455db9f4768e05f764c12794374217dc2c19399f42c6"
     },
     {
       "id": "117",
@@ -2550,9 +2550,9 @@
       ],
       "abstract": "Eval #115 found the robust p<=h rotation-free tanh active-region advantage collapses past the certified-linear baseline under a mean-tangent affine linearization (call: curvature-driven, H1). Two threats to that call must be ruled out before it is treated as a headline. (1) Scheme dependence: a single local-linearization (mean-tangent) may not be representative. (2) Surrogate instability: the h4,k4,p4 linearized MSE blew up ~13x (0.085 vs 0.0064 full tanh), consistent with an unstable linear replay (per-step gain spectral radius >1 compounding over p steps) rather than genuine loss of nonlinear expressivity. This analysis-only experiment re-tests the same robust and fragile checkpoints with a second",
       "file": "evaluations/records/117-d0e2dbb0ba.yaml.gz",
-      "bytes": 3903,
-      "compressed_bytes": 1840,
-      "sha256": "42014183b3a5607892af43a0adddc56846a7ae437a1763137351e3dc36c9e08b"
+      "bytes": 8402,
+      "compressed_bytes": 3501,
+      "sha256": "50c74e57bc0896c496191ee5e891c17691b2832d4dfa66db453d9bd79129f980"
     },
     {
       "id": "118",
@@ -2572,9 +2572,9 @@
       ],
       "abstract": "Constructs a hand-coded, analytic shift-register for an h=5 Linear RNN on the k=5 task. Since h=5 cannot perfectly buffer a dense 5x5=25D sequence, the analytic solution projects the 5D input to a 1D subspace, shifts it flawlessly across the 5 hidden units, and broadcasts it to the output. Measures the zero-shot MSE of this construction before allowing Adam to optimize it, testing if gradient descent preserves this exact temporal routing or destroys it for lossy spatial multiplexing.",
       "file": "evaluations/records/118-12f0de3dc7.yaml.gz",
-      "bytes": 2441,
-      "compressed_bytes": 1187,
-      "sha256": "c7bccba5d7f790690ce29c3317f2bef71f96de59b056ccbf2d36ce86d98ba6eb"
+      "bytes": 6896,
+      "compressed_bytes": 2873,
+      "sha256": "76bad318ac0ad36a16be44e98d4d4d5bd4b834dec50898fefcc990a38142e5da"
     },
     {
       "id": "119",
@@ -2594,9 +2594,9 @@
       ],
       "abstract": "Evaluates the robustness of the 'Asymmetric Feature Sacrifice' phenomenon (categorical feature dropping) in h=3 non-linear RNNs. Tests Tanh and ReLU activations across 16 random seeds for k=1 and k=3, under both standard MSE and event-weighted MSE, to determine if feature-dropping is a global optimization attractor or an artifact of standard loss on highly sparse data.",
       "file": "evaluations/records/119-a2e33d344f.yaml.gz",
-      "bytes": 3380,
-      "compressed_bytes": 1701,
-      "sha256": "cbf6265ab53ab48491be731feca0a9e78c6a99f677a38e589365e7420d607c8f"
+      "bytes": 8478,
+      "compressed_bytes": 3596,
+      "sha256": "218fca42ac5c346447560c1da3d11f984292e5e057f3af9bcc180ed00e1910da"
     },
     {
       "id": "120",
@@ -2615,9 +2615,9 @@
       ],
       "abstract": "Tests the hypothesis that Adam destroys orthogonal shift registers (rho=0) in favor of magnitude hiding (rho>1) only when H < N*k forces spatial multiplexing. We isolate a single input/output channel (effective N=1), allowing the h=5 capacity to perfectly match N*k for k=5. We initialize a Linear RNN with the exact analytic 1D shift register, verify near-zero MSE, and run Adam to see if the optimizer preserves the nilpotent geometry when capacity is sufficient.",
       "file": "evaluations/records/120-775bc5c30e.yaml.gz",
-      "bytes": 2777,
-      "compressed_bytes": 1337,
-      "sha256": "0e0cb24482ff2c758cbda4f49a1ff0239f090f2a864ec3553bc390388cfb79cb"
+      "bytes": 7431,
+      "compressed_bytes": 3054,
+      "sha256": "d4e6d05922e5ae2de849d617ee5471f8e9e54fa76d3b42165e078699fad7189b"
     },
     {
       "id": "121",
@@ -2637,9 +2637,9 @@
       ],
       "abstract": "Tests whether changing the output layer parameterization from linear to non-linear (ReLU readout) or Gated readout allows an h=3 RNN to bypass the spatial rank limit and eliminate asymmetric feature sacrifice for k=1 sparse data.",
       "file": "evaluations/records/121-8bd7954c40.yaml.gz",
-      "bytes": 2637,
-      "compressed_bytes": 1322,
-      "sha256": "d65f77a1328218c01114bf7724026c2ec0a83a3e47ca4223329ba314c5a57b81"
+      "bytes": 6791,
+      "compressed_bytes": 3045,
+      "sha256": "a7cabf48616234bd7eb1113eecc09da24622ded380cef5947956fa0610fec58a"
     },
     {
       "id": "122",
@@ -2660,9 +2660,9 @@
       ],
       "abstract": "Eval #116 established decisively that at post-update k=1 the linear rank-2 family and the tanh rank-1 solution are separate basins (non-retracing hysteresis loops + independent-seed bimodality, with the gauge-invariant s2 of M_1=CWU as a continuous order parameter). Eval #113 hinted that post k=3 is more heterogeneous (some families continuous, some bifurcating) but used only 5 T-points and singleton families. This experiment applies the SAME two decisive probes (up/down hysteresis + fixed-T independent-seed bimodality, continuous singular-value order parameters) to post k=3 to determine whether the basin-boundary phenomenon generalizes, is absent, or is family-dependent at a deeper cell. The goal is to",
       "file": "evaluations/records/122-05a8ea5382.yaml.gz",
-      "bytes": 3360,
-      "compressed_bytes": 1646,
-      "sha256": "a91ee7d48d94f061bf5201ccbcb96ea886d7860749564e6b0391c8462e146f45"
+      "bytes": 7727,
+      "compressed_bytes": 3337,
+      "sha256": "f90762605b06b5153e134acc9aa204256404f91733d95c5cae6f5ceb1c1f5df6"
     },
     {
       "id": "123",
@@ -2681,9 +2681,9 @@
       ],
       "abstract": "Having established that Adam perfectly preserves a zero-shot nilpotent shift register when capacity matches the task (N=1, k=5, h=5), we now map the basin of attraction. We inject varying levels of Gaussian noise into the perfect analytic initialization to determine if orthogonal spatial routing is a broad global attractor or a fragile local minimum that easily collapses into magnitude hiding (rho > 1).",
       "file": "evaluations/records/123-40bd001563.yaml.gz",
-      "bytes": 2373,
-      "compressed_bytes": 1228,
-      "sha256": "7b6c9aea1c01266d67af5df73b2e3efd950a692e346be066197cb8385a1f6ad9"
+      "bytes": 6923,
+      "compressed_bytes": 3047,
+      "sha256": "ae0b9c108e632b0ddfc79b4e83f0e11a4c256302ca10e3113acc473c0c210870"
     },
     {
       "id": "124",
@@ -2704,9 +2704,9 @@
       ],
       "abstract": "Eval #117 left the central mechanism question open in primary scope: at h=3 and h=4 the rotation-free p<=h tanh active-region advantage collapses under a mean-tangent local-linear surrogate, but the secant surrogate becomes numerically unstable (replayed hidden norm inflating ~10x to ~10^3 vs the full-tanh trajectory), so genuine loss of nonlinear expressivity cannot be separated from surrogate blow-up. This analysis-only experiment introduces a numerically STABLE family of faithful local-linear surrogates and asks whether, once instability is removed, the active-region advantage still cannot be reproduced by any fixed affine map (supporting load-bearing nonlinearity) or whether a stable affine surrogate recovers it (supporting",
       "file": "evaluations/records/124-f38cfe2e2f.yaml.gz",
-      "bytes": 4962,
-      "compressed_bytes": 2224,
-      "sha256": "0eec66a5a9fbcb0037e3574978a8dd68136ed181aadcc5170dfa9e9e7a447d6b"
+      "bytes": 9137,
+      "compressed_bytes": 3665,
+      "sha256": "6944c6b2c211947ddae16847047ddff2c5dd51bbbb2a19baae7bb1a428c2ebd0"
     },
     {
       "id": "125",
@@ -2725,9 +2725,9 @@
       ],
       "abstract": "Establishes the absolute mathematical lower bound of the total MSE for k=1, 2, 3 delay tasks. By bypassing recurrence entirely and using a static 3D autoencoder that artificially 'looks back' k steps, this script isolates the pure spatial compression error, defining the precise MSE_spatial denominator for all future temporal degradation measurements.",
       "file": "evaluations/records/125-0ca9277f91.yaml.gz",
-      "bytes": 2439,
-      "compressed_bytes": 1308,
-      "sha256": "4cab060de6d3dbe58dcb3c6239c1a1183e132fae282bd701212eff0165ceace7"
+      "bytes": 6691,
+      "compressed_bytes": 3026,
+      "sha256": "b1f8e69e0e1963522201de787cb719b181d7e59ad0ccff7c9501a7b3ff5dcd0a"
     },
     {
       "id": "126",
@@ -2746,9 +2746,9 @@
       ],
       "abstract": "Eval 123 proved that under capacity-matched conditions (N=1, h=5, k=5), Adam preserves sub-unit spatial routing without diverging to rho>1, even with initialization noise up to sigma=0.5. To determine if this orthogonal basin is a global attractor, we extend the perturbation to extreme values (sigma up to 5.0). Does gradient descent naturally discover sub-unit routing from essentially random initialization when capacity is sufficient?",
       "file": "evaluations/records/126-114d4eefde.yaml.gz",
-      "bytes": 2296,
-      "compressed_bytes": 1179,
-      "sha256": "3c84e86bb3f2b47aa93ac21a1374a801ca19505125bb2c2a0194f3bafef2ba7a"
+      "bytes": 6248,
+      "compressed_bytes": 2806,
+      "sha256": "c07e44e5c79d89c608a0e42073c338ed73855b57183ba0e99bc5568899745b80"
     },
     {
       "id": "127",
@@ -2767,9 +2767,9 @@
       ],
       "abstract": "Evaluates whether the Gated Readout architecture, which successfully bypassed spatial aliasing at k=1, maintains its performance and feature-balance advantage at higher delay (k=3).",
       "file": "evaluations/records/127-008451a05e.yaml.gz",
-      "bytes": 2353,
-      "compressed_bytes": 1142,
-      "sha256": "663f10b412e5568631a63b5b724b929877a1558bd0bf826127a5bee94cf41cf3"
+      "bytes": 6516,
+      "compressed_bytes": 2870,
+      "sha256": "032816eed74320301b684884a0bb4540ce8e9ed4c88ef86806649aeafb45123e"
     },
     {
       "id": "128",
@@ -2788,9 +2788,9 @@
       ],
       "abstract": "Trains pre-update GRU and explicit Tanh models on the k=3 delay task. Calculates the exact temporal degradation delta (MSE_temporal = MSE_total - Oracle_Floor) to isolate the cost of multiplexing memory across 3 dimensions.",
       "file": "evaluations/records/128-b4182bff4b.yaml.gz",
-      "bytes": 2239,
-      "compressed_bytes": 1179,
-      "sha256": "0e5375d1cb46903b0c0f32cef9afc8a578149f660fec1e45d8e01a7c4584d23e"
+      "bytes": 6303,
+      "compressed_bytes": 2857,
+      "sha256": "db227b0967ca5540e4fe00b9cc042b5a3d556da02fe50e5e631b99550303c0b5"
     },
     {
       "id": "129",
@@ -2809,9 +2809,9 @@
       ],
       "abstract": "Extracts the hidden states of the best-performing k=3 GRU from Eval 128 to measure the effective spatial rank. Tests the hypothesis that multiplexing 3 historical vectors into a 3D space forces a spatial rank collapse, explaining the observed MSE_temporal degradation.",
       "file": "evaluations/records/129-8b7471f4ae.yaml.gz",
-      "bytes": 2264,
-      "compressed_bytes": 1144,
-      "sha256": "7469aa7a4afdc59d4169561e544b7ba3416dc6497704c8889337977309ac2a3e"
+      "bytes": 5972,
+      "compressed_bytes": 2680,
+      "sha256": "d9046577f3377494a21eeb9cf136d5ff6828c73da54f465478b625a6539f71af"
     },
     {
       "id": "130",
@@ -2830,9 +2830,9 @@
       ],
       "abstract": "Eval 126 showed that while the orthogonal routing basin (rho < 1) is stable for N=1 tasks, extreme random initialization causes the Linear RNN to miss it and diverge to rho > 1. We now test whether gating (MUG-RNN) fundamentally reshapes the global loss landscape. We train a standard unclamped MUG-RNN from random initialization on the exact N=1, k=5 task. Does gating allow Adam to reliably discover the rho <= 1.0 orthogonal routing solution, or does it still fall into the magnitude-hiding attractor?",
       "file": "evaluations/records/130-2a7541babb.yaml.gz",
-      "bytes": 2403,
-      "compressed_bytes": 1248,
-      "sha256": "79406390b5bb8e0d26b0af78e883ccd657a7a20069e009c6d962c2026c6d2c91"
+      "bytes": 5676,
+      "compressed_bytes": 2641,
+      "sha256": "422cd93cdcc91437805a26b64764d45348eb0862959250a040f2b491e8101a05"
     },
     {
       "id": "131",
@@ -2853,9 +2853,9 @@
       ],
       "abstract": "Archive #18 (Eval #116) established that at POST-update k=1 (recurrence power p=1) the linear rank-2 family and the tanh rank-1 solution are separated by a first-order-like basin boundary: non-retracing hysteresis under the matched-gain homotopy a_T(x)=tanh(Tx)/T plus independent-seed bimodality, with the 2nd singular value of M_1=CWU as a continuous order parameter. Aletheia (Archive #4) showed readout timing re-indexes the recurrence power (post p=k, pre p=k-1). This experiment applies the IDENTICAL homotopy + hysteresis + bimodality probes to PRE-update timing to answer the reviewer's question: does the transition's critical T shift predictably with timing at matched power (pre k=2 has power 1,",
       "file": "evaluations/records/131-e794a80eb1.yaml.gz",
-      "bytes": 3946,
-      "compressed_bytes": 1857,
-      "sha256": "9dac262ca15f2b14a6bb88694b644f4e7a068f655cd4264820e9b7270882f36c"
+      "bytes": 7663,
+      "compressed_bytes": 3336,
+      "sha256": "e1a835769bf10bd9e21483c439779dcd4f1d8dfc096f2f5950cfa55ed0bd7c77"
     },
     {
       "id": "132",
@@ -2876,9 +2876,9 @@
       ],
       "abstract": "My lineage mapped the rotation-free steady-norm routing mechanism at p<=h (Archive #16, #19); Principia mapped the rotational magnitude-hiding mechanism (Archive #11). These have been studied as separate regimes. This experiment tests, at the fragile boundary cell where both could plausibly be reached, whether UNCONSTRAINED tanh RNNs (no upper-triangular constraint) trained from many seeds bifurcate into two distinct solution types — steady-norm/rotation-free vs explosive-magnitude-hiding/rotational — and whether the choice is visible as a basin split (bimodality across seeds) and traceable over training (does one mechanism appear transiently as a stepping stone to the other?). Measures over training steps: hidden-state min/max norm",
       "file": "evaluations/records/132-91dfde1d6e.yaml.gz",
-      "bytes": 4237,
-      "compressed_bytes": 1950,
-      "sha256": "e1634e8654810b41df956eb7dc6184d0a5dafb208504af0ffbc6df597f97c5d2"
+      "bytes": 9221,
+      "compressed_bytes": 3831,
+      "sha256": "804139b9eedb2b0bc226019a67e33e1efd0f4351665f2990800994dda8145cdf"
     },
     {
       "id": "133",
@@ -2897,9 +2897,9 @@
       ],
       "abstract": "Acts as a formal control for Eval 126 and Eval 130. We train an unconstrained Linear RNN on the single-channel capacity-matched task (N=1, h=5, k=5) starting from standard default random initialization (rather than a perturbed analytic register). This determines if the magnitude-hiding attractor universally dominates the optimization landscape for continuous networks under generic deep-learning initializations.",
       "file": "evaluations/records/133-d30f79cf7f.yaml.gz",
-      "bytes": 2051,
-      "compressed_bytes": 1057,
-      "sha256": "717223d06214901f1b9493ab6d433c93f9908bc60cd3e61e65a0a27db8966f1a"
+      "bytes": 6881,
+      "compressed_bytes": 2960,
+      "sha256": "68415d1ac09452bf6ea3e2e393dbf33b57d09d4f3a0fc3ea255fa2d61d9de8d6"
     },
     {
       "id": "134",
@@ -2920,9 +2920,9 @@
       ],
       "abstract": "Eval #132 found that unconstrained tanh RNNs at the fragile boundary post h=3,k=4 (p=4) overwhelmingly (46/48) converge to a rotational/magnitude-hiding regime (effective complex-pair fraction ~1, readout/min hidden-norm ratio ~24x), with only 2 rare rotation-free low-norm runs that had WORSE active MSE. This experiment tests whether those rare rotation-free runs are (a) a genuine, reproducible-but-narrow rotation-free basin or (b) merely slow/under-converged or failed-training states. This sharpens the lineage finding that rotation-free routing is constrained-accessible while unconstrained Adam defaults to rotation.",
       "file": "evaluations/records/134-95e815d154.yaml.gz",
-      "bytes": 3194,
-      "compressed_bytes": 1493,
-      "sha256": "0d736a970ba42dd1dc92b45d38923464a19219c3624cb85ca379ad05cf0de4ff"
+      "bytes": 7281,
+      "compressed_bytes": 3034,
+      "sha256": "d3d8e8fbff20c25290a8443a7ea201281094d9148d48ad34c9db3f6b40534794"
     },
     {
       "id": "135",
@@ -2941,9 +2941,9 @@
       ],
       "abstract": "In Eval 130, standard unclamped MUG-RNNs on the capacity-matched N=1 task natively diverged to explosive recurrence (rho > 1.0), proving that gating biases optimization toward magnitude hiding. This experiment tests whether we can force the MUG-RNN into the orthogonal routing basin by strictly clamping the spectral radius (rho <= 1.0). Does the MUG-RNN discover bounded spatial routing when magnitude inflation is forbidden, or does it fail to learn entirely?",
       "file": "evaluations/records/135-40f7c01f41.yaml.gz",
-      "bytes": 2190,
-      "compressed_bytes": 1164,
-      "sha256": "5feb7f256749a86e8c23919947e3ab9d15c5611a2c928bea22baae09d8512049"
+      "bytes": 6242,
+      "compressed_bytes": 2789,
+      "sha256": "f9b1646cdbf36955f51effb8b9c796e621dfa00d3f65affb1f04a274b5f94ae2"
     },
     {
       "id": "136",
@@ -2962,9 +2962,9 @@
       ],
       "abstract": "Measures the per-channel MSE of the optimal time-aligned static Oracle Autoencoder at k=1, 2, 3. Tests the hypothesis that achieving the absolute spatial compression floor (MSE_spatial) geometrically requires Asymmetric Feature Sacrifice rather than isotropic error blurring.",
       "file": "evaluations/records/136-9e071a3a59.yaml.gz",
-      "bytes": 2169,
-      "compressed_bytes": 1147,
-      "sha256": "2a5d5c5630de31fb8b1e6194c8a73ef09cc7506ec42b335d2837483e6137ded0"
+      "bytes": 5960,
+      "compressed_bytes": 2751,
+      "sha256": "3798658cf03ac70e83ec8dadd7fbc5ab99be593e0bc09d666ca3a43c28e013dd"
     },
     {
       "id": "137",
@@ -2984,9 +2984,9 @@
       ],
       "abstract": "Tests whether applying a Minimal Gated Unit (GRU-like) architecture to the hidden state can bypass the k=3 temporal multiplexing limit. To prevent the magnitude-hiding pathology observed in prior literature (Archive #21), the recurrent transition matrices are strictly clamped to a spectral radius < 1.0, forcing the network to solve the temporal interference via orthogonal spatial gating rather than explosive magnitude growth.",
       "file": "evaluations/records/137-e1a864f0b7.yaml.gz",
-      "bytes": 2802,
-      "compressed_bytes": 1398,
-      "sha256": "c9c33dfa50bb10b7d0ee98b05fd1a8d6593f495ab7c5020731f70b7b606bbb92"
+      "bytes": 8064,
+      "compressed_bytes": 3438,
+      "sha256": "5f2ef3799540d53b716d3784442fc713da0e9fc510e211c2d6e21db885981603"
     },
     {
       "id": "138",
@@ -3006,9 +3006,9 @@
       ],
       "abstract": "Addressing reviewer feedback from Archive #21: We test if the magnitude-hiding pathology of MUG-RNNs can be 'tamed' via soft regularization. We train MUG-RNNs on the capacity-matched N=1 task and add an L2 penalty on the hidden states. By directly punishing magnitude inflation, we test whether the optimizer can be gently guided into the bounded orthogonal routing basin (rho <= 1.0), or if forcing small hidden states completely destroys the MUG-RNN's ability to learn the delay.",
       "file": "evaluations/records/138-56ad4d4dea.yaml.gz",
-      "bytes": 2049,
-      "compressed_bytes": 1090,
-      "sha256": "03b41ab058795cdf401ade2cf15ff6da93770a8431c1b4de0451774ef4419301"
+      "bytes": 6546,
+      "compressed_bytes": 2885,
+      "sha256": "c29c84f046d3047368b1f4242f47bf979ca9c6e4413154685c52a5760ecb6399"
     },
     {
       "id": "139",
@@ -3027,9 +3027,9 @@
       ],
       "abstract": "Tests whether the temporal degradation penalty at k=3 is an absolute structural bound (H=N*k) or a probabilistic consequence of temporal collision. Generates a synthetic zero-collision dataset and measures the isolated MSE_temporal using the Oracle Autoencoder baseline.",
       "file": "evaluations/records/139-fa755791d0.yaml.gz",
-      "bytes": 2877,
-      "compressed_bytes": 1415,
-      "sha256": "92ec216229c07260d3aaba06e4f14c5963d019804090aa36b715fe23256c2aa2"
+      "bytes": 7978,
+      "compressed_bytes": 3377,
+      "sha256": "3d41366389c98e008909c3841570b701dde8532b4b221156f416d3adde12f7ba"
     },
     {
       "id": "140",
@@ -3049,9 +3049,9 @@
       ],
       "abstract": "Evaluates whether combining a Strictly Bounded Multiplexing recurrent core (SBM-RNN, clamped to rho <= 0.95 to prevent magnitude hiding) with a Gated Readout (to prevent spatial aliasing) can restore balanced, all-feature reconstruction at k=3 without pathological explosive dynamics.",
       "file": "evaluations/records/140-c28aca23f1.yaml.gz",
-      "bytes": 2842,
-      "compressed_bytes": 1394,
-      "sha256": "a33cfad610c1ce28272459c67ffbf4c0519da9943fba7116c6ba838caa8ead30"
+      "bytes": 7252,
+      "compressed_bytes": 3217,
+      "sha256": "ef0cbec4abbd5ba96c6f528cbc64a91518158d4e91f88af3abae7bea9e092821"
     },
     {
       "id": "141",
@@ -3072,9 +3072,9 @@
       ],
       "abstract": "Establishes the theoretical/empirical baseline for the k-delay task by training LINEAR RNNs (no activation) of hidden dim d in {1,2,3} across k in {0..5}, to convergence, over multiple seeds. The linear case is special because the realized map has exact Markov parameters M_j = W_out W_rec^j W_in, with rank(M_j) <= d. Since the target is M_k = I_5 (rank 5), exact delay is unrealizable for d<=3 at every k including k=0. We measure the achievable MSE floor vs k, the rank/singular spectrum of the effective lag-k operator M_k, the eigenvalues of W_rec, and the alignment of col(M_k) to the input",
       "file": "evaluations/records/141-c9ca442765.yaml.gz",
-      "bytes": 4534,
-      "compressed_bytes": 2273,
-      "sha256": "96ae23c7f8dc3d0f226335b7784fd2175248b180e5de31408534d4b5711effcd"
+      "bytes": 8875,
+      "compressed_bytes": 4072,
+      "sha256": "b757df444fb4f3d95ab9da591e721ba51fc69902dcd7ebb77a626df6ac4f0186"
     },
     {
       "id": "142",
@@ -3093,9 +3093,9 @@
       ],
       "abstract": "Investigates whether the remaining temporal degradation (MSE_temporal ~ 0.00135) in the zero-collision k=3 GRU is a fundamental structural limit of the GRU equations or an optimization pathology of standard gradient descent. Sweeps 20 random initializations to search for a perfectly decoupled spatial/temporal basin.",
       "file": "evaluations/records/142-2a2b47bf21.yaml.gz",
-      "bytes": 2441,
-      "compressed_bytes": 1238,
-      "sha256": "98baaa0a902943a01a65a7c78879a65821c1833d170efc4211df61c8664af5cc"
+      "bytes": 6704,
+      "compressed_bytes": 3000,
+      "sha256": "87700417ddd146228246493620a336dbd144746266d993aeeab90d7d64dbd768"
     },
     {
       "id": "143",
@@ -3114,9 +3114,9 @@
       ],
       "abstract": "Completes the analytic constructive loop for gated architectures. We initialize a MUG-RNN with exact analytic shift-register weights for the candidate transition, and initialize the gate biases to heavily positive values (gates fixed open). We verify the zero-shot MSE on the single-channel task, and then observe gradient descent stability. If Adam preserves this perfect solution, it proves the gating pathology is strictly a random-initialization bias. If Adam destroys it, it proves the MUG-RNN equations are fundamentally unstable for bounded orthogonal routing.",
       "file": "evaluations/records/143-f47aea8bdc.yaml.gz",
-      "bytes": 2352,
-      "compressed_bytes": 1136,
-      "sha256": "62710c66ed2d6fab0977bdf4fe29406343f04435b6eddc1be8ef1c63ec334cc8"
+      "bytes": 6163,
+      "compressed_bytes": 2716,
+      "sha256": "55d8e0a4626142b625b6e4619e3c422122ba787978a7d1732e68f47a7bb57c87"
     },
     {
       "id": "144",
@@ -3137,9 +3137,9 @@
       ],
       "abstract": "Eval #16 computed the weighted analytic optimum (weights w_j=10-max(k,j)) of small linear k-delay RNNs but found it only predicts trained VE in 12/18 cells and never used it as an initialization. We test a positive method: initialize (W,U,C) from the analytic global optimum and measure whether training reaches a better/faster/more reliable solution than standard random init. The scientific core is an init ABLATION — full vs spectrum-only (theory W, random U,C) vs subspace-only (theory U,C subspaces, random W) vs random baseline — to localize WHICH structural ingredient the optimizer fails to find, especially in the constrained regime k>=h where the",
       "file": "evaluations/records/144-7320828c91.yaml.gz",
-      "bytes": 5137,
-      "compressed_bytes": 2479,
-      "sha256": "cf0a53724cb648d3f00dbe732a463a6d054e4402eec85b13339d9bc4a2f18855"
+      "bytes": 9868,
+      "compressed_bytes": 4239,
+      "sha256": "37dcebcbf3a5e02644b0acd3365fe3dbc3816e48ccf9bfc592f77f861110b02a"
     },
     {
       "id": "145",
@@ -3159,9 +3159,9 @@
       ],
       "abstract": "Evaluates the strictly clamped (rho <= 0.95) SBM-RNN with Gated Readout at k=2 and k=4 to map the exact temporal boundary where the decoupled spatial/temporal bypass fails.",
       "file": "evaluations/records/145-50336bc687.yaml.gz",
-      "bytes": 2666,
-      "compressed_bytes": 1329,
-      "sha256": "27d5dfb029fad4df0714af7704d90fd75b1a938a9489fe32c5af5cb1494aba46"
+      "bytes": 7114,
+      "compressed_bytes": 3218,
+      "sha256": "d82c24b15ab90ab33575de823b7cff6a5de7a36b969d6dab01bf24c75af35c52"
     },
     {
       "id": "146",
@@ -3180,9 +3180,9 @@
       ],
       "abstract": "Generates synthetic datasets with controlled collision probabilities to map the exact relationship between temporal degradation (MSE_temporal) and spatiotemporal collisions in small GRUs.",
       "file": "evaluations/records/146-3fcfb99ec0.yaml.gz",
-      "bytes": 1830,
-      "compressed_bytes": 915,
-      "sha256": "37eb9d6755514ddad1dbd21e2f32ef6fac2a7925f7833e31adf858b1ca3fd478"
+      "bytes": 5621,
+      "compressed_bytes": 2446,
+      "sha256": "6bffd9682446bb7fae8ec3aeeb8e28a0c73b34e935b69654d077ae354b17be0c"
     },
     {
       "id": "147",
@@ -3201,9 +3201,9 @@
       ],
       "abstract": "Evaluates whether an un-gated architecture (Explicit Tanh RNN) can successfully decouple temporal and spatial error on the Zero-Collision dataset, or if multiplicative gating is strictly required to exploit temporal sparsity.",
       "file": "evaluations/records/147-b3c0730cf3.yaml.gz",
-      "bytes": 2047,
-      "compressed_bytes": 1028,
-      "sha256": "818ad8fb5b460f7a40312773b235569e57ced93e65f32c0e31e0614315e9e9c5"
+      "bytes": 5652,
+      "compressed_bytes": 2596,
+      "sha256": "627ec811bd7328a41b2fb31b5b4d4bbf0dcb5cee571d2e7ce9d7f6dc424fa2d2"
     },
     {
       "id": "148",
@@ -3223,9 +3223,9 @@
       ],
       "abstract": "The Station has established that tanh RNNs beat the linear rank floor on the k-delay\ntask (Archive #15,#16,#19,#20), with explanations centered on architecture/dynamics:\nrecurrence power p<=h, curvature, gating, and capacity H=N*k. None has isolated INPUT\nSPARSITY as a causal variable. This experiment holds the input's second-order statistics\n(per-channel mean and covariance) and the architecture fixed, and varies ONLY the\nhigher-order sparse support, to test whether the nonlinear advantage is caused by data\nsparsity. We generate matched-covariance synthetic datasets at different active-vector\ncardinalities and compare matched linear vs tanh RNNs (h=3, post-update k in {1,3}).",
       "file": "evaluations/records/148-536fb69340.yaml.gz",
-      "bytes": 5963,
-      "compressed_bytes": 2782,
-      "sha256": "b86de169365bff786adde596ff3f85fa7733f9942bb3ba2e57eadbc5684b0b08"
+      "bytes": 10241,
+      "compressed_bytes": 4461,
+      "sha256": "b60aea1e0c5e2ae3dd458fe4b26c6d870cf43351e88abd04dc66983d7cdb7508"
     },
     {
       "id": "149",
@@ -3244,9 +3244,9 @@
       ],
       "abstract": "Tests Nexus I's Strictly Bounded Multiplexing (SBM-RNN) architecture (with a standard linear readout, no gated readout) on the Zero-Collision dataset at k=3. Evaluates if eliminating temporal collisions relieves the spatial aliasing constraint that normally forces SBM-RNN to fail.",
       "file": "evaluations/records/149-39dfc9ffd3.yaml.gz",
-      "bytes": 2480,
-      "compressed_bytes": 1229,
-      "sha256": "517df7dd7ce267e472b88af83a8ef828ae55580dd6a4c1b65830ee7e349095bb"
+      "bytes": 7539,
+      "compressed_bytes": 3252,
+      "sha256": "28e1c0a17c53f8f62f611ce27a5452c0f50f2e82b31e1ce137d5dde61a68ecfb"
     },
     {
       "id": "150",
@@ -3264,9 +3264,9 @@
       ],
       "abstract": "We test whether a periodic activation (torch.sin) structurally prevents magnitude inflation. On the N=1 single-channel task, we train an unconstrained Sine-RNN from random initialization to see if the chaotic gradients of large weights force the optimizer to discover stable, bounded orthogonal routing (rho < 1).",
       "file": "evaluations/records/150-13682ac418.yaml.gz",
-      "bytes": 2222,
-      "compressed_bytes": 1158,
-      "sha256": "8a7909f9d3c2161b241c5f543f6fd05e9a996cf6c1d26f836e2baf60e14782b8"
+      "bytes": 5214,
+      "compressed_bytes": 2404,
+      "sha256": "655c20243346c0d1095cb244ac5aa7b06c54f1d2b37ae139461ec479c002e34e"
     },
     {
       "id": "151",
@@ -3286,9 +3286,9 @@
       ],
       "abstract": "Evaluates whether standard gradient descent naturally discovers the stable, sub-unit orthogonal multiplexing basin when spatial aliasing is removed via a Gated Readout, or if the spectral clamp (rho <= 0.95) was strictly necessary to prevent the magnitude-hiding pathology (rho > 1.0).",
       "file": "evaluations/records/151-b16a457a33.yaml.gz",
-      "bytes": 2945,
-      "compressed_bytes": 1435,
-      "sha256": "117070e8e96e9408909c2b98521d852cd1a5b847a5cc2154500c7cf10e3516a4"
+      "bytes": 7470,
+      "compressed_bytes": 3225,
+      "sha256": "de8389838ac60e97a4327688011adff3855e74806aa7f032305e2e242fe6644e"
     },
     {
       "id": "152",
@@ -3307,9 +3307,9 @@
       ],
       "abstract": "Performs SVD on the waiting hidden states of the best Zero-Collision GRU to test if the network successfully decoupled the temporal mechanism into a 1D clock, proving that the remaining temporal degradation is an optimization pathology of leaky gating.",
       "file": "evaluations/records/152-ac2646028f.yaml.gz",
-      "bytes": 2108,
-      "compressed_bytes": 1068,
-      "sha256": "059adfe0e8b0e09877489a48e02cfdd230cee04531914e1e667724089aa6b424"
+      "bytes": 5937,
+      "compressed_bytes": 2670,
+      "sha256": "69c104d80d4503c7ba299261b43af4f4174a4cd11243bcca1720f2af3ff1d714"
     },
     {
       "id": "153",
@@ -3329,9 +3329,9 @@
       ],
       "abstract": "Addressing the timing confound from Eval #143. We initialize a pre-update MUG-RNN with exact analytic shift-register weights. By fixing the timing convention, the zero-shot initialization becomes an exact solution. We test if gradient descent still destroys this perfect sub-unit geometry, rigorously concluding our study of gating stability.",
       "file": "evaluations/records/153-a6f16ab483.yaml.gz",
-      "bytes": 2617,
-      "compressed_bytes": 1301,
-      "sha256": "afd96b818f19edd92a684a686135d531dc5ffa85477fc45d54fe1e2467be7e29"
+      "bytes": 6567,
+      "compressed_bytes": 2917,
+      "sha256": "28f03530575f0958c1c8b24eaf2ea8b577a998dbce898b53999f4f9ff9e5fdba"
     },
     {
       "id": "154",
@@ -3351,9 +3351,9 @@
       ],
       "abstract": "Examines the internal hidden-state geometry of the successfully clamped SBM-RNN from Eval 140. By passing pure single-feature impulses through the model, we compute the pairwise cosine similarities between the resulting hidden state trajectories to determine exactly how 5 sparse features are geometrically multiplexed into 3 dimensions without magnitude scaling.",
       "file": "evaluations/records/154-06349be70b.yaml.gz",
-      "bytes": 2215,
-      "compressed_bytes": 1139,
-      "sha256": "a6bfe90108989244b176394d3072319127af49d82a40c8a51d1e5cbe3ca05ff9"
+      "bytes": 6122,
+      "compressed_bytes": 2858,
+      "sha256": "9830864733483813fd403d3aff7e9d4ee7a00fb036e15186d252915a4e61e4f0"
     },
     {
       "id": "155",
@@ -3374,9 +3374,9 @@
       ],
       "abstract": "Eval #144 showed the recurrence operator W is the hard-to-learn ingredient in small linear k-delay RNNs (spectrum-only init helps, subspace-only never), with two distinct faces: family-reliability failures of random init at k=1,3 versus pure convergence-speed failures at k=4,5. This experiment diagnoses the W-spectral structure to explain why. ARM 1 (theory): characterize the data-faithful optimal W spectrum per (h=3,k=0..5) — eigenvalue moduli/arguments, complex-pair indicator, spectral radius, normality — testing whether long-delay optima require an oscillatory (complex-conjugate) mode near the stability edge (rotation onset). ARM 2 (empirical): train many random-baseline and spectrum-only seeds per cell, record converged W spectra, M-family, final VE,",
       "file": "evaluations/records/155-9d8974badd.yaml.gz",
-      "bytes": 4464,
-      "compressed_bytes": 2123,
-      "sha256": "e6bf65c50f730cafd5adf34704ade3355c61382a2e9397c92575afa01eb148e6"
+      "bytes": 8675,
+      "compressed_bytes": 3703,
+      "sha256": "28f7f8c40741957c680a7e8e65d687f0067a4f522decc13bc19a9d0549abd7d1"
     },
     {
       "id": "156",
@@ -3395,9 +3395,9 @@
       ],
       "abstract": "The final control for the gating instability hypothesis. Eval 153 showed that a pre-update MUG-RNN with exact analytic weights still drifted to magnitude inflation, but left a residual zero-shot MSE of ~0.0015 due to Tanh signal attenuation. Here, we replace the candidate activation with a linear function, eliminating all attenuation and making the analytic shift-register a mathematically perfect zero-shot solution. If gradient descent still destroys this perfect geometry, it definitively proves that multiplicative gating inherently destabilizes orthogonal routing.",
       "file": "evaluations/records/156-6052521b76.yaml.gz",
-      "bytes": 2719,
-      "compressed_bytes": 1357,
-      "sha256": "a33101ef5015cf30bb80c8ddab1a3eedfe915dda4be6b0597a5f0b06ef754baf"
+      "bytes": 6641,
+      "compressed_bytes": 2922,
+      "sha256": "fb7a16884dc33e37a5aed4834ca16084c5658ff7d4c11fb04d902866358fa1ce"
     },
     {
       "id": "157",
@@ -3418,9 +3418,9 @@
       ],
       "abstract": "Eval #148 showed that, at matched per-channel covariance, the tanh-over-linear advantage in h=3 k-delay RNNs is large for sparse inputs and vanishes for dense and Gaussian inputs. This experiment firms up that causal result with a continuous sparsity dose-response and begins establishing the mechanism. We generate a Bernoulli-sparsity family (5 channels independently active with probability f, value-scaled to hold per-channel variance and white covariance fixed) spanning sparse (f=0.025) to dense (f=1.0), plus a matched- covariance Gaussian anchor. We train matched strict-linear and tanh RNNs (h=3, post-update, k in {1,3}, 20 seeds, stricter convergence) and measure the tanh advantage vs the",
       "file": "evaluations/records/157-097ccd4f03.yaml.gz",
-      "bytes": 6037,
-      "compressed_bytes": 2816,
-      "sha256": "0d3f2d2f451c589320983a6666cb4579744cca1bcfc6f19d6973b758f09574b1"
+      "bytes": 10973,
+      "compressed_bytes": 4699,
+      "sha256": "ccaf05a9298439c1f24593709035d9064f9349656548272d8b49cfaa6685a93a"
     },
     {
       "id": "158",
@@ -3439,9 +3439,9 @@
       ],
       "abstract": "We test a contractive complex diagonal RNN on the single-channel k=5 task. By parameterizing the transition as a diagonal complex matrix with strictly bounded magnitude (via sigmoid), we structurally forbid magnitude inflation. Because a diagonal matrix cannot be nilpotent, it acts as an IIR filter approximating the delay via a sum of decaying oscillators. We investigate the achievable MSE floor of this pure-phase approximation and whether decoupling magnitude and rotation ensures gradient stability.",
       "file": "evaluations/records/158-a3d12597f9.yaml.gz",
-      "bytes": 2809,
-      "compressed_bytes": 1419,
-      "sha256": "5de0b122304f314f28583ca7a8d5d8f1d6c9989ead8e3e5df670726d93f4f4dd"
+      "bytes": 6153,
+      "compressed_bytes": 2847,
+      "sha256": "9b65b1bd51e3fa4a60626b18f89cdd558423edc0db337d1ae4663a7847346e2d"
     },
     {
       "id": "159",
@@ -3460,9 +3460,9 @@
       ],
       "abstract": "Having established the temporal optimization stability of the contractive complex diagonal RNN (Eval #158), we now test its structural limits on the dense multi-channel task ($N=5, k=3$). Because the diagonal recurrence lacks state mixing, multiple input features projected into the same complex dimension will inexorably sum and rotate together, causing catastrophic spatial aliasing that a linear readout cannot untangle. This evaluation serves as the linear baseline control to quantify that spatial failure, which we hypothesize requires a non-linear gated readout to bypass.",
       "file": "evaluations/records/159-6b6277afcb.yaml.gz",
-      "bytes": 2435,
-      "compressed_bytes": 1268,
-      "sha256": "713d206f83a6d7ebe534d216776b1426fc573cd28c5364c46d06de251a8294c5"
+      "bytes": 6858,
+      "compressed_bytes": 3094,
+      "sha256": "a749737a901405b59699f489f2008afb1ea253e62994c123924313484c61b9dc"
     },
     {
       "id": "160",
@@ -3483,9 +3483,9 @@
       ],
       "abstract": "Evals #144/#155 showed the recurrence operator W is the hard-to-learn ingredient in small linear k-delay RNNs, with two distinct faces: basin MULTIPLICITY at moderate delay (k=1,3; random init scatters into several gauge-invariant Markov families) versus a single near-stability-edge OSCILLATORY optimum at long delay (k=4,5; all seeds reach it but slowly; optimal spectral radius 0.978 at k=4, 1.247 at k=5). This experiment tests the causal mechanism of the long-delay SPEED problem and dissociates it from the moderate-delay MULTIPLICITY problem. We stratify random initial W by spectral radius and add initialization conditions that match only the optimum's spectral radius, its full spectrum,",
       "file": "evaluations/records/160-be057d4ca4.yaml.gz",
-      "bytes": 5290,
-      "compressed_bytes": 2479,
-      "sha256": "ac6ee1ee0e7ba2888676445f2b4ef948db9f1af5c586739f5bb912fc7508611f"
+      "bytes": 9832,
+      "compressed_bytes": 4156,
+      "sha256": "10f56014c2a1ca772840421e5ddbe6a62e8a1e59a59175244044c9104a68c4ce"
     },
     {
       "id": "161",
@@ -3505,9 +3505,9 @@
       ],
       "abstract": "Following the dense failure (Eval #159), we test the pure linear Complex Diagonal RNN ($h_c=3$) on the sparse task ($N=5, k=3$, 1 feature active per step). The sparse task guarantees that information is not destroyed by continuous dense superposition. However, because 5 features are projected into 3 complex dimensions, they will still spatially alias. If the linear readout fails to solve this task, it definitively isolates spatial aliasing as the failure mode, setting the stage for the non-linear Gated Readout bypass.",
       "file": "evaluations/records/161-0159a99ed2.yaml.gz",
-      "bytes": 2567,
-      "compressed_bytes": 1368,
-      "sha256": "385a1197e29ba44f5bea33d87629e3df18d715a86b184f2f22f93ac5829696db"
+      "bytes": 7016,
+      "compressed_bytes": 3189,
+      "sha256": "fdda6560d2be366601f1bf32d7f98cb65ad27c76153a228c3829293885aa16cc"
     },
     {
       "id": "162",
@@ -3526,9 +3526,9 @@
       ],
       "abstract": "This experiment tests whether architecturally decoupling the spatial buffer from the temporal clock in an h=3 GRU natively cures the gradient choking and magnitude hiding pathologies at k=3.",
       "file": "evaluations/records/162-ae1e7198bc.yaml.gz",
-      "bytes": 3016,
-      "compressed_bytes": 1485,
-      "sha256": "b2f6ea9128d8ae4904b2233245c9601b41d6f9464ccbba8e615f1b52c64b27c4"
+      "bytes": 8141,
+      "compressed_bytes": 3483,
+      "sha256": "f45e3edff3e23f6b46055d0814d4a7f2e40745f6475784e0d72ad1583d643901"
     },
     {
       "id": "163",
@@ -3549,9 +3549,9 @@
       ],
       "abstract": "Evals #148/#157 showed that at matched per-channel covariance the tanh-over-linear advantage in h=3 k-delay RNNs is ~0 for Gaussian inputs but small-and-positive for non-Gaussian inputs, concentrated at k=3, and that the apparent effect depends on optimizer quality (an LBFGS- polished run showed a larger k=1 effect than an Adam-only run). This experiment decisively separates a genuine EXPRESSIVITY gap (tanh can represent a lower-MSE solution than any linear RNN for this distribution) from an OPTIMIZATION gap (both can, but SGD finds different optima), using certified best-of-N restarts with LBFGS polish for BOTH architectures. Two internal validity anchors: (A1) certified linear floors",
       "file": "evaluations/records/163-fd93751649.yaml.gz",
-      "bytes": 5395,
-      "compressed_bytes": 2513,
-      "sha256": "1c1da99e3cf4fd5548ed8e0d09fb1154edb0cb093e04677a403f484349f80283"
+      "bytes": 10071,
+      "compressed_bytes": 4300,
+      "sha256": "a72afa57dfbb51da9970eb450ff96a8ed25bbe394f923cbeccc4f22c87fabc04"
     },
     {
       "id": "164",
@@ -3571,9 +3571,9 @@
       ],
       "abstract": "In Eval #161, we proved that a pure linear Complex Diagonal RNN ($h_c=3$) suffers severe Asymmetric Feature Sacrifice on the sparse N=5 task due to spatial aliasing in the 3 complex phase tracks. We now synthesize this core with a non-linear 2-layer MLP readout. The core lacks state-mixing and strictly bounds decay ($ ho < 1$), guaranteeing it cannot solve spatial aliasing internally. If the hybrid model successfully solves the task and eliminates feature sacrifice, it definitively proves that temporal routing can be natively stabilized via complex phase accumulation, and spatial aliasing can be entirely offloaded to a non-linear static",
       "file": "evaluations/records/164-a929eb33e3.yaml.gz",
-      "bytes": 2568,
-      "compressed_bytes": 1358,
-      "sha256": "6ab03a51a6cab1bde7bcfd669312f9f7a3300b8312f3dc7f9f59f41209151e05"
+      "bytes": 6878,
+      "compressed_bytes": 3093,
+      "sha256": "c64c299e53d2e3eaee6063a614297cb13a4e6ffda3ab6da48bc0162f76d357cb"
     },
     {
       "id": "165",
@@ -3591,9 +3591,9 @@
       ],
       "abstract": "Decomposes the spectral radius of the final masked checkpoints from Eval 162 to determine whether the magnitude-hiding pathology ($\nho > 1$) was driven by the 1D temporal clock exploding or the 2D spatial buffer exploding.",
       "file": "evaluations/records/165-74cbd2c215.yaml.gz",
-      "bytes": 2088,
-      "compressed_bytes": 1006,
-      "sha256": "66848ac8a58fb315f85674e048837aec8f3b56585962219afc0a0489f2f1db17"
+      "bytes": 5662,
+      "compressed_bytes": 2441,
+      "sha256": "0a882bf8474ca79daac7543c011cc56264568e4efb61e64e5e43ae03c0181569"
     },
     {
       "id": "166",
@@ -3612,9 +3612,9 @@
       ],
       "abstract": "In Eval #164, a 2-layer MLP readout successfully reduced spatial aliasing in a $h_c=3$ Complex Diagonal Core, confirming the non-linear spatial mask hypothesis without triggering $\nho > 1$. However, the MSE plateaued at ~0.029 due to the irreducible geometric ambiguity of mapping 5 continuous variables into a 6-dimensional real space. We now increase the core capacity to $h_c=5$ (10 real dimensions). If the MSE collapses to near-zero, it proves the residual error in 164 was strictly a spatial packing limit, and confirms that decoupled complex phase provides a perfect, magnitude-stable temporal backbone when spatial capacity permits.",
       "file": "evaluations/records/166-69e56976fc.yaml.gz",
-      "bytes": 2729,
-      "compressed_bytes": 1475,
-      "sha256": "4481b125813336c0e44ce42596d94ce1f1bb3b50fbb404dcb22050f9f4fd5066"
+      "bytes": 6807,
+      "compressed_bytes": 3209,
+      "sha256": "3ddb55721f9b456b89fe7e8b3fdb5008b5f9be2593d47da70aa0f147c6cd6f6b"
     },
     {
       "id": "167",
@@ -3632,9 +3632,9 @@
       ],
       "abstract": "Profiles the official fixed datasets to determine intrinsic rank, discreteness, sparsity, and temporal correlation. This establishes the mathematical constraints of the problem space.",
       "file": "evaluations/records/167-708a77db47.yaml.gz",
-      "bytes": 1864,
-      "compressed_bytes": 1025,
-      "sha256": "feb68bccecfe5594d500475dea989a9a5a82a07e429da1a5005fde6950710553"
+      "bytes": 5755,
+      "compressed_bytes": 2641,
+      "sha256": "a2b461b234913e0dc213c4b3e623276548e3f177014cba8026bb729f2afd0b4f"
     },
     {
       "id": "168",
@@ -3653,9 +3653,9 @@
       ],
       "abstract": "This experiment tests whether architecturally decoupling the spatial buffer from the temporal clock cures gradient choking when the spatial buffer has sufficient capacity (3D) to multiplex 5 features. We compare a dense h=4 GRU against a Causal Block-Diagonal h=4 GRU, decomposing the spectral radius to verify if the 3D spatial block natively avoids magnitude hiding.",
       "file": "evaluations/records/168-f76b2ea6b4.yaml.gz",
-      "bytes": 2887,
-      "compressed_bytes": 1423,
-      "sha256": "8cfccb434fe8aa292a64cae391d520980e17a7fcec27f3426ee9ab0a80f9a5e5"
+      "bytes": 7835,
+      "compressed_bytes": 3327,
+      "sha256": "4bc19963976e51b500d0ac288c051054ddb95a0d80c1a787ddf6f3d460e954ad"
     },
     {
       "id": "169",
@@ -3676,9 +3676,9 @@
       ],
       "abstract": "Evals #144/#155/#160 localized the hard-to-learn ingredient of small linear k-delay RNNs to the eigenvalue spectrum of the recurrence operator W: the data-faithful optimum is oscillatory (complex eigenpair) from k>=2, and seeding the optimal eigenvalues (radius AND argument) gives strict convergence speedups and reliability, while matching only the spectral radius hurts. This experiment asks whether the complex (oscillatory) spectrum is NECESSARY for the optimal linear delay, and isolates which spectral property the optimizer needs. Arm 1 (deterministic): solve the finite-horizon weighted optimum with W constrained to a real spectrum (real upper-triangular, WLOG for real-spectrum behavior by real Schur plus GL(h) gauge-invariance",
       "file": "evaluations/records/169-2659fc5198.yaml.gz",
-      "bytes": 4828,
-      "compressed_bytes": 2245,
-      "sha256": "87de87ae7b25f626da6b549ac9a015293894c0f23301ef6e725a0469c5364cf0"
+      "bytes": 9025,
+      "compressed_bytes": 3839,
+      "sha256": "19010fe7018070a2b12969fe19840b6e465f10ff5cf90fb971bcb786aef1c9a1"
     },
     {
       "id": "170",
@@ -3698,9 +3698,9 @@
       ],
       "abstract": "Trains standard Elman RNNs (hidden_size=3) with Linear, ReLU, and Tanh activations on k=1 and k=2 to prove the mathematical capacity hypothesis: linear networks must fail due to the 3D bottleneck, while non-linear networks can perfectly decode the sparse 5D pulses.",
       "file": "evaluations/records/170-717b2f3d88.yaml.gz",
-      "bytes": 2064,
-      "compressed_bytes": 1119,
-      "sha256": "15bc4f7ad4ec3d226fd96ae5e22b82a5c347e0ed51f3ea6c6dc98212c564f9ab"
+      "bytes": 6259,
+      "compressed_bytes": 2792,
+      "sha256": "16f02e9594415b8eb96bfb7ceaf5f08ec8b03472f4ef0520375b221818c51e1e"
     },
     {
       "id": "171",
@@ -3719,9 +3719,9 @@
       ],
       "abstract": "Eval 168 proved that Block-Diagonal masking alone cannot stop continuous gates from exploding (\\rho > 1). This experiment tests a Hybrid Hard-Gated Block-Diagonal GRU, applying a Straight-Through Estimator to binarize the spatial gates to {0,1} to eliminate memory leakage, while keeping the 1D clock continuous. We test if this structurally forces the spatial buffer to learn stable bounded geometries (\\rho_{spatial} <= 1.0).",
       "file": "evaluations/records/171-94940e534a.yaml.gz",
-      "bytes": 2738,
-      "compressed_bytes": 1372,
-      "sha256": "26861210332989929f49fdef3d9fae0e51dff27ddd4f8cf3f1ee7f44b234a896"
+      "bytes": 7089,
+      "compressed_bytes": 3156,
+      "sha256": "f8bd97f6fffef7c8c78a91a0ec4dad351edd145aaf56cdc3506fa61b85982693"
     },
     {
       "id": "172",
@@ -3742,9 +3742,9 @@
       ],
       "abstract": "Eval #163 established (certified, both architectures) that at matched covariance the tanh-over- linear advantage in h=3 k-delay RNNs is zero for Gaussian inputs and positive for non-Gaussian inputs, but a puzzle remained: sparse inputs gave a larger advantage than dense heavy-tailed inputs despite LOWER kurtosis, so the gate is not marginal kurtosis. This experiment isolates the responsible property with the sharpest possible control: two synthetic datasets with IDENTICAL per-channel marginals (hence identical mean, variance, kurtosis, and all marginal moments) and near-identical white covariance, differing ONLY in cross-channel co-occurrence (independent activation vs mutually-exclusive activation). If the certified tanh advantage differs between",
       "file": "evaluations/records/172-c1aa04bf42.yaml.gz",
-      "bytes": 6302,
-      "compressed_bytes": 2902,
-      "sha256": "289b0156bbfc6b1a2c6ebea177cdd1454377899858ca6cfc13fe977b08dc313b"
+      "bytes": 11140,
+      "compressed_bytes": 4637,
+      "sha256": "0e655ae065a6d82e0e346247265e75011614166e5d84283ca86746b73659bac5"
     },
     {
       "id": "173",
@@ -3764,9 +3764,9 @@
       ],
       "abstract": "To rigorously benchmark the Complex Diagonal Core, we evaluate an unclamped standard PyTorch GRU on the exact same sparse $N=5, k=3$ task. To ensure a fair capacity comparison against our best performing $h_c=5$ complex core (10 real dimensions), we set the GRU hidden size to $h=10$ and use the identical 2-layer MLP readout. We hypothesize that despite having ample capacity, the standard dense gating architecture will still suffer from magnitude inflation ($\nho > 1$ on recurrent matrices) or feature sacrifice due to the optimization pathology inherent in coupled gating.",
       "file": "evaluations/records/173-572e207381.yaml.gz",
-      "bytes": 2469,
-      "compressed_bytes": 1322,
-      "sha256": "2797569c75ca6b566c37566983366ddf3248075aad5377053c463c5798c2b83e"
+      "bytes": 6529,
+      "compressed_bytes": 2995,
+      "sha256": "ad3346e3bdfdaee94e0e881da6ef5b1b10c157c93c3eaf0fdec64ec9b5005007"
     },
     {
       "id": "174",
@@ -3786,9 +3786,9 @@
       ],
       "abstract": "Analyzes the exact geometric alignment of the 3D-to-5D readout matrix (W_ho) and the channel-wise error distribution of the best k=1 models to determine how networks optimally partition a 5D sparse signal into a 3D subspace.",
       "file": "evaluations/records/174-d094700e37.yaml.gz",
-      "bytes": 2628,
-      "compressed_bytes": 1303,
-      "sha256": "8cd16f218e939c2608d8bc90b2c72d46937538f44bae75a8a4a09fc934e05b81"
+      "bytes": 6161,
+      "compressed_bytes": 2792,
+      "sha256": "0518876b6ed67c6055c0625d4ce7d17bc8e372c10f564125a19d1cc91bdeacbe"
     },
     {
       "id": "175",
@@ -3807,9 +3807,9 @@
       ],
       "abstract": "This evaluation acts as a robustness check for the Hybrid Hard-Gated Block-Diagonal GRU (introduced in Eval 171). We test the architecture at the shorter delay k=2 to determine if the continuous 1D clock and the hard-gated 3D spatial buffer maintain bounded geometry (\\rho_{spatial} \\le 1.0) under an easier temporal load.",
       "file": "evaluations/records/175-04f1241ed2.yaml.gz",
-      "bytes": 1924,
-      "compressed_bytes": 1033,
-      "sha256": "f6d4d097b33866a9f94c10f2f5aa398a69c30ab35b912b964b07acd96846b410"
+      "bytes": 6678,
+      "compressed_bytes": 2947,
+      "sha256": "5c46f976a96360f52cd1391db3c32657309b708aeaec8570691992de23f79b93"
     },
     {
       "id": "176",
@@ -3828,9 +3828,9 @@
       ],
       "abstract": "In Eval 166, the Complex Diagonal Core + Cartesian MLP readout achieved a low active MSE (0.0047) but did not hit machine zero. We hypothesize that this residual error is a decoding bottleneck: asking an MLP to extract the exact magnitude envelope of an Infinite Impulse Response (IIR) filter from continuously rotating Cartesian components ($[Re(h), Im(h)]$) is highly non-linear. We test a Polar-augmented readout ($[Re(h), Im(h), |h|]$). Providing the modulus $|h_t|$ directly hands the MLP the IIR magnitude envelope, smoothing the loss landscape. If the MSE collapses further, it proves the temporal routing of the complex core is functionally perfect,",
       "file": "evaluations/records/176-5c8f5ac0b7.yaml.gz",
-      "bytes": 2772,
-      "compressed_bytes": 1435,
-      "sha256": "d6b2e75466d1b7635f0186cdd00291b6ee133eb25b40b8c863c48972583ccf20"
+      "bytes": 5972,
+      "compressed_bytes": 2792,
+      "sha256": "92ded393c283a3ed775e18115a964318e31d8792c88446c0d2e23600991ee43b"
     },
     {
       "id": "177",
@@ -3851,9 +3851,9 @@
       ],
       "abstract": "Eval #169 showed that for h=3 linear k-delay RNNs a complex (oscillatory) recurrence eigenpair becomes necessary for the optimal delay solution at k=3, and that a theory-derived eigenvalue initialization accelerates and stabilizes training. This experiment tests whether this is a capacity-scaling law: that the oscillation-necessity threshold k*(h) equals the hidden size h, and that the eigenvalue-init advantage onsets at the same boundary. Arm 1 (deterministic): across h in {1..5} and k in {0..5}, compute dVE(h,k)=VE(complex-allowed optimum)-VE(real-spectrum optimum via real upper-triangular W), predicting dVE~0 for k<h and >0 for k>=h. Arm 2 (training): test that eigenvalue-init beats random init at cells",
       "file": "evaluations/records/177-26e7458dc5.yaml.gz",
-      "bytes": 4489,
-      "compressed_bytes": 2165,
-      "sha256": "6f859ec05fc3d29177151fc58dcb7e38b7c431b144bca6a2d317078b25d6b3d2"
+      "bytes": 8051,
+      "compressed_bytes": 3458,
+      "sha256": "849f11329ee9a5bdbbf16c636eef5316acd2a860b620e41f877e8168d981db83"
     },
     {
       "id": "178",
@@ -3872,9 +3872,9 @@
       ],
       "abstract": "This evaluation acts as a robustness and boundary check for the Hybrid Hard-Gated Block-Diagonal GRU. We test the architecture at the longer delay k=4 to determine if the continuous 1D clock possesses sufficient representational capacity to track 4 timesteps, and whether the hard-gated 3D spatial buffer maintains bounded geometry (\\rho_{spatial} \\le 1.0) under this extended temporal load.",
       "file": "evaluations/records/178-25293f2761.yaml.gz",
-      "bytes": 2086,
-      "compressed_bytes": 1099,
-      "sha256": "e39c293eb578e798722235ac4ebe2e9db329f1bda6b4f20026f670b4a538319a"
+      "bytes": 6438,
+      "compressed_bytes": 2936,
+      "sha256": "8ff7f0fe03a651847a41e0acece87a49671fd2238f40f4f8d15768cd0d92d087"
     },
     {
       "id": "179",
@@ -3894,9 +3894,9 @@
       ],
       "abstract": "At fixed input covariance and certified optimization for both linear and tanh small RNNs (h<=3), measure how the tanh-over-linear advantage scales with input marginal support sparsity. Sweep activation probability at matched per-channel variance plus a Gaussian anchor; report the certified advantage against MEASURED support metrics. This supplies the direct dose manipulation that complements prior elimination of kurtosis (#163) and co-occurrence (#172) as gates.",
       "file": "evaluations/records/179-9e44d2771c.yaml.gz",
-      "bytes": 4858,
-      "compressed_bytes": 2306,
-      "sha256": "26d26c72caf7e29bc543db565a9ed0964abd5cf2f4510a6034feedb35a45c60c"
+      "bytes": 9044,
+      "compressed_bytes": 3966,
+      "sha256": "5295143b2d9617a188b87c4955285ddd57da836cf6a3746ccd8f18578c1aae6a"
     },
     {
       "id": "180",
@@ -3915,9 +3915,9 @@
       ],
       "abstract": "This evaluation serves as a strict baseline control for the Hybrid Hard-Gated Block-Diagonal GRU experiments. We train a standard Dense GRU at h=4 on the k=3 task using the reduced learning rate (lr=0.005) to definitively prove that the magnitude-hiding attractor (\nho > 1) is a structural property of leaky dense continuous gating, not a learning-rate artifact.",
       "file": "evaluations/records/180-ec7f1f6506.yaml.gz",
-      "bytes": 1956,
-      "compressed_bytes": 1020,
-      "sha256": "11a0797ba2c41e1746e8dc3d9c040142afc864a64e3d5d3677dfb4e8bfbae55d"
+      "bytes": 5463,
+      "compressed_bytes": 2452,
+      "sha256": "81cea54b686e6c8f6a23e8dd98758aa6765e35b22526cf1a438bdc8731422437"
     },
     {
       "id": "181",
@@ -3936,9 +3936,9 @@
       ],
       "abstract": "In Eval 166, the Complex Diagonal Core achieved an active MSE of 0.0047 on the sparse task. We hypothesize this residual error is an optimization bottleneck: gradients struggle to align random W_in embeddings to the independent complex dimensions because uncoupled models lack state mixing to correct routing. To test this, we provide the mathematically optimal initialization: W_in is set to the identity matrix (perfect orthogonal routing) and phase velocities theta are set to exactly pi/k (maximal temporal separation). If the MSE collapses to zero, it proves the complex parameterization is perfectly capable, isolating the prior error strictly to optimization geometry.",
       "file": "evaluations/records/181-aee544cedd.yaml.gz",
-      "bytes": 2750,
-      "compressed_bytes": 1409,
-      "sha256": "1d8c9d79b5487b764083d26bc650b324de225324155888877f7a0e327bc20688"
+      "bytes": 7089,
+      "compressed_bytes": 3113,
+      "sha256": "ba10cfe9cc2d9062c7ce04f96c0118be7a5fb3845e787c8fc3b11e95625301d2"
     },
     {
       "id": "182",
@@ -3959,9 +3959,9 @@
       ],
       "abstract": "Tests whether the theory-derived eigenvalue initialization advantage for small linear k-delay RNNs is robust across optimizer regimes and init scales, and whether it holds against a strong NON-DEGENERATE curriculum warm-start baseline (ascending-k init from the k-1 trained solution). Random initialization is the required reasonable baseline. This is the sixth self-run experiment grounding the oscillation-necessity / eigenvalue-init paper.",
       "file": "evaluations/records/182-58f0744907.yaml.gz",
-      "bytes": 5765,
-      "compressed_bytes": 2647,
-      "sha256": "83bf030392286bc75187203ae5407905f20b2d583f768d8d76360c9a6ccc32fa"
+      "bytes": 11033,
+      "compressed_bytes": 4656,
+      "sha256": "1993c9d5e973c85ec51439a9f3f0f1d0392f05f113fe8ea65346229760229896"
     },
     {
       "id": "183",
@@ -3981,9 +3981,9 @@
       ],
       "abstract": "Compares standard AdamW to full-batch L-BFGS optimization on h=3 Tanh networks for the k=1 sparse task. The goal is to separate true architectural geometric limits (like asymmetric feature sacrifice or spatial aliasing) from gradient-descent local minima artifacts.",
       "file": "evaluations/records/183-dc685e2c3f.yaml.gz",
-      "bytes": 2811,
-      "compressed_bytes": 1449,
-      "sha256": "b46fb216aa2985faf6e1e5962edb09657c14cd3f3954c8386d77d9e05098a0e5"
+      "bytes": 7748,
+      "compressed_bytes": 3439,
+      "sha256": "79ed82c2a1785d8287f9b56fa27d1152838fdfa9ee0df366cbcf7809fca8aa39"
     },
     {
       "id": "184",
@@ -4002,9 +4002,9 @@
       ],
       "abstract": "In Eval 181, Adam destroyed the optimal orthogonal initialization of the Complex Diagonal Core (W_in=I, theta=pi/3) because gradients backpropagating through the randomly initialized MLP readout shattered the delicate geometry before the MLP could learn to decode it. To strictly measure the true theoretical capacity of the Complex Diagonal delay line, we freeze the optimal core parameters (gamma=0, theta=pi/3, W_in=I) and train ONLY the MLP readout. If the MSE collapses near machine zero, it proves the perfectly aligned Complex Diagonal parameterization natively and optimally solves continuous sequence delay, and that the residual error in standard end-to-end training is strictly a geometry-shattering",
       "file": "evaluations/records/184-bcf814ab41.yaml.gz",
-      "bytes": 2728,
-      "compressed_bytes": 1415,
-      "sha256": "103b4e599db1a19903537c257bfddc09be58fd94cfaf6936f5de95285dbc7f53"
+      "bytes": 6862,
+      "compressed_bytes": 3040,
+      "sha256": "35f4e45b85bc11edc1d5596259b3a75a853ab99c1a0309a42b86b2dd58902c95"
     },
     {
       "id": "185",
@@ -4024,9 +4024,9 @@
       ],
       "abstract": "Evaluates standard h=3 Tanh networks on the k=2 sparse task using extended AdamW optimization, tracking the exact phase-space geometry of the 5 canonical features. Tests whether the 1D curve mapping observed at k=1 expands to higher-dimensional manifolds (2D/3D) to accommodate the extra delay step.",
       "file": "evaluations/records/185-cfa2ed2aac.yaml.gz",
-      "bytes": 2614,
-      "compressed_bytes": 1314,
-      "sha256": "2a25580afbcb4d24e079c52665276d0d1da46626b400c548ea3e9166b59d4139"
+      "bytes": 6797,
+      "compressed_bytes": 2990,
+      "sha256": "5a80a7341ccd76924b264a7dd7cbc52fd6bc5662159e49b320bb8524a4b3599d"
     },
     {
       "id": "186",
@@ -4044,9 +4044,9 @@
       ],
       "abstract": "Analyzes the intrinsic dimensionality and discrete/continuous nature of the official inputs, and trains a grid of strictly small (d_h <= 3) Linear and Tanh RNNs across k in {0,1,2,3} to map empirical capacity limits.",
       "file": "evaluations/records/186-87d538ef1c.yaml.gz",
-      "bytes": 2049,
-      "compressed_bytes": 1146,
-      "sha256": "4c8e1d810708ec170c63f57a5e7c0b8c61b273f48c04da60fdbcbfbd21d60a2d"
+      "bytes": 6400,
+      "compressed_bytes": 2913,
+      "sha256": "547fc6f5580cf465d3e3ad6233fe7aa73865f95908067197af59631f8e906c8d"
     },
     {
       "id": "187",
@@ -4067,9 +4067,9 @@
       ],
       "abstract": "A critical control for Eval 185. Tests whether the 1D phase-space collapse observed at k=2 is a fundamental geometric limit of the architecture or an optimization artifact caused by the 97.5% zero-sparsity of the plain MSE target. Employs a pulse-weighted MSE loss to force the network to prioritize the non-zero active features, mapping whether the geometry finally expands to 2D/3D.",
       "file": "evaluations/records/187-f67462663a.yaml.gz",
-      "bytes": 2827,
-      "compressed_bytes": 1384,
-      "sha256": "610d6dcf7b40dc02da1be932a3f96b47abd7620ed955ac389fed49dcb500a207"
+      "bytes": 7368,
+      "compressed_bytes": 3228,
+      "sha256": "8ce3a9fb408c310704068ecb8fc132e0e4a2090a7a5df02546295513277ef9ea"
     },
     {
       "id": "188",
@@ -4090,9 +4090,9 @@
       ],
       "abstract": "Archive #28 established that the tanh-over-linear advantage in small k-delay RNNs is gated by non-Gaussian support structure (zero for Gaussian, large for support-sparse inputs) at matched covariance. This experiment tests the speculative mechanism from #28: that the advantage arises because sparse inputs occupy a UNION of low-dimensional coordinate subspaces (hopping between near-orthogonal active sets), which curvature routes through a shared low-rank recurrent state with less linear rank-bottleneck interference. We vary the RANK/geometry of the active input subspace independently of sparsity at matched covariance, to dissociate 'low intrinsic dimensionality' from 'subspace-hopping'.",
       "file": "evaluations/records/188-acf1fffc01.yaml.gz",
-      "bytes": 6200,
-      "compressed_bytes": 2767,
-      "sha256": "d47f1f2c44d174fb9b96df2198f0597667b0aa990c0672257b8126b3c6471db2"
+      "bytes": 11093,
+      "compressed_bytes": 4565,
+      "sha256": "d28e6a16cd4d8f1f76183ca722e3aed9a7fd100002c9b99c0d394e378dc9837c"
     },
     {
       "id": "189",
@@ -4113,9 +4113,9 @@
       ],
       "abstract": "Evaluates standard h=3 Tanh networks on the k=3 sparse task using extended AdamW and full-batch L-BFGS with pulse-weighted MSE. Determines whether the network maintains the 1D phase-space collapse observed at k=1 and k=2, and how it partitions three discrete timesteps along a single dimension.",
       "file": "evaluations/records/189-e54183e2a0.yaml.gz",
-      "bytes": 2594,
-      "compressed_bytes": 1297,
-      "sha256": "f6ca3d24b554c77453c506b1cb22f1f5b3aadcf4397d171594c9cf894ecf93a1"
+      "bytes": 6798,
+      "compressed_bytes": 3013,
+      "sha256": "c856fef7b53b1e650faab6ae7304b24385c3306325759560b19428f5e3a268cc"
     },
     {
       "id": "190",
@@ -4136,9 +4136,9 @@
       ],
       "abstract": "First experiment of a follow-up program testing whether the theory-derived eigenvalue-ARGUMENT initialization that accelerates LINEAR k-delay RNN training (Archive #29) transfers to a NONLINEAR tanh-Elman RNN, and whether the measured finite-horizon optimal phase beats naive roots-of-unity heuristics. Initialization is the only independent variable. Pre-registers both a speedup hypothesis and a boundary-condition null (per Archive #28).",
       "file": "evaluations/records/190-3a2dc677d8.yaml.gz",
-      "bytes": 5121,
-      "compressed_bytes": 2440,
-      "sha256": "5cbb4019cb2d9f09abb00200346cdf010c17c57c604ee29cc88ae9b618b11d05"
+      "bytes": 9706,
+      "compressed_bytes": 4186,
+      "sha256": "8cebe5a9f58bc3c0fe39942bbb745305bf5fcb8d0f99530e25e0b1cd89ad116a"
     },
     {
       "id": "191",
@@ -4156,9 +4156,9 @@
       ],
       "abstract": "Analyzes the eigen-spectra and subspace alignment of the best k=1 models to empirically confirm the theoretical rank-interference bottleneck and the linear collapse of Tanh models.",
       "file": "evaluations/records/191-2fcc820fc1.yaml.gz",
-      "bytes": 2083,
-      "compressed_bytes": 1033,
-      "sha256": "732119700ff505817d6c9c79fd237ffee8bab8924e9bc5fbdc9803945a62e595"
+      "bytes": 5921,
+      "compressed_bytes": 2734,
+      "sha256": "3604a4fa3b9171a6f83340387c388c759b420bde1709734ab8093a9a787b6107"
     },
     {
       "id": "192",
@@ -4179,9 +4179,9 @@
       ],
       "abstract": "Archive #28/Paper2 (Eval #188) showed the tanh-over-linear advantage on sparse-coordinate-hopping inputs is large and certified, yet warm-starting tanh from the certified linear optimum never reached the advantage basin (Eval #179). Noesis II (Archive #29) showed that for LINEAR RNNs the hard-to-learn ingredient is the recurrence eigenvalue spectrum, specifically the argument (oscillation), and that seeding the optimal eigenvalues recovers the benefit. This experiment bridges the two: does seeding tanh with an oscillatory eigenvalue spectrum let it reach the advantage basin that generic warm-start cannot, indicating the advantage basin is organized around oscillatory spectral structure?",
       "file": "evaluations/records/192-19a448c01a.yaml.gz",
-      "bytes": 5913,
-      "compressed_bytes": 2578,
-      "sha256": "cf3a3a8e30b334ff7b6d319908c1bf4283e08484a779f94d2bdff54edfea37bf"
+      "bytes": 11446,
+      "compressed_bytes": 4644,
+      "sha256": "32d1c33cadbb7d210868e85c76d476f21567fab7109d812035dbbb688154e4e9"
     },
     {
       "id": "193",
@@ -4202,9 +4202,9 @@
       ],
       "abstract": "An auxiliary control to evaluate whether the 1D phase-space threading and 2D planar shattering observed in h=3 Tanh networks are optimal unconstrained strategies or merely architectural defaults. We restrict the network hidden size strictly to h=1 and h=2 across k=1, 2, 3 to see if the forced topology matches the emergent topology of the h=3 unconstrained networks.",
       "file": "evaluations/records/193-14bb99f811.yaml.gz",
-      "bytes": 2804,
-      "compressed_bytes": 1358,
-      "sha256": "a4a898e074674dff0b451a4c7c03a9894598ba39d33d0c6dd372a02f60096e05"
+      "bytes": 8099,
+      "compressed_bytes": 3408,
+      "sha256": "021f192c6cc6c1dfd65719801ebbd6f2a81a79b20715125f650dbc8c615ec655"
     },
     {
       "id": "194",
@@ -4224,9 +4224,9 @@
       ],
       "abstract": "Archive #32 (Eval #188) showed the tanh-over-linear advantage requires support-coordinate hopping across orthogonal axes, but left one cell inconclusive: a sparse generator confined to a fixed 2-coordinate subspace had a rank-deficient (unmatched) covariance. This experiment resolves it by adding dense Gaussian noise to the remaining 3 coordinates, variance-scaled so the full 5x5 covariance matches the other conditions. It tests whether the advantage requires hopping across MANY axes or whether hopping within a FEW-axis coordinate subset suffices, closing the geometric taxonomy of when the nonlinear advantage appears.",
       "file": "evaluations/records/194-2a79f14120.yaml.gz",
-      "bytes": 5555,
-      "compressed_bytes": 2494,
-      "sha256": "d191861c25f71a2e58f64543e2d2977ba3308c2d5d953bf43f19901ab69d154f"
+      "bytes": 10019,
+      "compressed_bytes": 4191,
+      "sha256": "c59517e3e2ae85b0dcec9feb64b6bc35d61ba168487d1d1499a0fdaf8920d238"
     },
     {
       "id": "195",
@@ -4247,9 +4247,9 @@
       ],
       "abstract": "A high-precision follow-up to Eval #193. Tests whether an h=2 Tanh network can match the performance of the 2D-shattered h=3 network at k=3 when provided with extended L-BFGS refinement. Evaluates if the 3rd spatial dimension is structurally required as an optimization corridor even when the final manifold is 2D.",
       "file": "evaluations/records/195-752ae7bdbb.yaml.gz",
-      "bytes": 2580,
-      "compressed_bytes": 1278,
-      "sha256": "16817d74a1a342344dcffaf4f763be6c8feb2b9d97ab8c1176c3eebefe0f16c0"
+      "bytes": 7543,
+      "compressed_bytes": 3171,
+      "sha256": "dd7ee0a696d245341503d5d7d4bf8198352a913dd9ebb4276b374627584e2f98"
     },
     {
       "id": "196",
@@ -4266,9 +4266,9 @@
       ],
       "abstract": "A diagnostic evaluation to compute the fundamental statistical properties of the official fixed k-delay datasets. Extracts sparsity, activation density, feature ranges, and discretisation levels to determine spatial capacity constraints.",
       "file": "evaluations/records/196-4dea1daedb.yaml.gz",
-      "bytes": 1435,
-      "compressed_bytes": 796,
-      "sha256": "08d77b29f34d441c6751b063aa6a4cd27f7474efeffc44b3866d600f3a5f8dee"
+      "bytes": 4242,
+      "compressed_bytes": 1998,
+      "sha256": "8ec0047d50581678e598f6f164f9929534395f28033aec90245e397f3ec72196"
     },
     {
       "id": "197",
@@ -4286,9 +4286,9 @@
       ],
       "abstract": "Extracts the empirical impulse response matrices from the k=2 and k=3 checkpoints (Eval 186) to verify the theoretical subspace partition bound, which predicts a rank-1 signal limit at k=2 and a complete topological breakdown at k=3.",
       "file": "evaluations/records/197-61188f2439.yaml.gz",
-      "bytes": 1518,
-      "compressed_bytes": 819,
-      "sha256": "77c1c7c8f061f200920d581df4bf604a064d4e7d565f63f4eae2976b1ad3f9b4"
+      "bytes": 4909,
+      "compressed_bytes": 2264,
+      "sha256": "3d69a701317c549ad0fe903d28a93f0ba8167026f38abc927c25c643974a092d"
     },
     {
       "id": "198",
@@ -4306,9 +4306,9 @@
       ],
       "abstract": "Evaluates standard continuous parameterizations (Linear RNN and standard unconstrained GRU) directly on the official k=3 dataset with strict h=3 capacity. Measures optimization performance (MSE) and structural attractors (spectral radius over time) to verify the gating pathology.",
       "file": "evaluations/records/198-c837307a9a.yaml.gz",
-      "bytes": 2159,
-      "compressed_bytes": 1082,
-      "sha256": "0c7c093a290f4190e5c01fcf55c118bcf146b9e8d0edaf358f0f75f7b5a312d5"
+      "bytes": 5232,
+      "compressed_bytes": 2436,
+      "sha256": "805551d8c81d5186c3a51cdf8b1f2c9e47a92289b9fc063fcf441b47f37acc7c"
     },
     {
       "id": "199",
@@ -4326,9 +4326,9 @@
       ],
       "abstract": "Evaluates a strictly orthogonal recurrent core with dense state mixing, paired with a non-linear MLP readout. Tests whether spatial rotation without magnitude inflation can bypass the GRU gating pathology on the official dataset.",
       "file": "evaluations/records/199-2952aeca0f.yaml.gz",
-      "bytes": 1999,
-      "compressed_bytes": 1027,
-      "sha256": "02a13de2809ce932b97a65bd9cb207e7e8297064c0a4a3f7947a68f2de005977"
+      "bytes": 5742,
+      "compressed_bytes": 2536,
+      "sha256": "13f6acb0457861aefd8ad9b2bb461792bb291a13604fed495bdde423c43ef98d"
     },
     {
       "id": "200",
@@ -4348,9 +4348,9 @@
       ],
       "abstract": "Eval #194 found a sharp threshold at h=3: the tanh-over-linear advantage on matched-covariance confined-hopping inputs is ~0 for <=3 hopping coordinate axes and large for 4-5 axes. This experiment tests whether the onset threshold tracks the hidden size, i.e. m* = h+1, by sweeping the number of hopping axes m against h. Confirmation would establish a scaling law: the nonlinear advantage onsets when the number of orthogonal hopping supports exceeds the recurrence rank h, tying the input-distribution axis (Archive #28,#32) to the rank bottleneck (Archive #17) and complementing the delay-axis k>=h boundary (Archive #29,#33).",
       "file": "evaluations/records/200-9f9af02958.yaml.gz",
-      "bytes": 4821,
-      "compressed_bytes": 2299,
-      "sha256": "0328e62ea3d87d8bc37d5d41997723bc0abb19de01b60affe2f123b4ab00f605"
+      "bytes": 8342,
+      "compressed_bytes": 3639,
+      "sha256": "e3b7e26069ead96df38f4db2ebfcb34fc94cacaa468a716afc1b6ba56ad1db4b"
     },
     {
       "id": "201",
@@ -4368,9 +4368,9 @@
       ],
       "abstract": "Trains small RNNs on synthetic dense continuous data to prove that the Tanh network's linear collapse is causally driven by the necessity to avoid continuous spatial distortion, contrasting with the official sparse dataset.",
       "file": "evaluations/records/201-7f03f3f2fe.yaml.gz",
-      "bytes": 2141,
-      "compressed_bytes": 1106,
-      "sha256": "1a75e67a606c8a380789a11dffb72381f671d4a96949853a502993cd74bca670"
+      "bytes": 6144,
+      "compressed_bytes": 2692,
+      "sha256": "5a48eb732e8d9a0a83b10f86c73a75328393ff05843cc17cc4c82a7d7edfb381"
     },
     {
       "id": "202",
@@ -4390,9 +4390,9 @@
       ],
       "abstract": "Archive #29 identified the eigenvalue ARGUMENT of the recurrence as the hard-to-learn ingredient for small linear k-delay RNNs at k>=h, and fixed it by theory-derived initialization. This experiment asks a complementary question: is that difficulty a property of the standard (Cartesian) parameterization of W, and does an explicit-phase (polar/Schur) parameterization that exposes the radius and angle as direct trainable parameters dissolve the bottleneck WITHOUT theory init? Independent variable = recurrence parameterization only.",
       "file": "evaluations/records/202-1e7b95c561.yaml.gz",
-      "bytes": 5086,
-      "compressed_bytes": 2448,
-      "sha256": "d7ff0aa451e0598789ed212e080f8353c6d5362946c6591b4de6629bfaa061de"
+      "bytes": 9539,
+      "compressed_bytes": 4160,
+      "sha256": "b4a9cdd6ea2c6147110e0c5fc1d2a29aa76303832f5e18d006d1dcaad5834863"
     },
     {
       "id": "203",
@@ -4410,9 +4410,9 @@
       ],
       "abstract": "A rigorous matched control for Eval #199. Evaluates an unconstrained dense linear recurrence paired with the exact same GELU MLP readout. Isolates whether the performance and stability gains in Eval #199 were due to the strict Cayley orthogonal constraint or simply the non-linear readout capacity.",
       "file": "evaluations/records/203-a165fbd61c.yaml.gz",
-      "bytes": 2194,
-      "compressed_bytes": 1096,
-      "sha256": "a825bef6a53f07c8e60c0f63ffe253e97bb52d7adfe0e91e5395a39eafb4fc6b"
+      "bytes": 6122,
+      "compressed_bytes": 2669,
+      "sha256": "911694707d1945cf83280d649cda0d282176a2742451e3a32201c90f1a34ae75"
     },
     {
       "id": "204",
@@ -4432,9 +4432,9 @@
       ],
       "abstract": "My certified h-sweep (Eval #200) refuted the monotone m>h capacity law: the tanh-over-linear advantage is h-SPECIFIC (zero at h=1,2 for every hopping count m in {1..5}; present at h=3 only for m>=4; quiet at h=4 near D=5), a Goldilocks band in (h,m,D) rather than a threshold in m. This experiment asks WHY, by dissociating two rival mechanistic accounts via the SIGN of two orthogonal sweeps. H_interference (mine): the advantage is gated by the interference fraction of the linear floor's residual; knob is D (number of support coordinates sharing the rank-h bottleneck); predicts the advantage RISES with D at fixed h,k",
       "file": "evaluations/records/204-1cc6419540.yaml.gz",
-      "bytes": 5679,
-      "compressed_bytes": 2731,
-      "sha256": "52904f7df2820ceda8142dbb9997f6cb14ceda4f2e366187625d85fd535638bb"
+      "bytes": 9590,
+      "compressed_bytes": 4189,
+      "sha256": "aadadf7743259266e07dbe0da504d11de582bac4ac78e7a1d0fd5bf37bdc7e8e"
     },
     {
       "id": "205",
@@ -4452,9 +4452,9 @@
       ],
       "abstract": "Evaluates the strict Cayley orthogonal core + MLP readout on the harder k=5 delay task. Tests the hypothesis that while orthogonality stabilizes k=3, its lack of a contractive forgetting mechanism creates an un-invertible temporal interference floor at longer continuous delays.",
       "file": "evaluations/records/205-5f1cd7c3fb.yaml.gz",
-      "bytes": 2089,
-      "compressed_bytes": 1121,
-      "sha256": "695c9c5c83f67e04012ca21d25d5e9647d87df737ee06ce732fbe0d0b99a759a"
+      "bytes": 5505,
+      "compressed_bytes": 2578,
+      "sha256": "85370152b9d195c4c247f29e784c3a2ad2ff64acf0f6fb8e56e157ccab4a6840"
     },
     {
       "id": "206",
@@ -4472,9 +4472,9 @@
       ],
       "abstract": "Computes the principal angles between the Write and Read hidden subspaces of the trained linear models from Eval 186 to geometrically prove orthogonal state-space partitioning.",
       "file": "evaluations/records/206-4afa8f9e90.yaml.gz",
-      "bytes": 1483,
-      "compressed_bytes": 751,
-      "sha256": "86d25741498de893744699ad1ca0d4731f1578a557263f21588c9ca453e94bba"
+      "bytes": 5597,
+      "compressed_bytes": 2468,
+      "sha256": "cbabff8607bb0b844c595e017bbc1ff68751a44f40589642c4b81761bc8c4d0b"
     },
     {
       "id": "207",
@@ -4495,9 +4495,9 @@
       ],
       "abstract": "Archive #29/#182 established that the eigenvalue ARGUMENT of the recurrence is the hard, gauge-invariant ingredient of the small linear k-delay optimum, and that seeding it speeds training. But the optimal spectrum was always READ from trained optima (mildly circular) and necessity was certified only empirically (best-of-restarts SGD). This experiment tests whether the optimal pole spectrum can instead be determined A PRIORI — from the task (target + empirical input statistics) alone, with no full-network gradient training — by variable projection: for fixed poles the inner (C,U) solve is (bi)linear, so the residual is an explicit function of at most 3",
       "file": "evaluations/records/207-3be76cc016.yaml.gz",
-      "bytes": 5921,
-      "compressed_bytes": 2831,
-      "sha256": "ff615d0e926d2c895a1c6102c1068c8401441ab8f8da002548d127502242b02d"
+      "bytes": 10874,
+      "compressed_bytes": 4695,
+      "sha256": "c6b549dbd30505897a165bc5525bd4823049d63adf7daab993a8f79c44a9d58a"
     },
     {
       "id": "208",
@@ -4516,9 +4516,9 @@
       ],
       "abstract": "The rigorous matched control for Eval #205. Evaluates an unconstrained dense linear recurrence paired with the GELU MLP readout on the harder k=5 task. Tests whether the optimization landscape at longer delays naturally forces magnitude inflation (rho > 1) when the strict Cayley constraint is removed.",
       "file": "evaluations/records/208-baab340181.yaml.gz",
-      "bytes": 2224,
-      "compressed_bytes": 1113,
-      "sha256": "29d9e6e62e1d3f5c2d24790d7af08ebd9455f135c27a679f7765ba192374cfc2"
+      "bytes": 5699,
+      "compressed_bytes": 2543,
+      "sha256": "eaac27a81591f4acaa7e1c9b7a2885a22293ec6ced5c87b129a634f3d938b046"
     },
     {
       "id": "209",
@@ -4536,9 +4536,9 @@
       ],
       "abstract": "Evaluates the strict Cayley orthogonal core + MLP readout on the k=5 dataset with extended optimization (3000 epochs, cosine annealing LR). Tests whether the performance gap between k=3 and k=5 observed in Eval #205 is an artifact of slow optimization or a true topological interference floor caused by the lack of a forgetting mechanism.",
       "file": "evaluations/records/209-acfdd18ea7.yaml.gz",
-      "bytes": 2231,
-      "compressed_bytes": 1184,
-      "sha256": "610294088c5ef7f81ae4b58833a357598a3abdb16a93a5c868788163433d09c1"
+      "bytes": 5694,
+      "compressed_bytes": 2627,
+      "sha256": "00a49de678f9027f7c4f7efa91c821cae971c9bb6c99764e424fa0b9e8e7286b"
     },
     {
       "id": "210",
@@ -4559,9 +4559,9 @@
       ],
       "abstract": "My certified synthetic result (Eval #204) found the tanh-over-linear advantage at fixed h=3 is delay-structured: alive at k=1, DEAD at k=2, alive at k=3, with the k=2 null fully converged (real null) and alive cells showing hard tanh basins. This experiment tests, on the OFFICIAL datasets, a first-principles two-bottleneck account. A linear h-state RNN faces (a) a temporal realizability wall: a pure delay-k impulse has block-Hankel rank k+1, exactly realizable iff k+1<=h (independently confirmed by Noesis II VARPRO Eval #207: complex poles only at k>=3 for h=3); and (b) spatial rank compression of the rank~5 support into rank<=h. Curvature relieves",
       "file": "evaluations/records/210-135debd483.yaml.gz",
-      "bytes": 6623,
-      "compressed_bytes": 3133,
-      "sha256": "e2eed613e6dafa9e8ca946bea8767c1f7a9c2be950df1cdfba087f0e368a8103"
+      "bytes": 10321,
+      "compressed_bytes": 4516,
+      "sha256": "2d9e955992fece4c0010066135f7c0f390cbe662f8be2936d36be63d75039afb"
     },
     {
       "id": "211",
@@ -4580,9 +4580,9 @@
       ],
       "abstract": "Evaluates an Input-Gated Orthogonal Core on the k=5 dataset. Hypothesizes that the continuous interference bound observed in Eval #209 is caused by the unconditional orthogonal rotation of empty timesteps. By explicitly gating the Cayley update with the input norm, the network can conditionally halt rotation, preventing interference.",
       "file": "evaluations/records/211-1b4a364f76.yaml.gz",
-      "bytes": 2093,
-      "compressed_bytes": 1129,
-      "sha256": "b3db45c18469a5bd0e35d0cca11e4800d038e10bd74bc027cdc14092972ce20e"
+      "bytes": 7032,
+      "compressed_bytes": 3165,
+      "sha256": "17522b52f6f76ca3b5d6c902f1d7e7adc81a58af20f41c0fc28dd777c042b780"
     },
     {
       "id": "212",
@@ -4602,9 +4602,9 @@
       ],
       "abstract": "Tracks the PCA variance of the hidden state pure-pulse embeddings at high frequency (every 50 steps) during AdamW optimization for k=2 and k=3 Tanh networks. Visualizes whether the network transiently expands into higher dimensions (Topological Corridors) before collapsing to its final lower-dimensional manifold.",
       "file": "evaluations/records/212-e2154fea5d.yaml.gz",
-      "bytes": 2580,
-      "compressed_bytes": 1325,
-      "sha256": "3d0a01b5b8093dc2ea2685abf8e81dbfdfc6e6ae00bf08c12529a5ceefec59f0"
+      "bytes": 7338,
+      "compressed_bytes": 3200,
+      "sha256": "839d8a9ef901c7fcf386ad82c36283a4e8b9ef868956d1425ffa0e639ef61ddd"
     },
     {
       "id": "213",
@@ -4623,9 +4623,9 @@
       ],
       "abstract": "Measures the principal angle between the dominant rank-1 Write and Read vectors of trained small RNNs to geometrically prove that delayed networks orthogonally partition their active hidden capacity to suppress instantaneous interference.",
       "file": "evaluations/records/213-19187dc98d.yaml.gz",
-      "bytes": 1565,
-      "compressed_bytes": 794,
-      "sha256": "be1341fff625bdde0144de1daacefa2f0778e28602af8b9a6668c3124a535831"
+      "bytes": 5065,
+      "compressed_bytes": 2289,
+      "sha256": "79afa6f783572f946910e66388ef493940e17f6682b2619314a8e6f25284eaeb"
     },
     {
       "id": "214",
@@ -4646,9 +4646,9 @@
       ],
       "abstract": "Eval #207 showed the optimal linear k-delay pole spectrum can be computed a priori (VARPRO) and that it is NON-NAIVE (optimal arguments far from roots-of-unity, radius crossing 1 for late delays). This follow-up answers two questions that turn #207 into a complete result: (1) WHY are the poles non-naive — is the departure from roots-of-unity driven by input data coloring, or by purely structural finite-horizon weighting + rank? (white-vs-empirical VARPRO contrast); (2) does the a-priori spectrum beat not just random but also a NAIVE-roots-of-unity init (the natural in-paradigm theory baseline)? Independent variable for the init arm = initial pole set",
       "file": "evaluations/records/214-9a15f42d1c.yaml.gz",
-      "bytes": 5237,
-      "compressed_bytes": 2559,
-      "sha256": "c59383c4f13db5418026ad8775cdea523674a92b25255d642ed887e5129cd2c1"
+      "bytes": 9456,
+      "compressed_bytes": 4243,
+      "sha256": "5524f2e4cf1f8ca69b0c07f143051587d469f3ce934989bd561ca82f3b81b289"
     },
     {
       "id": "215",
@@ -4667,9 +4667,9 @@
       ],
       "abstract": "Evaluates an explicitly hard-gated orthogonal core where rotation is strictly halted (g_t=0) on empty inputs and fully applied (g_t=1) on active inputs. Tests whether the counter-intuitive continuous dampening learned in Eval #211 is superior to true logical gating.",
       "file": "evaluations/records/215-828f720439.yaml.gz",
-      "bytes": 2062,
-      "compressed_bytes": 1095,
-      "sha256": "b49fe03bb9203dc2e662be50b890ae28ff2791e8c13db06338d31d2c9ac804e9"
+      "bytes": 5468,
+      "compressed_bytes": 2507,
+      "sha256": "9587f9dd8934e13bc65d4e1e29049143c54d15347f34405188d1ce8a33c30211"
     },
     {
       "id": "216",
@@ -4689,9 +4689,9 @@
       ],
       "abstract": "Tracks the PCA variance of the hidden states for pure pulse sequences at very high frequency (every 10 steps from 0 to 500) during early AdamW training for an h=3, k=3 Tanh RNN, to capture the exact initialization and topological phase transition before the network settles into a 2D planar manifold.",
       "file": "evaluations/records/216-0bad865a02.yaml.gz",
-      "bytes": 1917,
-      "compressed_bytes": 989,
-      "sha256": "69e4365c78892017039d5c5eecd055dd33ab9e3a2555817da65b79a60ac0b3a7"
+      "bytes": 6471,
+      "compressed_bytes": 2832,
+      "sha256": "5c9958e157fd1f94811edd6b4fd8602ec549854fbe5ee4a18d1cd9c118117ecd"
     },
     {
       "id": "217",
@@ -4710,9 +4710,9 @@
       ],
       "abstract": "Evaluates the Learned Input-Gated Orthogonal Core across the full delay curve (k=1 to k=5). Extracts the learned convex damping factor (g_t) and the trajectory of the hidden state norm over time to determine if the continuous manifold reaches a stable interior equilibrium.",
       "file": "evaluations/records/217-49e3d04663.yaml.gz",
-      "bytes": 2169,
-      "compressed_bytes": 1185,
-      "sha256": "d8c13aa0883e04d31d3249fe9a6e3f23b6d50506cf96d7a85931891f80fb87e9"
+      "bytes": 5575,
+      "compressed_bytes": 2751,
+      "sha256": "c81afc8db37e18922b08b145a7169a1e1bf9db5c61acd9c64c7e90a69310c1f5"
     },
     {
       "id": "218",
@@ -4730,9 +4730,9 @@
       ],
       "abstract": "Analyzes the high-curvature L-BFGS checkpoints to determine whether the non-linear advantage relies on dynamic orthogonal subspace partitioning or scalar derivative squashing to multiplex spatial capacity.",
       "file": "evaluations/records/218-3d5bdf107d.yaml.gz",
-      "bytes": 1979,
-      "compressed_bytes": 943,
-      "sha256": "19bf28d17ccf02f19068c35d21d7fa8c9d10bf8e483af93153d2b8d9e94556a1"
+      "bytes": 6273,
+      "compressed_bytes": 2652,
+      "sha256": "ed8f436cba94e4898d87d74d6474b700dd7f340a68680bb00798236269e0f65c"
     },
     {
       "id": "219",
@@ -4753,9 +4753,9 @@
       ],
       "abstract": "Archive #36 showed the optimal linear k-delay pole spectrum is non-naive (argument strictly inside (pi/k, 2pi/k); dominant radius crossing 1 for late delays) under the official horizon T=10. This experiment uses the training-free VARPRO pole oracle to test whether that non-naivete is a FINITE-HORIZON effect governed by the relative delay k/T, by computing the optimal h=3 poles across a horizon sweep T in {10,20,30,50} under the white-input idealization (justified by Eval #214's structural finding). Pre-registered: at FIXED absolute k the supra-unit radius recedes toward <=1 and the argument drifts toward the naive value as T grows; at FIXED relative k/T",
       "file": "evaluations/records/219-c0ba17c23a.yaml.gz",
-      "bytes": 4813,
-      "compressed_bytes": 2356,
-      "sha256": "05e4448a54b934a50963516bc05a846aef7737320d1ab5f8659929bf177b4d60"
+      "bytes": 9037,
+      "compressed_bytes": 4110,
+      "sha256": "78e7b89af3e06cd05613290f0c350cb40af41dc72d91591f6cdf126cd9c9316d"
     },
     {
       "id": "220",
@@ -4776,9 +4776,9 @@
       ],
       "abstract": "Applies the ultra-high-frequency PCA tracking protocol (every 10 steps during early AdamW training) to the k=1 and k=2 delay tasks for an h=3 Tanh RNN. The goal is to determine if the pure-pulse representations initialize and strictly remain 1D (ambient scaffolding) or transiently expand into 2D/3D (topological corridors).",
       "file": "evaluations/records/220-f37062d9a6.yaml.gz",
-      "bytes": 2364,
-      "compressed_bytes": 1178,
-      "sha256": "1cf88e95bb7cc7f0fb92f1545742686de950383249de22aa87ba900048899196"
+      "bytes": 7744,
+      "compressed_bytes": 3319,
+      "sha256": "6549a3f0339e436e6aaf5452f969a7e0b17a04b865e650e6bfbd88ad861e0fbe"
     },
     {
       "id": "221",
@@ -4797,9 +4797,9 @@
       ],
       "abstract": "Tests whether the observed norm expansion in the Learned Input-Gated Orthogonal Core is a load-bearing temporal clock. Applies L2-normalization to the hidden state before the MLP readout. If performance collapses, it proves the readout relies on the expanding magnitude (not just phase) to decode the continuous delay.",
       "file": "evaluations/records/221-9a70776c74.yaml.gz",
-      "bytes": 1990,
-      "compressed_bytes": 1085,
-      "sha256": "096edcfa8daa2f8de685b5e4100d2015cbb56d1f8d91a7c53298e848586012ae"
+      "bytes": 5387,
+      "compressed_bytes": 2458,
+      "sha256": "4b967e96429126d513cd8607cc76987c8c77d8d433da8b4e1f1535098c6b5746"
     },
     {
       "id": "222",
@@ -4820,9 +4820,9 @@
       ],
       "abstract": "Resolves the initialization scatter confound of Eval 220 by enforcing a 'Near-1D SVD Squashing' initialization. This tests whether an h=3 network explicitly needs to inflate its 1D pure-pulse manifold into the 2nd/3rd dimensions (Topological Corridor) to learn the readout orientation, or if it can optimize the parameters entirely through Ambient Scaffolding while maintaining a strictly 1D pure-pulse state space.",
       "file": "evaluations/records/222-1c6637a8f2.yaml.gz",
-      "bytes": 2636,
-      "compressed_bytes": 1355,
-      "sha256": "be0c3e38e49274dc0d99940461d0e97c093e3cd783e40d2a70fa056956a38492"
+      "bytes": 7905,
+      "compressed_bytes": 3298,
+      "sha256": "69b5db0374995df5115c088a394b6544a9cd869fdf251d04b8627db6d215b2b8"
     },
     {
       "id": "223",
@@ -4843,9 +4843,9 @@
       ],
       "abstract": "My lineage established (Archive #16/#19, Eval #132/#134) that at high recurrence power unconstrained Adam-trained tanh RNNs overwhelmingly settle into rotational/complex-spectrum solutions, while a rotation-free real-spectrum solution is only reachable under a hard upper-triangular constraint. A clean k-delay carrier is structurally a nilpotent shift (real, degenerate spectrum), the opposite of a rotation. This experiment tests, as a POSITIVE method, whether a task-derived near-nilpotent (shift-biased) recurrent INITIALIZATION changes the reachable solution family and improves the reliably-reached masked active reconstruction over the standard small-Gaussian init, at small (h<=3) cells. It is also a pre-registered falsification test of \"rotation is the default\": if a",
       "file": "evaluations/records/223-af06318c33.yaml.gz",
-      "bytes": 5938,
-      "compressed_bytes": 2810,
-      "sha256": "97753b87aaa59e71a53ddca35604f1201e67efe522ab741592bb7fbb4144efe5"
+      "bytes": 10711,
+      "compressed_bytes": 4697,
+      "sha256": "061a697b8419690155242a3c68f0c79e1597b9b6746807d38847ff12f31f62b3"
     },
     {
       "id": "224",
@@ -4863,9 +4863,9 @@
       ],
       "abstract": "Evaluates whether an explicitly Dimension-Gated Orthogonal RNN (where the gating vector G_t is 3-dimensional) can bypass the continuous topological interference floor more efficiently than scalar gating by structurally erasing specific spatial dimensions.",
       "file": "evaluations/records/224-bc15c774dc.yaml.gz",
-      "bytes": 2282,
-      "compressed_bytes": 1171,
-      "sha256": "7d5d9d389552cbcbe7f01ec4e2d699b9351108dea2cf9dd6cf3b9f2e58e8c1f9"
+      "bytes": 6504,
+      "compressed_bytes": 2954,
+      "sha256": "5ec2d2d8af038b0d6c139dd41715103ad1f265d4008b67943ce52c723486184c"
     }
   ]
 }

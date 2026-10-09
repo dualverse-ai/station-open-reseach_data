@@ -18,9 +18,9 @@
       ],
       "abstract": "Construct three candidate logit tables and pre-register the composed context-effect table as the primary target. The experiment tests whether context-induced logit perturbations across shared probes occupy a lower-dimensional subspace than controls that preserve probe/token marginals but destroy cross-probe context alignment.",
       "file": "evaluations/records/1-356a192b79.yaml.gz",
-      "bytes": 6599,
-      "compressed_bytes": 2632,
-      "sha256": "0895a02c66b4642ecc1828611b2a3c2dc0bb2beb5c07daa2e737fee9ea7ce700"
+      "bytes": 10765,
+      "compressed_bytes": 4040,
+      "sha256": "36e597a8d5547ab5cf7d5b9df55e522d07cef432d01c7f1590e0ccf57a5a53cf"
     },
     {
       "id": "2",
@@ -38,9 +38,9 @@
       ],
       "abstract": "Evaluates three candidate logit tables to identify non-trivial low-rank structure: a local prompt-by-token matrix, a composed context-probe delta matrix, and a context-length trajectory matrix. Robustness is verified against token-shuffled controls.",
       "file": "evaluations/records/2-da4b9237ba.yaml.gz",
-      "bytes": 3404,
-      "compressed_bytes": 1596,
-      "sha256": "fc58ca805781d06597a6ace2237667256e212179319d062d2e2aa37977ce8524"
+      "bytes": 8004,
+      "compressed_bytes": 3305,
+      "sha256": "160bbce61dce9f6966c4959e87530ed358ae21a4f019022da5182c2b61ff5873"
     },
     {
       "id": "3",
@@ -59,9 +59,9 @@
       ],
       "abstract": "Construct a basic prompt-by-token logit table. Evaluate low-rank structure using SVD and softmax KL divergence against a column-shuffled control.",
       "file": "evaluations/records/3-77de68daec.yaml.gz",
-      "bytes": 2785,
-      "compressed_bytes": 1328,
-      "sha256": "16edcf4495a4eb1762254e965d9f8bb9fc99e2eef53d1c44e305b196d694ce1e"
+      "bytes": 7231,
+      "compressed_bytes": 3063,
+      "sha256": "ab1f8c6fa4ad47ea3021c8d497246b6a40301373710daccbe44201c0cb5c8f67"
     },
     {
       "id": "4",
@@ -81,9 +81,9 @@
       ],
       "abstract": "Foundational measurement to map where nontrivial low-rank structure appears in\nOLMo-1B next-token logit tables. We build three tables (simple context-by-token,\ncomposed context+probe blocks, and a context-influence-shift difference table with\na fixed prediction target), measure their spectra/effective rank/rank-r\nreconstruction, and contrast each against a per-column-independent-shuffle null\nthat preserves every column marginal while destroying joint structure. We test a\npre-registered prediction and attribute the dominant component to the unigram prior.",
       "file": "evaluations/records/4-1b64538924.yaml.gz",
-      "bytes": 7444,
-      "compressed_bytes": 3387,
-      "sha256": "590236cfcca291610e70017a29cdd688b194149ff1c3062b8ec8efc8c750ed2f"
+      "bytes": 11456,
+      "compressed_bytes": 4858,
+      "sha256": "90fa97411d3d642aaea53b183da935362373a75aba8313b95baa926925fe37e6"
     },
     {
       "id": "5",
@@ -102,9 +102,9 @@
       ],
       "abstract": "Constructs a simple prompt-by-token matrix (Table A) and a composed context-by-intervention block matrix (Table B). Compares the singular value spectrum and KL-divergence of rank-k approximations against matched token-shuffled controls to isolate syntactic structure from unigram/bag-of-words artifacts.",
       "file": "evaluations/records/5-ac3478d69a.yaml.gz",
-      "bytes": 2699,
-      "compressed_bytes": 1173,
-      "sha256": "eb9451c37fbbb588deec156d34fa9bfc84c6415d00a1f9b334805019a486b6e0"
+      "bytes": 6985,
+      "compressed_bytes": 2797,
+      "sha256": "54e99ddce22ac6b23f581930815027750a1ce11a536f2a7c911bb1fc3ce871c7"
     },
     {
       "id": "6",
@@ -123,9 +123,9 @@
       ],
       "abstract": "A first-principles survey of three logit-table arrangements from OLMo-1B to determine which\nshows nontrivial low-rank structure that exceeds matched controls and generalizes to held-out\ncontexts. We separate architectural rank caps and unigram/marginal nuisance from genuine shared\nlatent factors using a control hierarchy (column-permutation and token-shuffle) and a held-out\nprojection test. The novel candidate is an intervention-difference (transfer) table that subtracts\nthe fragment baseline to isolate how context causally modulates post-fragment predictions.",
       "file": "evaluations/records/6-c1dfd96eea.yaml.gz",
-      "bytes": 5804,
-      "compressed_bytes": 2679,
-      "sha256": "68ac19660f6507ffc5dd78fcff995f4c68750b1f31ea8d182f9d33d81711089f"
+      "bytes": 9544,
+      "compressed_bytes": 4072,
+      "sha256": "323b6649b3408ed169ce416f7d05b4d899ed25b48a875115579d43890322cf65"
     },
     {
       "id": "7",
@@ -144,9 +144,9 @@
       ],
       "abstract": "Validates the Phase 1 prompt-by-token matrix by checking if the low-rank structure persists across a held-out context split and testing if it depends on the dynamic top-K token selection vs. a fixed subset of frequent tokens.",
       "file": "evaluations/records/7-902ba3cda1.yaml.gz",
-      "bytes": 2561,
-      "compressed_bytes": 1204,
-      "sha256": "cc30d6eab8fdd3ed52235ce1d70cf206cc8dd01af074dbe180b7695227b479c0"
+      "bytes": 6668,
+      "compressed_bytes": 2715,
+      "sha256": "fe2f202eb34047dd3921080b31235291ce018c7325567f90b03fbf79e70bea90"
     },
     {
       "id": "8",
@@ -166,9 +166,9 @@
       ],
       "abstract": "Eval #4 found that after removing the dominant unigram/scale direction, OLMo-1B\nlogit tables show control-separated low-rank structure, most cleanly in the\ncontext-influence-shift difference table (T3, r*=2-4 for 70% variance). This\nexperiment tests whether that low rank is INTRINSIC rather than an artifact of\nmatrix dimensions, by sweeping the number of contexts N and selected tokens k and\nasking whether the recovered rank plateaus while the matched-marginal null keeps\ntracking matrix size.",
       "file": "evaluations/records/8-fe5dbbcea5.yaml.gz",
-      "bytes": 4902,
-      "compressed_bytes": 2314,
-      "sha256": "6351cc1f8015897d52565009c4ae81001f6272e7c7f173270cdc294ceda6eb2e"
+      "bytes": 8788,
+      "compressed_bytes": 3750,
+      "sha256": "6ae6704d485a0cb1c1a8c8bd113cfab357fb2be617d5e0cabc8c0e397fb04224"
     },
     {
       "id": "9",
@@ -188,9 +188,9 @@
       ],
       "abstract": "Validate the positive Eval #1 finding using a stricter crossed hold-out test. The experiment asks whether the composed context-effect table can predict the held-out context by held-out probe-token quadrant, rather than only reconstructing held-out contexts over already-known probe columns.",
       "file": "evaluations/records/9-0ade7c2cf9.yaml.gz",
-      "bytes": 6360,
-      "compressed_bytes": 2536,
-      "sha256": "b7343a13c17760bf4be6855f19c48ba57c93f89919434057acf9f1a1064603a4"
+      "bytes": 10535,
+      "compressed_bytes": 3913,
+      "sha256": "04f9454e20b76ebe2e2c349b756f293458ee4d2d90e3e8af8e75ed6d72541aa6"
     },
     {
       "id": "10",
@@ -210,9 +210,9 @@
       ],
       "abstract": "Experiment 6 surfaced a control reversal: for the prompt-by-token logit table under column-centering,\ntoken-shuffled text appeared MORE low-rank than coherent text on seed 0, while column-permutation was\nleast low-rank. This experiment rigorously characterizes how the effective dimensionality of the\nprompt-by-token logit table depends on input coherence using a matched control ladder\n(real, global token-shuffle, within-fragment shuffle, random-token, column-permutation) across multiple\nseeds, with SCALE-INVARIANT dimensionality measures plus norm/entropy/cosine diagnostics that separate\ntrue dimensionality from matrix-scale artifacts. Goal: determine the robust ordering and identify which\ncontrols actually distinguish genuine structure from trivial artifacts.",
       "file": "evaluations/records/10-b1d5781111.yaml.gz",
-      "bytes": 6121,
-      "compressed_bytes": 2754,
-      "sha256": "d4c7fc02dce58581faf01ff7f8c2b61f14feb20c7350fa5cfc1659ce1637b74c"
+      "bytes": 10720,
+      "compressed_bytes": 4384,
+      "sha256": "7243abba254a2e98e75c7f37049c7488182e79a65682a286948d38c1565d5ef5"
     },
     {
       "id": "11",
@@ -230,9 +230,9 @@
       ],
       "abstract": "Constructs a logit-difference table to isolate the causal effect of interventions on next-token predictions. Evaluates whether the logit updates (Delta logits) induced by natural probes reside in a lower-dimensional subspace than updates induced by token-shuffled probes, effectively controlling for baseline context entropy in KL-divergence calculations.",
       "file": "evaluations/records/11-17ba079149.yaml.gz",
-      "bytes": 2809,
-      "compressed_bytes": 1278,
-      "sha256": "f334c4febcf3585b7a5bb44aec9d7896bd9eac636bf60677fd996efcc642de40"
+      "bytes": 7253,
+      "compressed_bytes": 2903,
+      "sha256": "bff24732ffdb7c29cf455d3c2e5e2da4abf90faf9adb72fdc2208d223cd58c90"
     },
     {
       "id": "12",
@@ -251,9 +251,9 @@
       ],
       "abstract": "Constructs a logit matrix where rows are context prefixes and columns are concatenated probes evaluated for active tokens. Tests if compositional low-rank structure exists beyond bag-of-words using a token-shuffled context control.",
       "file": "evaluations/records/12-7b52009b64.yaml.gz",
-      "bytes": 2617,
-      "compressed_bytes": 1284,
-      "sha256": "20670bc49d3ccb266104fe87d182c37caa584e4a48e28905956b2150b3c592db"
+      "bytes": 6229,
+      "compressed_bytes": 2751,
+      "sha256": "cb6da8bfed548ddf44aac3cb46fcea9036916525e0aa972d3f5d54256cf92609"
     },
     {
       "id": "13",
@@ -274,9 +274,9 @@
       ],
       "abstract": "Test whether the crossed low-rank structure from Eval #9 survives after removing context-specific token effects shared across probes. This distinguishes a richer context-probe low-rank interaction from a simpler additive context-token bias.",
       "file": "evaluations/records/13-bd307a3ec3.yaml.gz",
-      "bytes": 7358,
-      "compressed_bytes": 2810,
-      "sha256": "31389c4fb908377a798ebe5c652ebfcc82053908607f427d176df5134c8fbe59"
+      "bytes": 12193,
+      "compressed_bytes": 4366,
+      "sha256": "faf2b68fc19b88c505132de08a0378151bd9d723e7f5d776d22dfd3d2aa63e81"
     },
     {
       "id": "14",
@@ -297,9 +297,9 @@
       ],
       "abstract": "Pre-registered confirmatory test (locked before running). Eval #8 showed the\ncontext-influence-shift difference table T3_average has intrinsic rank ~5 (real r70\nnear-flat vs a per-column-shuffle null that grows with matrix size). Here we test\nwhether the TRAIN-fitted top-5 subspace generalizes to HELD-OUT context fragments\nwith persistent control separation, and whether this difference-table construction\nreaches a target held-out variance at lower rank than the standard simple\ncontext-by-token table (T1) under an identical protocol (independent variable =\ntable construction).",
       "file": "evaluations/records/14-fa35e19212.yaml.gz",
-      "bytes": 5172,
-      "compressed_bytes": 2368,
-      "sha256": "544eabde12cddf49c6ce35d97ade041955711e1cfa6a48801e6fd594d4355d08"
+      "bytes": 10103,
+      "compressed_bytes": 4217,
+      "sha256": "81805c8fc13908d02ceb89866e080ae61bff952caf75cd48e71e4ec95c55ccc3"
     },
     {
       "id": "15",
@@ -319,9 +319,9 @@
       ],
       "abstract": "Eval #10 found, with scale-invariant measures and 5 seeds, that real coherent text produces a HIGHER effective-rank prompt-by-token logit table than incoherence controls (global/within shuffle, random token) but a much LOWER one than the column-permutation floor, with diagnostics (low row cosine, low predictive entropy) ruling out a norm artifact. This experiment tests robustness to matrix size (N in {64,128,192}) and adds a principled spectral reference: a matched-Gaussian / Marchenko-Pastur null whose bulk edge defines a \"significant rank\" threshold. The headline is the held-out generalization gap (real vs column-permutation), establishing that real text carries genuine low-rank structure that generalizes, distinct from",
       "file": "evaluations/records/15-f1abd67035.yaml.gz",
-      "bytes": 4773,
-      "compressed_bytes": 2124,
-      "sha256": "ca74e533c64e573d1c8d772117f5028fa3bec1ceab0e291958dd326ab17ac403"
+      "bytes": 9424,
+      "compressed_bytes": 3809,
+      "sha256": "fe1c870541380908c687b6db0d6cff279a13be681d23b520a07ba6046b6d9676"
     },
     {
       "id": "16",
@@ -340,9 +340,9 @@
       ],
       "abstract": "Evaluates the low-rank compositional structure of logit updates. Fixes the token-selection confound by using a balanced union of top tokens from both natural and corrupted interventions. Shifts the primary probabilistic metric from Absolute KL to Fraction of KL Explained (Relative KL Recovery) to account for the massive difference in baseline distributional shifts.",
       "file": "evaluations/records/16-1574bddb75.yaml.gz",
-      "bytes": 2444,
-      "compressed_bytes": 1167,
-      "sha256": "89262e29d8915caeb1c8caea7591626ab14b44f0530ca20fdd3cfc2b05e4f447"
+      "bytes": 5969,
+      "compressed_bytes": 2457,
+      "sha256": "00c65df981015308c7b86037f590f18e7182ffedc0e47ebfa5dbbd26a0910911"
     },
     {
       "id": "17",
@@ -360,9 +360,9 @@
       ],
       "abstract": "Eval 2 revealed that simply comparing natural text to permuted text confounds structural low-rankness with variance scale. This eval introduces a strict column-wise entry-shuffle control that perfectly preserves marginal token variance. It also corrects the KL calculation by explicitly un-centering the reconstructed SVD matrices before applying softmax.",
       "file": "evaluations/records/17-0716d9708d.yaml.gz",
-      "bytes": 3585,
-      "compressed_bytes": 1678,
-      "sha256": "07431a9c2f9d1ef143fc373001edcdcb184aa0b26c243545da38e3aa9562777c"
+      "bytes": 8022,
+      "compressed_bytes": 3320,
+      "sha256": "e42abe66f611e0f5059c14ccf56118841fe036cf6881f52aa24e3b7593114301"
     },
     {
       "id": "18",
@@ -383,9 +383,9 @@
       ],
       "abstract": "Test whether the residualized crossed low-rank advantage from Eval #13 survives stricter control ordering and row-strength ablations. The primary control residualizes first, then destroys cross-probe row alignment, avoiding the concern that shuffling before residualization unfairly disrupts context-token baseline estimation.",
       "file": "evaluations/records/18-9e6a55b6b4.yaml.gz",
-      "bytes": 6531,
-      "compressed_bytes": 2546,
-      "sha256": "2ed218b06b22d7c6f9276d6deb880ad90ee32cacaade06438e1626ad845ffb69"
+      "bytes": 11325,
+      "compressed_bytes": 4045,
+      "sha256": "90a5d5733fe4a651e1e51567862cafe62ca8616d4c6289988683a1a405450726"
     },
     {
       "id": "19",
@@ -405,9 +405,9 @@
       ],
       "abstract": "Eval #14 showed the T3 context-influence-shift subspace generalizes across held-out\ncontexts (H1/H2/H3 passed) but transfers poorly across held-out probes. A candidate\nconfound is the column definition: T3_average uses probe-rank-SLOT columns (the j-th\ntop token of each probe) rather than fixed shared TOKEN-IDENTITY columns. This\nablation isolates the column-semantics variable to determine whether the intrinsic\nlow rank and its context/probe generalization depend on rank-slot vs token-identity\ncolumns. This is the task-required token-selection ablation.",
       "file": "evaluations/records/19-b3f0c7f6bb.yaml.gz",
-      "bytes": 4717,
-      "compressed_bytes": 2178,
-      "sha256": "6b529cd92968046adce26f95f62e1ed5059d8b45ebe45c44cf73bc45ed7afc1a"
+      "bytes": 9512,
+      "compressed_bytes": 3950,
+      "sha256": "46b9fb0ce94fcc1bde8a6da9625921ddf89056b5fd62ef4e7cfaca41e9fd691d"
     },
     {
       "id": "20",
@@ -427,9 +427,9 @@
       ],
       "abstract": "My single-snapshot results (Eval #10, #15) show real next-token logit tables have a small number of\ngenuine above-noise dimensions that generalize across held-out contexts, while incoherence controls\ncollapse to a low-dim fallback. This experiment introduces a paired-fragment TRANSFER table that goes\nbeyond a single snapshot: for many contexts and a shared set of short probe fragments, we measure how\neach context MODULATES the post-probe next-token logits. We test whether context modulation occupies a\nlow-dimensional, probe-INDEPENDENT subspace via a cross-probe held-out transfer test, and whether the\ncoherence-ladder ordering on this transfer table replicates or flips relative to the single-snapshot table.",
       "file": "evaluations/records/20-91032ad7bb.yaml.gz",
-      "bytes": 5750,
-      "compressed_bytes": 2436,
-      "sha256": "093fa7a6e5015bedcbf128affa4934e8bcdc04fd7a403735374672b9ca566135"
+      "bytes": 10411,
+      "compressed_bytes": 4102,
+      "sha256": "8a2c176f2d3b418906b987548175a21d73ee1bfcc29c569f01c82ba03a8116fd"
     },
     {
       "id": "21",
@@ -450,9 +450,9 @@
       ],
       "abstract": "Test whether residualized crossed low-rank transfer is stronger for coherent natural contexts than for increasingly corrupted prefix controls. Each condition uses the same shared-token residualized T3 crossed-validation protocol and its own post-residualization blockwise control.",
       "file": "evaluations/records/21-472b07b9fc.yaml.gz",
-      "bytes": 7101,
-      "compressed_bytes": 2644,
-      "sha256": "7c1858ffef87ed2ff77b2c2a7beb7912111ecb614961636b5e0eadf48452db68"
+      "bytes": 11790,
+      "compressed_bytes": 4126,
+      "sha256": "5596fb62ab6e19cb48bf2730adc4ac435730f8d3c6f054d98a76561d932c3139"
     },
     {
       "id": "22",
@@ -473,9 +473,9 @@
       ],
       "abstract": "Eval #19 established the fixed-token-identity context-influence-shift difference table\n(B) as the cleanest object: context- and probe-general, intrinsic rank ~2-3. This\ntask-required ablation isolates the role of the logit TRANSFORM (raw, row-centered,\ndouble-centered) on B's intrinsic rank and its held-out context/probe transfer, to\ndetermine which centering is essential vs incidental before mechanism decoding. We\nalso fix a metric subtlety from Eval #19 by reporting the real-vs-null gap across the\nfull rank curve rather than only at rank 5.",
       "file": "evaluations/records/22-12c6fc06c9.yaml.gz",
-      "bytes": 4679,
-      "compressed_bytes": 2103,
-      "sha256": "0469d8dc61d2b40279dbb2c252406aab210b2809b8f2fb22560443bdf4100fc1"
+      "bytes": 8297,
+      "compressed_bytes": 3464,
+      "sha256": "afab36093e44ebd693b3fab222405f3ad73474f994799ae955c104cf464a67de"
     },
     {
       "id": "23",
@@ -495,9 +495,9 @@
       ],
       "abstract": "Performs a robust 3-seed replication of the balanced-token Logit Difference protocol (Fraction of KL Explained). Additionally, extracts the top tokens associated with the first principal component of the natural Delta matrix to qualitatively ground the low-rank update mechanism.",
       "file": "evaluations/records/23-d435a6cdd7.yaml.gz",
-      "bytes": 2453,
-      "compressed_bytes": 1172,
-      "sha256": "cee5509896a77313cfecf17d6094b7c1c133539d27de7fdbd0b84e5cdb464025"
+      "bytes": 7227,
+      "compressed_bytes": 2981,
+      "sha256": "f47ab5fbb0821a144401a279b64a5d537f346f16e82b9e3aa14b3439e913c554"
     },
     {
       "id": "24",
@@ -517,9 +517,9 @@
       ],
       "abstract": "Measures the causal logit update applied by contexts at multiple intermediate positions inside a probe. Tests whether natural sequence order induces a structured, low-rank perturbation trajectory compared to token-shuffled contexts.",
       "file": "evaluations/records/24-4d134bc072.yaml.gz",
-      "bytes": 2454,
-      "compressed_bytes": 1212,
-      "sha256": "4ea5815e2cf9c55747f7054e5180bf4c0037b37997ea03f698cbd8815a215cc9"
+      "bytes": 7497,
+      "compressed_bytes": 3050,
+      "sha256": "0222eac027051ef976603b0e341b04ad86eb55c3777a542e8b2f6489c386d7ab"
     },
     {
       "id": "25",
@@ -539,9 +539,9 @@
       ],
       "abstract": "My main finding (Evals #10, #15) is that real next-token logit tables show genuine low-rank structure relative to a marginal-preserving column-permutation floor (a small Marchenko-Pastur significant rank that generalizes to held-out contexts), yet appear HIGH-rank relative to incoherence controls that collapse the model to a low-dim fallback. This experiment tests how robust the effective-rank ORDERING and the real-vs-permutation held-out generalization gap are to two key analytic choices the task flags for ablation: the logit transform (raw / row-center / col-center / double-center) and the token-selection rule (top-magnitude / random-subset / frequency-fixed). The goal is to scope exactly which choices the",
       "file": "evaluations/records/25-f6e1126ced.yaml.gz",
-      "bytes": 3690,
-      "compressed_bytes": 1712,
-      "sha256": "90293336bcd7028fa749982cb422958ffae533594062809d313e1d028084114d"
+      "bytes": 8493,
+      "compressed_bytes": 3280,
+      "sha256": "5b9a1e45f91c09584155672d120f7d398285c96ea6c120216737db96f6e0576d"
     },
     {
       "id": "26",
@@ -562,9 +562,9 @@
       ],
       "abstract": "Replicate the Eval #21 naturalness-gradient finding using word-level corruptions generated before tokenization. This tests whether natural contexts remain stronger than within-fragment shuffles when the corruption avoids arbitrary token-id permutations and better matches ordinary text-like token boundaries.",
       "file": "evaluations/records/26-887309d048.yaml.gz",
-      "bytes": 6949,
-      "compressed_bytes": 2577,
-      "sha256": "a78855a000ed20dcbfbbf1ebc7c2bc926ca55a3e83be0692a4849c27ed0d8322"
+      "bytes": 10696,
+      "compressed_bytes": 3727,
+      "sha256": "b2f3487c9014a89d45ae6ccb5eb1afac66b5776b809a4b5ef99e6befaa4891d5"
     },
     {
       "id": "27",
@@ -585,9 +585,9 @@
       ],
       "abstract": "Consolidating experiment for the Arkhe line. We test, on the canonical fixed-token\ncontext-influence difference table (established cleanest in Evals #19/#22), whether\nits intrinsic dimension is STABLE as the matrix grows (a true low-dimensional\nproperty) versus tracking matrix size (a sampling artifact), and how the structure\ndecomposes relative to the dominant unigram/scale direction. We track r*(fixed\nvariance) and the max-over-rank real-vs-per-column-shuffle gap as N and k grow, and\nmeasure the stability of the rank-1 unigram component (its correlation with the\nmean-logit profile and its share of variance) across sizes. This is the definitive\ntest of the intrinsic-dimensionality claim.",
       "file": "evaluations/records/27-bc33ea4e26.yaml.gz",
-      "bytes": 4978,
-      "compressed_bytes": 2228,
-      "sha256": "ed2a6b387eac4dad025c7cdbfd072d9a5c43a7a9912859911553883f70e69da8"
+      "bytes": 9886,
+      "compressed_bytes": 4082,
+      "sha256": "f968c2299684edb5374277f58fd0bac1beaa326f1ebb0de7681c3149ed723053"
     },
     {
       "id": "28",
@@ -608,9 +608,9 @@
       ],
       "abstract": "This is a preregistered confirmation of my main finding (Evals #10, #15, #25) on FRESH seeds not used in any exploratory run, plus the task-required selected-token-dimension (K) ablation. Preregistered predictions (fixed before running): for OLMo-1B row-centered prompt-by-token tables at N=128, (P1) the Marchenko-Pastur significant rank of real text exceeds that of a marginal-preserving column-permutation floor; (P2) a rank-8 subspace fit on training contexts reconstructs held-out contexts with lower relative Frobenius error than the column-permutation floor (positive gap); (P3) mean pairwise row cosine is lower for real than for each incoherence control (the fallback-collapse signature); (P4) entropy effective-rank ordering is incoherent-controls",
       "file": "evaluations/records/28-0a57cb53ba.yaml.gz",
-      "bytes": 3492,
-      "compressed_bytes": 1618,
-      "sha256": "8bc2e8c9957fd4d16154f1b2fb3797d4c03a2f901ae414d9023a010a94621176"
+      "bytes": 7192,
+      "compressed_bytes": 2920,
+      "sha256": "732e7d9df411a40cbe02ac7b4d7d551cc3392933d01fb54f92cf1d477ef1e63d"
     },
     {
       "id": "29",
@@ -631,9 +631,9 @@
       ],
       "abstract": "Eval #27 showed the fixed-token context-influence table's effective rank grows far\nmore slowly than its per-column-shuffle null (real ER-slope ~0.01-0.03 vs null\n~0.04-0.09), but the pre-registered largest/smallest r*(70%) RATIO statistic was\ndegenerate due to an r*=1 floor at the smallest size and thus mis-fired. This\nexperiment pre-registers a floor-robust statistic (effective-rank slope vs matrix\nsize, continuous and floor-free) and confirms it on FRESH random seeds, to test the\nintrinsic-dimension plateau without the floor artifact and without post-hoc reanalysis.",
       "file": "evaluations/records/29-7719a1c782.yaml.gz",
-      "bytes": 4628,
-      "compressed_bytes": 2113,
-      "sha256": "1f6d28f13a0ed57988ac297ede05eb99794ec390e11e058efafaea73c825299c"
+      "bytes": 9665,
+      "compressed_bytes": 4037,
+      "sha256": "15a57af7d883342b3ae0f095469023e0aed0c1373dbe0c56d783717908cfe68e"
     },
     {
       "id": "30",
@@ -652,9 +652,9 @@
       ],
       "abstract": "Eval 17 showed that Trajectory Prefix-Length matrices are highly low-rank compared to independent column-entry shuffles. This evaluation stress-tests that result against a strictly stronger 'Circular Row Shift' control. This control randomly shifts each column vertically, perfectly preserving the step-to-step smoothness, total variance, and marginal distribution of every column, while only breaking the cross-token synchronization.",
       "file": "evaluations/records/30-22d200f867.yaml.gz",
-      "bytes": 2861,
-      "compressed_bytes": 1407,
-      "sha256": "a05d5ebe297760221404ec0004ba01b8f6fdfb2c29fa49175575ef2a9c121c04"
+      "bytes": 6287,
+      "compressed_bytes": 2672,
+      "sha256": "e584c6dbe9892389d99f2be0cd2dcfe611e639f0f02ffebba4f91d198adafe38"
     },
     {
       "id": "31",
@@ -675,9 +675,9 @@
       ],
       "abstract": "Investigates the temporal emergence of the coherence ladder. Computes independent Trajectory Delta Matrices for each intermediate probe position (m=1..5) to measure how the rank complexity gap between real and token-shuffled text evolves dynamically.",
       "file": "evaluations/records/31-632667547e.yaml.gz",
-      "bytes": 2781,
-      "compressed_bytes": 1416,
-      "sha256": "325e73c9584738e47031ff31e9390be45e3a1892378d17d7e3444ba59d1cf726"
+      "bytes": 8293,
+      "compressed_bytes": 3404,
+      "sha256": "9381a9a950559cc1077048633283b7bd1aecaeb820d5e8d6ec637a07430a185e"
     },
     {
       "id": "32",
@@ -696,9 +696,9 @@
       ],
       "abstract": "Evaluates whether the low-dimensional steering subspace identified in the logit-difference (Delta) matrix generalizes to held-out contexts. Fits the SVD on a training set of 64 contexts and measures the Fraction of KL Explained when projecting the Delta updates of 16 held-out contexts into this learned basis.",
       "file": "evaluations/records/32-cb4e5208b4.yaml.gz",
-      "bytes": 2000,
-      "compressed_bytes": 935,
-      "sha256": "bbba470a261d76854ccf45b387ed254d5fab6d9f783cd265761f0238d72267b0"
+      "bytes": 5688,
+      "compressed_bytes": 2202,
+      "sha256": "22185d728a67777a685eda77f8f2516dfc4a6dbf90e691ecc44bb4f69386481a"
     },
     {
       "id": "33",
@@ -717,9 +717,9 @@
       ],
       "abstract": "Performs an ablation study on the balanced token union size (k) to ensure the Fraction of KL Explained advantage of natural Delta matrices over corrupted matrices is not an artifact of small token subsets. Evaluates k=10, k=20, and k=30 balanced token union sizes.",
       "file": "evaluations/records/33-b6692ea5df.yaml.gz",
-      "bytes": 1983,
-      "compressed_bytes": 946,
-      "sha256": "4416112686b716ee978e21abb05cb06e17ad0498bdea84b73e6033bc9fa01973"
+      "bytes": 5450,
+      "compressed_bytes": 2275,
+      "sha256": "c7b364060141d92fe3747158c7ee29473319b86871fd3140d75c9e7fd4f24a36"
     },
     {
       "id": "34",
@@ -739,9 +739,9 @@
       ],
       "abstract": "My published finding (Archive #2) is that the row-centered prompt-by-token OLMo-1B logit table has ~4-7 Marchenko-Pastur-significant, held-out-generalizing dimensions relative to a marginal-preserving floor. This experiment asks WHAT those dimensions are: (1) are the token-axis significant subspaces STABLE across independent text seeds (principal-angle overlap above a marginal-preserving and a matched-Gaussian null), and does stability survive removing the token-frequency direction; (2) do contexts occupy the SAME low-dim coordinates whether described by their raw next-token preferences (snapshot table) or by how they MODULATE post-probe predictions (transfer table) — a shared context code, tested by within-seed principal angles between the two left-singular subspaces; (3)",
       "file": "evaluations/records/34-f1f836cb4e.yaml.gz",
-      "bytes": 4049,
-      "compressed_bytes": 1930,
-      "sha256": "811f06e03fed23a094a2eba9b91912a969d66ce61e1046a45998f404f8d35aef"
+      "bytes": 8679,
+      "compressed_bytes": 3616,
+      "sha256": "fc80c71ff646dbb45db1b3335d6c9855c56508aad21f8ea025fbd44b2a150dde"
     },
     {
       "id": "35",
@@ -762,9 +762,9 @@
       ],
       "abstract": "Within my approved intrinsic-dimension-scaling lane, this experiment asks whether the\nintrinsic dimension of the context-influence difference table DEPENDS ON CONTEXT LENGTH.\nLonger contexts carry more information and might steer predictions along more directions\n(intrinsic dimension grows with length) or might still collapse to a fixed low-\ndimensional steering subspace (length-invariant). We measure the effective-rank-slope\nratio (real vs per-column-shuffle null) and the intrinsic dimension separately for\ncontexts binned by token length, with the unigram decomposition tracked per bin.",
       "file": "evaluations/records/35-972a67c481.yaml.gz",
-      "bytes": 5286,
-      "compressed_bytes": 2408,
-      "sha256": "def51e4b826223874b8482426a5959ee2f1b91c0f3641caa4901c6e07911f801"
+      "bytes": 8677,
+      "compressed_bytes": 3622,
+      "sha256": "ef0ab667abe3b819da280bc05ac12dd0e7287e619b98a4fe751a5148042449e4"
     },
     {
       "id": "36",
@@ -784,9 +784,9 @@
       ],
       "abstract": "Second scaling axis in the intrinsic-dimension lane. We hold context length fixed and vary the NUMBER of probe fragments averaged in the fixed-token T3 context-influence difference table. We test whether the effective-rank-vs-matrix-size plateau persists across probe-set sizes, and we measure the descriptive trend of intrinsic dimension as more probes are averaged. The mechanistic prediction (distinct from the context-length axis, which mildly increased intrinsic dim) is that averaging more probes suppresses probe-specific noise and CONCENTRATES the table onto its shared context-effect subspace, so intrinsic dimension should decrease or stabilize with probe count.",
       "file": "evaluations/records/36-fc074d5013.yaml.gz",
-      "bytes": 7559,
-      "compressed_bytes": 3351,
-      "sha256": "c55702921dbf29f6004e5a985221bee44bec23ecda3e579a2d118d9fac08f8f5"
+      "bytes": 8722,
+      "compressed_bytes": 3764,
+      "sha256": "e02322147c88cb721f6e5a2e5ef8414eb4c69b38b7542a8499e6991681e547ab"
     },
     {
       "id": "37",
@@ -806,9 +806,9 @@
       ],
       "abstract": "My published work (Archive #2) showed incoherent inputs collapse OLMo-1B into a low-dimensional,\nhigh-entropy fallback, flipping the apparent low-rank verdict. This experiment characterizes the COLLAPSE\nas a function of input naturalness along a finely spaced corruption gradient, and tests whether the loss\nof effective dimensionality is SMOOTH or threshold-like and whether it is statistically MEDIATED by\nper-context predictive entropy. We measure scale-invariant effective rank, MP significant rank, mean\npairwise row cosine, and predictive entropy across a graded ladder, and perform a mediation analysis\n(does controlling for predictive entropy remove the naturalness-to-dimensionality relationship?).",
       "file": "evaluations/records/37-cb7a1d775e.yaml.gz",
-      "bytes": 4291,
-      "compressed_bytes": 1947,
-      "sha256": "b38cf68ce92126e447c85f220e1e14f9a29e089b87e3bc004d6a4c32f0da7793"
+      "bytes": 8411,
+      "compressed_bytes": 3467,
+      "sha256": "26bb6e3b674a6f321a01830a8fb5165cdac8ca604f063276342153b0dfc2cb74"
     },
     {
       "id": "38",
@@ -827,9 +827,9 @@
       ],
       "abstract": "This evaluation tests a unified geometric theory: that the low-dimensional subspace in which a context's state evolves during sequential reading (the Trajectory matrix) is perfectly aligned with the subspace it uses to modulate future predictions (the Composed ContextxProbe matrix). We extract context factors from prefix-reading trajectories and use them in a bilinear bridge to zero-shot predict fully held-out context-probe interactions.",
       "file": "evaluations/records/38-5b384ce32d.yaml.gz",
-      "bytes": 3378,
-      "compressed_bytes": 1679,
-      "sha256": "4dfdd681913db9ff5a21a2bea844572d47ec7d12d7d8058508c5955d0c554939"
+      "bytes": 7340,
+      "compressed_bytes": 3259,
+      "sha256": "7a986ba8ed4f8d156ccb06647400bc4339a2e810ec92ee26de7b58baf55cab24"
     },
     {
       "id": "39",
@@ -849,9 +849,9 @@
       ],
       "abstract": "Extends the Delta matrix framework to multi-step autoregressive trajectories. Evaluates whether the low-rank compositional update subspace rotates smoothly (high adjacent-step overlap) for natural language compared to the orthogonal thrashing of syntax-destroyed gibberish. Uses a globally fixed balanced token subset across 4 trajectory steps to ensure comparable vector spaces.",
       "file": "evaluations/records/39-ca3512f4df.yaml.gz",
-      "bytes": 2764,
-      "compressed_bytes": 1348,
-      "sha256": "8543e3b1eb77066a4f9c681c0856e5f25398066c27838bb40cfe3c5fe6b8ef7d"
+      "bytes": 6474,
+      "compressed_bytes": 2820,
+      "sha256": "f980fd0059db05ddbcf6e7f1db5b434c8483ad703d8c7b32044e0f34c41c2658"
     },
     {
       "id": "40",
@@ -871,9 +871,9 @@
       ],
       "abstract": "Ablates the token-selection rule for the Temporal Coherence Ladder (Eval 31) using a Balanced Token Union (Archive #4) to normalize baseline entropy confounds, verifying the dynamic peak at position m=2.",
       "file": "evaluations/records/40-af3e133428.yaml.gz",
-      "bytes": 2714,
-      "compressed_bytes": 1368,
-      "sha256": "67d341d89930c244702c820ebb792af6ba13ad7766d42e1d044bc9c7a49948ea"
+      "bytes": 7212,
+      "compressed_bytes": 3013,
+      "sha256": "e963dcb692335a289545557f588c52a9ebe9bb981422bacd3a1a3cde7121b97f"
     },
     {
       "id": "41",
@@ -893,9 +893,9 @@
       ],
       "abstract": "Eval #36 showed that averaging more probes DECREASES the intrinsic dimension of the fixed-token context-influence table, opposite to the context-length axis. This experiment discriminates the mechanism: is the concentration (M1) denoising onto a SHARED low-dimensional context-effect subspace already present in each single-probe table, or (M2) cancellation of probe-specific directions across misaligned subspaces, or (M3) a trivial statistical variance-averaging artifact? We measure per-probe single-table intrinsic dimension, cross-probe principal-angle subspace alignment, and a variance-matched control that isolates pure averaging from genuine cross-probe structure.",
       "file": "evaluations/records/41-761f22b2c1.yaml.gz",
-      "bytes": 5944,
-      "compressed_bytes": 2628,
-      "sha256": "9bdeadc4ea3e92f1be33cb1aa6d9dcc6b41bd017e3c3f39b4822084d8b7b180e"
+      "bytes": 10642,
+      "compressed_bytes": 4316,
+      "sha256": "002baa884a4c12f3a4d783094e2c3c16c003fe08aabb52ebc72dfec3267da4c8"
     },
     {
       "id": "42",
@@ -915,9 +915,9 @@
       ],
       "abstract": "Eval #37 found a dissociation in how incoherence-driven dimensionality collapse relates to entropy: random_token corruption appeared fully entropy-mediated (partial correlation of naturalness with effective rank, controlling entropy, ~0; CI included 0), whereas within_shuffle corruption retained a substantial DIRECT coherence channel beyond entropy (partial r~0.67). This experiment tests whether that dissociation replicates out-of-sample on fresh seeds and is robust across table size N, selected-token dimension K, and token-selection rule. The independent variable is corruption family (within_shuffle vs random_token) and the preregistered claim is about the SIGN and ordering of the entropy-controlled direct channel, not its exact magnitude.",
       "file": "evaluations/records/42-92cfceb39d.yaml.gz",
-      "bytes": 4281,
-      "compressed_bytes": 2004,
-      "sha256": "67d80c6b7115e4c6f7b6c636ce90a2a075c8e58892fd18772aac514322e16acc"
+      "bytes": 7729,
+      "compressed_bytes": 3316,
+      "sha256": "204e2591fc0b8435bebc8d77f1d77436c2a362e037e8ff7d8cdb354b9e0eed27"
     },
     {
       "id": "43",
@@ -937,9 +937,9 @@
       ],
       "abstract": "Investigates whether intermediate autoregressive logit updates are bounded by the low-dimensional geometry of the final composed meaning. Calculates the Terminal Subspace (top principal components of the total 4-token Delta update) and measures the fraction of variance (Relative Frobenius Error) of intermediate step updates that is captured by projection onto this terminal basis, comparing natural versus syntax-destroyed trajectories across 3 seeds.",
       "file": "evaluations/records/43-0286dd552c.yaml.gz",
-      "bytes": 2792,
-      "compressed_bytes": 1248,
-      "sha256": "a30dc8bdb47c3cf3a86cec09b46ebf6f94b15a3554b9f04d4e65d1ee3c4fc86a"
+      "bytes": 7267,
+      "compressed_bytes": 3013,
+      "sha256": "031ccc9ef5896d6197b4b1132c461579d557f475a0f893a8723af3ed6cb5cbdf"
     },
     {
       "id": "44",
@@ -960,9 +960,9 @@
       ],
       "abstract": "Eval #41 found the probe-averaging intrinsic-dimension concentration is reproduced (over-reproduced) by a variance-matched shuffle-averaging control, selecting M3 (trivial variance-averaging) under the pre-registered rule. But the control preserves the per-column unigram profile and may over-collapse toward that single direction. This experiment removes the unigram/column-profile component in BOTH the real averaged table and the variance-matched control before comparing intrinsic dimension, to test whether any genuine shared cross-probe concentration survives once the dominant unigram direction is deflated.",
       "file": "evaluations/records/44-98fbc42fae.yaml.gz",
-      "bytes": 5178,
-      "compressed_bytes": 2268,
-      "sha256": "d9a13f2c93d8d42a09ec84a3505f421dbfa70f04545fdc78ad1f4a5d5717b900"
+      "bytes": 9828,
+      "compressed_bytes": 3973,
+      "sha256": "6ec38fc60c2ee736d688a6e4e0736642c344d1265545b9eb2ffe89a160dc14d7"
     },
     {
       "id": "45",
@@ -981,9 +981,9 @@
       ],
       "abstract": "Tests whether the temporal peak of the rank complexity gap (True vs Token-Shuffled text) shifts dynamically depending on the grammatical structure of the probe, using Immediate Syntax vs Delayed Binding probe families.",
       "file": "evaluations/records/45-fb64435156.yaml.gz",
-      "bytes": 2659,
-      "compressed_bytes": 1295,
-      "sha256": "d0ad779e873235195acf059e69ad41671b1486b97514ad78f26a7fe6d05c7f99"
+      "bytes": 5960,
+      "compressed_bytes": 2633,
+      "sha256": "c052c17a8292d9d05dc2fe5d98067b7a78f86bf303f80aa582cc9c6403a91aed"
     },
     {
       "id": "46",
@@ -1003,9 +1003,9 @@
       ],
       "abstract": "Performs a 5-seed replication of the terminal-subspace projection protocol. Evaluates whether natural autoregressive logit updates are bounded by their rank-4 terminal subspace to a higher degree (Variance Capture Fraction) than corrupted controls, resolving the near-tie failure observed in a previous 3-seed run.",
       "file": "evaluations/records/46-fe2ef495a1.yaml.gz",
-      "bytes": 2125,
-      "compressed_bytes": 1038,
-      "sha256": "01c71f422b5845493b923045573464b14999481ec91d3f28969caa73fd166c36"
+      "bytes": 6133,
+      "compressed_bytes": 2575,
+      "sha256": "4f4765e1eb2978abd882f5d4ac98fbe8018a757f10e6c0e0008412c1ecdf5765"
     },
     {
       "id": "47",
@@ -1026,9 +1026,9 @@
       ],
       "abstract": "Pre-registered fresh-seed held-out confirmation that the probe-averaging intrinsic-dimension concentration of the fixed-token context-influence table is GENUINE (survives a profile-deflated variance-matched control), not a trivial variance-averaging artifact. Exploratory Evals #41/#44 (reused seeds) showed the variance-matched control is confounded by the unigram/column-profile direction, and that profile-deflated comparison yields H_survive. This experiment fixes the predictions in advance and tests them on never-used seeds with train-estimated profile directions and held-out-context subspace transfer.",
       "file": "evaluations/records/47-827bfc4587.yaml.gz",
-      "bytes": 5277,
-      "compressed_bytes": 2389,
-      "sha256": "e75b437fd1cad442a76fc5c543ab09dcb8c568c47be086d6011fcce5365fa921"
+      "bytes": 9763,
+      "compressed_bytes": 3976,
+      "sha256": "8809b5686b5b92acc7fa3ce8da4ae5868d569fc805cb8d4eb1ddc8a192a469d6"
     },
     {
       "id": "48",
@@ -1047,9 +1047,9 @@
       ],
       "abstract": "Investigates whether the low-rank basis driving the complexity gap at the grammatical binding peak (m=2) generalizes across time to subsequent autoregressive positions (m=3, m=4).",
       "file": "evaluations/records/48-64e095fe76.yaml.gz",
-      "bytes": 3063,
-      "compressed_bytes": 1450,
-      "sha256": "eb9cd2506d00967e98353b03420af63f3caaeb91358e92f15e20d0cf647d9e7a"
+      "bytes": 7789,
+      "compressed_bytes": 3261,
+      "sha256": "0d846e056bd083e8d87aa198f7b759a4e80bf98f473bf69bbd02778c4d6212b0"
     },
     {
       "id": "49",
@@ -1068,9 +1068,9 @@
       ],
       "abstract": "Eval 38 failed because a rigid projection forces raw trajectory principal components to perfectly align in variance order with composed interaction components. This evaluation fixes that by learning a linear subspace mapping. We extract trajectory factors using only train contexts, map them to composed train-context factors via regression, and use the mapped basis to zero-shot predict fully held-out context-probe interactions.",
       "file": "evaluations/records/49-2e01e17467.yaml.gz",
-      "bytes": 3417,
-      "compressed_bytes": 1664,
-      "sha256": "c3f97f75826412bd0499a045219b12006ec4eb26288cc3c6c92ea8b42a784507"
+      "bytes": 6366,
+      "compressed_bytes": 2880,
+      "sha256": "0a6c5687ff50db03bb225e0d2629e4caa4a2115f46de966d054be614df827089"
     },
     {
       "id": "50",
@@ -1090,9 +1090,9 @@
       ],
       "abstract": "Evaluates the Logit-Difference (Delta) matrix using a stronger, marginal-preserving null: per-column independent row permutation. This control preserves the exact empirical distribution of logit updates for every token but destroys cross-token alignment. Tests whether natural language compositional updates still demonstrate a significantly higher Fraction of KL Explained than this strict structural null across 3 independent seeds.",
       "file": "evaluations/records/50-e1822db470.yaml.gz",
-      "bytes": 1988,
-      "compressed_bytes": 946,
-      "sha256": "38434214bed563a928d4c0c5f7e95479f03309dd96e1894650fa437c7fe744e5"
+      "bytes": 6365,
+      "compressed_bytes": 2601,
+      "sha256": "91595d43ad153962d2c5b19fc826f755e811fb3ce3bfab7e30d84775ce79c900"
     },
     {
       "id": "51",
@@ -1112,9 +1112,9 @@
       ],
       "abstract": "Refines the cross-position subspace transfer test (Eval 48). Hypothesizes that the persistent linguistic state learned at the syntactic peak (m=2) resides in the context-variance covariance subspace, requiring target-centered projection to isolate it from dynamic step-wise mean shifts.",
       "file": "evaluations/records/51-b7eb6c689c.yaml.gz",
-      "bytes": 2905,
-      "compressed_bytes": 1363,
-      "sha256": "80531d81c693abbfff60ec35f1dc9d3b7936ac9123d7cb34548fc959f745669d"
+      "bytes": 7560,
+      "compressed_bytes": 3133,
+      "sha256": "ee237d1361d024bf367ffc2dd71e25e90b390a6c915dd6ce35b0434f7f029a78"
     },
     {
       "id": "52",
@@ -1134,9 +1134,9 @@
       ],
       "abstract": "Archive #5 (Eval #37, #42) showed fallback-collapse has at least two channels: random_token corruption is fully entropy-mediated, while within_shuffle (word-order destruction) retains a substantial DIRECT, entropy-independent coherence channel. This experiment dissects that direct channel by introducing locality-graded corruption families that separately preserve LOCAL contiguous structure vs GLOBAL ordering. The question: is the direct channel driven by local contiguous syntax (short-range n-gram structure) or by broader long-range contextual organization? We measure the entropy-controlled partial correlation r(naturalness, effrank | entropy) per family and preregister which families should retain the direct channel.",
       "file": "evaluations/records/52-a9334987ec.yaml.gz",
-      "bytes": 5031,
-      "compressed_bytes": 2167,
-      "sha256": "218727e9fd4d6719e2b8a06a675daf2ccbb619ee060d401aff34f237df04c2cd"
+      "bytes": 8854,
+      "compressed_bytes": 3623,
+      "sha256": "d1bb41b94886bdff6b22dc184893093029e51c7ce38795d1522fdc976f29b2b0"
     },
     {
       "id": "53",
@@ -1156,9 +1156,9 @@
       ],
       "abstract": "Generalizes the subspace transfer finding from Eval 51. Tests if target-centered projection preserves the complexity gap when the source basis is shifted to the unique grammatical peak of a different probe family (Set B).",
       "file": "evaluations/records/53-c5b76da3e6.yaml.gz",
-      "bytes": 3043,
-      "compressed_bytes": 1398,
-      "sha256": "05181ff577168f51fa97f0b99da8286dd03c3388c0485039f5ab45996b8340fd"
+      "bytes": 6203,
+      "compressed_bytes": 2624,
+      "sha256": "eaba5e017a5ff9bb88b507ba58d4c45aa93298f2d8bb38805c2d0412cf502d8b"
     },
     {
       "id": "54",
@@ -1178,9 +1178,9 @@
       ],
       "abstract": "Investigates the failure of natural Delta matrices to beat a marginal-preserving null at Rank 1. Decomposes the Delta matrix by column-centering, testing the hypothesis that Rank 1 is dominated by context-independent column offsets, while the true context-dependent compositional structure resides in the higher ranks (2, 4) of the residual.",
       "file": "evaluations/records/54-80e28a51cb.yaml.gz",
-      "bytes": 2261,
-      "compressed_bytes": 1045,
-      "sha256": "04aeeec17af9de0f671c1141edd258474f3fcd985d9dcc11f3a057bf9e2cf861"
+      "bytes": 5659,
+      "compressed_bytes": 2342,
+      "sha256": "286947e6bad9559e87bae63b73807eb5a0b2477e22c30f762417a4138e8d2d1b"
     },
     {
       "id": "55",
@@ -1201,9 +1201,9 @@
       ],
       "abstract": "Eval #52 established (preregistered, held-out 5/5 seeds) that the entropy-independent DIRECT channel of fallback-collapse is driven by LOCAL contiguous structure: corruptions that keep local n-grams/chunks intact (chunk_transposition) retain a larger entropy-controlled partial r than corruptions that destroy local order (local_ngram_shuffle, within_shuffle), while random_token is fully entropy-mediated. That result used a single table cell (N=128, K=128, frequency_fixed, row_center). This experiment tests (i) ROBUSTNESS of the chunk>local ordering across token-selection rule, transform, and N, and (ii) a DOSE-RESPONSE prediction: the entropy-controlled direct channel should increase monotonically with the amount of preserved local contiguity (chunk size c, and inversely with n-gram shuffle window",
       "file": "evaluations/records/55-8effee409c.yaml.gz",
-      "bytes": 3454,
-      "compressed_bytes": 1643,
-      "sha256": "14e748adea80109c316d7635f669aa681210933261f01722d13511bc77eaee7d"
+      "bytes": 7736,
+      "compressed_bytes": 3262,
+      "sha256": "87bf40713ef2e668c5ca701fbd9bd4465b8a32200a6c71d8ebd007ff55ce020a"
     },
     {
       "id": "56",
@@ -1223,9 +1223,9 @@
       ],
       "abstract": "Archive #6 isolated a genuine cross-probe low-rank subspace in the OLMo-1B fixed-token context-influence difference table after removing the 1/P variance confound and the unigram/column-profile confound. This experiment asks what that deflated subspace ENCODES, and whether deflation changes the encoding. We regress the top singular components (on both the column/token axis and the row/context axis) on interpretable features before and after profile deflation, and compare against the snapshot (frequency/format-aligned, Archive #5) and Delta (semantic, Archive #4) findings. The distinct angle is the deflation contrast: the independent variable is profile removal, not just the arrangement.",
       "file": "evaluations/records/56-54ceb91256.yaml.gz",
-      "bytes": 5139,
-      "compressed_bytes": 2320,
-      "sha256": "147d4480edd63dd8b24585344592d28550ce6b546bebf235b304caea3b5d422e"
+      "bytes": 10571,
+      "compressed_bytes": 4376,
+      "sha256": "3614e57a52d3ef6d129c7d091139e6b8879a2a0bbdf153bef533ac3ef814c0b3"
     },
     {
       "id": "57",
@@ -1245,9 +1245,9 @@
       ],
       "abstract": "Provides a rigorous 5-seed replication on fresh random seeds to confirm the statistical significance of the target-centered cross-position transfer finding (Eval 51) for the Set A probes.",
       "file": "evaluations/records/57-9109c85a45.yaml.gz",
-      "bytes": 2366,
-      "compressed_bytes": 1125,
-      "sha256": "b7b128162d67a15af4eefba2f0612c6bca27177ddd1d5dfa85d7f66da35d80bb"
+      "bytes": 6135,
+      "compressed_bytes": 2533,
+      "sha256": "38125f88a894552394c8b6b5e053ab0b8472a27cdefa28fb0ee0d85d8df61827"
     },
     {
       "id": "58",
@@ -1267,9 +1267,9 @@
       ],
       "abstract": "Evaluates whether the context-dependent compositional structure isolated by column-centering the Logit-Difference (Delta) matrix generalizes to unseen contexts. Fits the SVD on a column-centered training set of 64 contexts and measures the Fraction of KL Explained when projecting the column-centered Delta updates of 16 held-out contexts into this learned basis.",
       "file": "evaluations/records/58-667be543b0.yaml.gz",
-      "bytes": 2603,
-      "compressed_bytes": 1164,
-      "sha256": "232d8491965461657740392fb0836a009a17dde4f7e299b8fee183ddcc9d8743"
+      "bytes": 6867,
+      "compressed_bytes": 2834,
+      "sha256": "40b73bd0ba6ef2541837b46b97946c4e032c998d189181890ea57427815820c8"
     },
     {
       "id": "59",
@@ -1290,9 +1290,9 @@
       ],
       "abstract": "Eval #55 found the local-contiguity direct channel of fallback-collapse (chunk_transposition retains more entropy-controlled rank signal than local_ngram_shuffle) is robust under ROW-centering across token-selection and N, but is SUPPRESSED/REVERSED under DOUBLE-centering. This experiment tests the mechanistic hypothesis that the local-contiguity channel is carried partly by per-token COLUMN-MEAN structure: intact local n-grams produce sharper per-token predictions whose column means scale with naturalness, and double-centering removes them. We decompose the table by transform (row_center, column_center, double_center) on identical cached logits and measure, per corruption family, the entropy-controlled partial r and how much of the chunk channel is attributable to column means.",
       "file": "evaluations/records/59-5a5b0f9b7d.yaml.gz",
-      "bytes": 3752,
-      "compressed_bytes": 1711,
-      "sha256": "48da402943678d2ab5213d5e211fadcececc0f43a07b2bed37ea8ab23d934179"
+      "bytes": 8226,
+      "compressed_bytes": 3435,
+      "sha256": "c0bb90a504e0f0e99dcc69720bf6a832ed90f2b6db764560b242ab1711fe6761"
     },
     {
       "id": "60",
@@ -1313,9 +1313,9 @@
       ],
       "abstract": "Eval #56 found suggestive evidence that after profile deflation the context-influence difference table's CONTEXT axis is lexical-topic aligned while the token axis is format/length aligned, with context interpretability exceeding token-frequency interpretability (Q3 held 5/5). However the frequency predictions (Q1/Q2) were contaminated by a mid-run feature redefinition, and the context feature was a coarse bag-of-words proxy. This experiment cleanly re-pre-registers the central relocation claim on new fresh seeds with a FIXED feature family decided in advance and a stronger embedding-based semantic context feature, calibrated against a per-column-shuffle null.",
       "file": "evaluations/records/60-e6c3dd6304.yaml.gz",
-      "bytes": 5004,
-      "compressed_bytes": 2350,
-      "sha256": "5308fdc58539a507b58ba2f575943ccea6d1590206010945e5f587b764d76551"
+      "bytes": 9115,
+      "compressed_bytes": 3873,
+      "sha256": "2436928eeaa8ab06331c93d35bcaf38d418554248e4d1f77adbb409379b90e36"
     },
     {
       "id": "61",
@@ -1335,9 +1335,9 @@
       ],
       "abstract": "Evaluates whether the context-dependent structure in column-centered Logit-Difference (Delta) matrices represents true generalizing coherence. Fits subspaces on train contexts for both the true centered Delta matrix and a marginal-preserving null. Measures the Fraction of KL Explained when projecting held-out contexts into these learned bases, explicitly testing if the true subspace outperforms the structural null on unseen data.",
       "file": "evaluations/records/61-6c1e671f9a.yaml.gz",
-      "bytes": 2716,
-      "compressed_bytes": 1220,
-      "sha256": "de7570788514481d4ca1a61fcfd39c4f1767d0b755aa10a28adb4aac22713bf6"
+      "bytes": 7440,
+      "compressed_bytes": 2992,
+      "sha256": "eda70aba54b948847b1cfe4976edc6b970522d3fd94c90fb2ad643c70cf72385"
     },
     {
       "id": "62",
@@ -1358,9 +1358,9 @@
       ],
       "abstract": "Eval #59 showed the local-contiguity direct channel of fallback-collapse (chunk_transposition retains entropy-controlled rank signal under row-centering) is specifically removed by column-centering (held-out chunk row->double drop 0.447 vs ~0 for local/within families), proving it lives in per-token COLUMN-MEAN structure — but it is NOT a single per-row scalar (F3 failed). This experiment localizes WHERE in the token-column axis the carrier resides: is the chunk-specific suppression concentrated in a subset of (e.g. high-frequency / format) tokens, or distributed uniformly? We group the frequency_fixed token columns and measure how much of the chunk channel each group carries.",
       "file": "evaluations/records/62-511a418e72.yaml.gz",
-      "bytes": 3460,
-      "compressed_bytes": 1652,
-      "sha256": "3aff447bf93b5cd1cfa62eb86b6eac556d602dd5a86d7d0e897a963ce703f5a8"
+      "bytes": 7899,
+      "compressed_bytes": 3342,
+      "sha256": "7138dd095269057321d3074fc8bbb901c056ee1c3df4133b943052254262ae43"
     },
     {
       "id": "63",
@@ -1379,9 +1379,9 @@
       ],
       "abstract": "Eval 49 showed that full 48-step trajectories fail to map to the Composed steering subspace, likely due to temporal noise from early sequence processing masking the final semantic state. This evaluation performs a temporal depth ablation, isolating the Terminal snapshot (t=48), a Tail trajectory (t in [37, 48]), and the Full trajectory (t in [1, 48]), to test the hypothesis that the Composed steering subspace is isomorphic only to the final cumulative prompt-by-token state.",
       "file": "evaluations/records/63-a17554a0d2.yaml.gz",
-      "bytes": 3099,
-      "compressed_bytes": 1543,
-      "sha256": "678b458865c17527da44ca9117b5b400f174ee3bec7c825fbcb75715700e194d"
+      "bytes": 6750,
+      "compressed_bytes": 3062,
+      "sha256": "7f587b9e3619e7444e5d4d3804b83a50c9ef9b498b74d4d0a322f8a355cd31af"
     },
     {
       "id": "64",
@@ -1401,9 +1401,9 @@
       ],
       "abstract": "Ablates the balanced absolute token union size (expanding from k=5 to k=15 per condition) to verify that the temporal peak of the rank complexity gap at position m=2 is robust to the column dimension of the Trajectory Delta Matrix.",
       "file": "evaluations/records/64-c66c65175f.yaml.gz",
-      "bytes": 2501,
-      "compressed_bytes": 1241,
-      "sha256": "9e9c92e31bb78663e0e4f577b96e6bd818d9793c10d5d149e20718d622667931"
+      "bytes": 6023,
+      "compressed_bytes": 2565,
+      "sha256": "d9808f37b2ae560d2687e71ae371e1e337a2a4342ea8012c7799683b5e608132"
     },
     {
       "id": "65",
@@ -1423,9 +1423,9 @@
       ],
       "abstract": "Tests whether the temporal covariance subspace learned at the grammatical peak (m=2) of Set A (Immediate Syntax probes) is lexically specific or represents a universal grammatical state by projecting unseen, syntactically matched probes (Set C) into the Set A basis.",
       "file": "evaluations/records/65-2a45938070.yaml.gz",
-      "bytes": 3362,
-      "compressed_bytes": 1541,
-      "sha256": "0cbd03dcf43be39be5f62ee9dff6b6cfa15180f56ca058fb85255a7052232b2b"
+      "bytes": 7369,
+      "compressed_bytes": 3004,
+      "sha256": "e21fd96ec83ab85867f67e4cfacaf57b612021e44dafa63ceec40cf29608a580"
     },
     {
       "id": "66",
@@ -1446,9 +1446,9 @@
       ],
       "abstract": "My Archive #5 showed the row-centered snapshot subspace is frequency/format aligned; Episteme (Archive #4) showed compositional Delta subspaces are semantic; Arkhe (Archive #6) showed the column-mean profile is a two-sided confound that must be deflated identically before comparing structure. These motivate a direct, quantitative test of the \"arrangement determines what the subspace encodes\" thesis: on a SHARED context set and SHARED frequency_fixed token axis, do the genuine (profile-deflated) low-rank subspaces of different table arrangements overlap, or are they distinct? This experiment measures principal-angle subspace overlap between (a) row-centered snapshot, (b) double-centered snapshot, and (c) context-influence Delta tables, after identical rank-1",
       "file": "evaluations/records/66-59129aacfb.yaml.gz",
-      "bytes": 1368,
-      "compressed_bytes": 755,
-      "sha256": "93c3df30dd26107870f94e6c8cb350be94579678bea5e1819c9f72ce561dfaa7"
+      "bytes": 5583,
+      "compressed_bytes": 2242,
+      "sha256": "3f37635a8ba31ca78d448fc714c784766f6468d9cc0f71f45a37deb3efdf2298"
     },
     {
       "id": "67",
@@ -1469,9 +1469,9 @@
       ],
       "abstract": "Third construction-axis scaling law for the OLMo-1B fixed-token context-influence difference table. Eval #35 showed context LENGTH mildly accumulates intrinsic dimension; Eval #36 showed probe-COUNT concentrates it. Here the selected-token dimension k is the SINGLE independent variable (nested top-mean-logit token sets). Pre-registered prediction: because additional top-mean-logit tokens load mostly the rank-1 unigram/profile direction, the REAL effective-rank-vs-k slope stays well below the per-column-shuffle null slope, and the real/null gap WIDENS with k; after profile deflation the accumulation is attenuated. Falsifier: real slope tracks null slope, or gap does not widen, or deflation does not attenuate. Calibrated against per-column shuffle null with profile",
       "file": "evaluations/records/67-4d89d294cd.yaml.gz",
-      "bytes": 9373,
-      "compressed_bytes": 4441,
-      "sha256": "467627bbdeab9b12ea44ba5457d423319c21ef984334ea3765a7027da842bb23"
+      "bytes": 9520,
+      "compressed_bytes": 4083,
+      "sha256": "8e3aa3a038c7bb393df90ffc935e2ca83029fa2c58d4ca0764941c2c3be1f7ca"
     },
     {
       "id": "68",
@@ -1491,9 +1491,9 @@
       ],
       "abstract": "Evaluates whether the context-dependent compositional structure isolated by column-centering the Logit-Difference (Delta) matrix maintains its superiority over the marginal-preserving null when the token subset size is doubled. Tests k=20 balanced tokens per block (K=1280 total columns).",
       "file": "evaluations/records/68-b4c96d8085.yaml.gz",
-      "bytes": 1673,
-      "compressed_bytes": 878,
-      "sha256": "3c3d43f2cab8501a314e87781964e12347341991d6e6a7cc3ae24d3da7f558cf"
+      "bytes": 5688,
+      "compressed_bytes": 2402,
+      "sha256": "1e4a1a128f92adc6dcb1f1b56467109ef3a73467eeeff4a2a034134c12945a91"
     },
     {
       "id": "69",
@@ -1514,9 +1514,9 @@
       ],
       "abstract": "Archive #8 showed the OLMo-1B snapshot \"direct channel\" is a marginal-profile (column-mean) effect that DIES under double-centering (which isolates the row-by-column interaction). Archive #1/#4/#7 study transfer/compositional/trajectory arrangements where grammatical composition is active. The crux question: does ANY arrangement carry a genuine context-differentiating INTERACTION code that survives double-centering, or is all apparent low-rank structure a marginal-profile effect once interactions are isolated? This experiment compares, on a SHARED context set and SHARED frequency_fixed token axis, the double-centered (interaction-only) structure of multiple arrangements against a marginal-preserving column-permutation floor and a cross-seed reproducibility ceiling, with held-out validation.",
       "file": "evaluations/records/69-a72b20062e.yaml.gz",
-      "bytes": 4325,
-      "compressed_bytes": 1871,
-      "sha256": "1041f1f8d636cb0c113520cdccc07700735de727688373d70b41c4f3f5b87ef8"
+      "bytes": 9628,
+      "compressed_bytes": 3679,
+      "sha256": "5cb973d41de10fe259191c397f7e68c5df630a5dd01124976bf75795e9630dd2"
     },
     {
       "id": "70",
@@ -1535,9 +1535,9 @@
       ],
       "abstract": "Previous attempts to map full reading trajectories to composed interaction subspaces failed. We hypothesize this is a signal-to-noise failure: full trajectories are dominated by high-variance, fast-changing syntactic updates that obscure the slow-changing, persistent semantic state used for steering. This eval constructs a Time-Averaged Trajectory Matrix to isolate the 'Slow' subspace and tests if it successfully aligns with and predicts the Composed steering subspace via a bilinear projection bridge.",
       "file": "evaluations/records/70-b7103ca278.yaml.gz",
-      "bytes": 2876,
-      "compressed_bytes": 1416,
-      "sha256": "bb07df3878c35c65ddbc8713b8c98b571a768c0217c4777fe58877f342b0f32d"
+      "bytes": 6383,
+      "compressed_bytes": 2760,
+      "sha256": "31a92e049b940bc1f7c9cda9b3fbcfff7f95294fd5304a2bd86e8051edd29221"
     },
     {
       "id": "71",
@@ -1558,9 +1558,9 @@
       ],
       "abstract": "Eval #67 found that after rank-1 profile deflation the OLMo-1B fixed-token context-influence difference table accumulates intrinsic dimension with token breadth k FASTER than the raw table (deflated/raw slope ratio ~3.4, F3 triggered 5/5), while still concentrating relative to its own deflated null. The profile is therefore not the carrier of breadth-growth. This experiment localizes what is: it decomposes the post-deflation k-growth by (a) token groups (format/leading-space vs content vs frequency band) and (b) which singular components carry the added dimension as k widens. Pre-registered hypotheses with per-column-shuffle null calibration and fresh seeds; honest report of which carrier hypothesis holds.",
       "file": "evaluations/records/71-d02560dd9d.yaml.gz",
-      "bytes": 6750,
-      "compressed_bytes": 3105,
-      "sha256": "72ba982fde41f61ceaa79d472db569c7fa062b0402d8198b5891a192809938cd"
+      "bytes": 9507,
+      "compressed_bytes": 4088,
+      "sha256": "4d7e3ce8551a569c3a4b19784a32fd6e65878c84959e9c7466bc01942ddd4d76"
     },
     {
       "id": "72",
@@ -1579,9 +1579,9 @@
       ],
       "abstract": "Tests whether the positive complexity gap (Token-Shuffled minus True) at the m=2 grammatical peak survives Arche I's centering decomposition (column-centering and double-centering). If the gap survives double-centering, it proves the temporal coherence ladder is a true row-by-column interaction code, defying the deflationary marginal-profile effect found in static snapshot tables.",
       "file": "evaluations/records/72-c097638f92.yaml.gz",
-      "bytes": 2571,
-      "compressed_bytes": 1177,
-      "sha256": "7d0a2145d9ecedd9482eb9c47cc1740c0c7ba366da18639d606e361ce47910cf"
+      "bytes": 6293,
+      "compressed_bytes": 2500,
+      "sha256": "c677054dfdd5e828b30ebc1519db013e57e6ffe2e263334bad0b432cdffe7c91"
     },
     {
       "id": "73",
@@ -1601,9 +1601,9 @@
       ],
       "abstract": "Evaluates whether the 'Temporal Coherence Ladder'—where intermediate orthogonal updates project strongly onto a terminal subspace—survives column-centering. Deflates both the intermediate steps and the terminal update to remove context-independent unigram drifts, testing if genuine context-dependent semantic coherence governs the autoregressive trajectory.",
       "file": "evaluations/records/73-35e995c107.yaml.gz",
-      "bytes": 2547,
-      "compressed_bytes": 1157,
-      "sha256": "923015513ed49e88ece2d95c4cd7cf121e22cb1bd417b25489de33d4862bdb38"
+      "bytes": 7197,
+      "compressed_bytes": 2955,
+      "sha256": "5cf23df53815d697404fb1c9c734c2f37ab8b12c31a71657ea0f773f3ab4578e"
     },
     {
       "id": "74",
@@ -1624,9 +1624,9 @@
       ],
       "abstract": "Exp I (Eval #69) found that under double-centering, both snapshot and per-probe-block transfer_delta tables retained reproducible structure above the column-permutation floor, while probe-averaged delta did not. This left ambiguity: my Archive #8 showed the snapshot direct channel is a marginal-profile effect, so snapshot's apparent double-centering survival may be residual profile structure not fully removed by double-centering, whereas transfer_delta survival may be a genuine context-by-token interaction code. This experiment applies IDENTICAL explicit profile deflation (Eval #66/Archive #6 style: log-frequency + grand column-mean directions) to all arrangements BEFORE double-centering and retests interaction survival, to disambiguate profile-driven from genuine-interaction survival.",
       "file": "evaluations/records/74-1f1362ea41.yaml.gz",
-      "bytes": 3613,
-      "compressed_bytes": 1612,
-      "sha256": "a35dfa6bcad26c35f22ea86449c1d9f93973ac0a329b63acfc763e3e591b7816"
+      "bytes": 9236,
+      "compressed_bytes": 3698,
+      "sha256": "5aa15ec93d5e351b441af078e585a9a815a6540296210f9ed3a47e62a5c8c930"
     },
     {
       "id": "75",
@@ -1645,9 +1645,9 @@
       ],
       "abstract": "Tests whether the $m=2$ temporal covariance subspace is a universal grammatical interaction code or orthogonal across different syntactic structures. Projects an unseen Matched family (Set C) and a Mismatched family (Set B) onto the Set A basis, using a strict cross-condition shared token union to resolve previous confounds.",
       "file": "evaluations/records/75-450ddec8dd.yaml.gz",
-      "bytes": 3005,
-      "compressed_bytes": 1347,
-      "sha256": "fabb798ef39f1faa3fd11120963f601de0f4ec97604562782833e7fd25e3ae50"
+      "bytes": 6169,
+      "compressed_bytes": 2607,
+      "sha256": "1fc7a5c56ec97ef3780d35b75280b31a8d284ffabdec64f946ea81dd89844319"
     },
     {
       "id": "76",
@@ -1668,9 +1668,9 @@
       ],
       "abstract": "Evaluates the hypothesis that centered autoregressive logit updates are bounded by their centered terminal subspace specifically after grammatical binding initiates (Steps 2 and 3). Runs a strict 5-seed pre-registered confirmation of the column-centered terminal projection protocol to cleanly separate genuine terminal semantic coherence from unigram trajectory artifacts.",
       "file": "evaluations/records/76-d54ad009d1.yaml.gz",
-      "bytes": 2574,
-      "compressed_bytes": 1176,
-      "sha256": "dc5cd9dffe83effaf3954db9e45ab199fcdfd62c6862a97b832f904608bfb416"
+      "bytes": 7408,
+      "compressed_bytes": 3135,
+      "sha256": "c402339403bfec3036e2fcd7dab0ec3de31cc28a1a727769771d831ac24b9245"
     },
     {
       "id": "77",
@@ -1690,9 +1690,9 @@
       ],
       "abstract": "Eval #71 found that post-deflation token-breadth growth of the OLMo-1B fixed-token\ncontext-influence difference table is carried by CONTENT tokens (content-minus-format\neffective-rank-vs-k slope mean 0.445, 95% CI [0.25,0.64]) and lands in a growing\nmid-spectrum tail (PA/PB 5/5). That content/format split used a heuristic morphology rule.\nThis experiment tests whether the carrier conclusion (PA) survives a stricter,\npre-registered corpus-only lexical classifier, gating a potential paper on the\ntoken-breadth axis. Single IV, per-column-shuffle null, identical deflation, fresh seeds.",
       "file": "evaluations/records/77-d321d6f7cc.yaml.gz",
-      "bytes": 5956,
-      "compressed_bytes": 2686,
-      "sha256": "54680e4489db5b59ee6476e68aac92468728242aee7162ed46f13da29eff8c66"
+      "bytes": 7644,
+      "compressed_bytes": 3391,
+      "sha256": "dbbddf5ab6ce8496546208ae7b31a0f48f5b3908ec75f8326c397f640ec67ab9"
     },
     {
       "id": "78",
@@ -1712,9 +1712,9 @@
       ],
       "abstract": "Re-tests cross-probe temporal transfer (Set A -> Set C vs Set A -> Set B) using double-centered trajectory Delta matrices. Eval 75 showed the Token-Shuffled fallback state transferred perfectly across mismatched probes. By applying double-centering before projection, we strip out the marginal-profile fallback prior, forcing projection to rely solely on the residual interaction code to test true grammatical orthogonality.",
       "file": "evaluations/records/78-eb4ac3033e.yaml.gz",
-      "bytes": 3074,
-      "compressed_bytes": 1378,
-      "sha256": "58d411c94a560dbfe954eaddf779324b1728844280eae0fdce922c011f5c06e6"
+      "bytes": 6711,
+      "compressed_bytes": 2779,
+      "sha256": "12a4af121865efba2524e0bd5332499716b21bc48244b70fc45bab5eb8080dd1"
     },
     {
       "id": "79",
@@ -1734,9 +1734,9 @@
       ],
       "abstract": "Extracts and decodes the token columns with the highest positive and negative weights in the first two principal components (V1, V2) of the column-centered Total Delta Matrix. Aims to ground the algebraic 'steering' of compositional updates in interpretable lexical or syntactic features, explicitly contrasting natural versus corrupted interventions.",
       "file": "evaluations/records/79-b74f5ee946.yaml.gz",
-      "bytes": 2147,
-      "compressed_bytes": 1076,
-      "sha256": "6e8a2f78ff27bc54d87321d7d61678f5bd5d432acb5fc9be38bc832eabf11345"
+      "bytes": 5769,
+      "compressed_bytes": 2568,
+      "sha256": "a9f8cd90c4960acfebd98148189b2873f9ad3b080213088d80227650fb3b99dc"
     },
     {
       "id": "80",
@@ -1757,9 +1757,9 @@
       ],
       "abstract": "Consolidation-rigor experiment for the construction-axis scaling-law story. Prior evals measured three axes separately: context length (Eval #35, accumulates), probe count (Eval #36, concentrates), token breadth (Eval #67/#71, raw concentrates but post-deflation residual grows into a mid-spectrum tail). Those used different seeds and were not normalized on a common footing, so the apparent dissociation could be a matrix-shape or null-slope artifact. This experiment re-measures all three axes on a COMMON set of fresh seeds with a COMMON normalization: each axis's effective-rank-vs-size slope divided by its own per-column-shuffle null slope, pre and post identical profile deflation. Pre-registered dissociation pattern with falsifiers. Goal:",
       "file": "evaluations/records/80-b888b29826.yaml.gz",
-      "bytes": 5069,
-      "compressed_bytes": 2362,
-      "sha256": "74f0188be53ae498e6461a41b8978ae71127a5cb381dd3ba4f5da1c0dece4da8"
+      "bytes": 8230,
+      "compressed_bytes": 3502,
+      "sha256": "506615a0e91d9ec9cee1fbaeb07bfffe826aa61d90fc1c48d22a17afe4e6803e"
     },
     {
       "id": "81",
@@ -1778,9 +1778,9 @@
       ],
       "abstract": "Eval 70 demonstrated that time-averaged reading trajectories ('Slow' state) successfully align with and predict composed interaction subspaces better than strict controls. To confirm this is a fundamental geometric isomorphism and not a fragile parametric artifact, we ablate the token-selection breadth. We evaluate the Subspace Projection Bridge across Narrow, Standard, and Wide token dimension pairings.",
       "file": "evaluations/records/81-1d513c0bcb.yaml.gz",
-      "bytes": 2533,
-      "compressed_bytes": 1324,
-      "sha256": "1dc1674ae22aa25984676324a70735dd56ab42c3616b0bd22c2e78cffd15ecfa"
+      "bytes": 6893,
+      "compressed_bytes": 3002,
+      "sha256": "e0eaea8faf9ae98411816086185fcb5c3fd053caca6507ee4ddc2025c38c4984"
     },
     {
       "id": "82",
@@ -1800,9 +1800,9 @@
       ],
       "abstract": "Re-evaluates cross-probe syntactic orthogonality. Prior attempts used 'Delayed Binding' probes (Set B) starting with commas, which acted as a trivial, highly-predictable fallback state rather than a complex syntactic control. We replace Set B with a new, complex SVO semantic continuation family (Set D) and apply the double-centered, condition-matched transfer pipeline. We hypothesize the double-centered Set A m=2 interaction code will successfully project to matched Set C m=2 but collapse when projected to mismatched Set D m=2, proving distinct grammatical states occupy mathematically orthogonal subspaces.",
       "file": "evaluations/records/82-76546f9a64.yaml.gz",
-      "bytes": 2971,
-      "compressed_bytes": 1391,
-      "sha256": "6e6bf81e337ba892faab02b831bfdc4960a3a98616383277eddbb3e63d02c515"
+      "bytes": 6375,
+      "compressed_bytes": 2734,
+      "sha256": "83b507ee9a42412bc961b07e85d32d75b4dfb5047e2d84500a86e2bb670546f7"
     },
     {
       "id": "83",
@@ -1823,9 +1823,9 @@
       ],
       "abstract": "Eval #80 (exploratory, seeds 359-383) found that after rank-1 profile deflation the OLMo-1B context-influence difference table's residual effective-rank SLOPE dissociates by sign across construction axes: context-length negative, probe-count near zero, token-breadth positive; and that context-length shows a SIGN FLIP (raw/row-centered slope positive, matching Eval #35, but post-deflation slope negative). My earlier pre-registered ratio-based statistic was a poor normalization and its dissociation prediction failed. This experiment is the clean confirmatory test on FRESH pre-registered seeds, using the post-deflation real SLOPE (not the ratio) as the decisive statistic, with explicit falsifiers. Confirms or refutes the slope-sign dissociation and the length sign-flip before",
       "file": "evaluations/records/83-7d7116e23e.yaml.gz",
-      "bytes": 4733,
-      "compressed_bytes": 2160,
-      "sha256": "e1736c892535e22f4e6d12554001094d5c893ccaa485ea2c1def8761584b45fd"
+      "bytes": 8029,
+      "compressed_bytes": 3329,
+      "sha256": "dac521a44878a16f573511fe9fd99aa96c86ec84a6dd12f6f2e610ee382e405d"
     },
     {
       "id": "84",
@@ -1846,9 +1846,9 @@
       ],
       "abstract": "Within my approved lane (what the genuine low-rank subspace encodes), this experiment characterizes the CONTENT of the deflation-robust context-by-token INTERACTION subspace established in Eval #66/#69/#74, and tests whether its content dissociates from the one-way marginal DIRECT CHANNEL (Archive #8), which lives in format/leading-space columns. Hypothesis: the marginal channel aligns with format/frequency axes, whereas the deflation-robust interaction subspace aligns more with topic/semantic axes (cf. Arkhe Archive #10 topic-aligned context axis). A clean dissociation would sharpen Paper 4's claim that the post-deflation residual is not monolithic.",
       "file": "evaluations/records/84-be461a0cd1.yaml.gz",
-      "bytes": 3884,
-      "compressed_bytes": 1790,
-      "sha256": "0716ce6365cbbdf1ef478f8b4d3157bef032d112bb19b8ed85fe8982752c5086"
+      "bytes": 9139,
+      "compressed_bytes": 3725,
+      "sha256": "9aef7efbf5d4909dac58eef00b5ff4ed98293b9730ea478e0f304bb48d8464df"
     },
     {
       "id": "85",
@@ -1867,9 +1867,9 @@
       ],
       "abstract": "Evaluates whether the autoregressive trajectory of column-centered logit updates lies on a non-linear manifold. Compares the reconstruction error of intermediate trajectory steps projected onto the Terminal Subspace using linear PCA versus Kernel PCA (RBF kernel).",
       "file": "evaluations/records/85-1352246e33.yaml.gz",
-      "bytes": 2046,
-      "compressed_bytes": 1026,
-      "sha256": "7555f151984994d26838790cbf9c78cbfad117bb3c07ba996640408f7798b2b5"
+      "bytes": 5299,
+      "compressed_bytes": 2360,
+      "sha256": "58e1ba55dffba36525fa23f41d0c18a0065e18bb7718ed4bacc4781ba0fc17bd"
     },
     {
       "id": "86",
@@ -1888,9 +1888,9 @@
       ],
       "abstract": "Tests the Fast-Slow Geometric Decomposition hypothesis by comparing the ability of a Time-Averaged Historical Trajectory versus the Immediate Prior Step to linearly predict the Terminal Context-Effect Subspace. Employs a cross-validated linear bridge and marginal-preserving controls.",
       "file": "evaluations/records/86-3c26dffc8a.yaml.gz",
-      "bytes": 2993,
-      "compressed_bytes": 1460,
-      "sha256": "8afae0dd7a64c3296ad8965a54405f684fa6051a28971b0879115d181a0b0709"
+      "bytes": 7403,
+      "compressed_bytes": 3178,
+      "sha256": "332b0bd61766d860aa6c21eca28e9ec81eca1eb7a099611ab86b0ae70d22d285"
     },
     {
       "id": "87",
@@ -1910,9 +1910,9 @@
       ],
       "abstract": "Tests the half-life of the Universal Coherence Gate interaction code established at the m=2 syntactic peak. By projecting double-centered deep trajectory steps (m=5, m=10) onto the m=2 basis, we evaluate whether the model 'forgets' this dynamic gating subspace as it transitions into long-horizon semantic generation.",
       "file": "evaluations/records/87-e62d7f1eb4.yaml.gz",
-      "bytes": 2680,
-      "compressed_bytes": 1289,
-      "sha256": "8795051182a5f8496e9392d4ed5d4b2ffd3cbcb563d571ff38a8d5f38ee8eae0"
+      "bytes": 7184,
+      "compressed_bytes": 3068,
+      "sha256": "a024f2f12388bf1fd7009d9ffbf0a80414ea06ee22df555f2bbb17a3a939e6ed"
     },
     {
       "id": "88",
@@ -1931,9 +1931,9 @@
       ],
       "abstract": "Tests if the Time-Averaged (Slow) Trajectory subspace survives strict double-centering. Compares single-centered (column-centered) vs double-centered variants of the T_slow projection bridge against marginal-preserving controls.",
       "file": "evaluations/records/88-b37f6ddcef.yaml.gz",
-      "bytes": 2351,
-      "compressed_bytes": 1193,
-      "sha256": "86a8156f73f4c10640a87db241256347dafc387748fe2986422c607a247489cc"
+      "bytes": 6230,
+      "compressed_bytes": 2699,
+      "sha256": "6fad6b0f8b288ddb45acefdbf158d5b09540d5e408599c19adb365c95b8f8bb8"
     },
     {
       "id": "89",
@@ -1952,9 +1952,9 @@
       ],
       "abstract": "Evaluates whether the Time-Averaged Historical Trajectory carries unique persistent semantic signal that is masked in the Immediate Prior step. Compares a combined Subspace Projection Bridge to bridges using only the historical average or immediate prior.",
       "file": "evaluations/records/89-16b06bd9b7.yaml.gz",
-      "bytes": 2769,
-      "compressed_bytes": 1292,
-      "sha256": "55effb833bd977c5614686ac95801e49d9988967db998ca1d539d10cca9d975d"
+      "bytes": 8280,
+      "compressed_bytes": 3394,
+      "sha256": "a5f9736d7cd21b946133285c5d0d974157805ec5c6feaf6278de2fa3e7cbdf2e"
     },
     {
       "id": "90",
@@ -1974,9 +1974,9 @@
       ],
       "abstract": "Paper-4 (Eval #67,#80,#83) established that in the OLMo-1B fixed-token context-influence difference table, after rank-1 profile deflation (column-profile removed + row-centered) the residual effective-rank slope dissociates by sign across construction axes: token-breadth positive (grows into a tail), context-length negative (concentrates), probe-count ~flat. The frontier (Archive #12 Arche, Archive #13 Nexus) has shown that a two-way context-by-token INTERACTION code survives DOUBLE-centering (removal of BOTH margins). This experiment tests whether my scaling laws are genuine two-way interaction effects by recomputing them under double-centering (the pure interaction) versus my standard profile-deflation, identically. Pre-registered: token-breadth slope stays positive and length slope stays negative under double-centering,",
       "file": "evaluations/records/90-2d0c8af807.yaml.gz",
-      "bytes": 3367,
-      "compressed_bytes": 1627,
-      "sha256": "af579d987acc8961e0a82b71ed309b894c0fdce25491b037c1a9bb410c17dcd6"
+      "bytes": 7493,
+      "compressed_bytes": 3167,
+      "sha256": "5e3601a09db077b7daef510cb32163f512269e45b56bd2d1ba05a082dae1610d"
     },
     {
       "id": "91",
@@ -1995,9 +1995,9 @@
       ],
       "abstract": "In Archive #13, we proved the m=2 Trajectory Delta matrix acts as a Universal Coherence Gate. In Archive #11, Cantor I proved that time-averaging the context-reading trajectory isolates a 'Slow' semantic subspace that steers future probes. This experiment tests whether the geometric basis of the dynamic Coherence Gate structurally overlaps with the static Slow semantic subspace, unifying the two Station paradigms via principal angle overlap.",
       "file": "evaluations/records/91-4cd66dfabb.yaml.gz",
-      "bytes": 3061,
-      "compressed_bytes": 1399,
-      "sha256": "e297fbbecf7b8d7748dd9ba05b67752a0afd00f1455701d2ec6a127ab5e5bcc4"
+      "bytes": 7392,
+      "compressed_bytes": 3011,
+      "sha256": "b18bb173df815e4e8f781f23cf0b05af439c463f7ef4f50ba6179c1c3c5bc782"
     },
     {
       "id": "92",
@@ -2017,9 +2017,9 @@
       ],
       "abstract": "Tests whether the m=2 Universal Coherence Gate acts as a persistent geometric anchor for semantic composition. Uses a double-centered Subspace Projection Bridge to evaluate if combining the m=2 Gate with the immediate prior improves terminal state prediction compared to the immediate prior alone.",
       "file": "evaluations/records/92-8ee51caaa2.yaml.gz",
-      "bytes": 3048,
-      "compressed_bytes": 1399,
-      "sha256": "782676ec9a5b24264c3498c9f41e8b26ce095ebadc9837792696cb3d622c8ee3"
+      "bytes": 7245,
+      "compressed_bytes": 2983,
+      "sha256": "da518b7bdf65593493f588acf9f43e8460bde591067cbdef4b7c9be93e6c28ce"
     },
     {
       "id": "93",
@@ -2040,9 +2040,9 @@
       ],
       "abstract": "In-lane follow-up to Archive #12 (cross-arrangement geometry of the deflation-robust interaction subspace). Archive #12 found snapshot-vs-transfer residual interaction subspaces overlap 0.34 (floor 0.17, ceiling 0.72) — partially shared, not identical. This experiment tests whether a LEARNED linear/bilinear bridge from the snapshot interaction code can predict the per-probe-block transfer interaction code on held-out contexts, recovering more shared structure than the raw 0.34 overlap and beating a marginal-preserving control. Success = the remaining non-overlap is partly learnable shared geometry; failure = the arrangements carry genuinely arrangement-private interaction codes.",
       "file": "evaluations/records/93-08a35293e0.yaml.gz",
-      "bytes": 3258,
-      "compressed_bytes": 1489,
-      "sha256": "3fe78858990c8fd49e992f4af1e82b048f0d1990e9ca5115c0e776db66bb597c"
+      "bytes": 7916,
+      "compressed_bytes": 3160,
+      "sha256": "d1975fa3b70370192add43e563de5bd91a6e0fe17197e018c07b5cd808369c34"
     },
     {
       "id": "94",
@@ -2062,9 +2062,9 @@
       ],
       "abstract": "Re-evaluates the geometric overlap between the Set A m=2 Universal Coherence Gate and the Time-Averaged 'Slow' semantic subspace. Eval 91 failed because it did not double-center the Slow matrix and used condition-specific token extraction, allowing the trivial 'Token-Shuffled' marginal-profile fallback to artificially inflate overlap scores. This experiment applies strict double-centering to BOTH matrices to isolate pure interaction residuals, and enforces a strict condition-matched token union extracted only from True contexts.",
       "file": "evaluations/records/94-215bb47da8.yaml.gz",
-      "bytes": 3019,
-      "compressed_bytes": 1387,
-      "sha256": "dec474c570c3a916966fc930d3c5562a0907616b55a4f31d00f8ac46f888b014"
+      "bytes": 7450,
+      "compressed_bytes": 3027,
+      "sha256": "74d0ed19c88d06f9fcc49ea19671b1bcf4aaf11fdd4f26857cef27a33afdb90a"
     },
     {
       "id": "95",
@@ -2082,9 +2082,9 @@
       ],
       "abstract": "Tests the 'Fast' temporal residual (T_fast = T_full - T_slow) in the Subspace Projection Bridge. If the Fast subspace governs only transient syntactic operations and not persistent semantic steering, T_fast should fail to predict composed spatial interactions.",
       "file": "evaluations/records/95-8e63fd3e77.yaml.gz",
-      "bytes": 2133,
-      "compressed_bytes": 1062,
-      "sha256": "5535d325d06d664cc244a0d7b59dfa06bc25195d04c20ba76f7aa6fcba033e37"
+      "bytes": 5722,
+      "compressed_bytes": 2470,
+      "sha256": "c79161a3ccaf2d6d682eb5a509b27d3844493d8f4f857452b63de8cdb95f4150"
     },
     {
       "id": "96",
@@ -2103,9 +2103,9 @@
       ],
       "abstract": "Tests whether the Universal Coherence Gate (m=2 trajectory delta) acts as the geometric entry point to Cantor I's 'Slow' semantic subspace (time-averaged trajectory). We use a Subspace Projection Bridge to map context factors from the double-centered m=2 Gate matrix to the double-centered Slow matrix on True natural text. We evaluate whether the True Gate basis reconstructs the held-out Slow matrix better than an Episteme I Marginal-Preserving Column-Shuffle null.",
       "file": "evaluations/records/96-6fb84aed32.yaml.gz",
-      "bytes": 3448,
-      "compressed_bytes": 1554,
-      "sha256": "ca8435411665a66cee88eb67316f9a0246a91c7d2ad783e8b96240384aee1c95"
+      "bytes": 7923,
+      "compressed_bytes": 3237,
+      "sha256": "850a3c0ddb560c6a7b654a294c01a2b1924bca3ce9ce0ff1004c31751db0c9ce"
     },
     {
       "id": "97",
@@ -2126,9 +2126,9 @@
       ],
       "abstract": "Archive #15 (Eval #90) localized the token-breadth effective-rank growth in the OLMo-1B fixed-token context-influence difference table as a genuine TWO-WAY INTERACTION effect (survives double-centering), but could not test which tokens drive it because the top-mean-logit selection rule starves content tokens (2-6/160; Eval #77). This experiment changes the column-selection rule to a BALANCED format+content token union and pre-registers whether content-token columns carry a steeper token-breadth interaction scaling than format-token columns. This is a NEW table scope with fresh pre-registration, not a rescue of Archive #15.",
       "file": "evaluations/records/97-812ed4562d.yaml.gz",
-      "bytes": 5845,
-      "compressed_bytes": 2779,
-      "sha256": "1ad2421a59e10a27a188319db324299b6ce745ba77cae2fc1d3c89ef15172e21"
+      "bytes": 9932,
+      "compressed_bytes": 4307,
+      "sha256": "27414d64075dfcd7c2578c89dff242bd140867d2bccd9c2ce0c8d33e550a2564"
     },
     {
       "id": "98",
@@ -2148,9 +2148,9 @@
       ],
       "abstract": "A stringent 5-seed confirmation of the Subspace Projection Bridge connecting the Set A m=2 Universal Coherence Gate to the Time-Averaged 'Slow' semantic subspace. We use 5 completely fresh seeds to verify that the true double-centered Gate basis cleanly outperforms a Marginal-Preserving Column-Shuffle null in predicting held-out Slow context factors, solidifying the geometric unification of dynamic and static structural paradigms.",
       "file": "evaluations/records/98-31bd9b9f5f.yaml.gz",
-      "bytes": 2488,
-      "compressed_bytes": 1201,
-      "sha256": "73508dc0efb758aaf5e54353c614fb0c8bab19be67b154a1ba18d64fb6fb368a"
+      "bytes": 6719,
+      "compressed_bytes": 2674,
+      "sha256": "d28a0ae24a774f907c14bf8509f0b5c09c2b8e4b5a36c80b960dc9e3b2fd9d4f"
     },
     {
       "id": "99",
@@ -2170,9 +2170,9 @@
       ],
       "abstract": "A 1D diagnostic test to verify if the language model experiences a measurable geometric 'shock' at the disambiguating token of a garden-path sentence. Constructs paired garden-path and unambiguous-control contexts, measures the deflated column-centered logit-difference (Delta) matrix at the shared disambiguating probe token, and compares the Frobenius norms and surprisals.",
       "file": "evaluations/records/99-9a79be611e.yaml.gz",
-      "bytes": 3882,
-      "compressed_bytes": 1653,
-      "sha256": "0817e3ddd121048912546e20085dfa94d0c3d26849c852d7a0c2ba9e7ee4065f"
+      "bytes": 9319,
+      "compressed_bytes": 3658,
+      "sha256": "d625e1376d02d53ef8d63e133e9c27bbc662fa9bbb89a10abab60277d9648495"
     },
     {
       "id": "100",
@@ -2191,9 +2191,9 @@
       ],
       "abstract": "Tests whether the 'Fast' temporal residual (T_fast) specifically encodes immediate syntactic and format tracking. Maps T_fast(t) to the format class of the generated token at t+1 using Arkhe I's locked lexical classifier.",
       "file": "evaluations/records/100-310b86e0b6.yaml.gz",
-      "bytes": 2319,
-      "compressed_bytes": 1209,
-      "sha256": "04ec41bdc68040998043872aba11955bbe98c6221f347354a2955beca07801ac"
+      "bytes": 7170,
+      "compressed_bytes": 3098,
+      "sha256": "771dc8d7540ba70bacf7f49a0c1e4d72ccc833ca9c5e6c29d1dbdb491356e261"
     },
     {
       "id": "101",
@@ -2212,9 +2212,9 @@
       ],
       "abstract": "Tests whether retroactive syntactic revision (garden paths) 'shatters' the Markovian accumulation property of autoregressive language generation. Uses a Subspace Projection Bridge to evaluate if a combined predictor (historical disambiguation shock + immediate prior) significantly improves terminal state prediction over the immediate prior alone, contrasting Garden-Path contexts against Unambiguous Controls.",
       "file": "evaluations/records/101-dbc0f00485.yaml.gz",
-      "bytes": 3755,
-      "compressed_bytes": 1636,
-      "sha256": "a88a2ca4330e51bad8645aa5e58a038ad3b602866f462021fdb7ef8af0f3819d"
+      "bytes": 8598,
+      "compressed_bytes": 3555,
+      "sha256": "828e32e0685e4606292dce20ff48909f2ac2a10a7110298d768a518df2dd3e94"
     },
     {
       "id": "102",
@@ -2235,9 +2235,9 @@
       ],
       "abstract": "Archive #15/Eval #97 established that the OLMo-1B context-influence difference table has a two-way INTERACTION budget (survives double-centering) that is content-token loaded and grows with the token window, distinct from a one-way marginal/profile budget that is format-loaded. This experiment asks what the interaction budget depends on: token IDENTITY (presence) or word ORDER. We corrupt the CONTEXT before differencing along two families that isolate these — local token-shuffle (preserves multiset+length, destroys order) vs frequency-matched content-token replacement (preserves length+positions, destroys identity) — at graded levels, and pre-register a dissociation in how the double-centered content-interaction effective rank decays. Decisive statistic = paired (presence-decay slope",
       "file": "evaluations/records/102-c8306ae139.yaml.gz",
-      "bytes": 6482,
-      "compressed_bytes": 2912,
-      "sha256": "22c317ad69cc52decba1cbb14a959781d6bacb277766e97987f14816b26e7b0f"
+      "bytes": 11447,
+      "compressed_bytes": 4711,
+      "sha256": "e57ff4d04fc31e3af5ae0da6166608f4b160487a9ca87981fcc70634353c52b0"
     },
     {
       "id": "103",
@@ -2257,9 +2257,9 @@
       ],
       "abstract": "In-lane behavioral test linking my structural findings (Archive #12 interaction subspace; Archive #8 marginal direct channel) to the graded fallback-collapse mechanism (Archive #5). Question: do a context's double-centered, profile-deflated INTERACTION-subspace coordinates predict the MAGNITUDE of that context's fallback-collapse under graded corruption, and do they add incremental predictive power OVER the marginal direct-channel coordinate? Either a positive link or a clean dissociation (marginal = global fallback gating; interaction = specific steering) advances the lane.",
       "file": "evaluations/records/103-934385f53d.yaml.gz",
-      "bytes": 3569,
-      "compressed_bytes": 1658,
-      "sha256": "382250e7a3a461deeef02a1380c043f16a8e5fc55f6beb269138dd961ec1e63d"
+      "bytes": 7956,
+      "compressed_bytes": 3286,
+      "sha256": "61fa63628e02314e9589a7bb397104d065fa98ad65d6759673f44abeed48bf62"
     },
     {
       "id": "104",
@@ -2280,9 +2280,9 @@
       ],
       "abstract": "Eval #102 found the double-centered content-interaction budget of the OLMo-1B T3 table decays more under frequency-matched content-presence corruption than under LOCAL (block=8) order scramble (P3 passed), but two preregistered supports failed: the local order operator inflated one-way format profile norm (not an order-only IV), and presence decay was non-monotone. This diagnostic varies order-corruption STRENGTH (block sizes including global within-context shuffle) on the same balanced table, characterizes whether any order operator is one-way-clean, and tests whether the presence>order dissociation survives a maximally disruptive global order shuffle. It directly probes whether P3 was an artifact of gentle local scrambling.",
       "file": "evaluations/records/104-78a8efcbaa.yaml.gz",
-      "bytes": 5477,
-      "compressed_bytes": 2428,
-      "sha256": "e781f2edbcdca8587ddddd2df3d35b4ced93c99c05c62b0412eaffd6937ad89d"
+      "bytes": 9078,
+      "compressed_bytes": 3790,
+      "sha256": "65f4e5bb7877ded4794eca777eec2d9b9fc6330a724e8fba74a5c8916111ab1a"
     },
     {
       "id": "105",
@@ -2301,9 +2301,9 @@
       ],
       "abstract": "Investigates whether the language model completely commits to an erroneous parse before a garden-path disambiguation, or if it maintains a latent geometric superposition of the correct parse. Uses a Subspace Projection Bridge to predict the terminal state from the 'pre-shock' state (Step 0, before the disambiguating token), comparing deflated Garden-Path contexts against Unambiguous Controls and shuffled nulls.",
       "file": "evaluations/records/105-e114c448f4.yaml.gz",
-      "bytes": 3261,
-      "compressed_bytes": 1527,
-      "sha256": "71123b39f05f55c122668d726b4ba0a25040d65842c4d28d2e61752f71fa7203"
+      "bytes": 7427,
+      "compressed_bytes": 3192,
+      "sha256": "452b83b206c9a36cfa8c04d0dcfadd6a1aceed498df21e757a6c7ea4311775a1"
     },
     {
       "id": "106",
@@ -2322,9 +2322,9 @@
       ],
       "abstract": "Tests whether the geometric alignment between the Slow semantic trajectory subspace and the spatial composed interaction shatters when the probe is an incoherent sequence of random tokens.",
       "file": "evaluations/records/106-7224f997fc.yaml.gz",
-      "bytes": 2554,
-      "compressed_bytes": 1194,
-      "sha256": "8ca93245cf106eadd16832fd2ac782efde2259e5a761408cda9f71251cffc3b2"
+      "bytes": 6110,
+      "compressed_bytes": 2613,
+      "sha256": "28c12a0c02205f49339beb278fcc0164c550b61a5e335c21ffb37d1d56004327"
     },
     {
       "id": "107",
@@ -2344,9 +2344,9 @@
       ],
       "abstract": "Replicates the Eval 105 Pre-Shock Superposition test on a completely novel synthetic prefix grid to ensure findings are not prefix-specific. Crucially, introduces a token-selection ablation (Terminal Variance vs. Pre-Shock Variance) to determine if the latent geometry of the correct parse is strong enough to influence the primary token variance before the structural shock occurs.",
       "file": "evaluations/records/107-524e05dc77.yaml.gz",
-      "bytes": 3152,
-      "compressed_bytes": 1458,
-      "sha256": "9ade4ebcd782815b68dbece97cc7e2f513889e13bbcc109e3ee1a957deadd730"
+      "bytes": 6926,
+      "compressed_bytes": 2860,
+      "sha256": "24533f70b97eeb764f39950ea37f5209e1da462279c5d736d69f6e2fa2e1af18"
     },
     {
       "id": "108",
@@ -2365,9 +2365,9 @@
       ],
       "abstract": "",
       "file": "evaluations/records/108-17503a6b23.yaml.gz",
-      "bytes": 4173,
-      "compressed_bytes": 1958,
-      "sha256": "5021a75818d8e904448fa55429298111fb4a8983ecf88bcbcb1614d4b1027001"
+      "bytes": 8521,
+      "compressed_bytes": 3606,
+      "sha256": "b26d40cfa40955a6567352fc64aca3f317a784cf579304c9a3b3c67d16f760b5"
     },
     {
       "id": "109",
@@ -2386,9 +2386,9 @@
       ],
       "abstract": "Tests whether the mapping to the Time-Averaged 'Slow' semantic subspace requires ongoing syntactic coherence. We construct a coherent SVO matrix (X_coh) and an Adversarial Perturbation matrix (X_adv) where the final token violently breaks syntax. We evaluate if the Subspace Projection Bridge to Y_slow survives for X_coh but collapses to the marginal-preserving null for X_adv.",
       "file": "evaluations/records/109-a1422e6a16.yaml.gz",
-      "bytes": 3264,
-      "compressed_bytes": 1483,
-      "sha256": "1377ed88945967fb1022bbd0b2ee6467b4e809117c4b89b20fdb21f56e5a8578"
+      "bytes": 7432,
+      "compressed_bytes": 3128,
+      "sha256": "cb474f2f1ba8120fb9eb1393d4f251b70b81c99b915949b211cf6906ac7f7f9a"
     },
     {
       "id": "110",
@@ -2409,9 +2409,9 @@
       ],
       "abstract": "Regular-paper-supporting experiment. My prior held-out result (Eval #103) showed that double-centered, profile-deflated context-by-token INTERACTION-subspace coordinates predict graded fallback-collapse magnitude (held-out R^2 ~0.303 across 3 seeds), while the marginal direct channel does not (~0.011). That test used a binary natural-vs-corrupted contrast. This experiment asks whether the relationship is GRADED in naturalness: as context text is progressively corrupted along a continuum, does (a) the fallback-collapse magnitude rise monotonically, and (b) the interaction subspace's predictive power over fallback degrade monotonically, while the marginal channel stays flat/low throughout? A monotone curve would convert a dichotomy into a dose-response relation and tighten the scoped claim",
       "file": "evaluations/records/110-5e796e4833.yaml.gz",
-      "bytes": 3878,
-      "compressed_bytes": 1799,
-      "sha256": "a66a9131c573ab7c0360c01ed665021e11098caef0bbd4ef1aa14365524c6baa"
+      "bytes": 8326,
+      "compressed_bytes": 3443,
+      "sha256": "cda1e9badffea569e1ef9f3df709937049f806488e3dd6086d3d627f79e6b4f2"
     },
     {
       "id": "111",
@@ -2431,9 +2431,9 @@
       ],
       "abstract": "The final replication of the Pre-Shock Superposition test on a third novel synthetic prefix grid (Grid C). Re-evaluates both Terminal Variance and Pre-Shock Variance token selection rules to confirm the robustness of the latent superposition. Also tracks whether the 'subspace concentration' effect (where ambiguity forces GP to outperform Ctrl at lower ranks) replicates a third time.",
       "file": "evaluations/records/111-6216f8a75f.yaml.gz",
-      "bytes": 3138,
-      "compressed_bytes": 1442,
-      "sha256": "046c693c4f6c0814ab1bed45cfcbc950ef33c5f397cf4807268cb1199994fbe8"
+      "bytes": 7331,
+      "compressed_bytes": 3071,
+      "sha256": "a78b168265f5367bf22265af712330f5f96326e510e856ca7f5757d28b0691a2"
     },
     {
       "id": "112",
@@ -2452,9 +2452,9 @@
       ],
       "abstract": "Revises Eval 109 by enforcing a strict Coherent-Only Shared Token dimension. We test whether the Subspace Bridge mapping from the Adversarial Trajectory Delta Matrix to the Time-Averaged Slow Matrix collapses when forced to predict on the exact semantic token axes defined purely by the Coherent text conditions. This deflates the 'gibberish fallback' confound.",
       "file": "evaluations/records/112-601ca99d55.yaml.gz",
-      "bytes": 2886,
-      "compressed_bytes": 1387,
-      "sha256": "60756a578b9f99009bac6878c0cab1d8b1796bc92b91619f884867b7b02d4056"
+      "bytes": 7378,
+      "compressed_bytes": 3087,
+      "sha256": "fa4d58b07c41a40a34e6ffb81a7ca8a89edf245d3beaaa08bc637b3f5cf12f76"
     },
     {
       "id": "113",
@@ -2473,9 +2473,9 @@
       ],
       "abstract": "Investigates how the dynamic step-to-step prefix trajectory (T_full) geometrically aligns with the eventual Time-Averaged semantic anchor (T_slow) across time. By computing the principal angle overlap between T_full(t) and T_slow at each reading step t, we test whether semantic commitment occurs smoothly or discretely at syntactic binding gates.",
       "file": "evaluations/records/113-e993215bfd.yaml.gz",
-      "bytes": 2475,
-      "compressed_bytes": 1189,
-      "sha256": "6172333ec3824103928e4ee8aa9e21534804498fb977c4de597d1c157d923cd9"
+      "bytes": 7393,
+      "compressed_bytes": 3169,
+      "sha256": "82caa8eb63aad14121bd74b2220c9f8d22a4827962fffceede04e996e7cf7715"
     },
     {
       "id": "114",
@@ -2495,9 +2495,9 @@
       ],
       "abstract": "Ablation testing whether the identity-over-order dissociation (content-identity corruption decays the double-centered context-influence interaction budget more than a global word-order shuffle; Eval #102/#104/#108) is robust to the CHOICE of interaction-budget metric. Replaces the effective-rank decay-slope statistic with a rank-r reconstruction-error / KL-based interaction-energy metric on the same double-centered table, holding everything else fixed. Fresh seeds. Confirms or scopes the conclusion's dependence on the metric.",
       "file": "evaluations/records/114-ecb7937db5.yaml.gz",
-      "bytes": 4199,
-      "compressed_bytes": 1942,
-      "sha256": "74bf7f14117932836eadcef227c8b6a25181389de06f5121089e493529258f15"
+      "bytes": 7740,
+      "compressed_bytes": 3251,
+      "sha256": "d2c50bc8df98228b25627a3ac5492eb346732f50eeb01fc6e5611fb4a8f746b5"
     },
     {
       "id": "115",
@@ -2517,9 +2517,9 @@
       ],
       "abstract": "Evaluates the dimensionality robustness of the Syntactic Superposition effect. Runs the Pre-Shock Subspace Projection Bridge on the original Grid A dataset across multiple selected-token dimensions (K=20, 50, 100, 200) to confirm the latent correct parse is not a fragile tail artifact but a macro-geometric feature.",
       "file": "evaluations/records/115-efa6e44dfa.yaml.gz",
-      "bytes": 2620,
-      "compressed_bytes": 1272,
-      "sha256": "8afa4481ee2b246cf55421e8e2889c915b58ab9b7dcd25ed2bc459ebea5f617d"
+      "bytes": 7055,
+      "compressed_bytes": 2990,
+      "sha256": "9499ba5d37888a67195e0da2a7711d64b98b3096ba92acdcd2ab5cc0db3ec9c2"
     },
     {
       "id": "116",
@@ -2538,9 +2538,9 @@
       ],
       "abstract": "Evaluates whether the Subspace Projection Bridge from the Coherence Gate to the Slow Semantic Subspace relies on sequential syntactic binding or mere lexical prefix overlap. We compare a Coherent delta matrix against a Scrambled Adversarial delta matrix that uses the exact same vocabulary but scrambles internal word order to destroy syntactic composition. Both matrices are evaluated on the identical Coherent-only shared token dimension.",
       "file": "evaluations/records/116-683e725c03.yaml.gz",
-      "bytes": 3057,
-      "compressed_bytes": 1444,
-      "sha256": "cbd07e5feff4a8d1b204bf2a6d82c46bd9babb1d1be5b7ed52d82b4bc99f7fe6"
+      "bytes": 7403,
+      "compressed_bytes": 3047,
+      "sha256": "9131ba624577c436c2187adc970cc3482a740dd2ec944f5e84828ea04e321816"
     },
     {
       "id": "117",
@@ -2558,9 +2558,9 @@
       ],
       "abstract": "Evaluates whether step-by-step logit velocity matrices Delta T(t) are strictly orthogonal to the semantic anchor T_slow, or if they exhibit discrete semantic injection spikes.",
       "file": "evaluations/records/117-d0e2dbb0ba.yaml.gz",
-      "bytes": 2158,
-      "compressed_bytes": 1070,
-      "sha256": "91f4b31ee0a8fe76296b253ef5d7f762cd52fd3eec21762c153095f6f4beb567"
+      "bytes": 6619,
+      "compressed_bytes": 2707,
+      "sha256": "71b3a1ec33813757ffc18cc8a871b9a260369b559524aaa3347a9a53de2e546c"
     },
     {
       "id": "118",
@@ -2580,9 +2580,9 @@
       ],
       "abstract": "Investigates whether the 'Syntactic Superposition' of a latent correct parse decays as the ambiguity window lengthens. Uses a Subspace Projection Bridge to predict the terminal state from intermediate states within ambiguity windows of increasing length, comparing Garden-Path trajectories against Unambiguous Controls and shuffled nulls.",
       "file": "evaluations/records/118-12f0de3dc7.yaml.gz",
-      "bytes": 3626,
-      "compressed_bytes": 1669,
-      "sha256": "3261144567233fc97d3ba0ab46af005e18d2d0fbf9f14ff8c8cc821fb66161b5"
+      "bytes": 7633,
+      "compressed_bytes": 3216,
+      "sha256": "cecea41567534c703a4c7295dc39ee78fd0c036e7ef96d6b9b798f76c509f114"
     },
     {
       "id": "119",
@@ -2601,9 +2601,9 @@
       ],
       "abstract": "Having established that total word-order scrambling does not collapse the Subspace Bridge to the Slow Semantic Subspace (Eval 116), we test the hypothesis that the bridge is purely a function of lexical identity. We progressively corrupt the vocabulary of the probes (100%, 50%, 0% content word overlap) and measure if the null-minus-true error gap decays monotonically.",
       "file": "evaluations/records/119-a2e33d344f.yaml.gz",
-      "bytes": 2966,
-      "compressed_bytes": 1408,
-      "sha256": "e8d268d64c9a802baa52eab0addd8cd144a38383a3b91d24399a7f70e05f17dd"
+      "bytes": 6695,
+      "compressed_bytes": 2829,
+      "sha256": "e7416f34bf4902477d199eeb9dd268970e89a20233fb81c2e12eeb7a6bde8e8c"
     },
     {
       "id": "120",
@@ -2622,9 +2622,9 @@
       ],
       "abstract": "Evaluates whether the Subspace Projection Bridge from Trajectory Deltas to the Time-Averaged Semantic Subspace relies on the coherence of the background context rather than the local probe. We compare a bridge using natural 48-token contexts against one using completely word-order scrambled 48-token contexts. The bridge should collapse when the background context is scrambled.",
       "file": "evaluations/records/120-775bc5c30e.yaml.gz",
-      "bytes": 3112,
-      "compressed_bytes": 1451,
-      "sha256": "8b1ab42f145ec7fd7f74e17064025da62c5b3707a2b7b3eafc8ed7611a6d3b0c"
+      "bytes": 7137,
+      "compressed_bytes": 2964,
+      "sha256": "65131e963c17294d96aa82c77344e44ae4d9edd43af1a85d07eddcb320071f40"
     },
     {
       "id": "121",
@@ -2643,9 +2643,9 @@
       ],
       "abstract": "Investigates the geometric nature of the 'structural shock' during garden-path disambiguation. Uses a Subspace Projection Bridge to predict the terminal state from the Step 1 (shock) state, comparing the raw shock matrix against one that has been geometrically orthogonalized against the pre-shock superposition subspace.",
       "file": "evaluations/records/121-8bd7954c40.yaml.gz",
-      "bytes": 2905,
-      "compressed_bytes": 1338,
-      "sha256": "eb3d0fd28edb701928fd598248709b5d0a07658e026af2f036dac0f49025bf23"
+      "bytes": 7781,
+      "compressed_bytes": 3255,
+      "sha256": "f63ddf07ff7753080418a01cf6882d0da87566fe5bd9649c021d7c9aa663dd98"
     },
     {
       "id": "122",
@@ -2665,9 +2665,9 @@
       ],
       "abstract": "Investigates whether the structural shock at garden-path disambiguation relies purely on amplifying pre-existing superposition geometry, or if it injects massive novel orthogonal corrective geometry. Sweeps the orthogonalization rank (k_ortho) up to 32 to determine if removing the pre-shock subspace catastrophically destroys the shock's predictive power.",
       "file": "evaluations/records/122-05a8ea5382.yaml.gz",
-      "bytes": 3123,
-      "compressed_bytes": 1436,
-      "sha256": "44ba942b3b2d185f4b30b47249b503e6c7313243bc1ed196a7418326c38b3113"
+      "bytes": 6870,
+      "compressed_bytes": 2914,
+      "sha256": "a61183e986f1e846a0e6782192d2f1b4a0e5dd5b024d25dec95d08635195e2c8"
     },
     {
       "id": "123",
@@ -2688,9 +2688,9 @@
       ],
       "abstract": "Archive #15/#23 and Eval #97/#102/#108/#114 established that the OLMo-1B fixed-token T3 context-influence difference table has a deflation-robust TWO-WAY interaction budget (survives double-centering) that is content-token loaded and more sensitive to content IDENTITY than word ORDER. This experiment asks a sharper, information-theoretic question: within frequency-matched content-token replacement, does removing HIGH in-context-surprisal content tokens decay the double-centered two-way interaction budget MORE than removing frequency-matched LOW-surprisal content tokens? The single independent variable is the surprisal stratum of the replaced tokens; frequency composition of removed tokens is matched between arms by design, so a positive contrast cannot be a restatement of the rank-1 marginal",
       "file": "evaluations/records/123-40bd001563.yaml.gz",
-      "bytes": 8015,
-      "compressed_bytes": 3453,
-      "sha256": "57cfc40374b139d8a4eba6bef68c3cb1bddfd96c86ca26c98c4be87e79f77ac8"
+      "bytes": 12882,
+      "compressed_bytes": 5187,
+      "sha256": "1431ae338075538ab03881bd8b9defb4620fe95f3dffeaafe7a7f8724094e9e3"
     },
     {
       "id": "124",
@@ -2711,9 +2711,9 @@
       ],
       "abstract": "Precondition probe for a black-box causal test of whether the OLMo-1B interaction-subspace coordinate causes fallback-collapse. Measures (1) whether a context's FROZEN interaction coordinate composes predictably under input-side fragment combination, (2) how precisely it can be targeted, and (3) whether it can be moved while holding the marginal/profile coordinate and a perplexity naturalness proxy matched. Outputs a pre-stated GO/NO-GO decision for the constructive vs matched-design causal route.",
       "file": "evaluations/records/124-f38cfe2e2f.yaml.gz",
-      "bytes": 6119,
-      "compressed_bytes": 2821,
-      "sha256": "eed37aae332390362dfb53ece0c8632248f09d98c5c504b710bea675c1138ead"
+      "bytes": 10892,
+      "compressed_bytes": 4615,
+      "sha256": "87111179ef00f22a4912b198bf7a82d9ca375af9c7314274df041aace2ed720f"
     },
     {
       "id": "125",
@@ -2732,9 +2732,9 @@
       ],
       "abstract": "Cantor I found that T_slow predicts the composed interaction geometry of contexts with completely random adversarial probes (Eval 106). This evaluation tests whether this 'fallback geometry' is a genuine compositional structure or a trivial artifact of context unigram frequencies. We compare the predictive error of a subspace projection bridge from T_slow vs. a 'Context-Unigram Prior' (T_unigram) onto the adversarial interaction matrix.",
       "file": "evaluations/records/125-0ca9277f91.yaml.gz",
-      "bytes": 3005,
-      "compressed_bytes": 1443,
-      "sha256": "ac13a168f438963f28c978d5c6efdd049f9b901332b7fa66ae8b9aa94328c890"
+      "bytes": 7925,
+      "compressed_bytes": 3313,
+      "sha256": "30f03fb2329e9c33ab00547ffdab06a781a47add4c72ac754d9ceb337c49694d"
     },
     {
       "id": "126",
@@ -2755,9 +2755,9 @@
       ],
       "abstract": "Stage B of the causal arc. Eval #124 established that the frozen interaction coordinate is strongly decoupled from the marginal channel and naturalness proxies (residual fraction 0.825) but not reliably constructible, yielding a matched natural-experiment design. Here I test, on natural OLMo-1B contexts, whether the interaction coordinate predicts disjoint-probe fallback-collapse AFTER conditioning on context perplexity and the marginal/profile channel (covariate adjustment + nearest-neighbor matched arms), and whether the symmetric perplexity/marginal contrast at matched interaction coordinate does NOT. This rules out the naturalness common-cause that a raw correlation cannot.",
       "file": "evaluations/records/126-114d4eefde.yaml.gz",
-      "bytes": 5567,
-      "compressed_bytes": 2530,
-      "sha256": "be84fef8f63462e7c36742a89b6f7038e35f9b735b0f61a3a6ee36b1b9c5404e"
+      "bytes": 9981,
+      "compressed_bytes": 4181,
+      "sha256": "977a410340f9746f0927ea5c3643546ffccc8bd46b5ea65b0a30e5419363db7a"
     },
     {
       "id": "127",
@@ -2776,9 +2776,9 @@
       ],
       "abstract": "Having established that the Subspace Projection Bridge to the Slow Semantic Subspace is governed by 'bag-of-words' lexical identity (Archive #25), we test its temporal boundaries. We hypothesize that semantic projection is not a discrete event at a 'Universal Coherence Gate' (m=2) but a continuous accumulation. We evaluate the bridge using trajectory deltas at increasing probe depths (m=2, m=4, m=6), predicting a monotonic increase in the null-minus-true gap as lexical identity accumulates.",
       "file": "evaluations/records/127-008451a05e.yaml.gz",
-      "bytes": 2932,
-      "compressed_bytes": 1444,
-      "sha256": "5940a9c5f0173a431ad8b300f87bdd026412a190ef176b06873503a7a6a906ca"
+      "bytes": 6694,
+      "compressed_bytes": 2969,
+      "sha256": "b90ecaa72ceef49ae7fde02307c573110de65c1bdcb429996fb512b0c791608d"
     },
     {
       "id": "128",
@@ -2798,9 +2798,9 @@
       ],
       "abstract": "Tests whether the 'Orthogonal Corrective Shock' is a universal geometric error-correction operator, or if it specifically relies on collapsing a valid pre-shock Syntactic Superposition. Compares the orthogonalized shock residual of a hard grammatical error against a well-formed control across a k_ortho sweep.",
       "file": "evaluations/records/128-b4182bff4b.yaml.gz",
-      "bytes": 3856,
-      "compressed_bytes": 1719,
-      "sha256": "86985603a1add80ca50d41432fd1089ccaba6553bab2321be125f16be6f57e97"
+      "bytes": 8732,
+      "compressed_bytes": 3575,
+      "sha256": "f2e67538e3745696da6319d36980b70275292ce65ce9c9759922ea8e4dde20a8"
     },
     {
       "id": "129",
@@ -2821,9 +2821,9 @@
       ],
       "abstract": "Eval #123 found, on the OLMo-1B fixed-token T3 context-influence table with frequency-matched content replacement (9-nat HIGH/LOW surprisal separation), that in-context surprisal did NOT order the deflation-robust two-way low-rank interaction budget (effective rank and rank-4 reconstruction, CI included 0), yet DID order the one-way profile norm and the full-vocabulary predictive divergence KL(softmax(context+probe)||softmax(probe)). This confirmation replicates the dissociation on fresh seeds using a per-seed ENDPOINT contrast (the prior slope summary was unreliable because curves were nonmonotone). The primary decisive statistic is the paired standardized cross-channel difference (KL surprisal effect minus two-way surprisal effect). We add a calibrated equivalence (TOST) test for two-way",
       "file": "evaluations/records/129-8b7471f4ae.yaml.gz",
-      "bytes": 7238,
-      "compressed_bytes": 3370,
-      "sha256": "c695581f7d297d433e8cf6c81ee9e7516afe3356e1bee0be8a65e36ad1f26518"
+      "bytes": 11610,
+      "compressed_bytes": 5002,
+      "sha256": "1298cb46c6f5e4b4e04b64f79b385e88f6a68281f66daa006681cea471c2d63a"
     },
     {
       "id": "130",
@@ -2843,9 +2843,9 @@
       ],
       "abstract": "Investigates the working memory limits of the Orthogonal Corrective Shock as a general repair operator. Tests whether the model can dynamically invent orthogonal steering geometry to recover from multi-token unrecoverable gibberish fragments, mapping the breaking point of the semantic trajectory.",
       "file": "evaluations/records/130-2a7541babb.yaml.gz",
-      "bytes": 3649,
-      "compressed_bytes": 1665,
-      "sha256": "470e9d7602f975c83f4a7f3834f71eeabc403f8942d9952ca2708015f6e976ff"
+      "bytes": 8168,
+      "compressed_bytes": 3382,
+      "sha256": "73be261fb31b49f19e192c022c9350c13389968d1c94ade6d92a2f87c4fbe590"
     },
     {
       "id": "131",
@@ -2866,9 +2866,9 @@
       ],
       "abstract": "Higher-power replication and refinement of Eval #126. Increases train contexts and matched-pair counts, decomposes the fallback target into effective-rank-drop vs entropy-rise vs sum, and adds plural naturalness proxies. Tests whether the interaction subspace's predictive association with fallback-collapse survives covariate adjustment for context naturalness and the marginal channel, and whether a naturalness-balanced matched interaction contrast beats identically-processed controls, separately per target component. Pre-registers both survival and non-survival as informative.",
       "file": "evaluations/records/131-e794a80eb1.yaml.gz",
-      "bytes": 5646,
-      "compressed_bytes": 2592,
-      "sha256": "bf5aa87944f6d38347b7c7e633fae7cd8141a69fdb97bbb29e20db8692564939"
+      "bytes": 10601,
+      "compressed_bytes": 4393,
+      "sha256": "740bf07ad14f9b7f134a1fe12a0a0b499290312ff86a38c42d2bfbbd82a72da0"
     },
     {
       "id": "132",
@@ -2889,9 +2889,9 @@
       ],
       "abstract": "Completes the naturalness-controlled decomposition with the dissociation that makes the survival meaningful. Applies the identical frozen-readout, covariate-adjusted, matched-arm pipeline of Eval #131 to three predictors — the interaction-subspace coordinate, the marginal/profile channel (the Archive #21 baseline that fails the raw test), and random/permuted directions — and asks which retain a naturalness-independent association with fallback-collapse. Breaks results down by corruption family to test whether survival is family-general. Predicts interaction survives while marginal and random do not.",
       "file": "evaluations/records/132-91dfde1d6e.yaml.gz",
-      "bytes": 4905,
-      "compressed_bytes": 2124,
-      "sha256": "338b7e2f686efb687d5a69f1399ade03564fa9d5046ca3053d4256b9b25d08fb"
+      "bytes": 9376,
+      "compressed_bytes": 3777,
+      "sha256": "25d9a14f699ddaf1491ac904c65b2532382b889d26f339568a430dfea44ed554"
     },
     {
       "id": "133",
@@ -2911,9 +2911,9 @@
       ],
       "abstract": "Follow-up to Eval 125. Tests if T_slow predicts the adversarial interaction better than a Context-Unigram Prior (T_unigram) when the target is the strict interaction residual: L(context + random_probe) - L(random_probe).",
       "file": "evaluations/records/133-d30f79cf7f.yaml.gz",
-      "bytes": 1930,
-      "compressed_bytes": 964,
-      "sha256": "fde62de33fdc50a42f96ac715350ddd009af12c37f75bedcd90ef68a40995f71"
+      "bytes": 5130,
+      "compressed_bytes": 2123,
+      "sha256": "b6e07bab3185eef680274d7e1e72561e331c7cafa42adbb8a23ecef58479a9b6"
     },
     {
       "id": "134",
@@ -2934,9 +2934,9 @@
       ],
       "abstract": "Eval #123/#129 (13 OLMo-1B seeds) found that replacing LOW in-context-surprisal (predictable) content tokens perturbs full-vocabulary predictive divergence KL(softmax(context+probe)|| softmax(probe)) MORE than replacing frequency-matched HIGH-surprisal tokens, while the probe- averaged double-centered two-way interaction budget was not reliably ordered (TOST inconclusive). Two confounds threaten the interpretation: (1) removing a predictable token injects a larger local expectation violation, so the KL effect may be mechanical; (2) the geometric metric is probe- averaged while KL is per-(context,probe), so the apparent dissociation may be an aggregation artifact (Archive #12 shows probe-averaging can destroy interaction structure). This experiment controls injected local surprisal by design and adds",
       "file": "evaluations/records/134-95e815d154.yaml.gz",
-      "bytes": 7635,
-      "compressed_bytes": 3460,
-      "sha256": "dd1a72235d3bd65d4f9146060196af48318a638fb37a7ac68da959b0b879a5fa"
+      "bytes": 13070,
+      "compressed_bytes": 5493,
+      "sha256": "0a4ffe1050be86e968be03c5ac7bb3170e464476227862966b24c704ae72a9f1"
     },
     {
       "id": "135",
@@ -2956,9 +2956,9 @@
       ],
       "abstract": "Evaluates the boundaries of the Orthogonal Corrective Shock mechanism by testing its resilience against open-class semantic gibberish compared to closed-class syntactic gibberish. Tests the hypothesis that the repair mechanism can bypass local syntactic destruction but shatters when the sequence-invariant semantic topic centroid is overwritten.",
       "file": "evaluations/records/135-40f7c01f41.yaml.gz",
-      "bytes": 3485,
-      "compressed_bytes": 1532,
-      "sha256": "446df6a0e26383063e3a5cb23ac21ffcd4e88fd28f6263737c70fe3653e54d20"
+      "bytes": 8396,
+      "compressed_bytes": 3354,
+      "sha256": "930e0a5e067c3cf821e75847dd58c412196279d82c285f34a83acfb18f3fbce0"
     },
     {
       "id": "136",
@@ -2979,9 +2979,9 @@
       ],
       "abstract": "Eval #132 found that under naturalness control both the interaction subspace and a fairly target-fit marginal/profile channel retain a predictive association with fallback-collapse, so the Archive #21 dissociation does not survive a fair baseline. This experiment partitions the naturalness-independent predictive signal into interaction-unique, marginal-unique, and shared components via mutual orthogonalization and commonality analysis, using the identical frozen-readout, covariate-adjusted, matched-arm pipeline. It determines whether the interaction subspace carries any unique naturalness-independent predictive content beyond the marginal channel.",
       "file": "evaluations/records/136-9e071a3a59.yaml.gz",
-      "bytes": 4397,
-      "compressed_bytes": 1955,
-      "sha256": "6eed140684cf4273f1c7732a640e7d4399655d3b23a7a95d59201ce876ba78a4"
+      "bytes": 9264,
+      "compressed_bytes": 3832,
+      "sha256": "da95d0999e8f05fe6785326153b3f60728a27fcad19f5106d357e89e4a8de87c"
     },
     {
       "id": "137",
@@ -3002,9 +3002,9 @@
       ],
       "abstract": "Tests whether the per-component commonality result of Eval #136 (rank and sum: both interaction-unique and marginal-unique naturalness-controlled predictive components survive; entropy: marginal-unique only) is stable across the selected-token dimension K, the one scale on which all prior naturalness-controlled experiments were conditioned (K=50). Re-runs the identical frozen-readout, residualized, matched-arm commonality pipeline at K in {50,100,150}. Determines whether the interaction-unique component for rank/sum is K-robust or a K=50 artifact.",
       "file": "evaluations/records/137-e1a864f0b7.yaml.gz",
-      "bytes": 3924,
-      "compressed_bytes": 1873,
-      "sha256": "53fe0ccd101a1036d7eb3d20e715ed6d2ff9644e6ae2447cc4d3060c831da5bc"
+      "bytes": 9041,
+      "compressed_bytes": 3729,
+      "sha256": "36b04cd59ad847b19937a4ca5e89c1f7f9e5715f211c000f35ffc53d866712c4"
     },
     {
       "id": "138",
@@ -3023,9 +3023,9 @@
       ],
       "abstract": "In Archive #27, we proved that the m=2 trajectory delta is a 'Geometric Window'—the point of minimal syntactic tracking noise before local sequence resolution begins to dilute the global semantic topic signal. We perform a robustness ablation on this Temporal Dilution effect by evaluating the Subspace Projection Bridge at depths m=2, m=4, and m=6 across a broad sweep of principal component ranks (R=2, 5, 10, 20, 50). This will map exactly which geometric dimensions are most polluted by local syntax as the trajectory deepens.",
       "file": "evaluations/records/138-56ad4d4dea.yaml.gz",
-      "bytes": 2444,
-      "compressed_bytes": 1242,
-      "sha256": "eb02161031d49885d5382ff925919f389b9eede16a95e60dc5b5e2ad2245d0f7"
+      "bytes": 6606,
+      "compressed_bytes": 3005,
+      "sha256": "c226840eba4054f19400bf9c3753f0abf78ff0488d4b6818144c872401953b2e"
     },
     {
       "id": "139",
@@ -3044,9 +3044,9 @@
       ],
       "abstract": "Analyzes the Effective Rank and leading singular value share of double-centered instantaneous logit velocity matrices Delta T(t) over time, compared to a randomized-token structural null.",
       "file": "evaluations/records/139-fa755791d0.yaml.gz",
-      "bytes": 2233,
-      "compressed_bytes": 1110,
-      "sha256": "328734ddc204e54240818ab9c873a0a7df64ef6859e48222208b0ff0e8f5cbd8"
+      "bytes": 6964,
+      "compressed_bytes": 3027,
+      "sha256": "897a4c002c8ec4cba657b9db103919968b99cb4b11ac92d6d0129b8bdb420f4b"
     },
     {
       "id": "140",
@@ -3067,9 +3067,9 @@
       ],
       "abstract": "After establishing (Eval #123/#129/#134, 18 OLMo-1B seeds) that surprisal-stratified content REMOVAL effects on the context-influence table are mechanical artifacts of injected-perturbation magnitude, we switch from perturbation to a non-interventional READOUT test that is immune to that confound. For natural-context fixed-token T3 context-influence tables, we ask whether a context's information-weight (mean in-context surprisal of its content tokens) is ENCODED in the deflation- robust two-way interaction budget (Budget 2) beyond the one-way marginal channel (Budget 1) and nuisance controls (length, frequency, TF-IDF topic — the latter because Archive #10 showed the context axis is topic-aligned). The decisive statistic is the incremental held-out",
       "file": "evaluations/records/140-c28aca23f1.yaml.gz",
-      "bytes": 6986,
-      "compressed_bytes": 3089,
-      "sha256": "545ea7bf6f404b59989e32a1ce00204140a027435fbf8f2718398804b3fba7f2"
+      "bytes": 11497,
+      "compressed_bytes": 4753,
+      "sha256": "1a4f695fff0b153fbc06801117b5a4b6fa77466c0c68815c8b6669081a206b75"
     },
     {
       "id": "141",
@@ -3090,9 +3090,9 @@
       ],
       "abstract": "Tests the lexical-composition explanation of the Eval #137 K-dependence (entropy-rise facet marginal-unique at K=50, both-unique at wider K). Re-runs the residualized naturalness-controlled commonality partition on FORMAT-only vs CONTENT-only token sub-axes. Predicts the interaction-unique predictive component concentrates in content columns and the marginal-unique component (especially the entropy facet) concentrates in format columns, which would explain why widening K (adding long-tail content tokens) recruits interaction-unique signal into the entropy facet.",
       "file": "evaluations/records/141-c9ca442765.yaml.gz",
-      "bytes": 4441,
-      "compressed_bytes": 2045,
-      "sha256": "4ff29f2139fb99b20b6c52d921cf7bd5955830bd0d62427ac7c8ace472f36c3c"
+      "bytes": 9642,
+      "compressed_bytes": 3975,
+      "sha256": "7e49d2ce0aca65b85362d515aba35b8dee29b6281dadf647e26fb477ba0ced2d"
     },
     {
       "id": "142",
@@ -3113,9 +3113,9 @@
       ],
       "abstract": "Robustness follow-up to Eval #141 (Exp S), which found at content-limited K_sub=28 that the interaction-unique predictive component of the geometric rank-drop facet of fallback-collapse concentrates in CONTENT columns, while the entropy facet did NOT show the predicted content concentration (interaction-unique stronger on FORMAT). This experiment widens the candidate frequency window to obtain a balanced K_sub=50 content/format token axis and re-runs the identical residualized naturalness-controlled commonality partition, to test whether the rank-drop content-concentration and the entropy refutation are robust or artifacts of the small (28) content-column count.",
       "file": "evaluations/records/142-2a2b47bf21.yaml.gz",
-      "bytes": 4323,
-      "compressed_bytes": 1960,
-      "sha256": "52e61f1c0f0f18f5fccb33642809371f4691b064448c68cd4374bacc49285699"
+      "bytes": 8486,
+      "compressed_bytes": 3516,
+      "sha256": "9e4fe273df455163239e0043fbf8cde1f6f66d2a405a58a18c7e9534f5efff68"
     },
     {
       "id": "143",
@@ -3134,9 +3134,9 @@
       ],
       "abstract": "Analyzes the Effective Rank of double-centered instantaneous logit velocity matrices Delta T(t), stratified by the token class (Content vs Format) of the token generated at step t.",
       "file": "evaluations/records/143-f47aea8bdc.yaml.gz",
-      "bytes": 2171,
-      "compressed_bytes": 1054,
-      "sha256": "0de3aabaa76c0ea4183a32326f84f5e2d984419f290a76689605124cb291d947"
+      "bytes": 6676,
+      "compressed_bytes": 2972,
+      "sha256": "f314bc5854799d3db22fbebcab4fc6d37a1d06782acd5fb24a17b5482501e4d2"
     },
     {
       "id": "144",
@@ -3156,9 +3156,9 @@
       ],
       "abstract": "Evaluates whether syntactic dependency tracking in the 'Fast' residual ($T_{fast} = T_{full} - Y_{slow}$) requires a non-linear representation manifold. We construct a Subspace Projection Bridge mapping the context-induced shift in $T_{fast}$ ($X_{fast delta}$) to the terminal $T_{fast}$ state ($Y_{fast}$). We compare a standard linear SVD bridge against an RBF Kernel PCA bridge on Coherent versus Word-Order Scrambled contexts to test if non-linear unrolling is required to track syntax.",
       "file": "evaluations/records/144-7320828c91.yaml.gz",
-      "bytes": 2649,
-      "compressed_bytes": 1361,
-      "sha256": "996a62e4bcd163ced6a77b29383cdc36f808faafa2ec2837ae9f4a52d2fc3f6e"
+      "bytes": 7967,
+      "compressed_bytes": 3352,
+      "sha256": "b78815854429b5a0699fd361d85920d6dbbbb48a2cefd7e1d2fd1555e873f549"
     },
     {
       "id": "145",
@@ -3178,9 +3178,9 @@
       ],
       "abstract": "Tests whether the deflation-robust two-way interaction subspace of the OLMo-1B context-influence\nshift table is information-bearing, not just an energy artifact. We learn a rank-r interaction\nsubspace on training contexts and reconstruct held-out context-conditioned next-token distributions,\nscored by predictive KL, against a matched-rank random subspace (primary control) and the one-way\nmarginal channel (secondary baseline). Primary contrast and falsifier are pre-registered.",
       "file": "evaluations/records/145-50336bc687.yaml.gz",
-      "bytes": 5775,
-      "compressed_bytes": 2735,
-      "sha256": "aed951e88f6cbe7db89a15039ad2ce3b4990b742e85e0ff053343c46a0e4adf9"
+      "bytes": 10295,
+      "compressed_bytes": 4440,
+      "sha256": "097502061ba51fc1f6e39ba0f27c8eb04adf64501360317cae9245e154397e5b"
     },
     {
       "id": "146",
@@ -3199,9 +3199,9 @@
       ],
       "abstract": "Translates the lineage's Orthogonal Corrective Shock into black-box logit constraints. Constructs three candidate logit tables: a Baseline Context-by-Token table, a Composed Context-by-Probe table, and a Corrective Delta table. Evaluates the explained variance and rank-r KL divergence of the Corrective Delta at the repair token compared to a Pre-Shock Delta control, enforcing strict column-centering.",
       "file": "evaluations/records/146-3fcfb99ec0.yaml.gz",
-      "bytes": 3020,
-      "compressed_bytes": 1494,
-      "sha256": "c80485b3a289e384dfa3207239eaf2462c1450367e20886d060127f54429c6be"
+      "bytes": 7840,
+      "compressed_bytes": 3288,
+      "sha256": "9f27fb943dc4275d94ee9ff19a5f377e3aa33d8137091ec1279ba539c2cb9bf8"
     },
     {
       "id": "147",
@@ -3221,9 +3221,9 @@
       ],
       "abstract": "Tests whether the mapping between a context's influence on Probe A versus Probe B is governed by a non-linear manifold. Evaluates Kernel PCA vs Linear PCA out-of-sample under coherent and scrambled context conditions, isolated via strict double-centering.",
       "file": "evaluations/records/147-b3c0730cf3.yaml.gz",
-      "bytes": 3626,
-      "compressed_bytes": 1722,
-      "sha256": "ce0b9ea1749b579dc5c54ba08d8707a7f4b1d68e1473ca697d244d90d69f0d14"
+      "bytes": 8627,
+      "compressed_bytes": 3672,
+      "sha256": "276e4feeb59b5b99ccc87c9e6cc276adc62fa51e69a43ebc58817b37d6ca1253"
     },
     {
       "id": "148",
@@ -3242,9 +3242,9 @@
       ],
       "abstract": "Refines the Phase 1 finding by redefining the third candidate table as a Step-Update matrix (Logits at t minus Logits at t-1). Compares the dimensionality (rank-r KL divergence) of the transition from L=3 gibberish to a repair token against the transition from a well-formed prefix to the exact same target token. Hypothesizes that the structural repair update is more tightly bottlenecked (lower rank) than a normal semantic continuation.",
       "file": "evaluations/records/148-536fb69340.yaml.gz",
-      "bytes": 2967,
-      "compressed_bytes": 1417,
-      "sha256": "364846fc7e4b7aa4f7ee01b302a158a28e54aa1cf15a91b919257aa8fdec9003"
+      "bytes": 7239,
+      "compressed_bytes": 3138,
+      "sha256": "e9aac1674df290e41269c496aee29bce6b878bc4927e23064ada276952593680"
     },
     {
       "id": "149",
@@ -3265,9 +3265,9 @@
       ],
       "abstract": "Tests whether the content-localization of the interaction-unique rank-drop fallback-collapse signal (Eval #141/#142) reflects content IDENTITY or merely token FREQUENCY. Reruns the residualized, naturalness-controlled, train-to-held-out commonality pipeline on content vs format token sub-axes that are matched on corpus log-frequency, so the content-minus-format interaction-unique contrast cannot be explained by the long-tail/low-frequency nature of content tokens.",
       "file": "evaluations/records/149-39dfc9ffd3.yaml.gz",
-      "bytes": 4515,
-      "compressed_bytes": 2043,
-      "sha256": "3aa5e1154fc3364b4de3056f402bbb74dad79b2171c0609773e619c6dd9d8816"
+      "bytes": 8151,
+      "compressed_bytes": 3436,
+      "sha256": "f6872c1c083a93d6c67e4a6a9f0fad087368aa407bcd0fe7ad0d9c20b422e138"
     },
     {
       "id": "150",
@@ -3287,9 +3287,9 @@
       ],
       "abstract": "Follow-up to Eval 147. Formalizes the non-linear Subspace Projection Bridge by employing nested cross-validation to select the RBF kernel bandwidth. Tests the hypothesis that Kernel PCA outperforms Linear PCA in predicting the interaction profile of Probe B from Probe A on coherent text, but loses this advantage when text is scrambled, establishing a double dissociation between curved syntax and linear semantics.",
       "file": "evaluations/records/150-13682ac418.yaml.gz",
-      "bytes": 3038,
-      "compressed_bytes": 1484,
-      "sha256": "c138f4fdcde6dd37bc1f01e75cfc2059cd02a74b184670f19c1f729c50735d3c"
+      "bytes": 6911,
+      "compressed_bytes": 2977,
+      "sha256": "0d9da6e428053f12932179d0fcebffbca59252348009538dcfe3bfbf330443d5"
     },
     {
       "id": "151",
@@ -3309,9 +3309,9 @@
       ],
       "abstract": "Verifies the findings of Eval 148 by testing the Step-Update dimensionality hypothesis across multiple target tokens. Evaluates whether the transition from L=3 gibberish to a repair token consistently yields lower rank-r KL divergence than the matched well-formed transition, using four distinct target repair tokens to rule out single-token lexical artifacts.",
       "file": "evaluations/records/151-b16a457a33.yaml.gz",
-      "bytes": 2635,
-      "compressed_bytes": 1230,
-      "sha256": "0b14b262da200fc57c013ace81b8e53db2607d32d421ecab18c3e131733c1578"
+      "bytes": 6187,
+      "compressed_bytes": 2561,
+      "sha256": "c6ea1e91294d8be9475495a8b8b5b2ffaa80346fb27a4e7a1f07d33929da022a"
     },
     {
       "id": "152",
@@ -3330,9 +3330,9 @@
       ],
       "abstract": "Directly measures the Principal Angle intersection between the right-singular subspaces of T_slow(natural) and T_slow(scrambled) to test strict geometric path-independence without regression-bridge artifacts.",
       "file": "evaluations/records/152-ac2646028f.yaml.gz",
-      "bytes": 2110,
-      "compressed_bytes": 960,
-      "sha256": "2cf9ebe750654f24f37cd8da9f193d0b27a9d737741737625435c4deccf8d156"
+      "bytes": 5544,
+      "compressed_bytes": 2327,
+      "sha256": "cafb66065fdc7cfd73231f16c31f957bb2979da6d96eb3d5c920df9238299196"
     },
     {
       "id": "153",
@@ -3352,9 +3352,9 @@
       ],
       "abstract": "Consolidation of Eval #145's positive preregistered finding. Confirms on all five preregistered\nseeds that a train-learned rank-8 interaction subspace reconstructs held-out OLMo-1B\ncontext-conditioned next-token distributions in predictive KL better than a matched-rank random\nsubspace and the one-way marginal channel, and extends the rank grid to resolve whether\ninformation-optimal rank differs from L2-energy-optimal rank. Primary statistic already locked in\nEval #145; this is a power increase and a pre-specified exploratory rank comparison, not a re-test.",
       "file": "evaluations/records/153-a6f16ab483.yaml.gz",
-      "bytes": 3996,
-      "compressed_bytes": 2055,
-      "sha256": "7a5e36654258fa7884fe80ab0ab1438fc24e8cd3071661736cf5914c55794038"
+      "bytes": 8154,
+      "compressed_bytes": 3620,
+      "sha256": "0d255e41190b27ef472b4f50e5298809cb348979e99e5a24a503e28f24182446"
     },
     {
       "id": "154",
@@ -3374,9 +3374,9 @@
       ],
       "abstract": "Investigates whether the low-rank bottleneck of a syntactic repair scales with the severity of the prior structural disruption. Compares the Step-Update dimensionality of a repair following an L=1 single-token error against a repair following L=3 multi-token gibberish.",
       "file": "evaluations/records/154-06349be70b.yaml.gz",
-      "bytes": 2618,
-      "compressed_bytes": 1271,
-      "sha256": "75f3131f0c362fdf7c3773e691848b792f140876ebc18e53f466ec0f30ac09e6"
+      "bytes": 6826,
+      "compressed_bytes": 2910,
+      "sha256": "7b9e3280486a11c73abf534524cd45d4c72ca5963450073b6ba97893fd2bd776"
     },
     {
       "id": "155",
@@ -3396,9 +3396,9 @@
       ],
       "abstract": "Evaluates whether the Orthogonal Corrective Shock (the logit delta required to repair a local syntactic corruption) is governed by a non-linear manifold. Uses a Nested-CV Kernel PCA bridge to predict the Corrupted-minus-Well-Formed repair delta from the context's uncorrupted baseline state, comparing coherent and word-order scrambled contexts.",
       "file": "evaluations/records/155-9d8974badd.yaml.gz",
-      "bytes": 3299,
-      "compressed_bytes": 1599,
-      "sha256": "957218919aa71f9348bed6100c0fab18f38ed3aeca92c8e65beb3afe9b1e95a4"
+      "bytes": 8325,
+      "compressed_bytes": 3564,
+      "sha256": "bb71d0dc74f3f6df18a446ea3974a8861ea2d23be626c3c14008fcde2828c205"
     },
     {
       "id": "156",
@@ -3419,9 +3419,9 @@
       ],
       "abstract": "A high-powered 10-seed replication of Eval 155. Evaluates whether the exact structural repair required after a syntactic corruption (the Orthogonal Corrective Shock) is governed by a non-linear representation manifold, and rigorously tests if this non-linear advantage is destroyed when context word-order is scrambled.",
       "file": "evaluations/records/156-6052521b76.yaml.gz",
-      "bytes": 2732,
-      "compressed_bytes": 1324,
-      "sha256": "993bb77b8cb78a5a3079ab47f8c6c505bec83f744403c3c58ba6252dbeef6f22"
+      "bytes": 6970,
+      "compressed_bytes": 3021,
+      "sha256": "9108a960755c5e2e44cb575a05553818b1f66487c25c5d33f9e96d72b09bdd9c"
     },
     {
       "id": "157",
@@ -3440,9 +3440,9 @@
       ],
       "abstract": "Ablates the token selection rule from Eval 152, measuring the Principal Angle intersection between T_slow(natural) and T_slow(scrambled) using high-mean and random token subsets to verify the breakdown of geometric path-independence.",
       "file": "evaluations/records/157-097ccd4f03.yaml.gz",
-      "bytes": 1701,
-      "compressed_bytes": 808,
-      "sha256": "5bd1f5812af6520596e96f89193e3501f692aba830a7c18b755ceb47f8f4014f"
+      "bytes": 5644,
+      "compressed_bytes": 2273,
+      "sha256": "854d5cef7bfc2ab055cdf7d332dc1bab7acf6191a7ca876da2d0302ba6a28f13"
     },
     {
       "id": "158",
@@ -3462,9 +3462,9 @@
       ],
       "abstract": "Follow-up to Archive #31 / Eval #145/#153. Tests whether the held-out predictive information of the\nOLMo-1B interaction budget is carried only by its high-energy head (a low-dimensional topic centroid)\nor also by its low-energy tail. We project out the top-8 high-energy interaction directions\n(train-learned) and ask whether the remaining tail directions alone reconstruct held-out\ncontext-conditioned next-token distributions in predictive KL better than an equal-dimensional random\nsubspace. Primary statistic and falsifier are pre-registered (capsule #60).",
       "file": "evaluations/records/158-a3d12597f9.yaml.gz",
-      "bytes": 4066,
-      "compressed_bytes": 2090,
-      "sha256": "0f342c70f8035601f50957bd2387f09dac833cb180f1e21cd47c0959a8dd04bf"
+      "bytes": 8084,
+      "compressed_bytes": 3681,
+      "sha256": "61be9067a94f378370577c2b77c0d27555119ec2ad9e8818c3e2085a5340acc6"
     },
     {
       "id": "159",
@@ -3484,9 +3484,9 @@
       ],
       "abstract": "Decodes the content of the leading singular component of the Repair Step-Update matrix by projecting the full vocabulary onto the top-1 right singular vector. Tests whether the step-update bottleneck points toward generic grammatical recovery or specific semantic resumption.",
       "file": "evaluations/records/159-6b6277afcb.yaml.gz",
-      "bytes": 2604,
-      "compressed_bytes": 1252,
-      "sha256": "ac3ffada6186ec6ed6d61f9cc6d7e9808037bab1acbcc357da3cbf4bf5a17973"
+      "bytes": 7020,
+      "compressed_bytes": 3067,
+      "sha256": "75567d1e73bd13bb15403f06551ad1ac92ad58c6e2121b2a131de73dda4e6dcb"
     },
     {
       "id": "160",
@@ -3507,9 +3507,9 @@
       ],
       "abstract": "Deepens the Archive #33 content-localization result by asking whether the CONTENT-token interaction subspace's naturalness-independent predictive contribution to fallback-collapse is concentrated in a few leading high-energy directions (a coarse topic-centroid code) or is spread into the low-energy tail (a broad multi-dimensional calibration manifold). Within the same snapshot transfer-delta fallback-collapse arrangement, we bifurcate the content-token interaction readout by energy rank (leading-r vs tail-with-top-r-projected-out) and test whether the tail alone still predicts collapse beyond a matched-rank random subspace. Imports the energy-vs-information lens raised by Archive #31 but on a distinct object (collapse prediction, not shift-table KL reconstruction).",
       "file": "evaluations/records/160-be057d4ca4.yaml.gz",
-      "bytes": 5499,
-      "compressed_bytes": 2443,
-      "sha256": "c375d83e70e89cc97affc1b758ed7a82811ae1ec6824f2f386b6a5f5dc0e9b0f"
+      "bytes": 8921,
+      "compressed_bytes": 3837,
+      "sha256": "04a7b71b4af838e9e9163216af13fde379d0b38f16002c3d1aec192dc210eb8d"
     },
     {
       "id": "161",
@@ -3529,9 +3529,9 @@
       ],
       "abstract": "Resolves the 'effective rank caveat' by localizing where semantic resumption occurs within the Step-Update SVD spectrum. Tests whether prefix-specific semantic keywords are enriched in the row-conditioned Rank-1 reconstructed update vs. the Trailing Update (Ranks 2-16) of the L=3 Repair Step-Update matrix.",
       "file": "evaluations/records/161-0159a99ed2.yaml.gz",
-      "bytes": 2502,
-      "compressed_bytes": 1227,
-      "sha256": "81725c35f810c8cfa926e6c16db4865c21a2abcc7db585a4238f6b513e89e6b1"
+      "bytes": 5928,
+      "compressed_bytes": 2610,
+      "sha256": "1c938d15f65626f8f3529d06d7199130b1577e91c293dfd8247747435c6d3be3"
     },
     {
       "id": "162",
@@ -3551,9 +3551,9 @@
       ],
       "abstract": "Evaluates the physical depth of the non-linear syntactic manifold by applying the Nested-CV KPCA Subspace Bridge to intermediate layer states via the Logit Lens. Tests the hypothesis that non-linear geometric curvature peaks in the middle layers where syntax is actively parsed and flattens toward the final unembedding layer.",
       "file": "evaluations/records/162-ae1e7198bc.yaml.gz",
-      "bytes": 3250,
-      "compressed_bytes": 1634,
-      "sha256": "e284a22ad31bf354715200c9df04f4ac0a87a82f57171ec16c5a373cbc636319"
+      "bytes": 6549,
+      "compressed_bytes": 2889,
+      "sha256": "a71acaaf2b885416fa53544455f2dee5a1825e2148dcbff62be010f1ccece52a"
     },
     {
       "id": "163",
@@ -3573,9 +3573,9 @@
       ],
       "abstract": "A rigorous follow-up to Eval 161. Tests whether the localization of semantic keywords to the trailing manifold (Ranks 2-16) generalizes to out-of-sample contexts, proving it is a genuine linguistic structure rather than an artifact of SVD train-row memorization.",
       "file": "evaluations/records/163-fd93751649.yaml.gz",
-      "bytes": 2402,
-      "compressed_bytes": 1184,
-      "sha256": "64a2a850478b8ca73c3659b5e989fc8d6afcf3393c738549f32d3a9d42da42ea"
+      "bytes": 7313,
+      "compressed_bytes": 2996,
+      "sha256": "1cf0a5f92f91aa770aaa96f57a291ee28c263dd6fb0366a54833cc52e8bb2133"
     },
     {
       "id": "164",
@@ -3594,9 +3594,9 @@
       ],
       "abstract": "Measures the Principal Angle intersection between the terminal T_slow subspace of normal text and text subjected to an L=3 syntactic repair, comparing it to the intersection with globally scrambled text.",
       "file": "evaluations/records/164-a929eb33e3.yaml.gz",
-      "bytes": 1902,
-      "compressed_bytes": 936,
-      "sha256": "9ca59a6aa084052e3be0dd9d7b05e7e2df64e78d7daa3ada8ebd19f23e0148f0"
+      "bytes": 5047,
+      "compressed_bytes": 2241,
+      "sha256": "a78ddc6aeb8faf9be87d63afb685e7856a408757b082313df8eee809dd1db77b"
     },
     {
       "id": "165",
@@ -3617,9 +3617,9 @@
       ],
       "abstract": "A rigorous follow-up to Eval 162 (Logit Lens Depth Sweep). Addresses the confound of depth-dependent logit scaling by pre-registering a scale-normalized KPCA Advantage metric. Tests the hypothesis that the proportional predictive power of the non-linear syntactic manifold peaks at intermediate layer L=12 and flattens out by the final unembedding layer L=16.",
       "file": "evaluations/records/165-74cbd2c215.yaml.gz",
-      "bytes": 2187,
-      "compressed_bytes": 1172,
-      "sha256": "37ecc4348b5cb3c753daa31cb3cb1f32cc83ed9c4ac6b9261b78e7256185684d"
+      "bytes": 5390,
+      "compressed_bytes": 2296,
+      "sha256": "f13e84fcc47265281469041503e9c28b8090e6fc963667d577e8ab3e1eb8d1fa"
     },
     {
       "id": "166",
@@ -3639,9 +3639,9 @@
       ],
       "abstract": "Follow-up to Archive #31 / Eval #145/#153/#158. Converts the Eval #158 tail crossover into a defined,\nmeasured quantity: the control-relative information rank m* — the rank beyond which train-learned\ninteraction directions no longer reconstruct held-out next-token distributions better than a\nmatched-DIMENSION random subspace. Dense TAIL(h,64) sweep with a HEAD-h cross-check, pre-registered\n(capsule #63), fresh seeds.",
       "file": "evaluations/records/166-69e56976fc.yaml.gz",
-      "bytes": 4554,
-      "compressed_bytes": 2297,
-      "sha256": "17f8c5c61653c1a133a05171ba01016305fffd6422c73accb9b6f9e68b6fbefc"
+      "bytes": 7784,
+      "compressed_bytes": 3578,
+      "sha256": "b7eb97159d6d75f48c72d79264cca3863ca1df73cd1f393e428ed99004f33162"
     },
     {
       "id": "167",
@@ -3661,9 +3661,9 @@
       ],
       "abstract": "Transitions the Step-Update framework from synthetic gibberish to natural corpus text. Introduces the 'Composed Step-Update' matrix to control for target heterogeneity, and uses local 4-token word scrambling to induce natural structural errors. Tests if the Repair Composed Step-Update maintains a tighter low-rank bottleneck (lower held-out KL) than a Normal Composed Step-Update.",
       "file": "evaluations/records/167-708a77db47.yaml.gz",
-      "bytes": 2717,
-      "compressed_bytes": 1258,
-      "sha256": "9a6a3292b5308b0ced11a10d61ee0f7a5efaf2877d3fb573e7302c938724c5c8"
+      "bytes": 7388,
+      "compressed_bytes": 2986,
+      "sha256": "1f139b8ce02949f2d68462232f0ff60f49c970f086a8ac5b0501aad18280343a"
     },
     {
       "id": "168",
@@ -3684,9 +3684,9 @@
       ],
       "abstract": "Tests whether the Eval #160 conclusion — that the content-token interaction subspace's predictive contribution to fallback-collapse is a coarse, SVD-energy-LEADING code — is an artifact of the unsupervised SVD-energy ORDERING rather than a property of the signal's intrinsic predictive dimensionality. On the same frequency-matched content sub-axis, we build a TRAIN-ONLY target-aligned ordering of the interaction coordinates and ask whether a target-aligned readout drawn from the SVD-energy TAIL (directions beyond the top-8 energy cut) predicts held-out collapse beyond a matched-rank random subspace AND a target-aligned-on-label-shuffled overfit control. Discriminates 'target-dependent dimensionality' from 'energy-order artifact'.",
       "file": "evaluations/records/168-f76b2ea6b4.yaml.gz",
-      "bytes": 6156,
-      "compressed_bytes": 2581,
-      "sha256": "029f418e8a1e4b7d348d78f0ce619ef0b2bcc9e050695bd2581456e7b1cecb4c"
+      "bytes": 10735,
+      "compressed_bytes": 4239,
+      "sha256": "191ae16da3dd37c6701e72e31e2b51c00f4deed0104bdf4c055d59f82864e91f"
     },
     {
       "id": "169",
@@ -3706,9 +3706,9 @@
       ],
       "abstract": "Resolves the 'effective rank caveat' in natural corpus text. Decomposes the SVD spectrum of the Repair Composed Step-Update matrix to determine if long-range semantic integration is handled by the leading component (Rank 1) or the trailing manifold (Ranks 2-16). Uses a data-driven Semantic Target Vector to measure out-of-sample alignment.",
       "file": "evaluations/records/169-2659fc5198.yaml.gz",
-      "bytes": 2819,
-      "compressed_bytes": 1351,
-      "sha256": "f98416fb22e4b949853071304a6edeb8ae9615c2568b5e86457266f6b70b247e"
+      "bytes": 6977,
+      "compressed_bytes": 3022,
+      "sha256": "4225aefb8a6426000fc785a173ca77d6a1b51db5b170c5cf0d1b8820d7552018"
     },
     {
       "id": "170",
@@ -3728,9 +3728,9 @@
       ],
       "abstract": "Resolves the metric failure of Phase 8 by abandoning linear Pearson correlation in favor of predictive KL divergence. Tests whether the out-of-sample Rank-1 or Trailing Manifold (Ranks 2-16) of a structural repair step-update better reconstructs the pure, well-formed semantic state of natural text contexts.",
       "file": "evaluations/records/170-717b2f3d88.yaml.gz",
-      "bytes": 2707,
-      "compressed_bytes": 1314,
-      "sha256": "6fff5e5008e94aa98e7e2091f9cff5ca64a74ca6dac8854154a7f803bf8df072"
+      "bytes": 6331,
+      "compressed_bytes": 2624,
+      "sha256": "4f9816df870691ce6e1af9f5ed808ae113edb7b90bd053cda1aecda694da1527"
     },
     {
       "id": "171",
@@ -3750,9 +3750,9 @@
       ],
       "abstract": "Tests whether the published OLMo-1B interaction-budget findings (Archive #31/#35: a train-learned\nlow-rank interaction subspace beats matched-rank random and marginal in held-out KL; information rank\n~8 << energy rank ~27) generalize from a probe-AVERAGED single-context table to a composed\n(context,probe)-PAIR table that satisfies the task's \"beyond one distribution per prompt\" requirement.\nPrimary: existence of better-than-random generalizing structure on the new arrangement. Secondary:\nwhether the information-rank-below-energy-rank phenomenon replicates. Pre-registered (capsule).",
       "file": "evaluations/records/171-94940e534a.yaml.gz",
-      "bytes": 5142,
-      "compressed_bytes": 2478,
-      "sha256": "f5d09f2390134153bf2addbf93ea7ed179f583d2f7187a230e33ef230a4680e7"
+      "bytes": 9942,
+      "compressed_bytes": 4333,
+      "sha256": "7000308c93e747cdad8f5006a9412f21a316cc2961983990fc6174b14deac8e3"
     },
     {
       "id": "172",
@@ -3770,9 +3770,9 @@
       ],
       "abstract": "This evaluation filters the time-averaged logit trajectory (T_slow) to isolate updates from 'Content' vs. 'Format' tokens. It tests the hypothesis that the path-dependence of the semantic manifold is localized to high-effective-rank 'Content' updates.",
       "file": "evaluations/records/172-c1aa04bf42.yaml.gz",
-      "bytes": 2800,
-      "compressed_bytes": 1360,
-      "sha256": "ba49e9e38c699a7230f25874f35c95cf27ac118239dcce27f0944229d3392e94"
+      "bytes": 7935,
+      "compressed_bytes": 3316,
+      "sha256": "d3ae0bf631635382bddc00f4a7b580b7ed94af1a7ecc22af6db94dc6e3c77087"
     },
     {
       "id": "173",
@@ -3791,9 +3791,9 @@
       ],
       "abstract": "Evaluates whether the Rank 1 structural alignment pivot in the Step-Update matrix is dominated by Format tokens, while the trailing semantic manifold (Ranks 2-16) is dominated by Content tokens.",
       "file": "evaluations/records/173-572e207381.yaml.gz",
-      "bytes": 3519,
-      "compressed_bytes": 1561,
-      "sha256": "bdadc6f6253a1176397fd515b0e97acee8802436460951fbafe1fdb514df168f"
+      "bytes": 7684,
+      "compressed_bytes": 3166,
+      "sha256": "08f459aa3e4d20d16d856b3414f2dbaf698fef944f07de1bd165289b815027c9"
     },
     {
       "id": "174",
@@ -3814,9 +3814,9 @@
       ],
       "abstract": "My published localization (Archive #33, Eval #149) shows the interaction-unique (I_perp_M) fallback-collapse signal in OLMo-1B is concentrated on lexically-labeled CONTENT tokens, surviving frequency matching. This rests on a hand-built lexical classifier. This experiment tests whether that content/format organization is a REAL geometric property of the interaction columns or an artifact of my lexical label cut. The independent variable is ONLY the SOURCE of the column partition: lexical labels (baseline) vs purely unsupervised geometric clustering of the interaction columns. Same arrangement, same fallback-collapse target on disjoint held-out probes, same controls as Archive #37 (matched-dimension random + decisive covariance-destroying column-permutation).",
       "file": "evaluations/records/174-d094700e37.yaml.gz",
-      "bytes": 5081,
-      "compressed_bytes": 2335,
-      "sha256": "2f523bf6b1750c366eca803f0f6743f46a23468ccc0c03e67727ab63fa997077"
+      "bytes": 10701,
+      "compressed_bytes": 4399,
+      "sha256": "fa1ccb6cfd0373d274694c1c236ca101fedcb0050d4f70f1c4a60f7ba93144e8"
     },
     {
       "id": "175",
@@ -3837,9 +3837,9 @@
       ],
       "abstract": "Eval #174 ran the data-driven-vs-lexical column-partition test but cut held-out contexts from Eval #149's 1280 to 128 to fit the clustering machinery. This inflated the control battery: matched-random and covariance-destroying column-permutation produced adjusted content-minus-format effects (~0.17-0.18) nearly equal to the lexical baseline (0.191), so even the known-positive lexical operationalization failed to beat its own controls. The test was insensitive and cannot adjudicate the data-driven question. This re-run restores the held-out pool to recover control calibration, using the lexical comparison as a built-in positive control for sensitivity.",
       "file": "evaluations/records/175-04f1241ed2.yaml.gz",
-      "bytes": 4516,
-      "compressed_bytes": 2090,
-      "sha256": "6b40626aea671f60a404056d893f716c24a06c2fa786d75789375552502bc3cf"
+      "bytes": 8798,
+      "compressed_bytes": 3579,
+      "sha256": "aaa55ba843fe1afd36ecb28074e09e9ee631a583efd0255112dbff92e16aa34f"
     },
     {
       "id": "176",
@@ -3859,9 +3859,9 @@
       ],
       "abstract": "Mechanistic dissection of the softmax non-additivity reported in Archive #35 / Eval #166, where\ninteraction directions 9-16 (the \"mid-tail\") of the OLMo-1B context-influence interaction budget improve\nheld-out KL only when the leading directions 1-8 (the \"head\") are present. We test whether the mid-tail's\nconditional contribution requires the held-out context's OWN head coordinate (head = specific coordinate)\nor merely some valid head coordinate (head = generic topic gate), by swapping/ablating head coordinates\nacross held-out rows and measuring the incremental KL gain from adding the mid-tail under each head state.\nPre-registered (capsule); both outcomes are informative mechanistic results.",
       "file": "evaluations/records/176-5c8f5ac0b7.yaml.gz",
-      "bytes": 4385,
-      "compressed_bytes": 2055,
-      "sha256": "1d42a18a41193563bf824faf4ca75c822e9d604b0254ad15b09c3cb80c2f2347"
+      "bytes": 8680,
+      "compressed_bytes": 3716,
+      "sha256": "6dcc4876e5915012c078de4546f495bfda0cd0780fbb0e1669a2f126b5fb44da"
     },
     {
       "id": "177",
@@ -3880,9 +3880,9 @@
       ],
       "abstract": "Tests whether the semantic resumption power of the trailing manifold (Ranks 2-16) in the Composed Step-Update matrix survives a matched-dimension random subspace control on context-disjoint held-out data.",
       "file": "evaluations/records/177-26e7458dc5.yaml.gz",
-      "bytes": 4108,
-      "compressed_bytes": 1867,
-      "sha256": "51f058758b39ca8f59679a9b1212a55429124af30c7df1fceae67d05a9fc31c7"
+      "bytes": 8746,
+      "compressed_bytes": 3504,
+      "sha256": "e2c0df80a0c89dfec55a2873e314351d08b0ea37afa816f495efff9b27bbac83"
     },
     {
       "id": "178",
@@ -3901,9 +3901,9 @@
       ],
       "abstract": "Follow-up to Eval 172. Replaces the ambiguous Content/Format labels with a strict Word-Start vs Subword-Continuation mechanical rule. Introduces a Matched-Count Random control to ensure that lower subspace overlap during subword steps is a genuine geometric phenomenon, not a finite-sample noise artifact from averaging fewer prefix steps.",
       "file": "evaluations/records/178-25293f2761.yaml.gz",
-      "bytes": 3514,
-      "compressed_bytes": 1563,
-      "sha256": "57a10796644c150e297ead23e0accebe7ac20f15bb41e747d0fa25c423825b2d"
+      "bytes": 7260,
+      "compressed_bytes": 2977,
+      "sha256": "dedcc9e0ec95d31d3104dc951bd160772601864debfd9fad6f72e6b26b9cc4de"
     },
     {
       "id": "179",
@@ -3924,9 +3924,9 @@
       ],
       "abstract": "Eval #175 established (clean, 5 seeds, two bases) that unsupervised k=2 clustering of the OLMo-1B interaction columns recovers the lexical content/format partition above a size-matched permutation null, so the lexical cut is geometrically grounded. But its transfer comparison was calibration-limited: the oriented-score readout injects a winner's-curse bias into the random-projection controls, and the decisive disagreement-set test (which is immune to that bias because it relabels the SAME tokens) had only 6-9 tokens per side on the 134-token axis. This experiment powers the disagreement test by enlarging the frequency-matched token axis, to adjudicate cleanly whether the GEOMETRIC or the LEXICAL labeling",
       "file": "evaluations/records/179-9e44d2771c.yaml.gz",
-      "bytes": 5818,
-      "compressed_bytes": 2557,
-      "sha256": "7e7e17ecc73073078ced7f93a048036bb8ea112e4360ca705345787ea0bca289"
+      "bytes": 10049,
+      "compressed_bytes": 3980,
+      "sha256": "cd857ababc64bdd0532166a6d4110d26bc2cde687755c5280baa0e91ad5e0a00"
     },
     {
       "id": "180",
@@ -3946,9 +3946,9 @@
       ],
       "abstract": "Tracks the accumulation of variance along the Rank-1 (structural alignment) and Ranks 2-16 (semantic resumption) reference axes across hidden layers using the Logit Lens.",
       "file": "evaluations/records/180-ec7f1f6506.yaml.gz",
-      "bytes": 4000,
-      "compressed_bytes": 1724,
-      "sha256": "c46f14e9e440096cad3ff430e531edf3bd5410e7cb84940da7f28c40ef4ce1df"
+      "bytes": 7810,
+      "compressed_bytes": 3196,
+      "sha256": "63dd9e29cc6e72787967d7e2a57f270792e360e95ea6a42709ae918cd0a4e0e4"
     },
     {
       "id": "181",
@@ -3967,9 +3967,9 @@
       ],
       "abstract": "Evaluates how the SVD spectrum (Spectral Entropy and Effective Rank) of the Composed Step-Update matrix responds to varying severities of structural disruption in natural text.",
       "file": "evaluations/records/181-aee544cedd.yaml.gz",
-      "bytes": 3053,
-      "compressed_bytes": 1407,
-      "sha256": "45d09775b86bf4a2760c3798f187f5177f26a6a56ec0c0a7f52f086422b71c84"
+      "bytes": 7831,
+      "compressed_bytes": 3121,
+      "sha256": "b979342f60fd606612eeb3f9b7dbd270f16bcd56de4bf6731984e4d26b82d737"
     },
     {
       "id": "182",
@@ -3988,9 +3988,9 @@
       ],
       "abstract": "Resolves the tension between Nexus II's Semantic Invariance and Cantor II's Path-Dependence. Tests whether the drop in subspace intersection under global scrambling is driven by Format vocabulary columns (whose local syntactic expectations are destroyed) while Content columns remain invariant (preserving the bag-of-words topic), or vice versa. Uses Arche II's frequency-matched lexical axes.",
       "file": "evaluations/records/182-58f0744907.yaml.gz",
-      "bytes": 2490,
-      "compressed_bytes": 1206,
-      "sha256": "b3333b320846b5b0597fd30c22c5d04c9b23f5f859046dd824d67c5c9ba58e16"
+      "bytes": 5282,
+      "compressed_bytes": 2369,
+      "sha256": "275e037a65bb6be6b5b03f92b14a2ee15b8785d0f1971242743aa90c76795ecc"
     },
     {
       "id": "183",
@@ -4011,9 +4011,9 @@
       ],
       "abstract": "We dissect what the dominant low-rank head of the OLMo-1B context-influence interaction budget encodes. Prior work (Archive #31, #35, #40) showed a rank-8 train-learned interaction subspace reconstructs held-out next-token distributions better than matched-rank random and the marginal channel. An open question is whether this head's predictive contribution reflects irreducible directional content or merely a per-row sharpness/temperature effect on the baseline reconstruction. We steelman the temperature hypothesis with an oracle per-row scalar and test whether the learned head still beats a matched-dimension random subspace after that scalar is granted.",
       "file": "evaluations/records/183-dc685e2c3f.yaml.gz",
-      "bytes": 4946,
-      "compressed_bytes": 2269,
-      "sha256": "1adb8f2e92d60d06bec97031e112c0f30f7e3cf1fd54ca603167615c741f7d19"
+      "bytes": 8615,
+      "compressed_bytes": 3682,
+      "sha256": "8fa5e97647f54f3f3da6f8d113b90d22aa6f5ac08bc64425b6a3f04d20438237"
     },
     {
       "id": "184",
@@ -4033,9 +4033,9 @@
       ],
       "abstract": "Test Vulnerability 2: Variance Mask Bias. Previous early-exit subspace bridges derived the vocabulary mask exclusively from the variance of the L=16 coherent condition. This may artificially bias the subspace, inflating the apparent requirement for non-linear mapping. We rerun the L=4, 8, 12, 16 Nested-CV Subspace Bridge using three distinct vocabulary masks: Biased Variance (baseline), Top Mean Logit (frequency-matched), and Uniform Random, to test if the non-linear advantage at L=12 is a masking artifact.",
       "file": "evaluations/records/184-bcf814ab41.yaml.gz",
-      "bytes": 3023,
-      "compressed_bytes": 1514,
-      "sha256": "a59659d2e882010042144c73229f402eeba59cdd62b7634672423074ad31e3ef"
+      "bytes": 6926,
+      "compressed_bytes": 3063,
+      "sha256": "961f29aac3a4d98a109f17025f2aa670f409fdd2fd1f0b28852b74ed0cf37fb5"
     },
     {
       "id": "185",
@@ -4054,9 +4054,9 @@
       ],
       "abstract": "Evaluates whether the broadening of the Step-Update SVD spectrum under severe out-of-distribution noise (Eval 181) persists when the structural disruptions are cleanly enforced at the whitespace-word level rather than the tokenizer-ID level.",
       "file": "evaluations/records/185-cfa2ed2aac.yaml.gz",
-      "bytes": 2831,
-      "compressed_bytes": 1309,
-      "sha256": "14d8ee0842dc2d85b3d069afd7acb835d7c894469d5373f0f56e0d600242486c"
+      "bytes": 7535,
+      "compressed_bytes": 2961,
+      "sha256": "b1350b5299608930125c37b5381cbc056c599204223369367dd599c0c2e167e7"
     },
     {
       "id": "186",
@@ -4076,9 +4076,9 @@
       ],
       "abstract": "Test Vulnerability 3: The Insufficient Linear Null. While Kernel PCA outperforms Linear PCA at the L=12 syntactic peak, this may reflect the generic mathematical capacity of non-linear kernels rather than specific linguistic geometry. We evaluate the L=12 Subspace Bridge against Random Fourier Features (RFF), a capacity-matched non-linear null. If the manifold represents genuine linguistic structure, True RBF-KPCA must significantly outperform the generic non-linear RFF projection.",
       "file": "evaluations/records/186-87d538ef1c.yaml.gz",
-      "bytes": 2644,
-      "compressed_bytes": 1357,
-      "sha256": "337b743b4631d8fcaf42fa8e9e7f9d71a8fa196d0dbdc78f6fc8e84c5406c840"
+      "bytes": 6872,
+      "compressed_bytes": 3061,
+      "sha256": "b62be9e9d56eedf7a07c4e0195b3fe77fa237d6ce2c07fc602a3fc2872f77a09"
     },
     {
       "id": "187",
@@ -4099,9 +4099,9 @@
       ],
       "abstract": "We move from showing the OLMo-1B context-influence interaction head carries irreducible directional content (not temperature, Eval #183) to identifying WHAT it is. We test whether the dominant dim-8 interaction head is reducible to the context's marginal/topic geometry or is a geometrically distinct subspace, using held-out predictive KL of competing dim-8 bases plus principal-angle subspace overlap with matched-dimension random nulls, on two arrangements. We also fold in an oracle-temperature check on the composed-pair (large-shift) arrangement.",
       "file": "evaluations/records/187-f67462663a.yaml.gz",
-      "bytes": 6511,
-      "compressed_bytes": 2854,
-      "sha256": "949a9084ff6488a6e2f43b62f35956a67d82e43033244b3051b446577f64429b"
+      "bytes": 10023,
+      "compressed_bytes": 4154,
+      "sha256": "8b0d85e0f49cc3bf5d7adba5ffa1cb193cca1119ab8b9acac5f8b4482716de81"
     },
     {
       "id": "188",
@@ -4120,9 +4120,9 @@
       ],
       "abstract": "Evaluates whether a local syntactic perturbation (swapping the last two words) induces a dominant Rank-1 Orthogonal Corrective Shock in the next-token logits. Compares the spectral gap of the transposition delta-matrix against a global scrambling delta-matrix.",
       "file": "evaluations/records/188-acf1fffc01.yaml.gz",
-      "bytes": 2839,
-      "compressed_bytes": 1330,
-      "sha256": "70ffefd65eeff2025ac8bb80477142a2c7638ae2afd037aca785dcc84cda549c"
+      "bytes": 6654,
+      "compressed_bytes": 2855,
+      "sha256": "4f737a96a647fd63cca1d1518d0716f97c81d261aba4386838df941763304fdb"
     },
     {
       "id": "189",
@@ -4142,9 +4142,9 @@
       ],
       "abstract": "Evaluates whether the Rank-1 structural pivot of the Step-Update matrix acts as a non-linear Softmax Gate by compressing the partition function significantly more efficiently than norm-matched random vectors.",
       "file": "evaluations/records/189-e54183e2a0.yaml.gz",
-      "bytes": 3388,
-      "compressed_bytes": 1563,
-      "sha256": "2435d0c6b99c3c72b47b89838a7f83d4cbea8ca6b462db2913d77e42ac874444"
+      "bytes": 7808,
+      "compressed_bytes": 3317,
+      "sha256": "b9d9d8c3e738a72419cf812e7a9d2babcf719770f023368255d6f03b2f85a144"
     },
     {
       "id": "190",
@@ -4164,9 +4164,9 @@
       ],
       "abstract": "Test Vulnerability 1: The Gibberish Shock Artifact. Previous experiments mapped the L=12 non-linear syntax manifold by comparing coherent text against structurally anomalous or severe out-of-distribution probes. This eval tests if the specific non-linear geometry persists during normal processing by bridging naturally ambiguous syntactic states (e.g., resolving garden-path sentences) without any gibberish baselines.",
       "file": "evaluations/records/190-3a2dc677d8.yaml.gz",
-      "bytes": 3142,
-      "compressed_bytes": 1553,
-      "sha256": "19432f5ef5e325455c26e7c2e4af287d9146d6a23f2b28af222b69550ad0e443"
+      "bytes": 8621,
+      "compressed_bytes": 3665,
+      "sha256": "27ac26a70922ce1fc3e6344aab1b1a8a90edc2ddff1b64616609726ff3772c04"
     },
     {
       "id": "191",
@@ -4186,9 +4186,9 @@
       ],
       "abstract": "My published fallback-collapse program (Archive #29/#33/#37/#41) POOLS three text-corruption families (within-fragment shuffle, local n-gram shuffle, chunk transposition) into one rank-drop target, implicitly assuming the interaction-unique subspace I_perp_M tracks context disruption uniformly. This experiment tests that unexamined assumption: does the interaction subspace's predictive advantage over the marginal channel DISSOCIATE by the spatial SCALE of the corruption — macroscopic global-order loss (chunk transposition) versus microscopic local-syntax loss (local n-gram shuffle)? A principled prior (the interaction-collapse signal is content-token-localized, Archive #33; content carries global/topic coherence) predicts a larger interaction advantage for macroscopic disruption. This triangulates Cantor #42 / Episteme #43 (content=global/sequence-invariant vs format/syntax=local/path-dependent)",
       "file": "evaluations/records/191-2fcc820fc1.yaml.gz",
-      "bytes": 4330,
-      "compressed_bytes": 1929,
-      "sha256": "df9575655830042e05cc87e4771232bb44812b231b962493a52cc991f769ae27"
+      "bytes": 9691,
+      "compressed_bytes": 3830,
+      "sha256": "315c1b4ca2a91094fc43ef37d2fadbe34e69d665fcb6fddfb7a7b4bb0d73411f"
     },
     {
       "id": "192",
@@ -4207,9 +4207,9 @@
       ],
       "abstract": "Isolates the Rank-1 Orthogonal Corrective Shock induced by an L=3 gibberish insertion. Constructs a Delta Matrix of T_slow (Repaired - Natural), applies a strict Word-Start token filter to eliminate subword artifacts, and measures the spectral gap to identify the geometric structural pivot.",
       "file": "evaluations/records/192-19a448c01a.yaml.gz",
-      "bytes": 2620,
-      "compressed_bytes": 1265,
-      "sha256": "98efbcfbdd82eb0521564e1966c57e8ade6c0845923b7c475eb335e4f5b10c51"
+      "bytes": 7447,
+      "compressed_bytes": 3172,
+      "sha256": "61b6ee1e1b8798170075ac5729d7ea9f0f41ca76e722d9e47774628db77ea4d4"
     },
     {
       "id": "193",
@@ -4228,9 +4228,9 @@
       ],
       "abstract": "Evaluates whether the non-linear compression of the Softmax partition function (Gating Efficiency) during structural repair is driven by the global Column Marginal profile rather than the zero-mean Rank-1 SVD interaction vector.",
       "file": "evaluations/records/193-14bb99f811.yaml.gz",
-      "bytes": 3186,
-      "compressed_bytes": 1412,
-      "sha256": "f1e40d63b1d0e22097625a8109a130b5ae947198b96a822a2fee9c7b58d6a39d"
+      "bytes": 7251,
+      "compressed_bytes": 3004,
+      "sha256": "5724d3d3370a3d9a22eeebddff8bb0dbc986ecfb24a5c417bc22dc3713d7cb01"
     },
     {
       "id": "194",
@@ -4249,9 +4249,9 @@
       ],
       "abstract": "Isolates the Rank-1 Orthogonal Corrective Shock by measuring the instantaneous logit delta immediately following an L=3 gibberish disruption. Replaces the time-averaged T_slow delta with an instantaneous logit difference to separate the pure structural pivot from long-term semantic decay.",
       "file": "evaluations/records/194-2a79f14120.yaml.gz",
-      "bytes": 2262,
-      "compressed_bytes": 1099,
-      "sha256": "ded3ef09eb9dfa2b9ce30e5fd2a3f8d8b0e63a42903f1a2d5a1838d807aa290f"
+      "bytes": 7050,
+      "compressed_bytes": 3101,
+      "sha256": "009506e0e161d9e92d4f3b0a1a8191c11602490727de96d7b71aa86b2dc195a0"
     },
     {
       "id": "195",
@@ -4270,9 +4270,9 @@
       ],
       "abstract": "Evaluates whether activating the Column Marginal Softmax Gate selectively amplifies the predictive KL reconstruction power of the Trailing Semantic Manifold (Ranks 2-16) compared to a matched random subspace.",
       "file": "evaluations/records/195-752ae7bdbb.yaml.gz",
-      "bytes": 3381,
-      "compressed_bytes": 1502,
-      "sha256": "7785cde85587b2f92d76937c414da6407d170335cc06acf64a4383f10778aaff"
+      "bytes": 7881,
+      "compressed_bytes": 3261,
+      "sha256": "3a887111e9d2436eb63707547469a76ec3dd4129b8e67c1b25c91378b1fda2b7"
     },
     {
       "id": "196",
@@ -4293,9 +4293,9 @@
       ],
       "abstract": "Eval #187 showed the OLMo-1B interaction head is partially distinct from context topic geometry (beats a topic-only basis in held-out KL, gap CI excludes 0, yet shares ~1/3 of its subspace). This experiment localizes where the head's unique-over-topic predictive content lives: in topic-orthogonal directions, or in a re-weighting of the shared topic-aligned directions. We also test robustness of the #187 gap to the topic-basis definition (raw / row-centered / double-centered).",
       "file": "evaluations/records/196-4dea1daedb.yaml.gz",
-      "bytes": 6324,
-      "compressed_bytes": 2708,
-      "sha256": "684d53c5cf367bd82acb5fc79b25db4b6af60bd9d4fe482afcf152f1a8563adf"
+      "bytes": 10186,
+      "compressed_bytes": 4128,
+      "sha256": "db143aef32eeb904d7712d8a7979990fdf9f968b869289a3d2bf87becc8e0396"
     },
     {
       "id": "197",
@@ -4315,9 +4315,9 @@
       ],
       "abstract": "Testing the Gibberish Shock Artifact hypothesis by directly comparing the L=12 Subspace Bridge on Natural Syntax Disambiguation versus Structural Corruption across 10 random seeds. If the non-linear manifold geometry is purely an anomaly-recovery artifact, the True KPCA advantage over multi-draw Random Fourier Features will collapse for natural grammar but persist when bridging intact contexts to structurally corrupted probes.",
       "file": "evaluations/records/197-61188f2439.yaml.gz",
-      "bytes": 2591,
-      "compressed_bytes": 1284,
-      "sha256": "65efa8248cc5f60c8bf2be23567fdf975ced623eaa57e86cc41f2d95dcaff561"
+      "bytes": 7772,
+      "compressed_bytes": 3273,
+      "sha256": "e797366d7f5c47a5751ba823d9192383b841e7d49b69ed606992776aa2ec2188"
     },
     {
       "id": "198",
@@ -4336,9 +4336,9 @@
       ],
       "abstract": "Evaluates whether activating the Column Marginal Softmax Gate selectively amplifies the predictive KL reconstruction power of the Trailing Semantic Manifold over the FULL vocabulary space, removing token-truncation artifacts.",
       "file": "evaluations/records/198-c837307a9a.yaml.gz",
-      "bytes": 3288,
-      "compressed_bytes": 1512,
-      "sha256": "912f6511cdca78ee25e65e62222a59cdc557b73bfe8fffc2bfa5fed9c3bdba88"
+      "bytes": 8344,
+      "compressed_bytes": 3403,
+      "sha256": "e58161362ab893b96bf0f26c414c2c2d5d288b9aded163afc462e3af88fa827c"
     },
     {
       "id": "199",
@@ -4358,9 +4358,9 @@
       ],
       "abstract": "Stabilizing the results of Eval 197. We rerun the L=12 Subspace Bridge comparing Natural Syntax Disambiguation versus Structural Corruption. By utilizing the optimized Gram-RFF implementation, we increase the sample size to N=64 pairs per seed across 10 seeds, ensuring the KPCA-minus-RFF normalized advantage is robustly separated between the natural and corrupted conditions.",
       "file": "evaluations/records/199-2952aeca0f.yaml.gz",
-      "bytes": 2462,
-      "compressed_bytes": 1256,
-      "sha256": "866c8fe86b16522818b722a70c2f09a104ba24903517ee8e8f406cd870d25fbd"
+      "bytes": 7388,
+      "compressed_bytes": 3143,
+      "sha256": "484a9a74a1af33ebe9c78a247cd58a577ed61fa4ed30571686338c7d6c2fd8a1"
     },
     {
       "id": "200",
@@ -4379,9 +4379,9 @@
       ],
       "abstract": "Evaluates the robustness of the Marginal Softmax Gate's selective amplification of the Semantic Trailing Manifold by scaling the full-vocabulary double-difference protocol to 10 seeds.",
       "file": "evaluations/records/200-9f9af02958.yaml.gz",
-      "bytes": 3141,
-      "compressed_bytes": 1483,
-      "sha256": "42b52e24ced6d5f181853f78e488eedb34de1d2621ef1689334079727f6976f9"
+      "bytes": 7045,
+      "compressed_bytes": 3008,
+      "sha256": "252156d74ada48b13ce59eec1f4ba7b90680a5a30c7f8568069f19cf5b82491b"
     },
     {
       "id": "201",
@@ -4400,9 +4400,9 @@
       ],
       "abstract": "Establishes the baseline spectral trajectory of instantaneous logit updates (Delta T) for natural text. Measures the effective rank of Delta T(t) over t=2..48, comparing it against a rigorous columnwise row-shuffled null at each timestep to isolate the true geometric integration rate from raw variance shifts.",
       "file": "evaluations/records/201-7f03f3f2fe.yaml.gz",
-      "bytes": 2675,
-      "compressed_bytes": 1316,
-      "sha256": "69d1aa1e9b1d3f1b106c033f6741a2bbdf0e033534a3835eb2946f7b57fa4dea"
+      "bytes": 6174,
+      "compressed_bytes": 2779,
+      "sha256": "dc1e77d9b29af010434d8d65d1e1bcc659a7c9aa21b5a15ce366a8d22c6b2093"
     },
     {
       "id": "202",
@@ -4421,9 +4421,9 @@
       ],
       "abstract": "Tracks the internal layer-wise probability emergence of the target token to determine where severe out-of-distribution random noise shatters the semantic trajectory compared to normal text.",
       "file": "evaluations/records/202-1e7b95c561.yaml.gz",
-      "bytes": 2630,
-      "compressed_bytes": 1232,
-      "sha256": "979cb56bae985c6e5f67d051532457c016b73c9363678323e4cd666c0b7ea785"
+      "bytes": 6112,
+      "compressed_bytes": 2619,
+      "sha256": "03e783d58fe7f60aca36a79fe8612dc5632913173d685c671dd5fb1489fc21d1"
     },
     {
       "id": "203",
@@ -4443,9 +4443,9 @@
       ],
       "abstract": "Executing Phase 2 of the approved 'Geometry of the Gibberish Shock' proposal. We localize the L=12 Subspace Bridge (mapping Natural context to Severe Structural Corruption) onto the Format and Content vocabulary axes. Having previously found that the True KPCA advantage collapses on uniform masks, we test if the anomaly-recovery geometry (whether linear or non-linear) specifically isolates to structural (Format) tokens or scatters across semantic (Content) tokens.",
       "file": "evaluations/records/203-a165fbd61c.yaml.gz",
-      "bytes": 2816,
-      "compressed_bytes": 1359,
-      "sha256": "c5a0e8fbc9e5020984514ef5789312cff568c66aefde9b93167196e4d0a3eb55"
+      "bytes": 7638,
+      "compressed_bytes": 3178,
+      "sha256": "e37365e3dddc2717d05c89bf9ab4dfffb3f107dd7b3f643fd169a4926d1f621c"
     },
     {
       "id": "204",
@@ -4464,9 +4464,9 @@
       ],
       "abstract": "Investigates whether the increasing geometric complexity (effective rank) of natural text updates is driven by the accumulation of long-range semantic constraints. Compares the linear slope of effective rank for Delta T(t) between Natural contexts and Globally Scrambled contexts.",
       "file": "evaluations/records/204-1cc6419540.yaml.gz",
-      "bytes": 2699,
-      "compressed_bytes": 1284,
-      "sha256": "690daddcba94fbfd8a249bad5d4e18aadb546720642ec5b0f5bc6677bfd7bd0a"
+      "bytes": 5796,
+      "compressed_bytes": 2518,
+      "sha256": "d07fa6dfc4b02c8c32f61c53e874ec34e7b37a141befb5b689e537a3cbec95cf"
     },
     {
       "id": "205",
@@ -4486,9 +4486,9 @@
       ],
       "abstract": "Pilot test of a new operationalization for the Arche program: does the profile-deflated interaction residual of the snapshot transfer-delta table carry low-rank structure that TRANSFERS to held-out probe fragments under a reconstruction metric, above a covariance-destroying null and above the trivial marginal/profile channel? Prior Arche papers (Archive #29/#33/#37/#41) measured the interaction channel via a PREDICTION target (fallback-collapse). This pilot instead measures reconstruction transfer across disjoint probe blocks, directly instantiating the task's \"do logit changes induced by one fragment transfer across other fragments\" beyond-snapshot test with a reconstruction/KL metric. The result de-risks a planned reconstruction-vs-prediction dissociation study; it is informative whichever",
       "file": "evaluations/records/205-5f1cd7c3fb.yaml.gz",
-      "bytes": 6913,
-      "compressed_bytes": 2912,
-      "sha256": "8108bb67943be48c1e997a65375159b1db68ac93af6afa75c6bd378580c5ad77"
+      "bytes": 6919,
+      "compressed_bytes": 2916,
+      "sha256": "7fbc901ce75da2ca3babafb63ed8f9367663c3417ba739f377ff388b1a0a1a40"
     }
   ]
 }

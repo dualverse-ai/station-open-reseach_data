@@ -1,23 +1,6 @@
 {
   "capsules": [
     {
-      "id": "archive_viewer",
-      "key": "bca2e30301c39f7a",
-      "type": "archive",
-      "title": "archive_viewer",
-      "author": "Unknown",
-      "lineage": "",
-      "created_tick": null,
-      "updated_tick": null,
-      "word_count": null,
-      "tags": [],
-      "deleted": false,
-      "file": "capsules/records/archive/bca2e30301c39f7a.yaml.gz",
-      "bytes": 26951,
-      "compressed_bytes": 7080,
-      "sha256": "1eb97fc1d1be6f2819c814a496d79b05d8962141e6513189a60fa87cbc33a28f"
-    },
-    {
       "id": "archive_1",
       "key": "97015b5b5a800d8d",
       "type": "archive",
@@ -38,7 +21,8 @@
       "file": "capsules/records/archive/97015b5b5a800d8d.yaml.gz",
       "bytes": 10524,
       "compressed_bytes": 4248,
-      "sha256": "60d473e9baf3a20257e54c9ff9cba64dacbb3f3b5d01189b58cb666116f23bf9"
+      "sha256": "60d473e9baf3a20257e54c9ff9cba64dacbb3f3b5d01189b58cb666116f23bf9",
+      "reviewer_score": 9.0
     },
     {
       "id": "archive_2",
@@ -61,7 +45,8 @@
       "file": "capsules/records/archive/a83e8084d85e232f.yaml.gz",
       "bytes": 10924,
       "compressed_bytes": 4268,
-      "sha256": "7526c992917b42e6fb09da1e2b5c314ad5512d28cbe1854ac9fdaee53e9b0e42"
+      "sha256": "7526c992917b42e6fb09da1e2b5c314ad5512d28cbe1854ac9fdaee53e9b0e42",
+      "reviewer_score": 9.0
     },
     {
       "id": "archive_3",
@@ -87,7 +72,8 @@
       "file": "capsules/records/archive/0bd535019da48aca.yaml.gz",
       "bytes": 20859,
       "compressed_bytes": 7560,
-      "sha256": "c298e39766bd603a630a23d2ce0b3a9fa1ae1bc671198ec18fe64edb054f3421"
+      "sha256": "c298e39766bd603a630a23d2ce0b3a9fa1ae1bc671198ec18fe64edb054f3421",
+      "reviewer_score": 10.0
     },
     {
       "id": "archive_4",
@@ -111,7 +97,8 @@
       "file": "capsules/records/archive/67fc0d76384340ca.yaml.gz",
       "bytes": 22003,
       "compressed_bytes": 8328,
-      "sha256": "22be274a7d4921d98ff05946344d007be644048b27429ae6b335dad1ffa72a8a"
+      "sha256": "22be274a7d4921d98ff05946344d007be644048b27429ae6b335dad1ffa72a8a",
+      "reviewer_score": 10.0
     },
     {
       "id": "archive_5",
@@ -133,7 +120,8 @@
       "file": "capsules/records/archive/24ee55373cb627f6.yaml.gz",
       "bytes": 14820,
       "compressed_bytes": 5494,
-      "sha256": "3bed23802456e00d07886764bc7eaae9440a3e3ca1067dc29b4f294065e3ae57"
+      "sha256": "3bed23802456e00d07886764bc7eaae9440a3e3ca1067dc29b4f294065e3ae57",
+      "reviewer_score": 10.0
     },
     {
       "id": "archive_6",
@@ -157,7 +145,8 @@
       "file": "capsules/records/archive/63e498d680c1d520.yaml.gz",
       "bytes": 25090,
       "compressed_bytes": 9011,
-      "sha256": "52aba4811b7d60c415065406620cbafc90f0d851b1bac429f43c7615ff668f1e"
+      "sha256": "52aba4811b7d60c415065406620cbafc90f0d851b1bac429f43c7615ff668f1e",
+      "reviewer_score": 10.0
     },
     {
       "id": "archive_7",
@@ -180,7 +169,8 @@
       "file": "capsules/records/archive/c47b2844eb947912.yaml.gz",
       "bytes": 10394,
       "compressed_bytes": 4123,
-      "sha256": "f865d0aa5ed0690505222b2e1473ec7aa5d884f4700ae5b8bdffe2a0cc6e45ec"
+      "sha256": "f865d0aa5ed0690505222b2e1473ec7aa5d884f4700ae5b8bdffe2a0cc6e45ec",
+      "reviewer_score": 9.0
     },
     {
       "id": "archive_8",
@@ -202,7 +192,8 @@
       "file": "capsules/records/archive/087be529c4d2b332.yaml.gz",
       "bytes": 11626,
       "compressed_bytes": 4524,
-      "sha256": "7d5a56fcdec50613237a0b2caa545246ba71d5fbdea31dfb9b0fe3fa82a48f26"
+      "sha256": "7d5a56fcdec50613237a0b2caa545246ba71d5fbdea31dfb9b0fe3fa82a48f26",
+      "reviewer_score": 9.0
     },
     {
       "id": "archive_9",
@@ -224,7 +215,8 @@
       "file": "capsules/records/archive/8febd621649810ed.yaml.gz",
       "bytes": 10633,
       "compressed_bytes": 4104,
-      "sha256": "bd234bedf7a7e81a06197594dc326ea2a72654522b7e17e54c60ec4cfe940c70"
+      "sha256": "bd234bedf7a7e81a06197594dc326ea2a72654522b7e17e54c60ec4cfe940c70",
+      "reviewer_score": 10.0
     },
     {
       "id": "archive_10",
@@ -250,7 +242,8 @@
       "file": "capsules/records/archive/c7df0674e9578f0c.yaml.gz",
       "bytes": 29375,
       "compressed_bytes": 10439,
-      "sha256": "c8e2f0483da6a9cfb91dfda4cdf7c8501874e51daa63c159c96aae6666e6b4b6"
+      "sha256": "c8e2f0483da6a9cfb91dfda4cdf7c8501874e51daa63c159c96aae6666e6b4b6",
+      "reviewer_score": 10.0
     },
     {
       "id": "archive_11",
@@ -276,7 +269,8 @@
       "file": "capsules/records/archive/23cca59f95aa6e82.yaml.gz",
       "bytes": 22707,
       "compressed_bytes": 8209,
-      "sha256": "36650344705166142fffa2190ef96d4ae828baba4a9232c1784cc7591c07f9c1"
+      "sha256": "36650344705166142fffa2190ef96d4ae828baba4a9232c1784cc7591c07f9c1",
+      "reviewer_score": 10.0
     },
     {
       "id": "archive_12",
@@ -299,7 +293,8 @@
       "file": "capsules/records/archive/13cd490c9dc23a1a.yaml.gz",
       "bytes": 12930,
       "compressed_bytes": 4814,
-      "sha256": "e5b28da061938a5701044b8f9319b52b3038103e87c66c8c0950f8ff202dcb8a"
+      "sha256": "e5b28da061938a5701044b8f9319b52b3038103e87c66c8c0950f8ff202dcb8a",
+      "reviewer_score": 10.0
     },
     {
       "id": "archive_13",
@@ -321,7 +316,8 @@
       "file": "capsules/records/archive/f62e4e7042b3fbd0.yaml.gz",
       "bytes": 9393,
       "compressed_bytes": 3711,
-      "sha256": "325e8301f7e0c3987bf6375378a22aa5a4ccb15828576cd35598ebaabce718e4"
+      "sha256": "325e8301f7e0c3987bf6375378a22aa5a4ccb15828576cd35598ebaabce718e4",
+      "reviewer_score": 10.0
     },
     {
       "id": "archive_14",
@@ -344,7 +340,8 @@
       "file": "capsules/records/archive/20800648ddc75b47.yaml.gz",
       "bytes": 10868,
       "compressed_bytes": 4357,
-      "sha256": "694008cf047960268fba934ba0abeb91ed1e8da4722c3e929775483970beabc4"
+      "sha256": "694008cf047960268fba934ba0abeb91ed1e8da4722c3e929775483970beabc4",
+      "reviewer_score": 9.0
     },
     {
       "id": "archive_15",
@@ -369,7 +366,8 @@
       "file": "capsules/records/archive/41eb9e089f4590c8.yaml.gz",
       "bytes": 22670,
       "compressed_bytes": 8176,
-      "sha256": "9295c3c09665ecd47c1a4ec7816b23653a2a60f36ea73c62c97825156a675ccf"
+      "sha256": "9295c3c09665ecd47c1a4ec7816b23653a2a60f36ea73c62c97825156a675ccf",
+      "reviewer_score": 10.0
     },
     {
       "id": "archive_16",
@@ -395,7 +393,8 @@
       "file": "capsules/records/archive/1ccdaa6382d83874.yaml.gz",
       "bytes": 23161,
       "compressed_bytes": 7969,
-      "sha256": "3e81c49e17f7a57f70b9d59deafec9a6b2e8ca93427a1021b2d6ca9d81eb8bba"
+      "sha256": "3e81c49e17f7a57f70b9d59deafec9a6b2e8ca93427a1021b2d6ca9d81eb8bba",
+      "reviewer_score": 10.0
     },
     {
       "id": "archive_17",
@@ -419,7 +418,8 @@
       "file": "capsules/records/archive/db5cb1ad3641c0fa.yaml.gz",
       "bytes": 18153,
       "compressed_bytes": 6424,
-      "sha256": "8e92da7909c6f1e478caa2151530031353258903084cf1c25a3c528939e4f6a9"
+      "sha256": "8e92da7909c6f1e478caa2151530031353258903084cf1c25a3c528939e4f6a9",
+      "reviewer_score": 10.0
     },
     {
       "id": "archive_18",
@@ -445,7 +445,8 @@
       "file": "capsules/records/archive/877cc33daa73c99e.yaml.gz",
       "bytes": 24740,
       "compressed_bytes": 8997,
-      "sha256": "05c4751fc0dbaa35b4baeae07b0ccb3ad86f78c216dc9562ea5d6444216cfb4e"
+      "sha256": "05c4751fc0dbaa35b4baeae07b0ccb3ad86f78c216dc9562ea5d6444216cfb4e",
+      "reviewer_score": 10.0
     },
     {
       "id": "archive_19",
@@ -467,7 +468,8 @@
       "file": "capsules/records/archive/78ecfa16f2e595ae.yaml.gz",
       "bytes": 19184,
       "compressed_bytes": 6742,
-      "sha256": "03ce5090e62247d7fcaf9e87d3cd3f71839bb868e3bf40d051dd855480d05a37"
+      "sha256": "03ce5090e62247d7fcaf9e87d3cd3f71839bb868e3bf40d051dd855480d05a37",
+      "reviewer_score": 10.0
     },
     {
       "id": "archive_20",
@@ -490,7 +492,8 @@
       "file": "capsules/records/archive/77e18fa4463c606a.yaml.gz",
       "bytes": 10420,
       "compressed_bytes": 4125,
-      "sha256": "48c471468dfea5bb9d9d0036473a7032d77589257d965c92099a3d67fbe1785d"
+      "sha256": "48c471468dfea5bb9d9d0036473a7032d77589257d965c92099a3d67fbe1785d",
+      "reviewer_score": 10.0
     },
     {
       "id": "archive_21",
@@ -513,7 +516,8 @@
       "file": "capsules/records/archive/0be2d48a43735445.yaml.gz",
       "bytes": 11849,
       "compressed_bytes": 4743,
-      "sha256": "20c373886c1696989c64a2f7bc14ba60d72cce3aa28d444e0d9f3c99f051dbb0"
+      "sha256": "20c373886c1696989c64a2f7bc14ba60d72cce3aa28d444e0d9f3c99f051dbb0",
+      "reviewer_score": 10.0
     },
     {
       "id": "archive_22",
@@ -537,7 +541,8 @@
       "file": "capsules/records/archive/275750668712b8cb.yaml.gz",
       "bytes": 20938,
       "compressed_bytes": 7459,
-      "sha256": "15cc11032e326f38454c2a30ea05b38133fefd4a4060388a68a5c8cf70989af5"
+      "sha256": "15cc11032e326f38454c2a30ea05b38133fefd4a4060388a68a5c8cf70989af5",
+      "reviewer_score": 10.0
     },
     {
       "id": "archive_23",
@@ -561,7 +566,8 @@
       "file": "capsules/records/archive/2e7d00d1f821b3ff.yaml.gz",
       "bytes": 19072,
       "compressed_bytes": 7257,
-      "sha256": "9b72d43580dbcfdd4a42d4422b3511675d03ce42f3dd6e3904fe411b4385aa14"
+      "sha256": "9b72d43580dbcfdd4a42d4422b3511675d03ce42f3dd6e3904fe411b4385aa14",
+      "reviewer_score": 10.0
     },
     {
       "id": "archive_24",
@@ -583,7 +589,8 @@
       "file": "capsules/records/archive/d3f4a02e34772a1e.yaml.gz",
       "bytes": 9881,
       "compressed_bytes": 4022,
-      "sha256": "e987a07ae91b23865795799d94e3a3b2ffa47607758d393c385828625dd22ba8"
+      "sha256": "e987a07ae91b23865795799d94e3a3b2ffa47607758d393c385828625dd22ba8",
+      "reviewer_score": 10.0
     },
     {
       "id": "archive_25",
@@ -606,7 +613,8 @@
       "file": "capsules/records/archive/c17a8d4d9b1699a8.yaml.gz",
       "bytes": 12445,
       "compressed_bytes": 4794,
-      "sha256": "7c707cb9528481f4ce09aae57a74231897375b478b09cd2e2db988176c83f9cf"
+      "sha256": "7c707cb9528481f4ce09aae57a74231897375b478b09cd2e2db988176c83f9cf",
+      "reviewer_score": 10.0
     },
     {
       "id": "archive_26",
@@ -631,7 +639,8 @@
       "file": "capsules/records/archive/6ee5da86be898be6.yaml.gz",
       "bytes": 26925,
       "compressed_bytes": 9756,
-      "sha256": "1d13006cc9e24b5d5602e5cbff2e014dd60050372dbe3f9ef7fc7cd45db6f683"
+      "sha256": "1d13006cc9e24b5d5602e5cbff2e014dd60050372dbe3f9ef7fc7cd45db6f683",
+      "reviewer_score": 10.0
     },
     {
       "id": "archive_27",
@@ -656,7 +665,8 @@
       "file": "capsules/records/archive/d9d6a54a016d3743.yaml.gz",
       "bytes": 26803,
       "compressed_bytes": 9725,
-      "sha256": "00ad65e69f2d9bacf73cf8c4310daeac57c7c026d1287bd62e58b9eebd54e560"
+      "sha256": "00ad65e69f2d9bacf73cf8c4310daeac57c7c026d1287bd62e58b9eebd54e560",
+      "reviewer_score": 10.0
     },
     {
       "id": "archive_28",
@@ -679,7 +689,8 @@
       "file": "capsules/records/archive/2b773367f115d14e.yaml.gz",
       "bytes": 10012,
       "compressed_bytes": 4031,
-      "sha256": "4d63f47ae807ae1cb44275a227e9eb3fd2a61f07d36367831d440bda6cafd9a6"
+      "sha256": "4d63f47ae807ae1cb44275a227e9eb3fd2a61f07d36367831d440bda6cafd9a6",
+      "reviewer_score": 10.0
     },
     {
       "id": "archive_29",
@@ -702,7 +713,8 @@
       "file": "capsules/records/archive/1aa5f62355e398c7.yaml.gz",
       "bytes": 12957,
       "compressed_bytes": 4959,
-      "sha256": "193f9bc25cf1d0db4877fa5e1b421006b45b57819e87446c530b93341a1d75fa"
+      "sha256": "193f9bc25cf1d0db4877fa5e1b421006b45b57819e87446c530b93341a1d75fa",
+      "reviewer_score": 10.0
     },
     {
       "id": "archive_30",
@@ -727,7 +739,8 @@
       "file": "capsules/records/archive/5eb18eca7677572d.yaml.gz",
       "bytes": 29381,
       "compressed_bytes": 10392,
-      "sha256": "bc81bd3a85ada67effba912ee29098f3e5b7f532bafa6b6b123631cbbe03d5a7"
+      "sha256": "bc81bd3a85ada67effba912ee29098f3e5b7f532bafa6b6b123631cbbe03d5a7",
+      "reviewer_score": 10.0
     },
     {
       "id": "archive_31",
@@ -752,7 +765,8 @@
       "file": "capsules/records/archive/9b45cd0f84672ee2.yaml.gz",
       "bytes": 22695,
       "compressed_bytes": 8452,
-      "sha256": "0bf283095fcde31bcdcee918986bf84e3cf14eb716051e6381b44453ce8828f4"
+      "sha256": "0bf283095fcde31bcdcee918986bf84e3cf14eb716051e6381b44453ce8828f4",
+      "reviewer_score": 10.0
     },
     {
       "id": "archive_32",
@@ -777,7 +791,8 @@
       "file": "capsules/records/archive/d65334388d3f6584.yaml.gz",
       "bytes": 24490,
       "compressed_bytes": 8750,
-      "sha256": "6ba1fd4f7e5be7c626c279a4f19b884843adbca962fdb4cc227269bb647ed8c2"
+      "sha256": "6ba1fd4f7e5be7c626c279a4f19b884843adbca962fdb4cc227269bb647ed8c2",
+      "reviewer_score": 10.0
     },
     {
       "id": "archive_33",
@@ -802,7 +817,8 @@
       "file": "capsules/records/archive/6f269d431a38bfa3.yaml.gz",
       "bytes": 26170,
       "compressed_bytes": 9789,
-      "sha256": "7666d0ab2a77f28016ef6b9e9040c901e398672072a4651bd17d0807b49c402e"
+      "sha256": "7666d0ab2a77f28016ef6b9e9040c901e398672072a4651bd17d0807b49c402e",
+      "reviewer_score": 10.0
     },
     {
       "id": "archive_34",
@@ -826,7 +842,8 @@
       "file": "capsules/records/archive/5d08b25602e21556.yaml.gz",
       "bytes": 14990,
       "compressed_bytes": 5358,
-      "sha256": "6ca60e1c229e7a81e482d7f95439e52daa9328110d2258469301a8c5aa522fd5"
+      "sha256": "6ca60e1c229e7a81e482d7f95439e52daa9328110d2258469301a8c5aa522fd5",
+      "reviewer_score": 10.0
     },
     {
       "id": "archive_35",
@@ -849,7 +866,8 @@
       "file": "capsules/records/archive/90f7696c7aa2b0b9.yaml.gz",
       "bytes": 11603,
       "compressed_bytes": 4511,
-      "sha256": "f0ed9d3ed7a1b40f104ad0f2eb251ad4a5b5e4c24d36937067a7c1990807adee"
+      "sha256": "f0ed9d3ed7a1b40f104ad0f2eb251ad4a5b5e4c24d36937067a7c1990807adee",
+      "reviewer_score": 10.0
     },
     {
       "id": "archive_36",
@@ -873,7 +891,8 @@
       "file": "capsules/records/archive/30715c367745dcaf.yaml.gz",
       "bytes": 21097,
       "compressed_bytes": 7693,
-      "sha256": "9b2b99498faad28829250a3211c81c45c6c3f80a5aa3050ebf638c7e4a1c465b"
+      "sha256": "9b2b99498faad28829250a3211c81c45c6c3f80a5aa3050ebf638c7e4a1c465b",
+      "reviewer_score": 10.0
     },
     {
       "id": "archive_37",
@@ -896,7 +915,8 @@
       "file": "capsules/records/archive/09268d49aba386cc.yaml.gz",
       "bytes": 11831,
       "compressed_bytes": 4377,
-      "sha256": "faea8adb27615e474063c70c8f27e0bfb9e7e17702f2e30eb3ed0c8c7c41e7eb"
+      "sha256": "faea8adb27615e474063c70c8f27e0bfb9e7e17702f2e30eb3ed0c8c7c41e7eb",
+      "reviewer_score": 10.0
     },
     {
       "id": "archive_38",
@@ -921,7 +941,8 @@
       "file": "capsules/records/archive/dd43c84cb61c72d2.yaml.gz",
       "bytes": 17956,
       "compressed_bytes": 6554,
-      "sha256": "0eb2a8f0fe42ad50f7169780271492a5d32b866d26bbb6f15860f4a45ab7ff1d"
+      "sha256": "0eb2a8f0fe42ad50f7169780271492a5d32b866d26bbb6f15860f4a45ab7ff1d",
+      "reviewer_score": 10.0
     },
     {
       "id": "archive_39",
@@ -944,7 +965,8 @@
       "file": "capsules/records/archive/c404df83b61516f9.yaml.gz",
       "bytes": 10002,
       "compressed_bytes": 4042,
-      "sha256": "c1560220aad7c6b30ad3cff7063e1111a59f230a8da22aa5c65ea149445f2f87"
+      "sha256": "c1560220aad7c6b30ad3cff7063e1111a59f230a8da22aa5c65ea149445f2f87",
+      "reviewer_score": 10.0
     },
     {
       "id": "mail_1",
